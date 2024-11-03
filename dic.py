@@ -6,12 +6,10 @@ from pathlib import Path
 def parse_dic( path: Path, filename: str ) -> dict:
     result = {}
 
-    with open(path / filename, "r", encoding="ISO8859-1") as file:
+    with open(path / filename, "r", encoding="ISO-8859-1") as file:
         lines = file.read().splitlines()
 
         for line in lines:
-            # print( line )
-
             if "ISO8859-1" in line:
                 continue
 

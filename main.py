@@ -109,7 +109,17 @@ def main():
         test_pyphen(word.replace("-",""))
 
 
-#################
+################# PyHyphen und Pyphen: alle Wörter aus 'hyph_de_DE.dic' als Test
+#
+# Basiert auf TeX - https://ctan.org/tex-archive/language/hyphenation/dehyph
+#
+# Ergebnis:
+#   - generell viele Unterschiede (insg. 69090)
+#      - identisch:   46237
+#      - verschieden: 22853
+#
+#   - PyHyphen: kurze Wörter (ab, mit, hin, Weg, ...) => ""
+#
 
 def test():
     words = parse_dic( Path("."), "hyph_de_DE.dic")
@@ -146,15 +156,6 @@ def test():
     export_json( Path("./result"), "result.json", words)
 
     Trace.result(f"equal: {equal}, different: {different}")
-
-#
-# Ergebnis:
-#   - generell viele Unterschiede (insg. 69090)
-#      - identisch:   46237
-#      - verschieden: 22853
-#
-#   - PyHyphen: kurze Wörter (ab, mit, hin, Weg, ...) => ""
-#
 
 
 if __name__ == "__main__":
