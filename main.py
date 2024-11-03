@@ -17,8 +17,12 @@
 #  -> wird von Python Paketen nicht ausgewertet, aber von LibreOffice
 
 import sys
+from pathlib import Path
 
 from src.utils.trace import Trace, timeit
+from src.utils.util import export_json
+
+from dic import parse_dic
 
                                       # PyHyphen                          <-> Python
 words = [
@@ -105,7 +109,55 @@ def main():
         test_pyphen(word.replace("-",""))
 
 
+#################
+
+def test():
+    words = parse_dic( Path("."), "hyph_de_DE.dic")
+    Trace.info(f"{len(words)} words")
+
+    ### PyHyphen
+
+    init_hypen("de_DE")
+
+    for word, result in words.items():
+        res = hyphon.syllables(result[0])
+        result.append("-".join(res))
+
+    ### Pyphen
+
+    init_pyphen("de_DE")
+
+    for word, result in words.items():
+        res = pyphen_dic.inserted(result[0])
+        result.append(res)
+
+    equal = 0
+    different = 0
+
+    for word, result in words.items():
+        if result[1] == result[2]:
+            equal += 1
+        else:
+            result.append("different")
+            different += 1
+
+    # json dump
+
+    export_json( Path("./result"), "result.json", words)
+
+    Trace.result(f"equal: {equal}, different: {different}")
+
+#
+# Ergebnis:
+#   - generell viele Unterschiede (insg. 69090)
+#      - identisch:   46237
+#      - verschieden: 22853
+#
+#   - PyHyphen: kurze Wörter (ab, mit, hin, Weg, ...) => ""
+#
+
+
 if __name__ == "__main__":
     Trace.set( debug_mode=False, show_timestamp=True )
     Trace.action(f"Python version {sys.version}")
-    main()
+    test()
