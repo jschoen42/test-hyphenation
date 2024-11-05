@@ -1,6 +1,11 @@
 # .venv-3.12\Scripts\activate
 # python main.py
 #
+# Mark Liang Standford University 1983
+# https://www.tug.org/docs/liang/liang-thesis.pdf
+#
+# https://tex.stackexchange.com/questions/398491/how-does-texs-hyphenation-algorithm-work
+#
 # https://github.com/dr-leo/PyHyphen/
 #
 # https://github.com/Kozea/Pyphen
@@ -9,6 +14,11 @@
 #
 # https://ctan.org/tex-archive/language/hyphenation/dehyph
 #
+# https://github.com/voikko/libreoffice-voikko/blob/master/oxt/pythonpath/Hyphenator.py
+
+# hunspell implementation
+# https://github.com/hunspell/hyphen/blob/master/README.compound
+
 
 # Beispiel "Fortschritt" -> "Fort-s-chritt" mit Tex Algorithmus
 # in deutscher .dic steht aber zusätzlich "fort1schritt" (compound)
@@ -24,22 +34,30 @@ from src.utils.util import export_json
 
 from dic import parse_dic
 
-                                      # PyHyphen                          <-> Python
+                                      # PyHyphen                          <-> Pyphon
 words = [
-    "Fort-schritt",                   # Forts-chritt                      <-> Fort-s-chritt
-    "Blumen-topf-erde",
-    "Ad-ministrations-ober-fläche",
-    "Bedarfs-an-flug-hafen",          # Be-darfsan-flug-ha-fen            <-> Be-da-rfs-an-flug-ha-fen
-    "Benutzer-authenti-fizierungs-",  # Be-nut-zerau-then-ti-fi-zie-rungs <-> Be-nut-zer-au-then-ti-fi-zie-rungs
-    "Bild-re-daktions-aus-schuss",
-    "Blech-blas-in-strument",
-    "Blitz-ein-schalt-signal",        # Blitzein-schalt-si-gnal           <-> Blitz-ein-schalt-si-gnal
-    "Brücken-ein-sturz",
-    "Zeichen-trick-filme",
-    "Zebra-streifen-",
-    "Alkohol-aus-schank",
+    # "Fort-schritt",                   # Forts-chritt                      <-> Fort-s-chritt
+    # "Blumen-topf-erde",
+    # "Ad-ministrations-ober-fläche",
+    # "Bedarfs-an-flug-hafen",          # Be-darfsan-flug-ha-fen            <-> Be-da-rfs-an-flug-ha-fen
+    # "Benutzer-authenti-fizierungs-",  # Be-nut-zerau-then-ti-fi-zie-rungs <-> Be-nut-zer-au-then-ti-fi-zie-rungs
+    # "Bild-re-daktions-aus-schuss",
+    # "Blech-blas-in-strument",
+    # "Blitz-ein-schalt-signal",
+    # "Brücken-ein-sturz",
+    # "Zeichen-trick-filme",
+    # "Zebra-streifen-",
+    # "Alkohol-aus-schank",
 
-    "Silben-tren-nung",
+    # "Silben-tren-nung",
+    # "Fortschritt",
+    # "Universität",
+    # "Abenduniversität",
+    # "Mindestentfernung",
+    # "Miniaturausgabe",
+    # "Haustechnikraum",
+    "Technik",
+
 ]
 
 ##################
@@ -80,7 +98,7 @@ import pyphen
 
 pyphen_dic = None
 
-@timeit("Python init")
+@timeit("Pyphon init")
 def init_pyphen( language: str="de_DE" ):
     global pyphen_dic
 
@@ -161,4 +179,5 @@ def test():
 if __name__ == "__main__":
     Trace.set( debug_mode=False, show_timestamp=True )
     Trace.action(f"Python version {sys.version}")
-    test()
+    # test()
+    main()
