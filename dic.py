@@ -1,3 +1,5 @@
+import re
+
 from src.utils.trace import Trace, timeit
 
 from pathlib import Path
@@ -29,6 +31,6 @@ def parse_dic( path: Path, filename: str ) -> dict:
                 break
 
             word = line.strip()
-            result[word] = [word.replace("1", "")]
+            result[word] = [word.replace("1", "").replace("2", "").replace("3", "")]
 
     return result

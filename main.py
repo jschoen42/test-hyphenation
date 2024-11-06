@@ -39,6 +39,11 @@
 import sys
 from pathlib import Path
 
+import pyphen
+
+from hyphen import Hyphenator
+from hyphen import dictools
+
 from src.utils.trace import Trace, timeit
 from src.utils.util import export_json
 
@@ -69,13 +74,19 @@ words = [
     # "Technik",
     # "Technikraum",
     # "Technikvorraum",
-   "Abendstern",
+#    "Abendstern",
+#    "Morgenstern",
+#    "Abfüllstation",
+#    "Morgenthau",
+#    "Actionthriller",
+#    "Gastherme",
+#    "Funktionentheorie",
+#    "Gemeindebibliothek",
+   "Nennwertherabsetzung"
+
 ]
 
 ##################
-
-from hyphen import Hyphenator
-from hyphen import dictools
 
 DATA_DIR = "./data"
 
@@ -101,12 +112,10 @@ def download_all():
         try:
             dictools.install(language, directory=DATA_DIR )
             Trace.info(f"downloading {language}")
-        except Exception as e:
+        except Exception as _err:
             pass
 
 ################
-
-import pyphen
 
 pyphen_dic = None
 
