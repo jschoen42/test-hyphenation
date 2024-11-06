@@ -4,6 +4,8 @@
 # Mark Liang Standford University 1983
 # https://www.tug.org/docs/liang/liang-thesis.pdf
 #
+# >>>> https://hyphenation.org/
+#
 # https://tex.stackexchange.com/questions/398491/how-does-texs-hyphenation-algorithm-work
 #
 # https://github.com/dr-leo/PyHyphen/
@@ -19,6 +21,14 @@
 # hunspell implementation
 # https://github.com/hunspell/hyphen/blob/master/README.compound
 
+# LibreOffice
+# C:\Program Files\LibreOffice\share\extensions\dict-de
+# https://github.com/libreoffice
+# https://github.com/hunspell/hyphen/blob/master/hyphen.c
+# https://github.com/voikko/libreoffice-voikko/blob/master/oxt/pythonpath/HyphenatedWord.py
+# -> com.sun.star.linguistic2 - XHyphenatedWord
+# https://api.libreoffice.org/docs/idl//ref/interfacecom_1_1sun_1_1star_1_1linguistic2_1_1XHyphenatedWord.html#details
+# D:\downloads\core-master\linguistic\source\hyphdsp.cxx
 
 # Beispiel "Fortschritt" -> "Fort-s-chritt" mit Tex Algorithmus
 # in deutscher .dic steht aber zusätzlich "fort1schritt" (compound)
@@ -56,8 +66,10 @@ words = [
     # "Mindestentfernung",
     # "Miniaturausgabe",
     # "Haustechnikraum",
-    "Technik",
-
+    # "Technik",
+    # "Technikraum",
+    # "Technikvorraum",
+   "Abendstern",
 ]
 
 ##################
@@ -116,9 +128,9 @@ def main():
 
     ### PyHyphen
 
-    init_hypen("de_DE")
-    for word in words:
-        test_hyphen(word.replace("-",""))
+    # init_hypen("de_DE")
+    # for word in words:
+    #     test_hyphen(word.replace("-",""))
 
     ### Pyphen
 
