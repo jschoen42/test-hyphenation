@@ -1,4 +1,4 @@
-# .venv-3.12\Scripts\activate
+# .venv\Scripts\activate
 # python main.py
 #
 # Mark Liang Standford University 1983
@@ -65,30 +65,32 @@ words = [
     # "Alkohol-aus-schank",
 
     # "Silben-tren-nung",
-    # "Fortschritt",
     # "Universität",
     # "Abenduniversität",
     # "Mindestentfernung",
     # "Miniaturausgabe",
     # "Haustechnikraum",
     # "Technik",
+
     # "Technikraum",
+    # "technikraum",
+
     # "Technikvorraum",
-#    "Abendstern",
-#    "Morgenstern",
-#    "Abfüllstation",
-#    "Morgenthau",
-#    "Actionthriller",
-#    "Gastherme",
-#    "Funktionentheorie",
-#    "Gemeindebibliothek",
-   "Nennwertherabsetzung"
+    "Fortschritt",
+   "Abendstern",
+   "Morgenstern",
+   "Morgenthau",
+   "Gastherme",
+   # "Funktionentheorie",
+   # "Gemeindebibliothek",
+   "Nennwertherabsetzung",
+    #"Schiffahrt"
 
 ]
 
 ##################
 
-DATA_DIR = "./data"
+DATA_DIR = "./_tests"
 
 hyphon = None
 
@@ -99,9 +101,22 @@ def init_hypen( language: str = "de_DE" ):
     hyphon = Hyphenator(language, directory=DATA_DIR)
 
 def test_hyphen( word:str ):
-    result = hyphon.syllables(word)
-    Trace.result(f"{"-".join(result)}")
+    mode = 0
+    if word.istitle():
+        word = word.lower()
+        mode = 4
 
+    result = hyphon.syllables(word)
+    if mode == 4:
+        result[0] = result[0].title()
+
+    # Trace.result(f"syllables: {result}")
+    Trace.result(f"syllables: {"-".join(result)}")
+
+    return result
+
+    Trace.result(f"{"-".join(result)}")
+    Trace.result(f"syllables: {result}")
     # trennungen = hyphon.pairs(word)
     # silben = hyphon.syllables(word)
     # wrap = hyphon.wrap(word, 10)
@@ -137,15 +152,15 @@ def main():
 
     ### PyHyphen
 
-    # init_hypen("de_DE")
-    # for word in words:
-    #     test_hyphen(word.replace("-",""))
+    init_hypen("de_DE")
+    for word in words:
+        test_hyphen(word.replace("-",""))
 
     ### Pyphen
 
-    init_pyphen("de_DE")
-    for word in words:
-        test_pyphen(word.replace("-",""))
+    # init_pyphen("de_DE")
+    # for word in words:
+    #     test_pyphen(word.replace("-",""))
 
 
 ################# PyHyphen und Pyphen: alle Wörter aus 'hyph_de_DE.dic' als Test
