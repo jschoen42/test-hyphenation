@@ -33,18 +33,17 @@
 # Beispiel "Fortschritt" -> "Fort-s-chritt" mit Tex Algorithmus
 # in deutscher .dic steht aber zusätzlich "fort1schritt" (compound)
 # PyHyphen => ['Forts', 'chritt']
+#  -> bug: Regeln werde bei Substantiven ... nicht gefunden
 # Pyphen   => ['Fortschritt']
 #  -> wird von Python Paketen nicht ausgewertet, aber von LibreOffice
 
 import sys
 from pathlib import Path
 
-import pyphen
+from src.hyphen import init_hyphen, get_hyphen # PyHyphen
+from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
-from hyphen import Hyphenator
-from hyphen import dictools
-
-from src.utils.trace import Trace, timeit
+from src.utils.trace import Trace, Color, timeit
 from src.utils.util import export_json
 
 from dic import parse_dic
@@ -88,79 +87,17 @@ words = [
 
 ]
 
-##################
+def test_small():
 
-DATA_DIR = "./_tests"
-
-hyphon = None
-
-@timeit("PyHyphen init")
-def init_hypen( language: str = "de_DE" ):
-    global hyphon
-
-    hyphon = Hyphenator(language, directory=DATA_DIR)
-
-def test_hyphen( word:str ):
-    mode = 0
-    if word.istitle():
-        word = word.lower()
-        mode = 4
-
-    result = hyphon.syllables(word)
-    if mode == 4:
-        result[0] = result[0].title()
-
-    # Trace.result(f"syllables: {result}")
-    Trace.result(f"syllables: {"-".join(result)}")
-
-    return result
-
-    Trace.result(f"{"-".join(result)}")
-    Trace.result(f"syllables: {result}")
-    # trennungen = hyphon.pairs(word)
-    # silben = hyphon.syllables(word)
-    # wrap = hyphon.wrap(word, 10)
-
-def download_all():
-    languages = dictools.LANGUAGES
-    for language in languages:
-        try:
-            dictools.install(language, directory=DATA_DIR )
-            Trace.info(f"downloading {language}")
-        except Exception as _err:
-            pass
-
-################
-
-pyphen_dic = None
-
-@timeit("Pyphon init")
-def init_pyphen( language: str="de_DE" ):
-    global pyphen_dic
-
-    pyphen_dic = pyphen.Pyphen(lang=language)
-
-def test_pyphen( word:str ):
-    global pyphen_dic
-
-    result = pyphen_dic.inserted(word) # .split("-")
-    Trace.result(f"{result}")
-
-#################
-
-def main():
-
-    ### PyHyphen
-
-    init_hypen("de_DE")
+    Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen ...{Color.RESET}")
+    init_hyphen("de_DE")
     for word in words:
-        test_hyphen(word.replace("-",""))
+        get_hyphen(word.replace("-",""), trace=True)
 
-    ### Pyphen
-
-    # init_pyphen("de_DE")
-    # for word in words:
-    #     test_pyphen(word.replace("-",""))
+    Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
+    init_pyphen("de_DE")
+    for word in words:
+        get_pyphen(word.replace("-",""), trace=True)
 
 
 ################# PyHyphen und Pyphen: alle Wörter aus 'hyph_de_DE.dic' als Test
@@ -175,30 +112,49 @@ def main():
 #   - PyHyphen: kurze Wörter (ab, mit, hin, Weg, ...) => ""
 #
 
-def test():
+def test_big():
+
+    # leider ist "hyph_de_DE.dic" nicht für den Test verwendbar, Substantive sind klein geschrieben !!!
+
     words = parse_dic( Path("."), "hyph_de_DE.dic")
     Trace.info(f"{len(words)} words")
 
     ### PyHyphen
 
-    init_hypen("de_DE")
+    Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen ...{Color.RESET}")
 
-    for word, result in words.items():
-        res = hyphon.syllables(result[0])
-        result.append("-".join(res))
+    init_hyphen("de_DE")
 
-    ### Pyphen
+    @timeit("PyHyphen test")
+    def test_hyphen():
+        global result
+
+        for _word, result in words.items():
+            res = get_hyphen(result[0], patch = True)
+            result.append("-".join(res))
+
+    test_hyphen()
+
+    # ### Pyphen
+
+    Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
 
     init_pyphen("de_DE")
 
-    for word, result in words.items():
-        res = pyphen_dic.inserted(result[0])
-        result.append(res)
+    @timeit("Pyphon test")
+    def test_pypen():
+        global result
+
+        for _word, result in words.items():
+            res = get_pyphen(result[0])
+            result.append(res)
+
+    test_pypen()
 
     equal = 0
     different = 0
 
-    for word, result in words.items():
+    for _word, result in words.items():
         if result[1] == result[2]:
             equal += 1
         else:
@@ -215,5 +171,6 @@ def test():
 if __name__ == "__main__":
     Trace.set( debug_mode=False, show_timestamp=True )
     Trace.action(f"Python version {sys.version}")
-    # test()
-    main()
+
+    # test_small()
+    test_big()
