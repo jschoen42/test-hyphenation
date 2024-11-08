@@ -30,13 +30,6 @@
 # https://api.libreoffice.org/docs/idl//ref/interfacecom_1_1sun_1_1star_1_1linguistic2_1_1XHyphenatedWord.html#details
 # D:\downloads\core-master\linguistic\source\hyphdsp.cxx
 
-# Beispiel "Fortschritt" -> "Fort-s-chritt" mit Tex Algorithmus
-# in deutscher .dic steht aber zusätzlich "fort1schritt" (compound)
-# PyHyphen => ['Forts', 'chritt']
-#  -> bug: Regeln werde bei Substantiven ... nicht gefunden
-# Pyphen   => ['Fortschritt']
-#  -> wird von Python Paketen nicht ausgewertet, aber von LibreOffice
-
 import sys
 from pathlib import Path
 
