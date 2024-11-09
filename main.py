@@ -36,13 +36,15 @@ from pathlib import Path
 from src.hyphen import init_hyphen, get_hyphen # PyHyphen
 from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
+from src.words import import_words
+
 from src.utils.trace import Trace, Color, timeit
 from src.utils.util import export_json
 
 from dic import parse_dic
 
                                       # PyHyphen                          <-> Pyphon
-words = [
+special_words = [
     # "Fort-schritt",                   # Forts-chritt                      <-> Fort-s-chritt
     # "Blumen-topf-erde",
     # "Ad-ministrations-ober-fläche",
@@ -77,20 +79,89 @@ words = [
    # "Gemeindebibliothek",
    "Nennwertherabsetzung",
     #"Schiffahrt"
+    "Baden-Württemberg"
+
 
 ]
 
-def test_small():
 
-    Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen ...{Color.RESET}")
+################
+
+def check_patch_list():
+    words = import_words()
+    check_patch( words )
+
+def check_patch_special():
+    words = special_words
+    check_patch( words )
+
+def check_patch( words: list ):
+
+    # PyHyphen
+
+    difference = {}
+    identical = {}
+
     init_hyphen("de_DE")
     for word in words:
-        get_hyphen(word.replace("-",""), trace=True)
+        result_no_patch = get_hyphen(word, trace=False, patch=False)
+        result_patch = get_hyphen(word, trace=False, patch=True)
+        if result_no_patch != result_patch:
+            difference[word] = [result_no_patch, result_patch]
+        else:
+            identical[word] = result_no_patch
 
-    Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
-    init_pyphen("de_DE")
+    for word in difference:
+        Trace.error(f"patch is working: {word}: {difference[word][0]} -> {difference[word][1]}")
+
+    Trace.result(f"identical: {len(identical)}, different: {len(difference)}")
+
+
+
+#################
+
+def test_words_list():
+    words = import_words()
+    test_words( words, "list" )
+
+def test_words_special():
+    words = special_words
+    test_words( words, "special" )
+
+def test_words( words: list, type: str):
+
+    # PyHyphen without patch
+
+    Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen without patch...{Color.RESET}")
+    init_hyphen("de_DE")
+
+    results = {}
     for word in words:
-        get_pyphen(word.replace("-",""), trace=True)
+        result = get_hyphen(word, trace=True, patch=False)
+        results[result] = word
+
+    # Trace.fatal(results)
+
+    # PyHyphen with patch
+
+    Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen with patch...{Color.RESET}")
+    init_hyphen("de_DE")
+
+    count = 0
+    for word in words:
+        result = get_hyphen(word, trace=True, patch=True)
+        if result not in results:
+            count += 1
+            # Trace.error(f"patch is working: {word} -> {result}")
+
+    Trace.result(f"patch: {count}")
+
+    # Pyphen
+
+    # Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
+    # init_pyphen("de_DE")
+    # for word in words:
+    #     _result = get_pyphen(word, trace=(type == "special"))
 
 
 ################# PyHyphen und Pyphen: alle Wörter aus 'hyph_de_DE.dic' als Test
@@ -165,5 +236,9 @@ if __name__ == "__main__":
     Trace.set( debug_mode=False, show_timestamp=True )
     Trace.action(f"Python version {sys.version}")
 
-    # test_small()
-    test_big()
+    test_words_special()
+    # test_big()
+    # test_words_special()
+    # test_words_list()
+    # check_patch_special()
+    # check_patch_list()
