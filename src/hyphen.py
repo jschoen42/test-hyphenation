@@ -5,7 +5,7 @@ from hyphen import dictools
 
 from src.utils.trace import Trace, timeit
 
-DATA_DIR = "./_tests"
+DICT_DIR = "./dict"
 
 hyphen = None
 
@@ -13,46 +13,53 @@ hyphen = None
 def init_hyphen( language: str = "de_DE" ):
     global hyphen
 
-    hyphen = Hyphenator(language, directory=DATA_DIR)
+    hyphen = Hyphenator(language, directory=DICT_DIR)
 
 def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
 
-    word_original = word
+    parts = word.split("-") # e.g. "Baden-Württemberg"
 
-    parts = word.split("-")
+    result = []
+    for part in parts:
+        part_original = part
 
-    # for part in parts:
+        if patch:
+            mode = 0
+            if part.istitle():
+                part = part.lower()
+                mode = 4
 
+            res = hyphen.syllables(part)
+            if len(res) == 0:
+                res = [part_original]
 
-    if patch:
-        mode = 0
-        if word.istitle():
-            word = word.lower()
-            mode = 4
+            elif mode == 4:
+                res[0] = res[0].title()
 
-        result = hyphen.syllables(word)
-        if len(result) == 0:
-            result = [word_original]
+        else:
+            res = hyphen.syllables(part)
+            if len(res) == 0:
+                res = [part_original]
 
-        elif mode == 4:
-            result[0] = result[0].title()
-
-    else:
-        result = hyphen.syllables(word)
-        if len(result) == 0:
-            result = [word_original]
+        result.append(res)
 
     if trace:
-        Trace.result(f"{"-".join(result)}")
+        Trace.result(f"{pprint_hyphen(result)}")
 
-    return "=".join(result)
+    return pprint_hyphen(result)
 
+def pprint_hyphen( parts: list ):
+    result = ""
+    for part in parts:
+        result = result + "~".join(part) + "-"
+
+    return result[:-1]
 
 def download_all():
     languages = dictools.LANGUAGES
     for language in languages:
         try:
-            dictools.install(language, directory=DATA_DIR )
+            dictools.install(language, directory=DICT_DIR )
             Trace.info(f"downloading {language}")
         except Exception as _err:
             pass
