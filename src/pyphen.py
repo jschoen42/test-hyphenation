@@ -1,12 +1,12 @@
 # Pyphen
-
+import sys
 from pathlib import Path
 
 import pyphen
 
 from src.utils.trace import Trace, timeit
 
-DICT_DIR = "./dict"
+DICT_DIR = Path(sys.argv[0]).parent / "dict"
 
 pyphen_dic = None
 
@@ -14,7 +14,11 @@ pyphen_dic = None
 def init_pyphen( language: str="de_DE" ):
     global pyphen_dic
 
-    filepath = Path(DICT_DIR) / f"hyph_{language}.dic"
+    dirpath = DICT_DIR
+    if not dirpath.exists():
+        Trace.fatal(f"Pyphen directory '{dirpath}' not found")
+
+    filepath = dirpath / f"hyph_{language}.dic"
     if not filepath.exists():
         Trace.fatal(f"Pyphen dictionary '{filepath}' not found")
 
@@ -30,6 +34,6 @@ def get_pyphen( word:str, trace: bool = False ):
         result.append(pyphen_dic.inserted(part, "~"))
 
     if trace:
-        Trace.result(f"{"-".join(result)}")
+        Trace.result(f"Pyphen:   {"-".join(result)}")
 
     return f"{"-".join(result)}"

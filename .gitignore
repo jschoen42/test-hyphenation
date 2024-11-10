@@ -3,6 +3,10 @@ _video/*
 !_audio/.gitkeep
 !_video/.gitkeep
 
+material/*
+results/*
+result/*
+
 folderico-*.ico
 desktop.ini
 

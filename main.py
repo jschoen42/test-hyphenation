@@ -30,16 +30,22 @@
 # https://api.libreoffice.org/docs/idl//ref/interfacecom_1_1sun_1_1star_1_1linguistic2_1_1XHyphenatedWord.html#details
 # D:\downloads\core-master\linguistic\source\hyphdsp.cxx
 
+from re import X
 import sys
+from datetime import datetime
+from pathlib import Path
+
+from result import is_err, is_ok
 
 from src.hyphen import init_hyphen, get_hyphen # PyHyphen
 from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
-from src.words import import_words
+from src.samples import import_samples
 
-from src.utils.trace import Trace, Color
+from src.utils.trace import Trace, Color, timeit
+from src.utils.files import write_file
 
-special_words = [
+sample = [
     "Fortschritt",
     "Blumentopferde",
     "Administrationsoberfläche",
@@ -78,14 +84,80 @@ special_words = [
     "Baden-Württemberg"
 ]
 
+RESULT_DIR = Path(sys.argv[0]).parent / "results"
+
+################
+
+def check_samples(package_name, language, samples_name  ):
+
+    set_name, samples = import_samples(samples_name)
+
+    dt = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    filename = f"{package_name}-{set_name}-{dt}.json"
+
+    if package_name == "Pyphen":
+        results = test_Pyphen(samples, language, trace=False)
+
+    elif package_name == "PyHyphen":
+        results = test_PyHyphen(samples, language, trace=False)
+
+    else:
+        Trace.fatal(f"unknown package name '{package_name}'")
+
+    Trace.result(f"results: {len(results)}")
+
+    ret = write_file(RESULT_DIR, filename, results )
+    if is_err(ret):
+        Trace.error(f"Error: {ret.err_value}")
+
+
+def check_sample(package_name, language):
+    check_words( package_name, language, sample )
+
+def check_words(package_name, language, words):
+
+    if package_name == "Pyphen":
+        result = test_Pyphen(words, language)
+
+    elif package_name == "PyHyphen":
+        result = test_PyHyphen(words, language)
+
+    else:
+        Trace.fatal(f"unknown package name '{package_name}'")
+
+    return result
+
+@timeit("Pyphen test all")
+def test_Pyphen(words: dict, language: str, trace:bool = True) -> list:
+    Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
+    init_pyphen(language)
+
+    result = {}
+    for word in words:
+        result[word] = get_pyphen(word, trace=trace)
+
+    return result
+
+@timeit("PyHyphen test all")
+def test_PyHyphen(words: dict, language: str, trace:bool = True) -> list:
+    Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen with patch ...{Color.RESET}")
+    init_hyphen(language)
+
+    result = {}
+    for word in words:
+        result[word] = get_hyphen(word, trace=trace)
+
+    return result
+
 
 ################ PyHyphen - check for patch 'mode=4'
 
-def check_patch_list():
-    check_patch( import_words() )
+def check_patch_samples():
+    check_patch( import_samples() )
 
 def check_patch_special():
-    check_patch( special_words )
+    check_patch( sample )
 
 def check_patch( words: list ):
 
@@ -101,8 +173,8 @@ def check_patch( words: list ):
         else:
             identical[word] = result_no_patch
 
-    for word in difference:
-        Trace.update(f"patched '{word}': '{difference[word][0]}' => '{difference[word][1]}'")
+    # for word in difference:
+    #     Trace.update(f"patched '{word}': '{difference[word][0]}' => '{difference[word][1]}'")
 
     Trace.result(f"all: {len(words)}, identical: {len(identical)}, different: {len(difference)}")
 
@@ -114,12 +186,12 @@ def check_patch( words: list ):
 # Pyphen <-> PyHyphen (with patch)
 # identical: 24861, different: 1309
 
-def compare_words_list():
-    words = import_words()
+def compare_words_samples():
+    words = import_samples()
     compare_words( words, False )
 
 def compare_words_special():
-    words = special_words
+    words = sample
     compare_words( words, True )
 
 def compare_words( words: list, show_trace):
@@ -145,8 +217,8 @@ def compare_words( words: list, show_trace):
         else:
             identical[word] = result_hyphen
 
-    for word in difference:
-        Trace.info(f"'{word}': {Color.RED}{Color.BOLD}Pyphen{Color.RESET} '{difference[word][0]}', {Color.BLUE}{Color.BOLD}PyHyphen{Color.RESET} '{difference[word][1]}'")
+    # for word in difference:
+    #    Trace.info(f"'{word}': {Color.RED}{Color.BOLD}Pyphen{Color.RESET} '{difference[word][0]}', {Color.BLUE}{Color.BOLD}PyHyphen{Color.RESET} '{difference[word][1]}'")
 
     Trace.result(f"all: {len(words)}, identical: {len(identical)}, different: {len(difference)}")
 
@@ -155,10 +227,19 @@ if __name__ == "__main__":
     Trace.set( debug_mode=False, show_timestamp=False )
     Trace.action(f"Python version {sys.version}")
 
+    check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
+    check_samples("PyHyphen", "de_DE", "wortliste")
+    check_samples("PyHyphen", "de_DE", "german_words")
+
+    check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
+    check_samples("Pyphen", "de_DE", "wortliste")
+    check_samples("Pyphen", "de_DE", "german_words")
+
+
     # Pyphen <-> PyHyphen (with patch)
-    compare_words_special()
-    # compare_words_list()
+    # compare_words_special()
+    # compare_words_samples()
 
     # PyHyphen
     # check_patch_special()
-    # check_patch_list()
+    # check_patch_samples()

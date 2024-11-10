@@ -1,11 +1,14 @@
 # PyHyphen
 
+import sys
+from pathlib import Path
+
 from hyphen import Hyphenator
 from hyphen import dictools
 
 from src.utils.trace import Trace, timeit
 
-DICT_DIR = "./dict"
+DICT_DIR = Path(sys.argv[0]).parent / "dict"
 
 hyphen = None
 
@@ -13,7 +16,15 @@ hyphen = None
 def init_hyphen( language: str = "de_DE" ):
     global hyphen
 
-    hyphen = Hyphenator(language, directory=DICT_DIR)
+    dirpath = DICT_DIR
+    if not dirpath.exists():
+        Trace.fatal(f"PyHyphen directory '{dirpath}' not found")
+
+    # filepath = dirpath / f"hyph_{language}.dic"
+    # if not filepath.exists():
+    #     Trace.fatal(f"PyHyphen dictionary '{filepath}' not found")
+
+    hyphen = Hyphenator(language, directory=dirpath)
 
 def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
 
@@ -44,7 +55,7 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
         result.append(res)
 
     if trace:
-        Trace.result(f"{pprint_hyphen(result)}")
+        Trace.result(f"PyHyphen: {pprint_hyphen(result)}")
 
     return pprint_hyphen(result)
 

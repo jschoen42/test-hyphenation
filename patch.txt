@@ -11,5 +11,7 @@ es bleibt
  - a1str6
  - elb1st5a
  ...
- 
+
 abend1s2tern -> abend3s2tern
+
+nicht nötig für PyHyphen
