@@ -62,7 +62,7 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
 def pprint_hyphen( parts: list ):
     result = ""
     for part in parts:
-        result = result + "~".join(part) + "-"
+        result = result + "|".join(part) + "-"
 
     return result[:-1]
 

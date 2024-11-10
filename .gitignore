@@ -4,7 +4,6 @@ _video/*
 !_video/.gitkeep
 
 material/*
-results/*
 result/*
 
 folderico-*.ico
