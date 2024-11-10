@@ -3,7 +3,7 @@
 #
 
 import sys
-from datetime import datetime
+# from datetime import datetime
 from pathlib import Path
 
 from result import is_err #, is_ok
@@ -15,6 +15,8 @@ from src.samples import import_samples
 
 from src.utils.trace import Trace, Color, timeit
 from src.utils.files import write_file
+
+RESULT_DIR = Path(sys.argv[0]).parent / "results"
 
 test_sample = [
     "Fortschritt",
@@ -55,8 +57,6 @@ test_sample = [
     "Baden-Württemberg"
 ]
 
-RESULT_DIR = Path(sys.argv[0]).parent / "results"
-
 ##############################################################
 # check_samples("PyHyphen", "de_DE")
 # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
@@ -71,7 +71,7 @@ RESULT_DIR = Path(sys.argv[0]).parent / "results"
 # check_samples("Pyphen", "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_sample(package_name, language):
+def check_sample(package_name: str, language: str) -> list:
     if package_name == "Pyphen":
         result = test_Pyphen(test_sample, language)
 
@@ -83,7 +83,7 @@ def check_sample(package_name, language):
 
     return result
 
-def check_samples(package_name, language, samples_name  ):
+def check_samples(package_name: str, language: str, samples_name: str ) -> None:
 
     set_name, samples = import_samples(samples_name)
 
@@ -138,15 +138,15 @@ def test_PyHyphen(words: dict, language: str, trace:bool = True) -> list:
 # compare_samples( "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_patch_sample( language: str ):
+def check_patch_sample( language: str ) -> None:
     check_patch( "", test_sample, language, trace=False )
 
-def check_patch_samples( language: str, set_name: str  ):
+def check_patch_samples( language: str, set_name: str  ) -> None:
     set_name, samples = import_samples(set_name)
 
     check_patch( set_name, samples, language, trace=False )
 
-def check_patch( set_name: str, words: list, language: str, trace:bool = True ):
+def check_patch( set_name: str, words: list, language: str, trace:bool = True ) -> None:
 
     difference = {}
     identical = {}
@@ -188,16 +188,16 @@ def check_patch( set_name: str, words: list, language: str, trace:bool = True ):
 #
 ##############################################################
 
-def compare_sample( language ):
+def compare_sample( language: str ) -> None:
     samples = test_sample
     compare_words( "", samples, language, True )
 
-def compare_samples( language, set_name ):
+def compare_samples( language: str, set_name: str ) -> None:
     set_name, samples = import_samples(set_name)
 
     compare_words( set_name, samples, language, False )
 
-def compare_words( set_name, samples: list, language: str, trace: bool):
+def compare_words( set_name: str, samples: list, language: str, trace: bool) -> None:
 
     difference = {}
     identical = {}
@@ -267,4 +267,3 @@ if __name__ == "__main__":
     compare_samples("de_DE", "wortliste")
     compare_samples("de_DE", "german_words")
     compare_samples("de_DE", "de_DE_frami")
-
