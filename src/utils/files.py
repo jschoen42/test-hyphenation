@@ -25,14 +25,16 @@
 """
 
 import os
-# import json
+import sys
+
 import xml.etree.ElementTree as ET
 
-# import json
-import orjson # toDo optional
+if "orjson" in sys.modules:
+    import orjson # optional
+else:
+    import json
 
 from pathlib import Path
-
 from result import Result, Ok, Err
 
 from src.utils.trace import Trace
@@ -143,13 +145,18 @@ def read_file(dirpath: Path | str, filename: str, encoding: str="utf-8") -> Resu
         return Ok(text)
 
     elif type == "json":
-        try:
-            data = orjson.loads(text)
-            # data = json.loads(text)
-        except orjson.JSONDecodeError as err:
-        # except json.JSONDecodeError as err:
-            return Err(f"JSONDecodeError: {filepath} => {err}")
-        return Ok(data)
+        if "orjson" in sys.modules:
+            try:
+                data = orjson.loads(text)
+            except orjson.JSONDecodeError as err:
+                return Err(f"JSONDecodeError: {filepath} => {err}")
+            return Ok(data)
+        else:
+            try:
+                data = json.loads(text)
+            except json.JSONDecodeError as err:
+                return Err(f"JSONDecodeError: {filepath} => {err}")
+            return Ok(data)
 
     elif type == "xml":
         try:
@@ -192,8 +199,10 @@ def write_file(dirpath: Path | str, filename: str, data: any, encoding: str="utf
 
     elif suffix == ".json":
         if not isinstance(data, str):
-            text = orjson.dumps(data, option=orjson.OPT_INDENT_2).decode("utf-8")
-            # text = json.dumps(data, indent=2, ensure_ascii=False)
+            if "orjson" in sys.modules:
+                text = orjson.dumps(data, option=orjson.OPT_INDENT_2).decode("utf-8")
+            else:
+                text = json.dumps(data, indent=2, ensure_ascii=False)
         else:
             text = data
 

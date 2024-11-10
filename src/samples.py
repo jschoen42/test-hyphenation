@@ -27,12 +27,11 @@ word_lists = {
     ]
 }
 
-@timeit("import words")
+@timeit("import samples")
 def import_samples( test_set: str ):
     words = set()
 
     dirpath = BASE_PATH / test_set
-
 
     for word_list in word_lists[test_set]:
         with open(dirpath / word_list, "r", encoding="utf-8") as f:
