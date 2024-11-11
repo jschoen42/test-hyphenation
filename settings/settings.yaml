@@ -3,17 +3,24 @@
 ---
 
 samples_all:
+
+  # ./samples/samples.yaml
+
   samples:
     type: yaml
     encoding: utf-8
     files:
       - samples.yaml
 
+  # https://github.com/LibreOffice/dictionaries/tree/master/de
+
   de_DE_frami:
     type: dic
     encoding: cp1252
     files:
       - de_DE_frami.dic
+
+  # https://github.com/cpos/AlleDeutschenWoerter
 
   AlleDeutschenWoerter:
     type: text
@@ -26,11 +33,15 @@ samples_all:
       - Verben/Verben_regelmaeßig.txt
       - Verben/Verben_unregelmaeßig_Infinitiv.txt
 
+  # https://github.com/davidak/wortliste
+
   wortliste:
     type: text
     encoding: utf-8
     files:
       - wortliste.txt
+
+  # https://github.com/0LL13/german_words
 
   german_words:
     type: text

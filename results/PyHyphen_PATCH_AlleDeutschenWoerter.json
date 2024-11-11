@@ -1,0 +1,4518 @@
+{
+  "Aarau": [
+    "Aa|rau",
+    "Aar|au"
+  ],
+  "Abendessen": [
+    "Aben|des|sen",
+    "Abend|es|sen"
+  ],
+  "Abitur": [
+    "Abi|tur",
+    "Ab|itur"
+  ],
+  "Abiturient": [
+    "Abi|tu|ri|ent",
+    "Ab|itu|ri|ent"
+  ],
+  "Ablage": [
+    "Abla|ge",
+    "Ab|la|ge"
+  ],
+  "Ablagerung": [
+    "Abla|ge|rung",
+    "Ab|la|ge|rung"
+  ],
+  "Ablauf": [
+    "Ablauf",
+    "Ab|lauf"
+  ],
+  "Ableitung": [
+    "Ablei|tung",
+    "Ab|lei|tung"
+  ],
+  "Ablenkung": [
+    "Ablen|kung",
+    "Ab|len|kung"
+  ],
+  "Abrechnung": [
+    "Abrech|nung",
+    "Ab|rech|nung"
+  ],
+  "Abstimmungsergebnis": [
+    "Ab|stim|mungser|geb|nis",
+    "Ab|stim|mungs|er|geb|nis"
+  ],
+  "Abstract": [
+    "Abstract",
+    "Abs|tract"
+  ],
+  "Abstraktion": [
+    "Abstrak|ti|on",
+    "Abs|trak|ti|on"
+  ],
+  "Achtundsechziger": [
+    "Achtund|sech|zi|ger",
+    "Acht|und|sech|zi|ger"
+  ],
+  "Ackerbau": [
+    "Acker|bau",
+    "Acke|r|bau"
+  ],
+  "Ackerland": [
+    "Acker|land",
+    "Acke|r|land"
+  ],
+  "Action": [
+    "Ac|ti|on",
+    "Ac|tion"
+  ],
+  "Actionfilm": [
+    "Ac|ti|o|n|film",
+    "Action|film"
+  ],
+  "Adagio": [
+    "Adagio",
+    "Ada|gio"
+  ],
+  "Adventszeit": [
+    "Ad|vent|s|zeit",
+    "Ad|vents|zeit"
+  ],
+  "Aerobic": [
+    "Aero|bic",
+    "Ae|ro|bic"
+  ],
+  "Affront": [
+    "Affront",
+    "Af|front"
+  ],
+  "Afghanistan": [
+    "Af|gha|nis|tan",
+    "Af|gha|ni|stan"
+  ],
+  "Ahle": [
+    "Ahle",
+    "Ah|le"
+  ],
+  "Aktienindex": [
+    "Ak|tie|nin|dex",
+    "Ak|ti|en|in|dex"
+  ],
+  "Alkoholeinfluss": [
+    "Al|ko|ho|le|in|fluss",
+    "Al|ko|hol|ein|fluss"
+  ],
+  "Altersklasse": [
+    "Al|ter|sklas|se",
+    "Al|ters|klas|se"
+  ],
+  "Altersstufe": [
+    "Al|ter|s|s|tu|fe",
+    "Al|ters|stu|fe"
+  ],
+  "Amnestie": [
+    "Am|nes|tie",
+    "Amnes|tie"
+  ],
+  "Ampelanlage": [
+    "Am|pe|lan|la|ge",
+    "Am|pel|an|la|ge"
+  ],
+  "Amtsantritt": [
+    "Amts|an|tritt",
+    "Amts|antritt"
+  ],
+  "Amtsinhaber": [
+    "Amt|sin|ha|ber",
+    "Amts|in|ha|ber"
+  ],
+  "Amtssprache": [
+    "Amtss|pra|che",
+    "Amts|spra|che"
+  ],
+  "Amtsstube": [
+    "Amts|s|tu|be",
+    "Amts|stu|be"
+  ],
+  "Anachronismus": [
+    "Anachro|nis|mus",
+    "Ana|chro|nis|mus"
+  ],
+  "Analphabet": [
+    "Anal|pha|bet",
+    "An|al|pha|bet"
+  ],
+  "Anerkennung": [
+    "Aner|ken|nung",
+    "An|er|ken|nung"
+  ],
+  "Angebotspalette": [
+    "An|ge|bot|spa|let|te",
+    "An|ge|bots|pa|let|te"
+  ],
+  "Ansporn": [
+    "Ansporn",
+    "An|sporn"
+  ],
+  "Anthologie": [
+    "Antho|lo|gie",
+    "An|tho|lo|gie"
+  ],
+  "Antragsteller": [
+    "An|trag|stel|ler",
+    "An|trags|tel|ler"
+  ],
+  "Antritt": [
+    "An|tritt",
+    "Antritt"
+  ],
+  "Antrittsbesuch": [
+    "An|tritts|be|such",
+    "Antritts|be|such"
+  ],
+  "Antrittsrede": [
+    "An|tritts|re|de",
+    "Antritts|re|de"
+  ],
+  "Apostel": [
+    "Apos|tel",
+    "Apo|stel"
+  ],
+  "Appeal": [
+    "Ap|pe|al",
+    "Ap|peal"
+  ],
+  "Applikation": [
+    "Appli|ka|ti|on",
+    "Ap|pli|ka|ti|on"
+  ],
+  "Arbeitsagentur": [
+    "Ar|beit|sa|gen|tur",
+    "Ar|beits|agen|tur"
+  ],
+  "Arbeitsalltag": [
+    "Ar|beit|sall|tag",
+    "Ar|beits|all|tag"
+  ],
+  "Arbeitsamt": [
+    "Ar|beitsamt",
+    "Ar|beits|amt"
+  ],
+  "Arbeitsbedingung": [
+    "Ar|beits|be|din|gung",
+    "Ar|beits|bedin|gung"
+  ],
+  "Arbeitseinsatz": [
+    "Ar|beit|sein|satz",
+    "Ar|beits|ein|satz"
+  ],
+  "Arbeitserlaubnis": [
+    "Ar|beitser|laub|nis",
+    "Ar|beits|er|laub|nis"
+  ],
+  "Arbeitsprogramm": [
+    "Ar|beitspro|gramm",
+    "Ar|beits|pro|gramm"
+  ],
+  "Arbeitsprozess": [
+    "Ar|beitspro|zess",
+    "Ar|beits|pro|zess"
+  ],
+  "Archipel": [
+    "Archi|pel",
+    "Ar|chi|pel"
+  ],
+  "Architekt": [
+    "Archi|tekt",
+    "Ar|chi|tekt"
+  ],
+  "Architektenwettbewerb": [
+    "Archi|tek|ten|wett|be|werb",
+    "Ar|chi|tek|ten|wett|be|werb"
+  ],
+  "Architektin": [
+    "Archi|tek|tin",
+    "Ar|chi|tek|tin"
+  ],
+  "Architektur": [
+    "Archi|tek|tur",
+    "Ar|chi|tek|tur"
+  ],
+  "Archiv": [
+    "Archiv",
+    "Ar|chiv"
+  ],
+  "Archivar": [
+    "Archi|var",
+    "Ar|chi|var"
+  ],
+  "Archivbild": [
+    "Archi|v|bild",
+    "Ar|chi|v|bild"
+  ],
+  "Armenier": [
+    "Ar|me|nier",
+    "Ar|me|ni|er"
+  ],
+  "Arschloch": [
+    "Ar|sch|loch",
+    "Arsch|loch"
+  ],
+  "Aspekt": [
+    "Aspekt",
+    "As|pekt"
+  ],
+  "Astrologie": [
+    "Astro|lo|gie",
+    "As|tro|lo|gie"
+  ],
+  "Astronaut": [
+    "Astro|naut",
+    "As|tro|naut"
+  ],
+  "Astronom": [
+    "Astro|nom",
+    "As|tro|nom"
+  ],
+  "Astronomie": [
+    "Astro|no|mie",
+    "As|tro|no|mie"
+  ],
+  "Asylantrag": [
+    "Asy|lan|trag",
+    "Asyl|an|trag"
+  ],
+  "Atelier": [
+    "Ate|lier",
+    "Ate|li|er"
+  ],
+  "Atomindustrie": [
+    "Ato|m|in|dus|trie",
+    "Atom|in|dus|trie"
+  ],
+  "Aufarbeitung": [
+    "Au|farb|ei|tung",
+    "Auf|arb|ei|tung"
+  ],
+  "Aufbruchstimmung": [
+    "Auf|bruch|stim|mung",
+    "Auf|bruchs|tim|mung"
+  ],
+  "Auferstehung": [
+    "Au|fer|ste|hung",
+    "Auf|er|ste|hung"
+  ],
+  "Aufruhr": [
+    "Aufruhr",
+    "Auf|ruhr"
+  ],
+  "Aufstiegschance": [
+    "Auf|stiegschan|ce",
+    "Auf|stiegs|chan|ce"
+  ],
+  "Auftragseingang": [
+    "Auf|trag|s|ein|gang",
+    "Auf|trags|ein|gang"
+  ],
+  "Augenarzt": [
+    "Au|ge|n|arzt",
+    "Au|gen|arzt"
+  ],
+  "Auseinandersetzung": [
+    "Au|s|ein|an|der|set|zung",
+    "Aus|ein|an|der|set|zung"
+  ],
+  "Auslandseinsatz": [
+    "Aus|land|sein|satz",
+    "Aus|lands|ein|satz"
+  ],
+  "Auslandsinvestition": [
+    "Aus|land|sin|ves|ti|ti|on",
+    "Aus|lands|in|ves|ti|ti|on"
+  ],
+  "Aussprache": [
+    "Auss|pra|che",
+    "Aus|s|pra|che"
+  ],
+  "Ausspruch": [
+    "Auss|pruch",
+    "Aus|s|pruch"
+  ],
+  "Ausstand": [
+    "Auss|tand",
+    "Aus|stand"
+  ],
+  "Ausstatter": [
+    "Auss|tat|ter",
+    "Aus|stat|ter"
+  ],
+  "Ausstattung": [
+    "Auss|tat|tung",
+    "Aus|stat|tung"
+  ],
+  "Aussteiger": [
+    "Auss|tei|ger",
+    "Aus|stei|ger"
+  ],
+  "Aussteller": [
+    "Auss|tel|ler",
+    "Aus|stel|ler"
+  ],
+  "Ausstellung": [
+    "Auss|tel|lung",
+    "Aus|stel|lung"
+  ],
+  "Ausstellungshalle": [
+    "Auss|tel|lungs|hal|le",
+    "Aus|stel|lungs|hal|le"
+  ],
+  "Ausstellungsmacher": [
+    "Auss|tel|lungs|ma|cher",
+    "Aus|stel|lungs|ma|cher"
+  ],
+  "Ausstellungsraum": [
+    "Auss|tel|lungs|raum",
+    "Aus|stel|lungs|raum"
+  ],
+  "Ausstieg": [
+    "Auss|tieg",
+    "Aus|stieg"
+  ],
+  "Ausstrahlung": [
+    "Auss|trah|lung",
+    "Aus|s|trah|lung"
+  ],
+  "Australierin": [
+    "Aus|tra|lie|rin",
+    "Aus|tra|li|e|rin"
+  ],
+  "Austria": [
+    "Austria",
+    "Aus|tria"
+  ],
+  "Austritt": [
+    "Austritt",
+    "Aus|tritt"
+  ],
+  "Autoknacker": [
+    "Au|to|k|na|cker",
+    "Au|to|kna|cker"
+  ],
+  "Autowrack": [
+    "Au|towrack",
+    "Au|to|wrack"
+  ],
+  "Badeort": [
+    "Ba|de|ort",
+    "Ba|deort"
+  ],
+  "Baisse": [
+    "Bais|se",
+    "Baisse"
+  ],
+  "Banane": [
+    "Bana|ne",
+    "Ba|na|ne"
+  ],
+  "Bangladesch": [
+    "Ban|gla|desch",
+    "Bang|la|desch"
+  ],
+  "Bankangestellte": [
+    "Ban|kan|ge|stell|te",
+    "Bank|an|ge|stell|te"
+  ],
+  "Bankier": [
+    "Ban|kier",
+    "Ban|ki|er"
+  ],
+  "Bankraub": [
+    "Ban|kraub",
+    "Bank|raub"
+  ],
+  "Barbar": [
+    "Ba|r|bar",
+    "Bar|bar"
+  ],
+  "Barbarei": [
+    "Ba|r|ba|rei",
+    "Bar|ba|rei"
+  ],
+  "Barbier": [
+    "Ba|r|bier",
+    "Bar|bier"
+  ],
+  "Barcelona": [
+    "Ba|r|ce|lo|na",
+    "Bar|ce|lo|na"
+  ],
+  "Barriere": [
+    "Bar|rie|re",
+    "Bar|ri|e|re"
+  ],
+  "Baumarkt": [
+    "Baumarkt",
+    "Bau|markt"
+  ],
+  "Bausparkasse": [
+    "Bauspar|kas|se",
+    "Bau|spar|kas|se"
+  ],
+  "Bausparvertrag": [
+    "Bauspar|ver|trag",
+    "Bau|spar|ver|trag"
+  ],
+  "Beach": [
+    "Be|ach",
+    "Beach"
+  ],
+  "Beachtung": [
+    "Be|ach|tung",
+    "Beach|tung"
+  ],
+  "Beachvolleyball": [
+    "Be|ach|vol|ley|ball",
+    "Beach|vol|ley|ball"
+  ],
+  "Beamtin": [
+    "Be|am|tin",
+    "Beam|tin"
+  ],
+  "Bedacht": [
+    "Be|dacht",
+    "Bedacht"
+  ],
+  "Bedauern": [
+    "Be|dau|ern",
+    "Bedau|ern"
+  ],
+  "Bedingung": [
+    "Be|din|gung",
+    "Bedin|gung"
+  ],
+  "Beendigung": [
+    "Been|di|gung",
+    "Be|en|di|gung"
+  ],
+  "Begleiter": [
+    "Beglei|ter",
+    "Be|glei|ter"
+  ],
+  "Begleiterin": [
+    "Beglei|te|rin",
+    "Be|glei|te|rin"
+  ],
+  "Begleiterscheinung": [
+    "Begleiter|schei|nung",
+    "Be|gleit|er|schei|nung"
+  ],
+  "Begleitperson": [
+    "Begleit|per|son",
+    "Be|gleit|per|son"
+  ],
+  "Begleitung": [
+    "Beglei|tung",
+    "Be|glei|tung"
+  ],
+  "Beiname": [
+    "Beiname",
+    "Bei|na|me"
+  ],
+  "Bekleidung": [
+    "Bek|lei|dung",
+    "Be|klei|dung"
+  ],
+  "Belgier": [
+    "Bel|gier",
+    "Bel|gi|er"
+  ],
+  "Beobachter": [
+    "Beob|ach|ter",
+    "Be|ob|ach|ter"
+  ],
+  "Beobachtung": [
+    "Beob|ach|tung",
+    "Be|ob|ach|tung"
+  ],
+  "Bergland": [
+    "Ber|g|land",
+    "Berg|land"
+  ],
+  "Bergregion": [
+    "Ber|g|re|gi|on",
+    "Berg|re|gi|on"
+  ],
+  "Berufserfahrung": [
+    "Be|rufser|fah|rung",
+    "Be|rufs|er|fah|rung"
+  ],
+  "Berufsstand": [
+    "Be|rufs|s|tand",
+    "Be|rufs|stand"
+  ],
+  "Betriebsamkeit": [
+    "Be|trieb|sam|keit",
+    "Be|triebs|am|keit"
+  ],
+  "Betriebsergebnis": [
+    "Be|triebser|geb|nis",
+    "Be|triebs|er|geb|nis"
+  ],
+  "Beunruhigung": [
+    "Beun|ru|hi|gung",
+    "Be|un|ru|hi|gung"
+  ],
+  "Beurteilung": [
+    "Beur|tei|lung",
+    "Be|ur|tei|lung"
+  ],
+  "Bezirksamt": [
+    "Be|zirksamt",
+    "Be|zirks|amt"
+  ],
+  "Bezirksanwalt": [
+    "Be|zirksan|walt",
+    "Be|zirks|an|walt"
+  ],
+  "Bezirksstadt": [
+    "Be|zirks|s|tadt",
+    "Be|zirks|stadt"
+  ],
+  "Bibliothek": [
+    "Biblio|thek",
+    "Bi|blio|thek"
+  ],
+  "Bibliothekar": [
+    "Biblio|the|kar",
+    "Bi|blio|the|kar"
+  ],
+  "Bike": [
+    "Bi|ke",
+    "Bike"
+  ],
+  "Biker": [
+    "Bi|ker",
+    "Biker"
+  ],
+  "Bikini": [
+    "Bi|ki|ni",
+    "Biki|ni"
+  ],
+  "Bilanz": [
+    "Bilanz",
+    "Bi|lanz"
+  ],
+  "Bilanzgewinn": [
+    "Bilanz|ge|winn",
+    "Bi|lanz|ge|winn"
+  ],
+  "Bilanzpressekonferenz": [
+    "Bilanz|pres|se|kon|fe|renz",
+    "Bi|lanz|pres|se|kon|fe|renz"
+  ],
+  "Bilanzsumme": [
+    "Bilanz|sum|me",
+    "Bi|lanz|sum|me"
+  ],
+  "Biodiesel": [
+    "Biodie|sel",
+    "Bio|die|sel"
+  ],
+  "Bioethik": [
+    "Bioethik",
+    "Bio|ethik"
+  ],
+  "Biotechnologie": [
+    "Bio|tech|no|lo|gie",
+    "Bi|o|tech|no|lo|gie"
+  ],
+  "Biotonne": [
+    "Bio|ton|ne",
+    "Bi|o|ton|ne"
+  ],
+  "Bistro": [
+    "Bistro",
+    "Bis|tro"
+  ],
+  "Blasorchester": [
+    "Bla|sor|ches|ter",
+    "Blas|or|ches|ter"
+  ],
+  "Blues": [
+    "Blu|es",
+    "Blues"
+  ],
+  "Bluterguss": [
+    "Bluter|guss",
+    "Blut|er|guss"
+  ],
+  "Bombenattentat": [
+    "Bom|benat|ten|tat",
+    "Bom|ben|at|ten|tat"
+  ],
+  "Bundesagentur": [
+    "Bun|de|sa|gen|tur",
+    "Bun|des|agen|tur"
+  ],
+  "Bundesinnenminister": [
+    "Bun|desin|nen|mi|nis|ter",
+    "Bun|des|in|nen|mi|nis|ter"
+  ],
+  "Bundesinnenministerium": [
+    "Bun|desin|nen|mi|nis|te|ri|um",
+    "Bun|des|in|nen|mi|nis|te|ri|um"
+  ],
+  "Bundesinstitut": [
+    "Bun|desin|sti|tut",
+    "Bun|des|in|sti|tut"
+  ],
+  "Bundesligaklub": [
+    "Bun|des|ligaklub",
+    "Bun|des|li|ga|klub"
+  ],
+  "Bundespartei": [
+    "Bun|de|s|par|tei",
+    "Bun|des|par|tei"
+  ],
+  "Bundesparteitag": [
+    "Bun|de|s|par|tei|tag",
+    "Bun|des|par|tei|tag"
+  ],
+  "Bundesstaat": [
+    "Bun|dess|taat",
+    "Bun|des|staat"
+  ],
+  "Bundesumweltminister": [
+    "Bun|desum|welt|mi|nis|ter",
+    "Bun|des|um|welt|mi|nis|ter"
+  ],
+  "Bundesumweltministerium": [
+    "Bun|desum|welt|mi|nis|te|ri|um",
+    "Bun|des|um|welt|mi|nis|te|ri|um"
+  ],
+  "Bundeswehreinsatz": [
+    "Bun|des|weh|rein|satz",
+    "Bun|des|wehr|ein|satz"
+  ],
+  "Burgruine": [
+    "Bur|gru|i|ne",
+    "Burg|ru|i|ne"
+  ],
+  "Business": [
+    "Bu|si|ness",
+    "Busi|ness"
+  ],
+  "Busspur": [
+    "Buss|pur",
+    "Bus|spur"
+  ],
+  "Byte": [
+    "By|te",
+    "Byte"
+  ],
+  "Cannes": [
+    "Can|nes",
+    "Cannes"
+  ],
+  "Canyon": [
+    "Ca|ny|on",
+    "Can|yon"
+  ],
+  "Cape": [
+    "Ca|pe",
+    "Cape"
+  ],
+  "Champagner": [
+    "Cham|pa|gner",
+    "Cham|pag|ner"
+  ],
+  "Charme": [
+    "Char|me",
+    "Charme"
+  ],
+  "Chefarzt": [
+    "Che|f|arzt",
+    "Chef|arzt"
+  ],
+  "Chefetage": [
+    "Che|fe|ta|ge",
+    "Chef|e|ta|ge"
+  ],
+  "Chefredakteur": [
+    "Che|fre|dak|teur",
+    "Chefre|dak|teur"
+  ],
+  "Chefredakteurin": [
+    "Che|fre|dak|teu|rin",
+    "Chefre|dak|teu|rin"
+  ],
+  "Chefredaktion": [
+    "Che|fre|dak|ti|on",
+    "Chefre|dak|ti|on"
+  ],
+  "Chefredaktor": [
+    "Che|fre|dak|tor",
+    "Chefre|dak|tor"
+  ],
+  "Chefsache": [
+    "Chefsa|che",
+    "Chef|sa|che"
+  ],
+  "Chemieindustrie": [
+    "Che|mi|ein|dus|trie",
+    "Che|mi|e|in|dus|trie"
+  ],
+  "Chemiekonzern": [
+    "Che|mi|ekon|zern",
+    "Che|mie|kon|zern"
+  ],
+  "Chemieunternehmen": [
+    "Che|mi|eun|ter|neh|men",
+    "Che|mie|un|ter|neh|men"
+  ],
+  "Chiphersteller": [
+    "Chi|pher|stel|ler",
+    "Chip|her|stel|ler"
+  ],
+  "Code": [
+    "Co|de",
+    "Code"
+  ],
+  "Computerfirma": [
+    "Com|puter|fir|ma",
+    "Com|pu|ter|fir|ma"
+  ],
+  "Dachau": [
+    "Dach|au",
+    "Da|ch|au"
+  ],
+  "Dachgeschoss": [
+    "Dach|ge|schoss",
+    "Da|ch|ge|schoss"
+  ],
+  "Dachorganisation": [
+    "Da|ch|or|ga|ni|sa|ti|on",
+    "Dach|or|ga|ni|sa|ti|on"
+  ],
+  "Dachverband": [
+    "Dach|ver|band",
+    "Da|ch|ver|band"
+  ],
+  "Dancefloor": [
+    "Dan|ce|floor",
+    "Dance|floor"
+  ],
+  "Darbietung": [
+    "Da|r|bie|tung",
+    "Dar|bie|tung"
+  ],
+  "Darlehen": [
+    "Da|r|le|hen",
+    "Dar|le|hen"
+  ],
+  "Darling": [
+    "Da|r|ling",
+    "Dar|ling"
+  ],
+  "Datenautobahn": [
+    "Da|ten|au|to|bahn",
+    "Da|tenau|to|bahn"
+  ],
+  "Dauereinsatz": [
+    "Dau|e|rein|satz",
+    "Dau|er|ein|satz"
+  ],
+  "Deal": [
+    "De|al",
+    "Deal"
+  ],
+  "Dechant": [
+    "Dechant",
+    "De|chant"
+  ],
+  "Delhi": [
+    "Del|hi",
+    "De|lhi"
+  ],
+  "Designer": [
+    "De|si|g|ner",
+    "De|si|gner"
+  ],
+  "Designerin": [
+    "De|si|g|ne|rin",
+    "De|si|gne|rin"
+  ],
+  "Desinteresse": [
+    "De|sin|ter|es|se",
+    "Des|in|ter|es|se"
+  ],
+  "Desktop": [
+    "Desktop",
+    "Desk|top"
+  ],
+  "Despot": [
+    "De|spot",
+    "Des|pot"
+  ],
+  "Destination": [
+    "Des|ti|na|ti|on",
+    "De|sti|na|ti|on"
+  ],
+  "Deutschland": [
+    "Deut|sch|land",
+    "Deutsch|land"
+  ],
+  "Deutschlandfunk": [
+    "Deut|sch|land|funk",
+    "Deutsch|land|funk"
+  ],
+  "Diabetes": [
+    "Dia|be|tes",
+    "Di|a|be|tes"
+  ],
+  "Diabetiker": [
+    "Dia|be|ti|ker",
+    "Di|a|be|ti|ker"
+  ],
+  "Diakon": [
+    "Dia|kon",
+    "Di|a|kon"
+  ],
+  "Diakonie": [
+    "Dia|ko|nie",
+    "Di|a|ko|nie"
+  ],
+  "Diaspora": [
+    "Dias|po|ra",
+    "Di|a|spo|ra"
+  ],
+  "Dickicht": [
+    "Dickicht",
+    "Di|ckicht"
+  ],
+  "Dienstagnachmittag": [
+    "Diens|tagnach|mit|tag",
+    "Diens|tag|nach|mit|tag"
+  ],
+  "Dienstherr": [
+    "Dienstherr",
+    "Dienst|herr"
+  ],
+  "Direktinvestition": [
+    "Di|rek|tin|ves|ti|ti|on",
+    "Di|rekt|in|ves|ti|ti|on"
+  ],
+  "Distrikt": [
+    "Distrikt",
+    "Di|strikt"
+  ],
+  "Donnerstagnachmittag": [
+    "Don|ners|tagnach|mit|tag",
+    "Don|ners|tag|nach|mit|tag"
+  ],
+  "Dorferneuerung": [
+    "Dor|fer|neu|e|rung",
+    "Dorf|er|neu|e|rung"
+  ],
+  "Dossier": [
+    "Dos|sier",
+    "Dos|si|er"
+  ],
+  "Download": [
+    "Dow|n|load",
+    "Down|load"
+  ],
+  "Drehort": [
+    "Dre|hort",
+    "Dreh|ort"
+  ],
+  "Dublin": [
+    "Dub|lin",
+    "Du|blin"
+  ],
+  "Duell": [
+    "Duell",
+    "Du|ell"
+  ],
+  "Duett": [
+    "Duett",
+    "Du|ett"
+  ],
+  "Duke": [
+    "Du|ke",
+    "Duke"
+  ],
+  "Durcheinander": [
+    "Durchein|an|der",
+    "Durch|ein|an|der"
+  ],
+  "Durchschnittseinkommen": [
+    "Durch|schnitt|sein|kom|men",
+    "Durch|schnitts|ein|kom|men"
+  ],
+  "Edinburgh": [
+    "Edin|bur|gh",
+    "Edin|burgh"
+  ],
+  "Ehrenamt": [
+    "Ehren|amt",
+    "Eh|ren|amt"
+  ],
+  "Ehrengast": [
+    "Ehren|gast",
+    "Eh|ren|gast"
+  ],
+  "Ehrenmitglied": [
+    "Ehren|mit|glied",
+    "Eh|ren|mit|glied"
+  ],
+  "Ehrennadel": [
+    "Ehren|na|del",
+    "Eh|ren|na|del"
+  ],
+  "Ehrenplatz": [
+    "Ehren|platz",
+    "Eh|ren|platz"
+  ],
+  "Ehrenrunde": [
+    "Ehren|run|de",
+    "Eh|ren|run|de"
+  ],
+  "Ehrensache": [
+    "Ehren|sa|che",
+    "Eh|ren|sa|che"
+  ],
+  "Ehrentitel": [
+    "Ehren|ti|tel",
+    "Eh|ren|ti|tel"
+  ],
+  "Ehrenvorsitzende": [
+    "Ehren|vor|sit|zen|de",
+    "Eh|ren|vor|sit|zen|de"
+  ],
+  "Ehrenvorsitzender": [
+    "Ehren|vor|sit|zen|der",
+    "Eh|ren|vor|sit|zen|der"
+  ],
+  "Ehrenzeichen": [
+    "Ehren|zei|chen",
+    "Eh|ren|zei|chen"
+  ],
+  "Ehrung": [
+    "Ehrung",
+    "Eh|rung"
+  ],
+  "Eigeninitiative": [
+    "Ei|genin|iti|a|ti|ve",
+    "Ei|gen|in|iti|a|ti|ve"
+  ],
+  "Eilantrag": [
+    "Eilan|trag",
+    "Eil|an|trag"
+  ],
+  "Eingreiftruppe": [
+    "Ein|greift|rup|pe",
+    "Ein|greif|trup|pe"
+  ],
+  "Einkaufstour": [
+    "Ein|kaufstour",
+    "Ein|kaufs|tour"
+  ],
+  "Einordnung": [
+    "Ei|n|ord|nung",
+    "Ein|ord|nung"
+  ],
+  "Einsatzort": [
+    "Ein|satzort",
+    "Ein|satz|ort"
+  ],
+  "Eissporthalle": [
+    "Eiss|port|hal|le",
+    "Eis|sport|hal|le"
+  ],
+  "Eisstadion": [
+    "Eiss|ta|di|on",
+    "Eis|sta|di|on"
+  ],
+  "Elektrosmog": [
+    "Elek|tros|mog",
+    "Elek|tro|smog"
+  ],
+  "Elterninitiative": [
+    "El|ter|nin|iti|a|ti|ve",
+    "El|tern|in|iti|a|ti|ve"
+  ],
+  "Empfang": [
+    "Empfang",
+    "Emp|fang"
+  ],
+  "Endabrechnung": [
+    "En|dab|rech|nung",
+    "End|ab|rech|nung"
+  ],
+  "Endergebnis": [
+    "En|der|geb|nis",
+    "End|er|geb|nis"
+  ],
+  "Endrunde": [
+    "En|drun|de",
+    "End|run|de"
+  ],
+  "Equipe": [
+    "Equi|pe",
+    "Equipe"
+  ],
+  "Erachten": [
+    "Erach|ten",
+    "Er|ach|ten"
+  ],
+  "Erbanlage": [
+    "Er|ban|la|ge",
+    "Erban|la|ge"
+  ],
+  "Erbschaftsteuer": [
+    "Erb|schaft|steu|er",
+    "Erb|schafts|teu|er"
+  ],
+  "Erfolgschance": [
+    "Er|folgschan|ce",
+    "Er|folgs|chan|ce"
+  ],
+  "Erfolgserlebnis": [
+    "Er|folgser|leb|nis",
+    "Er|folgs|er|leb|nis"
+  ],
+  "Erfolgsserie": [
+    "Er|folgs|se|rie",
+    "Er|folgs|serie"
+  ],
+  "Erinnerung": [
+    "Erin|ne|rung",
+    "Er|in|ne|rung"
+  ],
+  "Eroberer": [
+    "Ero|be|rer",
+    "Er|obe|rer"
+  ],
+  "Eroberung": [
+    "Erobe|rung",
+    "Er|obe|rung"
+  ],
+  "Erzgebirge": [
+    "Erz|ge|bir|ge",
+    "Er|z|ge|bir|ge"
+  ],
+  "Esprit": [
+    "Esprit",
+    "Es|prit"
+  ],
+  "Establishment": [
+    "Esta|blis|h|ment",
+    "Es|ta|blish|ment"
+  ],
+  "Etatentwurf": [
+    "Eta|tent|wurf",
+    "Etat|ent|wurf"
+  ],
+  "Europaabgeordnete": [
+    "Eur|opaab|ge|ord|ne|te",
+    "Eu|ro|paab|ge|ord|ne|te"
+  ],
+  "Europacup": [
+    "Eur|opa|cup",
+    "Eu|ro|pa|cup"
+  ],
+  "Europaliga": [
+    "Eur|opa|li|ga",
+    "Eu|ro|pa|li|ga"
+  ],
+  "Europameister": [
+    "Eur|opa|meis|ter",
+    "Eu|ro|pa|meis|ter"
+  ],
+  "Europameisterin": [
+    "Eur|opa|meis|te|rin",
+    "Eu|ro|pa|meis|te|rin"
+  ],
+  "Europameisterschaft": [
+    "Eur|opa|meis|ter|schaft",
+    "Eu|ro|pa|meis|ter|schaft"
+  ],
+  "Europaparlament": [
+    "Eur|opa|par|la|ment",
+    "Eu|ro|pa|par|la|ment"
+  ],
+  "Europapokal": [
+    "Eur|opa|po|kal",
+    "Eu|ro|pa|po|kal"
+  ],
+  "Europapolitik": [
+    "Eur|opa|po|li|tik",
+    "Eu|ro|pa|po|li|tik"
+  ],
+  "Europarat": [
+    "Eur|opa|rat",
+    "Eu|ro|pa|rat"
+  ],
+  "Europawahl": [
+    "Eur|opa|wahl",
+    "Eu|ro|pa|wahl"
+  ],
+  "Exempel": [
+    "Exem|pel",
+    "Ex|em|pel"
+  ],
+  "Exemplar": [
+    "Exem|plar",
+    "Ex|em|plar"
+  ],
+  "Facette": [
+    "Fa|cet|te",
+    "Facet|te"
+  ],
+  "Fachliteratur": [
+    "Fachli|te|ra|tur",
+    "Fach|li|te|ra|tur"
+  ],
+  "Fahrtrichtung": [
+    "Fahrtrich|tung",
+    "Fahrt|rich|tung"
+  ],
+  "Fahrzeuglenker": [
+    "Fahr|zeuglen|ker",
+    "Fahr|zeug|len|ker"
+  ],
+  "Falschaussage": [
+    "Fal|schaus|sa|ge",
+    "Falsch|aus|sa|ge"
+  ],
+  "Familienname": [
+    "Fa|mi|li|enna|me",
+    "Fa|mi|li|en|na|me"
+  ],
+  "Farbe": [
+    "Fa|r|be",
+    "Far|be"
+  ],
+  "Farbgebung": [
+    "Fa|rb|ge|bung",
+    "Farb|ge|bung"
+  ],
+  "Farbigkeit": [
+    "Fa|r|big|keit",
+    "Far|big|keit"
+  ],
+  "Farbstoff": [
+    "Fa|rb|stoff",
+    "Farb|stoff"
+  ],
+  "Farbton": [
+    "Fa|rb|ton",
+    "Farb|ton"
+  ],
+  "Farbtupfer": [
+    "Fa|rb|tup|fer",
+    "Farb|tup|fer"
+  ],
+  "Farce": [
+    "Fa|r|ce",
+    "Far|ce"
+  ],
+  "Fashion": [
+    "Fa|shi|on",
+    "Fa|shion"
+  ],
+  "Feinstaub": [
+    "Fein|sta|ub",
+    "Fein|staub"
+  ],
+  "Feinunze": [
+    "Fei|nun|ze",
+    "Fein|un|ze"
+  ],
+  "Ferieninsel": [
+    "Fe|rien|in|sel",
+    "Fe|ri|en|in|sel"
+  ],
+  "Fernsehauftritt": [
+    "Fern|se|h|auf|tritt",
+    "Fern|seh|auf|tritt"
+  ],
+  "Fernsehinterview": [
+    "Fern|sehin|ter|view",
+    "Fern|seh|in|ter|view"
+  ],
+  "Fernsehshow": [
+    "Fern|sehs|how",
+    "Fern|seh|show"
+  ],
+  "Festrede": [
+    "Fe|st|re|de",
+    "Fest|re|de"
+  ],
+  "Festredner": [
+    "Fe|st|red|ner",
+    "Fest|red|ner"
+  ],
+  "Festumzug": [
+    "Fe|stum|zug",
+    "Fest|um|zug"
+  ],
+  "Fiasko": [
+    "Fias|ko",
+    "Fi|as|ko"
+  ],
+  "Fiction": [
+    "Fic|ti|on",
+    "Fic|tion"
+  ],
+  "Fiesta": [
+    "Fies|ta",
+    "Fi|es|ta"
+  ],
+  "File": [
+    "Fi|le",
+    "File"
+  ],
+  "Filialnetz": [
+    "Fi|lial|netz",
+    "Fi|li|al|netz"
+  ],
+  "Filmindustrie": [
+    "Fil|m|in|dus|trie",
+    "Film|in|dus|trie"
+  ],
+  "Finale": [
+    "Fina|le",
+    "Fi|na|le"
+  ],
+  "Finaleinzug": [
+    "Final|ein|zug",
+    "Fi|nal|ein|zug"
+  ],
+  "Finalist": [
+    "Fina|list",
+    "Fi|na|list"
+  ],
+  "Finalrunde": [
+    "Final|run|de",
+    "Fi|nal|run|de"
+  ],
+  "Finalsieg": [
+    "Final|sieg",
+    "Fi|nal|sieg"
+  ],
+  "Finalspiel": [
+    "Final|spiel",
+    "Fi|nal|spiel"
+  ],
+  "Finanz": [
+    "Finanz",
+    "Fi|nanz"
+  ],
+  "Finanzamt": [
+    "Finanz|amt",
+    "Fi|nanz|amt"
+  ],
+  "Finanzausgleich": [
+    "Finanzaus|gleich",
+    "Fi|nanz|aus|gleich"
+  ],
+  "Finanzausschuss": [
+    "Finanzaus|schuss",
+    "Fi|nanz|aus|schuss"
+  ],
+  "Finanzbeamter": [
+    "Finanz|be|am|ter",
+    "Fi|nanz|be|am|ter"
+  ],
+  "Finanzbedarf": [
+    "Finanz|be|darf",
+    "Fi|nanz|be|darf"
+  ],
+  "Finanzchef": [
+    "Finanz|chef",
+    "Fi|nanz|chef"
+  ],
+  "Finanzdienstleister": [
+    "Finanz|dienst|leis|ter",
+    "Fi|nanz|dienst|leis|ter"
+  ],
+  "Finanzdienstleistung": [
+    "Finanz|dienst|leis|tung",
+    "Fi|nanz|dienst|leis|tung"
+  ],
+  "Finanzdirektor": [
+    "Finanz|di|rek|tor",
+    "Fi|nanz|di|rek|tor"
+  ],
+  "Finanzexperte": [
+    "Finanz|ex|per|te",
+    "Fi|nanz|ex|per|te"
+  ],
+  "Finanzhilfe": [
+    "Finanz|hil|fe",
+    "Fi|nanz|hil|fe"
+  ],
+  "Finanzier": [
+    "Finan|zier",
+    "Fi|nan|zier"
+  ],
+  "Finanzierung": [
+    "Finan|zie|rung",
+    "Fi|nan|zie|rung"
+  ],
+  "Finanzierungsmodell": [
+    "Finan|zie|rungs|mo|dell",
+    "Fi|nan|zie|rungs|mo|dell"
+  ],
+  "Finanzinstitut": [
+    "Finan|zin|sti|tut",
+    "Fi|nanz|in|sti|tut"
+  ],
+  "Finanzinvestor": [
+    "Finan|zin|ves|tor",
+    "Fi|nanz|in|ves|tor"
+  ],
+  "Finanzkraft": [
+    "Finanz|kraft",
+    "Fi|nanz|kraft"
+  ],
+  "Finanzkrise": [
+    "Finanz|kri|se",
+    "Fi|nanz|kri|se"
+  ],
+  "Finanzlage": [
+    "Finanz|la|ge",
+    "Fi|nanz|la|ge"
+  ],
+  "Finanzmarkt": [
+    "Finanz|markt",
+    "Fi|nanz|markt"
+  ],
+  "Finanzminister": [
+    "Finanz|mi|nis|ter",
+    "Fi|nanz|mi|nis|ter"
+  ],
+  "Finanzministerium": [
+    "Finanz|mi|nis|te|ri|um",
+    "Fi|nanz|mi|nis|te|ri|um"
+  ],
+  "Finanznot": [
+    "Finanz|not",
+    "Fi|nanz|not"
+  ],
+  "Finanzplan": [
+    "Finanz|plan",
+    "Fi|nanz|plan"
+  ],
+  "Finanzplanung": [
+    "Finanz|pla|nung",
+    "Fi|nanz|pla|nung"
+  ],
+  "Finanzplatz": [
+    "Finanz|platz",
+    "Fi|nanz|platz"
+  ],
+  "Finanzpolitik": [
+    "Finanz|po|li|tik",
+    "Fi|nanz|po|li|tik"
+  ],
+  "Finanzproblem": [
+    "Finanz|pro|blem",
+    "Fi|nanz|pro|blem"
+  ],
+  "Finanzressort": [
+    "Finanzres|sort",
+    "Fi|nanz|res|sort"
+  ],
+  "Finanzsektor": [
+    "Finanz|sek|tor",
+    "Fi|nanz|sek|tor"
+  ],
+  "Finanzsenator": [
+    "Finanz|se|na|tor",
+    "Fi|nanz|se|na|tor"
+  ],
+  "Finanzsenatorin": [
+    "Finanz|se|na|to|rin",
+    "Fi|nanz|se|na|to|rin"
+  ],
+  "Finanzsituation": [
+    "Finanz|si|tu|a|ti|on",
+    "Fi|nanz|si|tu|a|ti|on"
+  ],
+  "Finanzspritze": [
+    "Finanz|sprit|ze",
+    "Fi|nanz|sprit|ze"
+  ],
+  "Finanzsystem": [
+    "Finanz|sys|tem",
+    "Fi|nanz|sys|tem"
+  ],
+  "Finanzverwaltung": [
+    "Finanz|ver|wal|tung",
+    "Fi|nanz|ver|wal|tung"
+  ],
+  "Finanzvorstand": [
+    "Finanz|vor|stand",
+    "Fi|nanz|vor|stand"
+  ],
+  "Finanzwelt": [
+    "Finan|z|welt",
+    "Fi|nanz|welt"
+  ],
+  "Finish": [
+    "Fi|nish",
+    "Finish"
+  ],
+  "Fluglotse": [
+    "Fluglot|se",
+    "Flug|lot|se"
+  ],
+  "Flugzeugabsturz": [
+    "Flug|zeu|gab|sturz",
+    "Flug|zeug|ab|sturz"
+  ],
+  "Flugzeughersteller": [
+    "Flug|zeugher|stel|ler",
+    "Flug|zeug|her|stel|ler"
+  ],
+  "Flutopfer": [
+    "Flu|top|fer",
+    "Flut|op|fer"
+  ],
+  "Force": [
+    "For|ce",
+    "Force"
+  ],
+  "Forschungsergebnis": [
+    "For|schungser|geb|nis",
+    "For|schungs|er|geb|nis"
+  ],
+  "Fortschreibung": [
+    "Forts|chrei|bung",
+    "Fort|schrei|bung"
+  ],
+  "Fortschritt": [
+    "Forts|chritt",
+    "Fort|schritt"
+  ],
+  "Fortsetzung": [
+    "Forts|et|zung",
+    "Fort|set|zung"
+  ],
+  "Forum": [
+    "Forum",
+    "Fo|rum"
+  ],
+  "Foulelfmeter": [
+    "Fou|lelf|me|ter",
+    "Foul|elf|me|ter"
+  ],
+  "Frauenanteil": [
+    "Frauen|an|teil",
+    "Frau|en|an|teil"
+  ],
+  "Frauenarzt": [
+    "Frauen|arzt",
+    "Frau|en|arzt"
+  ],
+  "Frauenbeauftragte": [
+    "Frau|en|be|auf|trag|te",
+    "Frau|en|beauf|trag|te"
+  ],
+  "Frauenbeauftragter": [
+    "Frau|en|be|auf|trag|ter",
+    "Frau|en|beauf|trag|ter"
+  ],
+  "Frauenklinik": [
+    "Frau|enkli|nik",
+    "Frau|en|kli|nik"
+  ],
+  "Freak": [
+    "Fre|ak",
+    "Freak"
+  ],
+  "Freiheitsstrafe": [
+    "Frei|heits|s|tra|fe",
+    "Frei|heits|stra|fe"
+  ],
+  "Freistellung": [
+    "Frei|stel|lung",
+    "Freis|tel|lung"
+  ],
+  "Freitagnachmittag": [
+    "Frei|tagnach|mit|tag",
+    "Frei|tag|nach|mit|tag"
+  ],
+  "Freizeiteinrichtung": [
+    "Frei|zei|tein|rich|tung",
+    "Frei|zeit|ein|rich|tung"
+  ],
+  "Freundschaftsspiel": [
+    "Freund|schaftss|piel",
+    "Freund|schafts|spiel"
+  ],
+  "Friedensinitiative": [
+    "Frie|den|si|n|iti|a|ti|ve",
+    "Frie|dens|in|iti|a|ti|ve"
+  ],
+  "Friedensprozess": [
+    "Frie|den|spro|zess",
+    "Frie|dens|pro|zess"
+  ],
+  "Friedenstruppe": [
+    "Frie|den|s|trup|pe",
+    "Frie|dens|trup|pe"
+  ],
+  "Funkausstellung": [
+    "Fun|kaus|stel|lung",
+    "Funk|aus|stel|lung"
+  ],
+  "Gabler": [
+    "Ga|bler",
+    "Gab|ler"
+  ],
+  "Gangart": [
+    "Gan|gart",
+    "Gang|art"
+  ],
+  "Gasexplosion": [
+    "Ga|sex|plo|si|on",
+    "Gas|ex|plo|si|on"
+  ],
+  "Geburtsstadt": [
+    "Ge|burts|s|tadt",
+    "Ge|burts|stadt"
+  ],
+  "Gedankenaustausch": [
+    "Ge|dan|ke|n|aus|tausch",
+    "Ge|dan|ken|aus|tausch"
+  ],
+  "Gegenentwurf": [
+    "Ge|ge|nent|wurf",
+    "Ge|genent|wurf"
+  ],
+  "Geiseldrama": [
+    "Gei|seldra|ma",
+    "Gei|sel|dra|ma"
+  ],
+  "Geldanlage": [
+    "Geldan|la|ge",
+    "Geld|an|la|ge"
+  ],
+  "Geldspende": [
+    "Geld|s|pen|de",
+    "Geld|spen|de"
+  ],
+  "Gemeinderatswahl": [
+    "Ge|mein|de|rat|s|wahl",
+    "Ge|mein|de|rats|wahl"
+  ],
+  "Gemeinschaftsprojekt": [
+    "Ge|mein|schaftspro|jekt",
+    "Ge|mein|schafts|pro|jekt"
+  ],
+  "Genius": [
+    "Ge|ni|us",
+    "Geni|us"
+  ],
+  "Gentleman": [
+    "Gent|le|man",
+    "Gentleman"
+  ],
+  "Georgia": [
+    "Ge|or|gia",
+    "Geor|gia"
+  ],
+  "Gerade": [
+    "Gera|de",
+    "Ge|ra|de"
+  ],
+  "Gerangel": [
+    "Geran|gel",
+    "Ge|ran|gel"
+  ],
+  "Gerichtsentscheidung": [
+    "Ge|richt|s|ent|schei|dung",
+    "Ge|richts|ent|schei|dung"
+  ],
+  "Gesamteindruck": [
+    "Ge|samtein|druck",
+    "Ge|samt|ein|druck"
+  ],
+  "Gesamtergebnis": [
+    "Ge|sam|ter|geb|nis",
+    "Ge|samt|er|geb|nis"
+  ],
+  "Gesamtschaden": [
+    "Ge|samts|cha|den",
+    "Ge|samt|scha|den"
+  ],
+  "Gesamtumsatz": [
+    "Ge|sam|tum|satz",
+    "Ge|samt|um|satz"
+  ],
+  "Gesellschaftsspiel": [
+    "Ge|sell|schaftss|piel",
+    "Ge|sell|schafts|spiel"
+  ],
+  "Gesetzentwurf": [
+    "Ge|setzent|wurf",
+    "Ge|setz|ent|wurf"
+  ],
+  "Gesetzesentwurf": [
+    "Ge|set|ze|sent|wurf",
+    "Ge|set|zes|ent|wurf"
+  ],
+  "Gesetzesinitiative": [
+    "Ge|set|ze|sin|iti|a|ti|ve",
+    "Ge|set|zes|in|iti|a|ti|ve"
+  ],
+  "Gespenst": [
+    "Ge|s|penst",
+    "Ge|spenst"
+  ],
+  "Gewaltakt": [
+    "Ge|waltakt",
+    "Ge|walt|akt"
+  ],
+  "Gewaltanwendung": [
+    "Ge|waltan|wen|dung",
+    "Ge|walt|an|wen|dung"
+  ],
+  "Glatteis": [
+    "Glatteis",
+    "Glatt|eis"
+  ],
+  "Grundidee": [
+    "Grun|di|dee",
+    "Grund|idee"
+  ],
+  "Grundsatzentscheidung": [
+    "Grund|satzent|schei|dung",
+    "Grund|satz|ent|schei|dung"
+  ],
+  "Gruppenarbeit": [
+    "Grup|pe|n|ar|beit",
+    "Grup|pen|ar|beit"
+  ],
+  "Guardian": [
+    "Guar|di|an",
+    "Gu|ar|di|an"
+  ],
+  "Guide": [
+    "Gui|de",
+    "Guide"
+  ],
+  "Gummistiefel": [
+    "Gum|mis|tie|fel",
+    "Gum|mi|stie|fel"
+  ],
+  "Gusto": [
+    "Gu|sto",
+    "Gus|to"
+  ],
+  "Haftrichter": [
+    "Haf|trich|ter",
+    "Haft|rich|ter"
+  ],
+  "Haiti": [
+    "Hai|ti",
+    "Ha|i|ti"
+  ],
+  "Halbleiter": [
+    "Halblei|ter",
+    "Halb|lei|ter"
+  ],
+  "Halfpipe": [
+    "Ha|lf|pi|pe",
+    "Half|pi|pe"
+  ],
+  "Handelspartner": [
+    "Han|del|s|part|ner",
+    "Han|dels|part|ner"
+  ],
+  "Handumdrehen": [
+    "Handum|dre|hen",
+    "Hand|um|dre|hen"
+  ],
+  "Hardcore": [
+    "Hard|co|re",
+    "Hard|core"
+  ],
+  "Hardware": [
+    "Hard|wa|re",
+    "Hard|ware"
+  ],
+  "Harfe": [
+    "Ha|r|fe",
+    "Har|fe"
+  ],
+  "Haupteingang": [
+    "Haup|tein|gang",
+    "Haupt|ein|gang"
+  ],
+  "Hauptort": [
+    "Haup|tort",
+    "Haupt|ort"
+  ],
+  "Hauptrolle": [
+    "Haup|trol|le",
+    "Haupt|rol|le"
+  ],
+  "Hauptschulabschluss": [
+    "Haupt|schulab|schluss",
+    "Haupt|schul|ab|schluss"
+  ],
+  "Hauptsponsor": [
+    "Haupt|s|pon|sor",
+    "Haupt|spon|sor"
+  ],
+  "Haushaltsentwurf": [
+    "Haus|halt|s|ent|wurf",
+    "Haus|halts|ent|wurf"
+  ],
+  "Haushaltsexperte": [
+    "Haus|halt|sex|per|te",
+    "Haus|halts|ex|per|te"
+  ],
+  "Haushaltssperre": [
+    "Haus|haltss|per|re",
+    "Haus|halts|sper|re"
+  ],
+  "Hausse": [
+    "Haus|se",
+    "Hausse"
+  ],
+  "Heiligabend": [
+    "Hei|ligabend",
+    "Hei|lig|abend"
+  ],
+  "Heilsarmee": [
+    "Heil|sar|mee",
+    "Heils|ar|mee"
+  ],
+  "Hektar": [
+    "Hek|tar",
+    "Hekt|ar"
+  ],
+  "Hektare": [
+    "Hek|t|are",
+    "Hekt|are"
+  ],
+  "Herausgabe": [
+    "Heraus|ga|be",
+    "Her|aus|ga|be"
+  ],
+  "Herzanfall": [
+    "Her|z|an|fall",
+    "Herz|an|fall"
+  ],
+  "Herzinfarkt": [
+    "Her|zin|farkt",
+    "Herz|in|farkt"
+  ],
+  "Herzoperation": [
+    "Her|z|ope|ra|ti|on",
+    "Herz|ope|ra|ti|on"
+  ],
+  "Heuschrecke": [
+    "Heuschre|cke",
+    "Heu|schre|cke"
+  ],
+  "Hierarchie": [
+    "Hier|ar|chie",
+    "Hi|er|ar|chie"
+  ],
+  "Highway": [
+    "Highway",
+    "High|way"
+  ],
+  "Hilfsangebot": [
+    "Hilfsan|ge|bot",
+    "Hilfs|an|ge|bot"
+  ],
+  "Hilfsprogramm": [
+    "Hilfspro|gramm",
+    "Hilfs|pro|gramm"
+  ],
+  "Hilfsprojekt": [
+    "Hilfspro|jekt",
+    "Hilfs|pro|jekt"
+  ],
+  "Hiobsbotschaft": [
+    "Hiobs|bot|schaft",
+    "Hi|obs|bot|schaft"
+  ],
+  "Hochachtung": [
+    "Hochach|tung",
+    "Hoch|ach|tung"
+  ],
+  "Hochofen": [
+    "Hochofen",
+    "Hoch|ofen"
+  ],
+  "Hochrechnung": [
+    "Hochrech|nung",
+    "Hoch|rech|nung"
+  ],
+  "Hofrat": [
+    "Ho|frat",
+    "Hof|rat"
+  ],
+  "Holstein": [
+    "Hol|stein",
+    "Hols|tein"
+  ],
+  "Hospital": [
+    "Ho|spi|tal",
+    "Hos|pi|tal"
+  ],
+  "Hospiz": [
+    "Ho|spiz",
+    "Hos|piz"
+  ],
+  "Hotelier": [
+    "Ho|te|lier",
+    "Ho|te|li|er"
+  ],
+  "Hubraum": [
+    "Hu|braum",
+    "Hub|raum"
+  ],
+  "Hunderasse": [
+    "Hun|deras|se",
+    "Hun|de|ras|se"
+  ],
+  "Image": [
+    "Ima|ge",
+    "Image"
+  ],
+  "Imageschaden": [
+    "Ima|ge|scha|den",
+    "Image|scha|den"
+  ],
+  "Imagination": [
+    "Imagi|na|ti|on",
+    "Ima|gi|na|ti|on"
+  ],
+  "Imperialismus": [
+    "Im|pe|ri|alis|mus",
+    "Im|pe|ri|a|lis|mus"
+  ],
+  "Inanspruchnahme": [
+    "Inan|spruch|nah|me",
+    "In|an|spruch|nah|me"
+  ],
+  "Individualverkehr": [
+    "In|di|vi|du|a|l|ver|kehr",
+    "In|di|vi|du|al|ver|kehr"
+  ],
+  "Industrialisierung": [
+    "In|dus|tri|ali|sie|rung",
+    "In|dus|tri|a|li|sie|rung"
+  ],
+  "Industriestaat": [
+    "In|dus|tri|estaat",
+    "In|dus|trie|staat"
+  ],
+  "Industriestadt": [
+    "In|dus|tri|estadt",
+    "In|dus|trie|stadt"
+  ],
+  "Industriestandort": [
+    "In|dus|tri|estand|ort",
+    "In|dus|trie|stand|ort"
+  ],
+  "Infrastruktur": [
+    "In|fras|truk|tur",
+    "In|fra|struk|tur"
+  ],
+  "Inhaltsstoff": [
+    "In|haltss|toff",
+    "In|halts|stoff"
+  ],
+  "Initiale": [
+    "Ini|ti|a|le",
+    "In|iti|a|le"
+  ],
+  "Initiant": [
+    "Ini|ti|ant",
+    "In|iti|ant"
+  ],
+  "Initiative": [
+    "Ini|ti|a|ti|ve",
+    "In|iti|a|ti|ve"
+  ],
+  "Initiator": [
+    "Ini|ti|a|tor",
+    "In|iti|a|tor"
+  ],
+  "Initiatorin": [
+    "Ini|ti|a|to|rin",
+    "In|iti|a|to|rin"
+  ],
+  "Inlandspresse": [
+    "In|land|s|pres|se",
+    "In|lands|pres|se"
+  ],
+  "Innenausstattung": [
+    "In|nen|ausstat|tung",
+    "In|nen|aus|stat|tung"
+  ],
+  "Innviertel": [
+    "Inn|vier|tel",
+    "In|n|vier|tel"
+  ],
+  "Insolvenzantrag": [
+    "In|sol|venzan|trag",
+    "In|sol|venz|an|trag"
+  ],
+  "Inszenierung": [
+    "Ins|ze|nie|rung",
+    "In|sze|nie|rung"
+  ],
+  "Intensivstation": [
+    "In|ten|sivsta|ti|on",
+    "In|ten|siv|sta|ti|on"
+  ],
+  "Internetseite": [
+    "In|ter|netsei|te",
+    "In|ter|net|sei|te"
+  ],
+  "Intrige": [
+    "Int|ri|ge",
+    "In|tri|ge"
+  ],
+  "Investitionssumme": [
+    "In|ves|ti|ti|ons|s|um|me",
+    "In|ves|ti|ti|ons|sum|me"
+  ],
+  "Italiener": [
+    "Ita|lie|ner",
+    "Ita|li|e|ner"
+  ],
+  "Jahreseinkommen": [
+    "Jah|re|s|ein|kom|men",
+    "Jah|res|ein|kom|men"
+  ],
+  "Jahresergebnis": [
+    "Jah|reser|geb|nis",
+    "Jah|res|er|geb|nis"
+  ],
+  "Jesuit": [
+    "Je|suit",
+    "Je|su|it"
+  ],
+  "Jugendorchester": [
+    "Ju|gen|dor|ches|ter",
+    "Ju|gend|or|ches|ter"
+  ],
+  "Jugendtreff": [
+    "Ju|gendtreff",
+    "Ju|gend|treff"
+  ],
+  "Jungschar": [
+    "Jungs|char",
+    "Jung|schar"
+  ],
+  "Jungsozialist": [
+    "Jungs|o|zi|a|list",
+    "Jung|so|zi|a|list"
+  ],
+  "Jungstar": [
+    "Jungs|tar",
+    "Jung|star"
+  ],
+  "Juniorpartner": [
+    "Ju|ni|o|r|part|ner",
+    "Ju|ni|or|part|ner"
+  ],
+  "Kabinettsumbildung": [
+    "Ka|bi|nett|sum|bil|dung",
+    "Ka|bi|netts|um|bil|dung"
+  ],
+  "Kaiserin": [
+    "Kai|se|rin",
+    "Kai|serin"
+  ],
+  "Kalzium": [
+    "Ka|l|zi|um",
+    "Kal|zi|um"
+  ],
+  "Kammeroper": [
+    "Kam|me|ro|per",
+    "Kam|mer|oper"
+  ],
+  "Kampfeinsatz": [
+    "Kampfein|satz",
+    "Kampf|ein|satz"
+  ],
+  "Kanal": [
+    "Kanal",
+    "Ka|nal"
+  ],
+  "Kanalisation": [
+    "Kana|li|sa|ti|on",
+    "Ka|na|li|sa|ti|on"
+  ],
+  "Kantonsspital": [
+    "Kan|tonss|pi|tal",
+    "Kan|tons|spi|tal"
+  ],
+  "Kanzleramt": [
+    "Kanz|le|r|amt",
+    "Kanz|ler|amt"
+  ],
+  "Kanzleramtsminister": [
+    "Kanz|le|r|amts|mi|nis|ter",
+    "Kanz|ler|amts|mi|nis|ter"
+  ],
+  "Karfreitag": [
+    "Ka|r|frei|tag",
+    "Kar|frei|tag"
+  ],
+  "Karlsruhe": [
+    "Ka|rls|ru|he",
+    "Karls|ru|he"
+  ],
+  "Karpfen": [
+    "Ka|r|pfen",
+    "Karp|fen"
+  ],
+  "Karriere": [
+    "Kar|rie|re",
+    "Kar|ri|e|re"
+  ],
+  "Karriereende": [
+    "Kar|rie|reen|de",
+    "Kar|ri|e|reen|de"
+  ],
+  "Karriereleiter": [
+    "Kar|rie|re|lei|ter",
+    "Kar|ri|e|re|lei|ter"
+  ],
+  "Kasachstan": [
+    "Ka|sachs|tan",
+    "Ka|sach|stan"
+  ],
+  "Katastrophe": [
+    "Ka|tas|tro|phe",
+    "Ka|ta|stro|phe"
+  ],
+  "Katastrophengebiet": [
+    "Ka|tas|tro|phen|ge|biet",
+    "Ka|ta|stro|phen|ge|biet"
+  ],
+  "Katastrophenschutz": [
+    "Ka|tas|tro|phen|schutz",
+    "Ka|ta|stro|phen|schutz"
+  ],
+  "Kaufangebot": [
+    "Kau|fan|ge|bot",
+    "Kauf|an|ge|bot"
+  ],
+  "Kaufinteressent": [
+    "Kau|fin|ter|es|sent",
+    "Kauf|in|ter|es|sent"
+  ],
+  "Kentucky": [
+    "Ken|tucky",
+    "Ken|tu|cky"
+  ],
+  "Keramik": [
+    "Kera|mik",
+    "Ke|ra|mik"
+  ],
+  "Kiew": [
+    "Kiew",
+    "Ki|ew"
+  ],
+  "Kindererziehung": [
+    "Kin|de|rer|zie|hung",
+    "Kin|der|er|zie|hung"
+  ],
+  "Kinderkrippe": [
+    "Kin|derkrip|pe",
+    "Kin|der|krip|pe"
+  ],
+  "Kindesalter": [
+    "Kin|desal|ter",
+    "Kin|des|al|ter"
+  ],
+  "Kinshasa": [
+    "Kins|ha|sa",
+    "Kin|sha|sa"
+  ],
+  "Kiosk": [
+    "Kiosk",
+    "Ki|osk"
+  ],
+  "Kirchenasyl": [
+    "Kir|che|n|asyl",
+    "Kir|chen|asyl"
+  ],
+  "Klassenerhalt": [
+    "Klas|se|ner|halt",
+    "Klas|sen|er|halt"
+  ],
+  "Koalition": [
+    "Koali|ti|on",
+    "Ko|a|li|ti|on"
+  ],
+  "Koalitionsaussage": [
+    "Koali|ti|ons|aus|sa|ge",
+    "Ko|a|li|ti|ons|aus|sa|ge"
+  ],
+  "Koalitionsausschuss": [
+    "Koali|ti|ons|aus|schuss",
+    "Ko|a|li|ti|ons|aus|schuss"
+  ],
+  "Koalitionsfraktion": [
+    "Koali|ti|ons|frak|ti|on",
+    "Ko|a|li|ti|ons|frak|ti|on"
+  ],
+  "Koalitionspartei": [
+    "Koali|ti|ons|par|tei",
+    "Ko|a|li|ti|ons|par|tei"
+  ],
+  "Koalitionspartner": [
+    "Koali|ti|ons|part|ner",
+    "Ko|a|li|ti|ons|part|ner"
+  ],
+  "Koalitionsregierung": [
+    "Koali|ti|ons|re|gie|rung",
+    "Ko|a|li|ti|ons|re|gie|rung"
+  ],
+  "Koalitionsrunde": [
+    "Koali|ti|ons|run|de",
+    "Ko|a|li|ti|ons|run|de"
+  ],
+  "Koalitionsvereinbarung": [
+    "Koali|ti|ons|ver|ein|ba|rung",
+    "Ko|a|li|ti|ons|ver|ein|ba|rung"
+  ],
+  "Koalitionsverhandlung": [
+    "Koali|ti|ons|ver|hand|lung",
+    "Ko|a|li|ti|ons|ver|hand|lung"
+  ],
+  "Koalitionsvertrag": [
+    "Koali|ti|ons|ver|trag",
+    "Ko|a|li|ti|ons|ver|trag"
+  ],
+  "Kolonialmacht": [
+    "Ko|lo|nial|macht",
+    "Ko|lo|ni|al|macht"
+  ],
+  "Kommissar": [
+    "Kom|missar",
+    "Kom|mis|sar"
+  ],
+  "Kommissariat": [
+    "Kom|missa|ri|at",
+    "Kom|mis|sa|ri|at"
+  ],
+  "Kommissarin": [
+    "Kom|missa|rin",
+    "Kom|mis|sa|rin"
+  ],
+  "Konjunkturaufschwung": [
+    "Kon|junk|turauf|schwung",
+    "Kon|junk|tur|auf|schwung"
+  ],
+  "Kontrollausschuss": [
+    "Kon|trollaus|schuss",
+    "Kon|troll|aus|schuss"
+  ],
+  "Konzernergebnis": [
+    "Kon|zer|ner|geb|nis",
+    "Kon|zern|er|geb|nis"
+  ],
+  "Konzertabend": [
+    "Kon|zertabend",
+    "Kon|zert|abend"
+  ],
+  "Konzertreihe": [
+    "Kon|zer|trei|he",
+    "Kon|zert|rei|he"
+  ],
+  "Koordinate": [
+    "Koor|di|na|te",
+    "Ko|or|di|na|te"
+  ],
+  "Koordination": [
+    "Koor|di|na|ti|on",
+    "Ko|or|di|na|ti|on"
+  ],
+  "Koordinator": [
+    "Koor|di|na|tor",
+    "Ko|or|di|na|tor"
+  ],
+  "Koordinierung": [
+    "Koor|di|nie|rung",
+    "Ko|or|di|nie|rung"
+  ],
+  "Koralle": [
+    "Koral|le",
+    "Ko|ral|le"
+  ],
+  "Koran": [
+    "Koran",
+    "Ko|ran"
+  ],
+  "Koreaner": [
+    "Ko|rea|ner",
+    "Ko|re|a|ner"
+  ],
+  "Korruptionsskandal": [
+    "Kor|rup|ti|onss|kan|dal",
+    "Kor|rup|ti|ons|skan|dal"
+  ],
+  "Kostenexplosion": [
+    "Kos|tenex|plo|si|on",
+    "Kos|ten|ex|plo|si|on"
+  ],
+  "Kraftakt": [
+    "Kraf|takt",
+    "Kraft|akt"
+  ],
+  "Krankheitserreger": [
+    "Krank|heitser|re|ger",
+    "Krank|heits|er|re|ger"
+  ],
+  "Kreation": [
+    "Krea|ti|on",
+    "Kre|a|ti|on"
+  ],
+  "Kreatur": [
+    "Krea|tur",
+    "Kre|a|tur"
+  ],
+  "Krebserkrankung": [
+    "Krebser|kran|kung",
+    "Krebs|er|kran|kung"
+  ],
+  "Krebspatient": [
+    "Kreb|spa|ti|ent",
+    "Krebs|pa|ti|ent"
+  ],
+  "Kreditinstitut": [
+    "Kre|ditin|sti|tut",
+    "Kre|dit|in|sti|tut"
+  ],
+  "Kreuzbandriss": [
+    "Kreuz|ban|driss",
+    "Kreuz|band|riss"
+  ],
+  "Krisenmanagement": [
+    "Kri|sen|ma|na|ge|ment",
+    "Kri|sen|ma|nage|ment"
+  ],
+  "Kulturamt": [
+    "Kul|tu|ramt",
+    "Kul|tur|amt"
+  ],
+  "Kulturangebot": [
+    "Kul|tu|ran|ge|bot",
+    "Kul|tur|an|ge|bot"
+  ],
+  "Kulturarbeit": [
+    "Kul|tu|r|ar|beit",
+    "Kul|tur|ar|beit"
+  ],
+  "Kulturausschuss": [
+    "Kul|turaus|schuss",
+    "Kul|tur|aus|schuss"
+  ],
+  "Kultureinrichtung": [
+    "Kul|tu|rein|rich|tung",
+    "Kul|tur|ein|rich|tung"
+  ],
+  "Kulturinstitut": [
+    "Kul|tu|rin|sti|tut",
+    "Kul|tur|in|sti|tut"
+  ],
+  "Kunstakademie": [
+    "Kun|st|aka|de|mie",
+    "Kunst|aka|de|mie"
+  ],
+  "Kunstausstellung": [
+    "Kunstaus|stel|lung",
+    "Kunst|aus|stel|lung"
+  ],
+  "Kunsteisbahn": [
+    "Kunsteis|bahn",
+    "Kunst|eis|bahn"
+  ],
+  "Kunstobjekt": [
+    "Kunstob|jekt",
+    "Kunst|ob|jekt"
+  ],
+  "Kunstrasen": [
+    "Kun|stra|sen",
+    "Kunst|ra|sen"
+  ],
+  "Kurdistan": [
+    "Kur|dis|tan",
+    "Kur|di|stan"
+  ],
+  "Kurier": [
+    "Ku|ri|er",
+    "Ku|rier"
+  ],
+  "Kurort": [
+    "Ku|r|ort",
+    "Kur|ort"
+  ],
+  "Kurseinbruch": [
+    "Kursein|bruch",
+    "Kurs|ein|bruch"
+  ],
+  "Kursentwicklung": [
+    "Kur|sent|wick|lung",
+    "Kurs|ent|wick|lung"
+  ],
+  "Kursniveau": [
+    "Kur|s|ni|veau",
+    "Kurs|ni|veau"
+  ],
+  "Kurssteigerung": [
+    "Kur|s|stei|ge|rung",
+    "Kurs|stei|ge|rung"
+  ],
+  "Kurssturz": [
+    "Kur|s|s|turz",
+    "Kurs|sturz"
+  ],
+  "Kurzurlaub": [
+    "Kur|zur|laub",
+    "Kurz|ur|laub"
+  ],
+  "Kurzweil": [
+    "Kurzweil",
+    "Kurz|weil"
+  ],
+  "Lake": [
+    "La|ke",
+    "Lake"
+  ],
+  "Landammann": [
+    "Lan|dam|mann",
+    "Land|am|mann"
+  ],
+  "Landauer": [
+    "Lan|dau|er",
+    "Land|au|er"
+  ],
+  "Landessprache": [
+    "Lan|des|s|pra|che",
+    "Lan|des|spra|che"
+  ],
+  "Landesstudio": [
+    "Lan|dess|tu|dio",
+    "Lan|des|stu|dio"
+  ],
+  "Landrat": [
+    "Lan|drat",
+    "Land|rat"
+  ],
+  "Landratsamt": [
+    "Lan|drat|samt",
+    "Land|rats|amt"
+  ],
+  "Larve": [
+    "La|r|ve",
+    "Lar|ve"
+  ],
+  "Lebensalter": [
+    "Le|bensal|ter",
+    "Le|bens|al|ter"
+  ],
+  "Lebensbedingung": [
+    "Le|bens|be|din|gung",
+    "Le|bens|bedin|gung"
+  ],
+  "Lebenserfahrung": [
+    "Le|benser|fah|rung",
+    "Le|bens|er|fah|rung"
+  ],
+  "Lebenserwartung": [
+    "Le|benser|war|tung",
+    "Le|bens|er|war|tung"
+  ],
+  "Lebenspartner": [
+    "Le|ben|s|part|ner",
+    "Le|bens|part|ner"
+  ],
+  "Lebensphase": [
+    "Le|ben|s|pha|se",
+    "Le|bens|pha|se"
+  ],
+  "Lebensumstand": [
+    "Le|ben|sum|stand",
+    "Le|bens|um|stand"
+  ],
+  "Leckerbissen": [
+    "Le|cke|r|bis|sen",
+    "Le|cker|bis|sen"
+  ],
+  "Leopard": [
+    "Leo|pard",
+    "Le|o|pard"
+  ],
+  "Lethargie": [
+    "Lethar|gie",
+    "Le|thar|gie"
+  ],
+  "Lifestyle": [
+    "Li|festy|le",
+    "Life|style"
+  ],
+  "Live": [
+    "Li|ve",
+    "Live"
+  ],
+  "Liverpool": [
+    "Li|ve|r|pool",
+    "Live|r|pool"
+  ],
+  "Lockerheit": [
+    "Lo|cke|r|heit",
+    "Lo|cker|heit"
+  ],
+  "Logo": [
+    "Lo|go",
+    "Logo"
+  ],
+  "Logos": [
+    "Lo|gos",
+    "Logos"
+  ],
+  "Lokalaugenschein": [
+    "Lo|ka|lau|gen|schein",
+    "Lo|kal|au|gen|schein"
+  ],
+  "Louisiana": [
+    "Loui|si|a|na",
+    "Lou|i|si|a|na"
+  ],
+  "Lover": [
+    "Lo|ver",
+    "Lover"
+  ],
+  "Luftangriff": [
+    "Luftan|griff",
+    "Luft|an|griff"
+  ],
+  "Luftraum": [
+    "Luf|traum",
+    "Luft|raum"
+  ],
+  "Machbarkeitsstudie": [
+    "Mach|bar|keits|s|tu|die",
+    "Mach|bar|keits|stu|die"
+  ],
+  "Machtanspruch": [
+    "Machtan|spruch",
+    "Macht|an|spruch"
+  ],
+  "Machtergreifung": [
+    "Machter|grei|fung",
+    "Macht|er|grei|fung"
+  ],
+  "Madame": [
+    "Ma|da|me",
+    "Ma|dame"
+  ],
+  "Magier": [
+    "Magier",
+    "Ma|gi|er"
+  ],
+  "Magnum": [
+    "Ma|g|num",
+    "Ma|gnum"
+  ],
+  "Makel": [
+    "Ma|kel",
+    "Makel"
+  ],
+  "Malz": [
+    "Ma|lz",
+    "Malz"
+  ],
+  "Management": [
+    "Ma|na|ge|ment",
+    "Ma|nage|ment"
+  ],
+  "Managua": [
+    "Ma|na|gua",
+    "Mana|gua"
+  ],
+  "Mandant": [
+    "Man|dant",
+    "Mandant"
+  ],
+  "Mandantin": [
+    "Man|dan|tin",
+    "Mandan|tin"
+  ],
+  "Marburg": [
+    "Ma|r|burg",
+    "Mar|burg"
+  ],
+  "Marketingleiter": [
+    "Mar|ke|tinglei|ter",
+    "Mar|ke|ting|lei|ter"
+  ],
+  "Marquis": [
+    "Ma|r|quis",
+    "Mar|quis"
+  ],
+  "Marxismus": [
+    "Ma|r|xis|mus",
+    "Mar|xis|mus"
+  ],
+  "Marxist": [
+    "Ma|r|xist",
+    "Mar|xist"
+  ],
+  "Materialismus": [
+    "Ma|te|ri|alis|mus",
+    "Ma|te|ri|a|lis|mus"
+  ],
+  "Mauerbau": [
+    "Mau|e|r|bau",
+    "Mau|er|bau"
+  ],
+  "Mausklick": [
+    "Mausklick",
+    "Maus|klick"
+  ],
+  "Mechanik": [
+    "Mecha|nik",
+    "Me|cha|nik"
+  ],
+  "Mechaniker": [
+    "Mecha|ni|ker",
+    "Me|cha|ni|ker"
+  ],
+  "Mechanismus": [
+    "Mecha|nis|mus",
+    "Me|cha|nis|mus"
+  ],
+  "Medienbericht": [
+    "Me|dien|be|richt",
+    "Me|di|en|be|richt"
+  ],
+  "Medienhaus": [
+    "Me|dien|haus",
+    "Me|di|en|haus"
+  ],
+  "Medienkonzern": [
+    "Me|dien|kon|zern",
+    "Me|di|en|kon|zern"
+  ],
+  "Medienlandschaft": [
+    "Me|dien|land|schaft",
+    "Me|di|en|land|schaft"
+  ],
+  "Medienunternehmen": [
+    "Me|dien|un|ter|neh|men",
+    "Me|di|en|un|ter|neh|men"
+  ],
+  "Medienunternehmer": [
+    "Me|dien|un|ter|neh|mer",
+    "Me|di|en|un|ter|neh|mer"
+  ],
+  "Medienwelt": [
+    "Me|dien|welt",
+    "Me|di|en|welt"
+  ],
+  "Meeresspiegel": [
+    "Mee|res|s|pie|gel",
+    "Mee|res|spie|gel"
+  ],
+  "Meisterschaftsspiel": [
+    "Meis|ter|schaftss|piel",
+    "Meis|ter|schafts|spiel"
+  ],
+  "Menschlichkeit": [
+    "Men|sch|lich|keit",
+    "Mensch|lich|keit"
+  ],
+  "Meran": [
+    "Meran",
+    "Me|ran"
+  ],
+  "Message": [
+    "Mes|sa|ge",
+    "Mes|sage"
+  ],
+  "Methadon": [
+    "Metha|don",
+    "Me|tha|don"
+  ],
+  "Methan": [
+    "Methan",
+    "Me|than"
+  ],
+  "Methode": [
+    "Metho|de",
+    "Me|tho|de"
+  ],
+  "Methodik": [
+    "Metho|dik",
+    "Me|tho|dik"
+  ],
+  "Metier": [
+    "Me|tier",
+    "Me|ti|er"
+  ],
+  "Miami": [
+    "Mia|mi",
+    "Mi|a|mi"
+  ],
+  "Mieteinnahme": [
+    "Mie|tein|nah|me",
+    "Miet|ein|nah|me"
+  ],
+  "Milieu": [
+    "Mi|lieu",
+    "Mi|li|eu"
+  ],
+  "Missachtung": [
+    "Mis|sach|tung",
+    "Miss|ach|tung"
+  ],
+  "Misserfolg": [
+    "Mis|ser|folg",
+    "Miss|er|folg"
+  ],
+  "Missmanagement": [
+    "Miss|ma|na|ge|ment",
+    "Miss|ma|nage|ment"
+  ],
+  "Mitgliedschaft": [
+    "Mit|glied|schaft",
+    "Mit|glieds|chaft"
+  ],
+  "Mitgliedsstaat": [
+    "Mit|glieds|s|taat",
+    "Mit|glieds|staat"
+  ],
+  "Mitgliedstaat": [
+    "Mit|glied|s|taat",
+    "Mit|glieds|taat"
+  ],
+  "Mitherausgeber": [
+    "Mither|aus|ge|ber",
+    "Mit|her|aus|ge|ber"
+  ],
+  "Mittagessen": [
+    "Mit|ta|ges|sen",
+    "Mit|tag|es|sen"
+  ],
+  "Mittelamerika": [
+    "Mit|tela|me|ri|ka",
+    "Mit|tel|ame|ri|ka"
+  ],
+  "Mittelmeerinsel": [
+    "Mit|tel|mee|r|in|sel",
+    "Mit|tel|meer|in|sel"
+  ],
+  "Mittwochabend": [
+    "Mitt|wo|cha|bend",
+    "Mitt|woch|abend"
+  ],
+  "Mittwochnachmittag": [
+    "Mitt|wochnach|mit|tag",
+    "Mitt|woch|nach|mit|tag"
+  ],
+  "Mobilfunkanbieter": [
+    "Mo|bil|funkan|bie|ter",
+    "Mo|bil|funk|an|bie|ter"
+  ],
+  "Monstrum": [
+    "Mon|strum",
+    "Mons|trum"
+  ],
+  "Montagnachmittag": [
+    "Mon|tagnach|mit|tag",
+    "Mon|tag|nach|mit|tag"
+  ],
+  "Moral": [
+    "Moral",
+    "Mo|ral"
+  ],
+  "Moralist": [
+    "Mora|list",
+    "Mo|ra|list"
+  ],
+  "Moratorium": [
+    "Mora|to|ri|um",
+    "Mo|ra|to|ri|um"
+  ],
+  "Mordanschlag": [
+    "Mor|dan|schlag",
+    "Mord|an|schlag"
+  ],
+  "Mordopfer": [
+    "Mor|dop|fer",
+    "Mord|op|fer"
+  ],
+  "Morgenstern": [
+    "Mor|gens|tern",
+    "Mor|gen|stern"
+  ],
+  "Musikleben": [
+    "Mu|sikle|ben",
+    "Mu|sik|le|ben"
+  ],
+  "Mutation": [
+    "Muta|ti|on",
+    "Mu|ta|ti|on"
+  ],
+  "Nachbarort": [
+    "Nach|ba|rort",
+    "Nach|bar|ort"
+  ],
+  "Nachtessen": [
+    "Nachtes|sen",
+    "Nacht|es|sen"
+  ],
+  "Nachtruhe": [
+    "Nachtru|he",
+    "Nacht|ru|he"
+  ],
+  "Nachwuchsspieler": [
+    "Nach|wuchss|pie|ler",
+    "Nach|wuchs|spie|ler"
+  ],
+  "Narbe": [
+    "Na|r|be",
+    "Nar|be"
+  ],
+  "Narben": [
+    "Na|r|ben",
+    "Nar|ben"
+  ],
+  "Nationalelf": [
+    "Na|ti|o|nalelf",
+    "Na|ti|o|nal|elf"
+  ],
+  "Nationaltheater": [
+    "Na|ti|o|nalthe|a|ter",
+    "Na|ti|o|nal|the|a|ter"
+  ],
+  "Neckar": [
+    "Neckar",
+    "Ne|ckar"
+  ],
+  "Neuschnee": [
+    "Neuschnee",
+    "Neu|schnee"
+  ],
+  "Newcomer": [
+    "Ne|w|co|mer",
+    "New|co|mer"
+  ],
+  "Newsletter": [
+    "Newslet|ter",
+    "News|let|ter"
+  ],
+  "Nichtregierungsorganisation": [
+    "Nichtre|gie|rungs|or|ga|ni|sa|ti|on",
+    "Nicht|re|gie|rungs|or|ga|ni|sa|ti|on"
+  ],
+  "Nichtstun": [
+    "Nichtstun",
+    "Nichts|tun"
+  ],
+  "Nitrat": [
+    "Nitrat",
+    "Ni|trat"
+  ],
+  "Nordirland": [
+    "Nordir|land",
+    "Nord|ir|land"
+  ],
+  "Norditalien": [
+    "Nor|di|ta|li|en",
+    "Nord|ita|li|en"
+  ],
+  "Notoperation": [
+    "No|t|ope|ra|ti|on",
+    "Not|ope|ra|ti|on"
+  ],
+  "Nuance": [
+    "Nuan|ce",
+    "Nu|an|ce"
+  ],
+  "Nuklearwaffe": [
+    "Nu|klear|waf|fe",
+    "Nu|kle|ar|waf|fe"
+  ],
+  "Obdachlosigkeit": [
+    "Ob|da|ch|lo|sig|keit",
+    "Ob|dach|lo|sig|keit"
+  ],
+  "Oberarm": [
+    "Obe|r|arm",
+    "Ober|arm"
+  ],
+  "Olympiastadion": [
+    "Olym|pias|ta|di|on",
+    "Olym|pia|sta|di|on"
+  ],
+  "Orchidee": [
+    "Orchi|dee",
+    "Or|chi|dee"
+  ],
+  "Organisationsstruktur": [
+    "Or|ga|ni|sa|ti|onss|truk|tur",
+    "Or|ga|ni|sa|ti|ons|struk|tur"
+  ],
+  "Ortschaft": [
+    "Ort|schaft",
+    "Orts|chaft"
+  ],
+  "Ortseingang": [
+    "Ort|sein|gang",
+    "Orts|ein|gang"
+  ],
+  "Ostasien": [
+    "Ostasi|en",
+    "Ost|asi|en"
+  ],
+  "Osterei": [
+    "Os|te|rei",
+    "Os|ter|ei"
+  ],
+  "Osterweiterung": [
+    "Os|ter|wei|te|rung",
+    "Ost|er|wei|te|rung"
+  ],
+  "Ozonschicht": [
+    "Oz|on|schicht",
+    "Ozon|schicht"
+  ],
+  "Pakistan": [
+    "Pa|kis|tan",
+    "Pa|ki|stan"
+  ],
+  "Panorama": [
+    "Pa|n|ora|ma",
+    "Pan|ora|ma"
+  ],
+  "Papierindustrie": [
+    "Pa|pi|er|in|dus|trie",
+    "Pa|pier|in|dus|trie"
+  ],
+  "Parcours": [
+    "Pa|r|cours",
+    "Par|cours"
+  ],
+  "Parfum": [
+    "Pa|r|fum",
+    "Par|fum"
+  ],
+  "Parkraumbewirtschaftung": [
+    "Par|kraum|be|wirt|schaf|tung",
+    "Park|raum|be|wirt|schaf|tung"
+  ],
+  "Parlament": [
+    "Pa|r|la|ment",
+    "Par|la|ment"
+  ],
+  "Parlamentarier": [
+    "Pa|r|la|men|ta|ri|er",
+    "Par|la|men|ta|ri|er"
+  ],
+  "Parlamentarierin": [
+    "Pa|r|la|men|ta|rie|rin",
+    "Par|la|men|ta|ri|e|rin"
+  ],
+  "Parlamentarismus": [
+    "Pa|r|la|men|ta|ris|mus",
+    "Par|la|men|ta|ris|mus"
+  ],
+  "Parlamentsabgeordnete": [
+    "Pa|r|la|ment|s|ab|ge|ord|ne|te",
+    "Par|la|ments|ab|ge|ord|ne|te"
+  ],
+  "Parlamentsdebatte": [
+    "Pa|r|la|ments|de|bat|te",
+    "Par|la|ments|de|bat|te"
+  ],
+  "Parlamentsmehrheit": [
+    "Pa|r|la|ments|mehr|heit",
+    "Par|la|ments|mehr|heit"
+  ],
+  "Parlamentssitz": [
+    "Pa|r|la|ments|sitz",
+    "Par|la|ments|sitz"
+  ],
+  "Parlamentssitzung": [
+    "Pa|r|la|ments|sit|zung",
+    "Par|la|ments|sit|zung"
+  ],
+  "Parlamentswahl": [
+    "Pa|r|la|ments|wahl",
+    "Par|la|ments|wahl"
+  ],
+  "Parodie": [
+    "Pa|r|odie",
+    "Par|odie"
+  ],
+  "Parteigenosse": [
+    "Par|t|ei|ge|nos|se",
+    "Par|tei|ge|nos|se"
+  ],
+  "Parteispende": [
+    "Par|teis|pen|de",
+    "Par|tei|spen|de"
+  ],
+  "Parzelle": [
+    "Pa|r|zel|le",
+    "Par|zel|le"
+  ],
+  "Passagier": [
+    "Pas|sagier",
+    "Pas|sa|gier"
+  ],
+  "Passagierflugzeug": [
+    "Pas|sagier|flug|zeug",
+    "Pas|sa|gier|flug|zeug"
+  ],
+  "Passant": [
+    "Passant",
+    "Pas|sant"
+  ],
+  "Passantin": [
+    "Passan|tin",
+    "Pas|san|tin"
+  ],
+  "Patchwork": [
+    "Patchwork",
+    "Patch|work"
+  ],
+  "Pendant": [
+    "Pend|ant",
+    "Pen|dant"
+  ],
+  "Perestroika": [
+    "Pe|re|stro|i|ka",
+    "Pe|res|troi|ka"
+  ],
+  "Performance": [
+    "Per|for|man|ce",
+    "Per|for|mance"
+  ],
+  "Petersilie": [
+    "Pe|ter|si|lie",
+    "Pe|ters|ilie"
+  ],
+  "Pflicht": [
+    "Pf|licht",
+    "Pflicht"
+  ],
+  "Pflichtschule": [
+    "Pf|licht|schu|le",
+    "Pflicht|schu|le"
+  ],
+  "Pflichtspiel": [
+    "Pf|licht|spiel",
+    "Pflicht|spiel"
+  ],
+  "Pharmaunternehmen": [
+    "Phar|maun|ter|neh|men",
+    "Phar|ma|un|ter|neh|men"
+  ],
+  "Pianist": [
+    "Pia|nist",
+    "Pi|a|nist"
+  ],
+  "Pianistin": [
+    "Pia|nis|tin",
+    "Pi|a|nis|tin"
+  ],
+  "Pietsch": [
+    "Pietsch",
+    "Pi|etsch"
+  ],
+  "Pinakothek": [
+    "Pina|ko|thek",
+    "Pi|na|ko|thek"
+  ],
+  "Pionier": [
+    "Pio|ni|er",
+    "Pi|o|nier"
+  ],
+  "Pionierarbeit": [
+    "Pio|nier|ar|beit",
+    "Pi|o|nier|ar|beit"
+  ],
+  "Pipeline": [
+    "Pi|pe|li|ne",
+    "Pipe|line"
+  ],
+  "Plagiat": [
+    "Plagi|at",
+    "Pla|gi|at"
+  ],
+  "Poesie": [
+    "Poe|sie",
+    "Po|e|sie"
+  ],
+  "Poet": [
+    "Poet",
+    "Po|et"
+  ],
+  "Poetik": [
+    "Poe|tik",
+    "Po|e|tik"
+  ],
+  "Postulat": [
+    "Po|stu|lat",
+    "Pos|tu|lat"
+  ],
+  "Powerplay": [
+    "Po|wer|play",
+    "Pow|er|play"
+  ],
+  "Preisabsprache": [
+    "Preisab|spra|che",
+    "Preis|ab|spra|che"
+  ],
+  "Preisspanne": [
+    "Preiss|pan|ne",
+    "Preis|span|ne"
+  ],
+  "Preissteigerung": [
+    "Preiss|tei|ge|rung",
+    "Preis|stei|ge|rung"
+  ],
+  "Premier": [
+    "Pre|mier",
+    "Pre|mi|er"
+  ],
+  "Premiere": [
+    "Pre|mie|re",
+    "Pre|mi|e|re"
+  ],
+  "Premierminister": [
+    "Pre|mier|mi|nis|ter",
+    "Pre|mi|er|mi|nis|ter"
+  ],
+  "Premierministerin": [
+    "Pre|mier|mi|nis|te|rin",
+    "Pre|mi|er|mi|nis|te|rin"
+  ],
+  "Pressechef": [
+    "Press|e|chef",
+    "Pres|se|chef"
+  ],
+  "Privatanleger": [
+    "Pri|va|tan|le|ger",
+    "Pri|vat|an|le|ger"
+  ],
+  "Privateigentum": [
+    "Pri|vatei|gen|tum",
+    "Pri|vat|ei|gen|tum"
+  ],
+  "Privatinitiative": [
+    "Pri|vatin|iti|a|ti|ve",
+    "Pri|vat|in|iti|a|ti|ve"
+  ],
+  "Produktionsstandort": [
+    "Pro|duk|ti|ons|s|tand|ort",
+    "Pro|duk|ti|ons|stand|ort"
+  ],
+  "Protagonist": [
+    "Pro|tago|nist",
+    "Prot|ago|nist"
+  ],
+  "Protagonistin": [
+    "Pro|tago|nis|tin",
+    "Prot|ago|nis|tin"
+  ],
+  "Protein": [
+    "Pro|tein",
+    "Pro|te|in"
+  ],
+  "Protestaktion": [
+    "Pro|tes|t|ak|ti|on",
+    "Pro|test|ak|ti|on"
+  ],
+  "Prunksitzung": [
+    "Prunksit|zung",
+    "Prunk|sit|zung"
+  ],
+  "Psychiater": [
+    "Psychi|a|ter",
+    "Psych|ia|ter"
+  ],
+  "Psychiatrie": [
+    "Psychia|trie",
+    "Psych|ia|trie"
+  ],
+  "Publicity": [
+    "Pub|li|ci|ty",
+    "Pu|bli|ci|ty"
+  ],
+  "Publikation": [
+    "Pub|li|ka|ti|on",
+    "Pu|bli|ka|ti|on"
+  ],
+  "Publikum": [
+    "Pub|li|kum",
+    "Pu|bli|kum"
+  ],
+  "Publikumsliebling": [
+    "Pub|li|kums|lieb|ling",
+    "Pu|bli|kums|lieb|ling"
+  ],
+  "Publikumsmagnet": [
+    "Pub|li|kums|ma|gnet",
+    "Pu|bli|kums|ma|gnet"
+  ],
+  "Publizist": [
+    "Pub|li|zist",
+    "Pu|bli|zist"
+  ],
+  "Publizistik": [
+    "Pub|li|zis|tik",
+    "Pu|bli|zis|tik"
+  ],
+  "Puzzle": [
+    "Puzz|le",
+    "Puz|zle"
+  ],
+  "Qual": [
+    "Qu|al",
+    "Qual"
+  ],
+  "Qualifikationsspiel": [
+    "Qua|li|fi|ka|ti|onss|piel",
+    "Qua|li|fi|ka|ti|ons|spiel"
+  ],
+  "Querdenker": [
+    "Qu|er|den|ker",
+    "Quer|den|ker"
+  ],
+  "Quere": [
+    "Qu|e|re",
+    "Que|re"
+  ],
+  "Querele": [
+    "Qu|e|re|le",
+    "Que|re|le"
+  ],
+  "Querschnitt": [
+    "Qu|er|schnitt",
+    "Quer|schnitt"
+  ],
+  "Querverbindung": [
+    "Qu|er|ver|bin|dung",
+    "Quer|ver|bin|dung"
+  ],
+  "Quintessenz": [
+    "Quintes|senz",
+    "Quint|es|senz"
+  ],
+  "Radiosender": [
+    "Ra|di|o|sen|der",
+    "Ra|dio|sen|der"
+  ],
+  "Rahmenbedingung": [
+    "Rah|men|be|din|gung",
+    "Rah|men|bedin|gung"
+  ],
+  "Rangliste": [
+    "Ran|glis|te",
+    "Rang|lis|te"
+  ],
+  "Rauchentwicklung": [
+    "Rau|chent|wick|lung",
+    "Rauch|ent|wick|lung"
+  ],
+  "Raumordnung": [
+    "Rau|m|ord|nung",
+    "Raum|ord|nung"
+  ],
+  "Raumordnungsverfahren": [
+    "Rau|m|ord|nungs|ver|fah|ren",
+    "Raum|ord|nungs|ver|fah|ren"
+  ],
+  "Reagenzglas": [
+    "Rea|genz|glas",
+    "Re|agenz|glas"
+  ],
+  "Realisierung": [
+    "Rea|li|sie|rung",
+    "Re|a|li|sie|rung"
+  ],
+  "Realismus": [
+    "Rea|lis|mus",
+    "Re|a|lis|mus"
+  ],
+  "Realist": [
+    "Rea|list",
+    "Re|a|list"
+  ],
+  "Realo": [
+    "Rea|lo",
+    "Re|a|lo"
+  ],
+  "Realschule": [
+    "Real|schu|le",
+    "Re|al|schu|le"
+  ],
+  "Rechtschreibreform": [
+    "Recht|schrei|b|re|form",
+    "Recht|schreib|re|form"
+  ],
+  "Rechtsextremismus": [
+    "Rechtsex|tre|mis|mus",
+    "Rechts|ex|tre|mis|mus"
+  ],
+  "Rechtsextremist": [
+    "Rechtsex|tre|mist",
+    "Rechts|ex|tre|mist"
+  ],
+  "Rechtsstreit": [
+    "Rechtss|treit",
+    "Rechts|streit"
+  ],
+  "Referatsleiter": [
+    "Re|fe|rat|s|lei|ter",
+    "Re|fe|rats|lei|ter"
+  ],
+  "Regimegegner": [
+    "Re|gi|me|geg|ner",
+    "Regime|geg|ner"
+  ],
+  "Regimekritiker": [
+    "Re|gi|me|kri|ti|ker",
+    "Re|gime|kri|ti|ker"
+  ],
+  "Relegationsspiel": [
+    "Re|le|ga|ti|onss|piel",
+    "Re|le|ga|ti|ons|spiel"
+  ],
+  "Relief": [
+    "Re|lief",
+    "Re|li|ef"
+  ],
+  "Remake": [
+    "Re|ma|ke",
+    "Re|make"
+  ],
+  "Rennsport": [
+    "Rennsport",
+    "Renn|sport"
+  ],
+  "Reparaturarbeit": [
+    "Re|pa|ra|tu|r|ar|beit",
+    "Re|pa|ra|tur|ar|beit"
+  ],
+  "Requiem": [
+    "Re|quiem",
+    "Re|qui|em"
+  ],
+  "Rheinufer": [
+    "Rhei|nu|fer",
+    "Rhein|ufer"
+  ],
+  "Riad": [
+    "Riad",
+    "Ri|ad"
+  ],
+  "Richterskala": [
+    "Rich|ters|ka|la",
+    "Rich|ter|ska|la"
+  ],
+  "Riesenerfolg": [
+    "Rie|se|ner|folg",
+    "Rie|sen|er|folg"
+  ],
+  "Riesenslalom": [
+    "Rie|sensla|lom",
+    "Rie|sen|sla|lom"
+  ],
+  "Rogner": [
+    "Ro|gner",
+    "Rog|ner"
+  ],
+  "Romancier": [
+    "Ro|man|cier",
+    "Ro|man|ci|er"
+  ],
+  "Ruin": [
+    "Ruin",
+    "Ru|in"
+  ],
+  "Ruine": [
+    "Rui|ne",
+    "Ru|i|ne"
+  ],
+  "Rundfunkrat": [
+    "Rund|fun|krat",
+    "Rund|funk|rat"
+  ],
+  "Rundfunksender": [
+    "Rund|funksen|der",
+    "Rund|funk|sen|der"
+  ],
+  "Rundreise": [
+    "Run|drei|se",
+    "Rund|rei|se"
+  ],
+  "Sachspende": [
+    "Sach|s|pen|de",
+    "Sach|spen|de"
+  ],
+  "Safe": [
+    "Sa|fe",
+    "Safe"
+  ],
+  "Saisonauftakt": [
+    "Sai|sonauf|takt",
+    "Sai|son|auf|takt"
+  ],
+  "Saisonende": [
+    "Sai|son|en|de",
+    "Sai|so|nen|de"
+  ],
+  "Salve": [
+    "Sa|l|ve",
+    "Sal|ve"
+  ],
+  "Salz": [
+    "Sa|lz",
+    "Salz"
+  ],
+  "Salzach": [
+    "Sa|lzach",
+    "Salz|ach"
+  ],
+  "Salzburgerin": [
+    "Sa|lz|bur|ge|rin",
+    "Salz|bur|ge|rin"
+  ],
+  "Salzkammergut": [
+    "Sa|lz|kam|mer|gut",
+    "Salz|kam|mer|gut"
+  ],
+  "Salzwasser": [
+    "Sa|lz|was|ser",
+    "Salz|was|ser"
+  ],
+  "Sammelaktion": [
+    "Sam|me|lak|ti|on",
+    "Sam|mel|ak|ti|on"
+  ],
+  "Samstagnachmittag": [
+    "Sams|tagnach|mit|tag",
+    "Sams|tag|nach|mit|tag"
+  ],
+  "Sauerland": [
+    "Sau|e|r|land",
+    "Sau|er|land"
+  ],
+  "Schadensersatz": [
+    "Scha|denser|satz",
+    "Scha|dens|er|satz"
+  ],
+  "Schadenssumme": [
+    "Scha|dens|s|um|me",
+    "Scha|dens|sum|me"
+  ],
+  "Schah": [
+    "Sch|ah",
+    "Schah"
+  ],
+  "Schlagabtausch": [
+    "Schlagab|tausch",
+    "Schlag|ab|tausch"
+  ],
+  "Schlich": [
+    "Sch|lich",
+    "Schlich"
+  ],
+  "Schlichter": [
+    "Sch|lich|ter",
+    "Schlich|ter"
+  ],
+  "Schlichtheit": [
+    "Sch|licht|heit",
+    "Schlicht|heit"
+  ],
+  "Schlichtung": [
+    "Sch|lich|tung",
+    "Schlich|tung"
+  ],
+  "Schliere": [
+    "Sch|lie|re",
+    "Schlie|re"
+  ],
+  "Schlinge": [
+    "Sch|lin|ge",
+    "Schlin|ge"
+  ],
+  "Schlussspurt": [
+    "Schluss|s|purt",
+    "Schluss|spurt"
+  ],
+  "Schmankerl": [
+    "Sch|man|kerl",
+    "Schman|kerl"
+  ],
+  "Schnickschnack": [
+    "Sch|nick|schnack",
+    "Schnick|schnack"
+  ],
+  "Schuldenabbau": [
+    "Schul|de|nab|bau",
+    "Schul|den|ab|bau"
+  ],
+  "Scientology": [
+    "Scien|to|lo|gy",
+    "Sci|en|to|lo|gy"
+  ],
+  "Seeufer": [
+    "Seeu|fer",
+    "See|ufer"
+  ],
+  "Selbstinszenierung": [
+    "Selbstinsze|nie|rung",
+    "Selbst|in|sze|nie|rung"
+  ],
+  "Selbstironie": [
+    "Selbstiro|nie",
+    "Selbst|iro|nie"
+  ],
+  "Selbstzweifel": [
+    "Selbstzwei|fel",
+    "Selbst|zwei|fel"
+  ],
+  "Serie": [
+    "Se|rie",
+    "Serie"
+  ],
+  "Serienausstattung": [
+    "Se|rie|n|ausstat|tung",
+    "Seri|en|aus|stat|tung"
+  ],
+  "Shuttle": [
+    "Shutt|le",
+    "Shut|tle"
+  ],
+  "Sicherheitsstandard": [
+    "Si|cher|heits|s|tan|dard",
+    "Si|cher|heits|stan|dard"
+  ],
+  "Siegesserie": [
+    "Sie|ges|se|rie",
+    "Sie|ges|serie"
+  ],
+  "Sierra": [
+    "Sier|ra",
+    "Si|er|ra"
+  ],
+  "Signet": [
+    "Sig|net",
+    "Si|gnet"
+  ],
+  "Sirene": [
+    "Si|re|ne",
+    "Sire|ne"
+  ],
+  "Site": [
+    "Si|te",
+    "Site"
+  ],
+  "Skandinavier": [
+    "Skan|di|na|vier",
+    "Skan|di|na|vi|er"
+  ],
+  "Sklerose": [
+    "Sk|le|ro|se",
+    "Skle|ro|se"
+  ],
+  "Software": [
+    "Soft|wa|re",
+    "Soft|ware"
+  ],
+  "Softwarehaus": [
+    "Soft|wa|re|haus",
+    "Soft|ware|haus"
+  ],
+  "Softwarekonzern": [
+    "Soft|wa|re|kon|zern",
+    "Soft|ware|kon|zern"
+  ],
+  "Solarenergie": [
+    "So|la|re|ner|gie",
+    "So|lar|ener|gie"
+  ],
+  "Sonderausgabe": [
+    "Son|deraus|ga|be",
+    "Son|der|aus|ga|be"
+  ],
+  "Sonderausstellung": [
+    "Son|deraus|stel|lung",
+    "Son|der|aus|stel|lung"
+  ],
+  "Sondereinheit": [
+    "Son|de|r|ein|heit",
+    "Son|der|ein|heit"
+  ],
+  "Sonnenenergie": [
+    "Son|ne|ne|ner|gie",
+    "Son|nen|ener|gie"
+  ],
+  "Sonntagnachmittag": [
+    "Sonn|tagnach|mit|tag",
+    "Sonn|tag|nach|mit|tag"
+  ],
+  "Soundtrack": [
+    "Soundtrack",
+    "Sound|track"
+  ],
+  "Sowjetrepublik": [
+    "So|wjetre|pu|blik",
+    "So|wjet|re|pu|blik"
+  ],
+  "Sowjetunion": [
+    "So|wje|tu|ni|on",
+    "So|wjet|uni|on"
+  ],
+  "Sozialexperte": [
+    "So|zi|a|lex|per|te",
+    "So|zi|al|ex|per|te"
+  ],
+  "Spaghetti": [
+    "Spaghet|ti",
+    "Spa|ghet|ti"
+  ],
+  "Spanier": [
+    "Spa|nier",
+    "Spa|ni|er"
+  ],
+  "Spanierin": [
+    "Spa|nie|rin",
+    "Spa|ni|e|rin"
+  ],
+  "Sparzwang": [
+    "Sparz|wang",
+    "Spar|zwang"
+  ],
+  "Spendenaktion": [
+    "Spen|de|n|ak|ti|on",
+    "Spen|den|ak|ti|on"
+  ],
+  "Spieldauer": [
+    "Spieldau|er",
+    "Spiel|dau|er"
+  ],
+  "Spielleiter": [
+    "Spi|el|lei|ter",
+    "Spiel|lei|ter"
+  ],
+  "Spielort": [
+    "Spielort",
+    "Spiel|ort"
+  ],
+  "Spike": [
+    "Spi|ke",
+    "Spike"
+  ],
+  "Spitzenklub": [
+    "Spit|zenklub",
+    "Spit|zen|klub"
+  ],
+  "Splitter": [
+    "Sp|lit|ter",
+    "Split|ter"
+  ],
+  "Splittergruppe": [
+    "Sp|lit|ter|grup|pe",
+    "Split|ter|grup|pe"
+  ],
+  "Sportereignis": [
+    "Spor|ter|eig|nis",
+    "Sport|er|eig|nis"
+  ],
+  "Sportschule": [
+    "Sports|chu|le",
+    "Sport|schu|le"
+  ],
+  "Sportstudio": [
+    "Sports|tu|dio",
+    "Sport|stu|dio"
+  ],
+  "Staatsoper": [
+    "Staats|o|per",
+    "Staats|oper"
+  ],
+  "Staatsstreich": [
+    "Staats|s|treich",
+    "Staats|streich"
+  ],
+  "Stabschef": [
+    "St|abs|chef",
+    "Stabs|chef"
+  ],
+  "Stadtoberhaupt": [
+    "Stad|t|ober|haupt",
+    "Stadt|ober|haupt"
+  ],
+  "Statement": [
+    "Sta|te|ment",
+    "State|ment"
+  ],
+  "Stellenabbau": [
+    "Stel|le|nab|bau",
+    "Stel|len|ab|bau"
+  ],
+  "Stellenangebot": [
+    "Stel|le|nan|ge|bot",
+    "Stel|len|an|ge|bot"
+  ],
+  "Sterbe": [
+    "St|er|be",
+    "Ster|be"
+  ],
+  "Steuererleichterung": [
+    "Steu|erer|leich|te|rung",
+    "Steu|er|er|leich|te|rung"
+  ],
+  "Stockerl": [
+    "Sto|cke|rl",
+    "Sto|ckerl"
+  ],
+  "Stromerzeuger": [
+    "Stro|mer|zeu|ger",
+    "Strom|er|zeu|ger"
+  ],
+  "Stromerzeugung": [
+    "Stro|mer|zeu|gung",
+    "Strom|er|zeu|gung"
+  ],
+  "Studiengang": [
+    "Stu|dien|gang",
+    "Stu|di|en|gang"
+  ],
+  "Studienjahr": [
+    "Stu|dien|jahr",
+    "Stu|di|en|jahr"
+  ],
+  "Stunt": [
+    "St|unt",
+    "Stunt"
+  ],
+  "Subunternehmer": [
+    "Su|bun|ter|neh|mer",
+    "Sub|un|ter|neh|mer"
+  ],
+  "Sushi": [
+    "Sus|hi",
+    "Su|shi"
+  ],
+  "Synagoge": [
+    "Sy|n|ago|ge",
+    "Syn|ago|ge"
+  ],
+  "Synergie": [
+    "Sy|ner|gie",
+    "Syn|er|gie"
+  ],
+  "Synergieeffekt": [
+    "Sy|ner|gie|ef|fekt",
+    "Syn|er|gie|ef|fekt"
+  ],
+  "Synode": [
+    "Synode",
+    "Syn|ode"
+  ],
+  "Tabakindustrie": [
+    "Ta|ba|k|in|dus|trie",
+    "Ta|bak|in|dus|trie"
+  ],
+  "Tabakkonzern": [
+    "Ta|b|ak|kon|zern",
+    "Ta|bak|kon|zern"
+  ],
+  "Tabellenende": [
+    "Ta|bel|lenen|de",
+    "Ta|bel|len|en|de"
+  ],
+  "Tabuthema": [
+    "Ta|buthe|ma",
+    "Ta|bu|the|ma"
+  ],
+  "Tadschikistan": [
+    "Ta|d|schi|kis|tan",
+    "Ta|dschi|ki|stan"
+  ],
+  "Tagesablauf": [
+    "Ta|ge|sab|lauf",
+    "Ta|ges|ab|lauf"
+  ],
+  "Tageskarte": [
+    "Ta|ge|s|kar|te",
+    "Ta|ges|kar|te"
+  ],
+  "Tagesklinik": [
+    "Ta|ge|s|kli|nik",
+    "Ta|ges|kli|nik"
+  ],
+  "Tagesthema": [
+    "Ta|gesthe|ma",
+    "Ta|ges|the|ma"
+  ],
+  "Take": [
+    "Ta|ke",
+    "Take"
+  ],
+  "Talfahrt": [
+    "Ta|l|fahrt",
+    "Tal|fahrt"
+  ],
+  "Talkshow": [
+    "Talks|how",
+    "Talk|show"
+  ],
+  "Tarifabschluss": [
+    "Ta|ri|fab|schluss",
+    "Ta|rif|ab|schluss"
+  ],
+  "Tarifrunde": [
+    "Ta|rifrun|de",
+    "Ta|rif|run|de"
+  ],
+  "Tathergang": [
+    "Ta|ther|gang",
+    "Tat|her|gang"
+  ],
+  "Team": [
+    "Te|am",
+    "Team"
+  ],
+  "Teamarbeit": [
+    "Te|am|ar|beit",
+    "Team|ar|beit"
+  ],
+  "Teamchef": [
+    "Te|am|chef",
+    "Team|chef"
+  ],
+  "Teamgeist": [
+    "Te|am|geist",
+    "Team|geist"
+  ],
+  "Teamkollege": [
+    "Te|am|kol|le|ge",
+    "Team|kol|le|ge"
+  ],
+  "Teammanager": [
+    "Te|am|ma|na|ger",
+    "Team|ma|na|ger"
+  ],
+  "Teamwork": [
+    "Te|am|work",
+    "Team|work"
+  ],
+  "Teenager": [
+    "Tee|na|ger",
+    "Teen|ager"
+  ],
+  "Teheran": [
+    "Te|her|an",
+    "Te|he|ran"
+  ],
+  "Teilerfolg": [
+    "Tei|ler|folg",
+    "Teil|er|folg"
+  ],
+  "Tennisspieler": [
+    "Ten|nis|s|pie|ler",
+    "Ten|nis|spie|ler"
+  ],
+  "Tennisspielerin": [
+    "Ten|nis|s|pie|le|rin",
+    "Ten|nis|spie|le|rin"
+  ],
+  "Terrororganisation": [
+    "Ter|ro|r|or|ga|ni|sa|ti|on",
+    "Ter|ror|or|ga|ni|sa|ti|on"
+  ],
+  "Testament": [
+    "Te|sta|ment",
+    "Tes|ta|ment"
+  ],
+  "Testergebnis": [
+    "Tes|ter|geb|nis",
+    "Test|er|geb|nis"
+  ],
+  "Texaner": [
+    "Texa|ner",
+    "Te|xa|ner"
+  ],
+  "Texas": [
+    "Texas",
+    "Te|xas"
+  ],
+  "Theater": [
+    "Thea|ter",
+    "The|a|ter"
+  ],
+  "Theaterabend": [
+    "Thea|ter|abend",
+    "The|a|ter|abend"
+  ],
+  "Theatergruppe": [
+    "Thea|ter|grup|pe",
+    "The|a|ter|grup|pe"
+  ],
+  "Theatermacher": [
+    "Thea|ter|ma|cher",
+    "The|a|ter|ma|cher"
+  ],
+  "Theatertreffen": [
+    "Thea|ter|tref|fen",
+    "The|a|ter|tref|fen"
+  ],
+  "Themenschwerpunkt": [
+    "The|menschwer|punkt",
+    "The|men|schwer|punkt"
+  ],
+  "Theoretiker": [
+    "Theo|re|ti|ker",
+    "The|o|re|ti|ker"
+  ],
+  "Theorie": [
+    "Theo|rie",
+    "The|o|rie"
+  ],
+  "Todesopfer": [
+    "To|de|sop|fer",
+    "To|des|op|fer"
+  ],
+  "Todesstrafe": [
+    "To|dess|tra|fe",
+    "To|des|stra|fe"
+  ],
+  "Topfavorit": [
+    "Topfa|vo|rit",
+    "Top|fa|vo|rit"
+  ],
+  "Torerfolg": [
+    "To|rer|folg",
+    "Tor|er|folg"
+  ],
+  "Toskana": [
+    "To|s|ka|na",
+    "Tos|ka|na"
+  ],
+  "Touristenattraktion": [
+    "Tou|ris|te|nat|trak|ti|on",
+    "Tou|ris|ten|at|trak|ti|on"
+  ],
+  "Touristiker": [
+    "Tou|ris|ti|ker",
+    "Tou|ris|tik|er"
+  ],
+  "Trainerwechsel": [
+    "Trainer|wech|sel",
+    "Trai|ner|wech|sel"
+  ],
+  "Trainingseinheit": [
+    "Trai|ning|s|ein|heit",
+    "Trai|nings|ein|heit"
+  ],
+  "Treibhausgas": [
+    "Treib|h|aus|gas",
+    "Treib|haus|gas"
+  ],
+  "Trier": [
+    "Tri|er",
+    "Trier"
+  ],
+  "Triest": [
+    "Triest",
+    "Tri|est"
+  ],
+  "Truppenabzug": [
+    "Trup|pe|n|ab|zug",
+    "Trup|pen|ab|zug"
+  ],
+  "Tsunami": [
+    "Tsu|n|a|mi",
+    "Tsu|na|mi"
+  ],
+  "Type": [
+    "Ty|pe",
+    "Type"
+  ],
+  "Ukraine": [
+    "Ukrai|ne",
+    "Uk|rai|ne"
+  ],
+  "Ukrainer": [
+    "Ukrai|ner",
+    "Uk|rai|ner"
+  ],
+  "Umarmung": [
+    "Umar|mung",
+    "Um|ar|mung"
+  ],
+  "Unachtsamkeit": [
+    "Unacht|sam|keit",
+    "Un|acht|sam|keit"
+  ],
+  "Unannehmlichkeit": [
+    "Unan|nehm|lich|keit",
+    "Un|an|nehm|lich|keit"
+  ],
+  "Unendlichkeit": [
+    "Unend|lich|keit",
+    "Un|end|lich|keit"
+  ],
+  "Unfallopfer": [
+    "Un|fallop|fer",
+    "Un|fall|op|fer"
+  ],
+  "Unsterblichkeit": [
+    "Uns|terb|lich|keit",
+    "Un|sterb|lich|keit"
+  ],
+  "Unterbewusstsein": [
+    "Un|t|er|be|wusst|sein",
+    "Un|ter|be|wusst|sein"
+  ],
+  "Untersuchungsergebnis": [
+    "Un|ter|su|chungser|geb|nis",
+    "Un|ter|su|chungs|er|geb|nis"
+  ],
+  "Update": [
+    "Up|da|te",
+    "Up|date"
+  ],
+  "Ureinwohner": [
+    "Urein|woh|ner",
+    "Ur|ein|woh|ner"
+  ],
+  "Urenkel": [
+    "Uren|kel",
+    "Ur|en|kel"
+  ],
+  "Urlaubsort": [
+    "Ur|laub|sort",
+    "Ur|laubs|ort"
+  ],
+  "Urteilsspruch": [
+    "Ur|teilss|pruch",
+    "Ur|teils|spruch"
+  ],
+  "Usbekistan": [
+    "Us|be|kis|tan",
+    "Us|be|ki|stan"
+  ],
+  "Verabredung": [
+    "Verab|re|dung",
+    "Ver|ab|re|dung"
+  ],
+  "Verabschiedung": [
+    "Verab|schie|dung",
+    "Ver|ab|schie|dung"
+  ],
+  "Verankerung": [
+    "Veran|ke|rung",
+    "Ver|an|ke|rung"
+  ],
+  "Verantwortlichkeit": [
+    "Verant|wort|lich|keit",
+    "Ver|ant|wort|lich|keit"
+  ],
+  "Verantwortung": [
+    "Verant|wor|tung",
+    "Ver|ant|wor|tung"
+  ],
+  "Verantwortungsbewusstsein": [
+    "Verant|wor|tungs|be|wusst|sein",
+    "Ver|ant|wor|tungs|be|wusst|sein"
+  ],
+  "Verdienstorden": [
+    "Ver|dienstor|den",
+    "Ver|dienst|or|den"
+  ],
+  "Vereidigung": [
+    "Ve|rei|di|gung",
+    "Ver|ei|di|gung"
+  ],
+  "Verein": [
+    "Ve|rein",
+    "Ver|ein"
+  ],
+  "Vereinfachung": [
+    "Ve|rein|fa|chung",
+    "Ver|ein|fa|chung"
+  ],
+  "Vereinheitlichung": [
+    "Ve|rein|heit|li|chung",
+    "Ver|ein|heit|li|chung"
+  ],
+  "Vereinigung": [
+    "Ve|rei|ni|gung",
+    "Ver|ei|ni|gung"
+  ],
+  "Verengung": [
+    "Ve|ren|gung",
+    "Ver|en|gung"
+  ],
+  "Verkaufsstand": [
+    "Ver|kaufs|s|tand",
+    "Ver|kaufs|stand"
+  ],
+  "Verkehrsstrom": [
+    "Ver|kehrs|s|trom",
+    "Ver|kehrs|strom"
+  ],
+  "Versuchsperson": [
+    "Ver|such|s|per|son",
+    "Ver|suchs|per|son"
+  ],
+  "Verunglimpfung": [
+    "Ve|run|glimp|fung",
+    "Ver|un|glimp|fung"
+  ],
+  "Verunreinigung": [
+    "Ve|run|rei|ni|gung",
+    "Ver|un|rei|ni|gung"
+  ],
+  "Verunsicherung": [
+    "Verun|si|che|rung",
+    "Ver|un|si|che|rung"
+  ],
+  "Veruntreuung": [
+    "Ve|run|treu|ung",
+    "Ver|un|treu|ung"
+  ],
+  "Videospiel": [
+    "Vi|deo|spiel",
+    "Vi|de|ospiel"
+  ],
+  "Vignette": [
+    "Vig|net|te",
+    "Vi|gnet|te"
+  ],
+  "Violett": [
+    "Vio|lett",
+    "Vi|o|lett"
+  ],
+  "Violine": [
+    "Vio|li|ne",
+    "Vi|o|li|ne"
+  ],
+  "Violinkonzert": [
+    "Vio|lin|kon|zert",
+    "Vi|o|lin|kon|zert"
+  ],
+  "Violoncello": [
+    "Vio|lon|cel|lo",
+    "Vi|o|lon|cel|lo"
+  ],
+  "Vizepremier": [
+    "Vi|ze|p|re|mi|er",
+    "Vi|ze|pre|mi|er"
+  ],
+  "Volksarmee": [
+    "Volksar|mee",
+    "Volks|ar|mee"
+  ],
+  "Volkssport": [
+    "Volkss|port",
+    "Volks|sport"
+  ],
+  "Vollendung": [
+    "Vollen|dung",
+    "Voll|en|dung"
+  ],
+  "Vorabend": [
+    "Vora|bend",
+    "Vor|abend"
+  ],
+  "Vorahnung": [
+    "Vorah|nung",
+    "Vor|ah|nung"
+  ],
+  "Voranmeldung": [
+    "Voran|mel|dung",
+    "Vor|an|mel|dung"
+  ],
+  "Voranschlag": [
+    "Voran|schlag",
+    "Vor|an|schlag"
+  ],
+  "Vorarlberg": [
+    "Vorarl|berg",
+    "Vor|arl|berg"
+  ],
+  "Voraussage": [
+    "Voraus|sa|ge",
+    "Vor|aus|sa|ge"
+  ],
+  "Voraussetzung": [
+    "Voraus|set|zung",
+    "Vor|aus|set|zung"
+  ],
+  "Voraussicht": [
+    "Voraus|sicht",
+    "Vor|aus|sicht"
+  ],
+  "Vorauswahl": [
+    "Voraus|wahl",
+    "Vor|aus|wahl"
+  ],
+  "Vorentscheidung": [
+    "Vo|rent|schei|dung",
+    "Vor|ent|schei|dung"
+  ],
+  "Vorort": [
+    "Vo|r|ort",
+    "Vor|ort"
+  ],
+  "Wachstumschance": [
+    "Wachs|tumschan|ce",
+    "Wachs|tums|chan|ce"
+  ],
+  "Wachstumsprognose": [
+    "Wachs|tumspro|gno|se",
+    "Wachs|tums|pro|gno|se"
+  ],
+  "Wagnis": [
+    "Wa|g|nis",
+    "Wag|nis"
+  ],
+  "Wahlabend": [
+    "Wahl|a|bend",
+    "Wahl|abend"
+  ],
+  "Wahlergebnis": [
+    "Wah|ler|geb|nis",
+    "Wahl|er|geb|nis"
+  ],
+  "Wahlkampfthema": [
+    "Wahl|kampft|he|ma",
+    "Wahl|kampf|the|ma"
+  ],
+  "Walfang": [
+    "Wa|l|fang",
+    "Wal|fang"
+  ],
+  "Walz": [
+    "Wa|lz",
+    "Walz"
+  ],
+  "Walze": [
+    "Wa|l|ze",
+    "Wal|ze"
+  ],
+  "Walzer": [
+    "Wa|l|zer",
+    "Wal|zer"
+  ],
+  "Wanderausstellung": [
+    "Wan|deraus|stel|lung",
+    "Wan|der|aus|stel|lung"
+  ],
+  "Weekend": [
+    "Wee|kend",
+    "Week|end"
+  ],
+  "Weltall": [
+    "Wel|tall",
+    "Welt|all"
+  ],
+  "Weltanschauung": [
+    "Wel|t|an|schau|ung",
+    "Welt|an|schau|ung"
+  ],
+  "Weltausstellung": [
+    "Weltaus|stel|lung",
+    "Welt|aus|stel|lung"
+  ],
+  "Weltcuprennen": [
+    "Welt|cu|pren|nen",
+    "Welt|cup|ren|nen"
+  ],
+  "Weltelite": [
+    "Wel|te|li|te",
+    "Welt|eli|te"
+  ],
+  "Welterbe": [
+    "Wel|t|er|be",
+    "Welt|er|be"
+  ],
+  "Welterfolg": [
+    "Wel|ter|folg",
+    "Welt|er|folg"
+  ],
+  "Weltoffenheit": [
+    "Wel|tof|fen|heit",
+    "Welt|of|fen|heit"
+  ],
+  "Weltordnung": [
+    "Wel|t|ord|nung",
+    "Welt|ord|nung"
+  ],
+  "Weltorganisation": [
+    "Wel|t|or|ga|ni|sa|ti|on",
+    "Welt|or|ga|ni|sa|ti|on"
+  ],
+  "Weltrangliste": [
+    "Wel|trang|lis|te",
+    "Welt|rang|lis|te"
+  ],
+  "Weltranglistenerste": [
+    "Wel|trang|lis|ten|ers|te",
+    "Welt|rang|lis|ten|ers|te"
+  ],
+  "Weltraum": [
+    "Wel|traum",
+    "Welt|raum"
+  ],
+  "Weltrekord": [
+    "Wel|tre|kord",
+    "Welt|re|kord"
+  ],
+  "Weltrekordler": [
+    "Wel|tre|kord|ler",
+    "Welt|re|kord|ler"
+  ],
+  "Weltruhm": [
+    "Wel|truhm",
+    "Welt|ruhm"
+  ],
+  "Werbeslogan": [
+    "Wer|bes|lo|gan",
+    "Wer|be|slo|gan"
+  ],
+  "Wespe": [
+    "We|s|pe",
+    "Wes|pe"
+  ],
+  "Westautobahn": [
+    "We|stau|to|bahn",
+    "Westau|to|bahn"
+  ],
+  "Westjordanland": [
+    "West|jord|an|land",
+    "West|jor|dan|land"
+  ],
+  "Widrigkeit": [
+    "Wi|d|rig|keit",
+    "Wid|rig|keit"
+  ],
+  "Wiederaufarbeitung": [
+    "Wie|der|au|farb|ei|tung",
+    "Wie|der|auf|ar|bei|tung"
+  ],
+  "Wiederaufarbeitungsanlage": [
+    "Wie|der|au|farb|ei|tungs|an|la|ge",
+    "Wie|der|auf|ar|bei|tungs|an|la|ge"
+  ],
+  "Wiederentdeckung": [
+    "Wie|de|rent|de|ckung",
+    "Wie|der|ent|de|ckung"
+  ],
+  "Wien": [
+    "Wi|en",
+    "Wien"
+  ],
+  "Windenergie": [
+    "Win|de|ner|gie",
+    "Wind|ener|gie"
+  ],
+  "Windeseile": [
+    "Win|desei|le",
+    "Win|des|ei|le"
+  ],
+  "Windrad": [
+    "Win|drad",
+    "Wind|rad"
+  ],
+  "Wintereinbruch": [
+    "Win|te|r|ein|bruch",
+    "Win|ter|ein|bruch"
+  ],
+  "Wintersportort": [
+    "Win|ter|spor|tort",
+    "Win|ter|sport|ort"
+  ],
+  "Wirtschaftsexperte": [
+    "Wirt|schaft|sex|per|te",
+    "Wirt|schafts|ex|per|te"
+  ],
+  "Wirtschaftsprofessor": [
+    "Wirt|schaftspro|fes|sor",
+    "Wirt|schafts|pro|fes|sor"
+  ],
+  "Wirtschaftsressort": [
+    "Wirt|schaftsres|sort",
+    "Wirt|schafts|res|sort"
+  ],
+  "Wirtschaftsstandort": [
+    "Wirt|schafts|s|tand|ort",
+    "Wirt|schafts|stand|ort"
+  ],
+  "Wochenarbeitszeit": [
+    "Wo|che|n|ar|beits|zeit",
+    "Wo|chen|ar|beits|zeit"
+  ],
+  "Wochenende": [
+    "Wo|che|n|en|de",
+    "Wo|chen|en|de"
+  ],
+  "Wohlfahrtsstaat": [
+    "Wohl|fahrts|s|taat",
+    "Wohl|fahrts|staat"
+  ],
+  "Wohnungsbaugesellschaft": [
+    "Woh|nungs|b|au|ge|sell|schaft",
+    "Woh|nungs|bau|ge|sell|schaft"
+  ],
+  "Workstation": [
+    "Work|sta|ti|on",
+    "Work|sta|tion"
+  ],
+  "Wortschatz": [
+    "Worts|chatz",
+    "Wort|schatz"
+  ],
+  "Wortsinn": [
+    "Worts|inn",
+    "Wort|sinn"
+  ],
+  "Wortspiel": [
+    "Worts|piel",
+    "Wort|spiel"
+  ],
+  "Wunschdenken": [
+    "Wun|sch|den|ken",
+    "Wunsch|den|ken"
+  ],
+  "Wunschliste": [
+    "Wun|sch|lis|te",
+    "Wunsch|lis|te"
+  ],
+  "Zabel": [
+    "Za|bel",
+    "Zabel"
+  ],
+  "Zahnersatz": [
+    "Zah|ner|satz",
+    "Zahn|er|satz"
+  ],
+  "Zeitaufwand": [
+    "Zei|tauf|wand",
+    "Zeitauf|wand"
+  ],
+  "Zeitraffer": [
+    "Zeitraf|fer",
+    "Zeit|raf|fer"
+  ],
+  "Zentimeter": [
+    "Zen|ti|me|ter",
+    "Zen|time|ter"
+  ],
+  "Zentralasien": [
+    "Zen|trala|si|en",
+    "Zen|tral|asi|en"
+  ],
+  "Zentralinstitut": [
+    "Zen|tra|lin|sti|tut",
+    "Zen|tral|in|sti|tut"
+  ],
+  "Zeugenaussage": [
+    "Zeu|ge|n|aus|sa|ge",
+    "Zeu|gen|aus|sa|ge"
+  ],
+  "Ziellinie": [
+    "Zi|el|li|nie",
+    "Ziel|li|nie"
+  ],
+  "Zielort": [
+    "Zielort",
+    "Ziel|ort"
+  ],
+  "Zinsertrag": [
+    "Zin|ser|trag",
+    "Zins|er|trag"
+  ],
+  "Zionismus": [
+    "Zio|nis|mus",
+    "Zi|o|nis|mus"
+  ],
+  "Zitrone": [
+    "Zitro|ne",
+    "Zi|tro|ne"
+  ],
+  "Zitronensaft": [
+    "Zitro|nen|saft",
+    "Zi|tro|nen|saft"
+  ],
+  "Zuckerl": [
+    "Zu|cke|rl",
+    "Zu|ckerl"
+  ],
+  "Zuflucht": [
+    "Zuf|lucht",
+    "Zu|flucht"
+  ],
+  "Zufluss": [
+    "Zuf|luss",
+    "Zu|fluss"
+  ],
+  "Zufriedenheit": [
+    "Zufrie|den|heit",
+    "Zu|frie|den|heit"
+  ],
+  "Zusammenschluss": [
+    "Zu|sam|menschluss",
+    "Zu|sam|men|schluss"
+  ],
+  "Zuschauer": [
+    "Zuschau|er",
+    "Zu|schau|er"
+  ],
+  "Zuschauerin": [
+    "Zuschau|e|rin",
+    "Zu|schau|e|rin"
+  ],
+  "Zuschauerraum": [
+    "Zuschau|er|raum",
+    "Zu|schau|er|raum"
+  ],
+  "Zuschauerzahl": [
+    "Zuschau|e|r|zahl",
+    "Zu|schau|e|r|zahl"
+  ],
+  "Zuschnitt": [
+    "Zuschnitt",
+    "Zu|schnitt"
+  ],
+  "Zustrom": [
+    "Zustrom",
+    "Zu|strom"
+  ],
+  "Zutat": [
+    "Zutat",
+    "Zu|tat"
+  ]
+}

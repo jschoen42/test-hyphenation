@@ -1,0 +1,27 @@
+
+2. Collect all patterns that are a substring of the word to be hyphenated.
+3. Combine the numerical values between characters: higher values overwrite lower values.
+4. Odd values are hyphenation points (except if the hyphenation point is left from leftmin and right from rightmin), replace them with a soft hyphen and drop the other values.
+5. Repeat steps 2. - 4. for all words longer than minWordLength
+
+Morgenstern
+ m o r g e n s t e r n
+1m o
+ m o r g e n1s t e r n
+   o8r1g
+   o r1g e
+    8r1g
+     r1g e
+      1g e
+         e6n s
+          6n s
+             s1t e
+               t e2r n
+                 e2r n
+                  2r n
+ m o8r1g0e6n1s1t0e2r0n
+ M o r-g e n s-t e r n
+ 
+ pyphen
+ M o r-g e n s-t e r n
+                  
