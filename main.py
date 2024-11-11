@@ -76,8 +76,6 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: list
 
     set_name, samples = import_samples(set_name, sub_set)
 
-    filename = f"{package_name}_COMPLETE_{set_name}.json"
-
     if package_name == "Pyphen":
         results = test_Pyphen(samples, language, trace)
 
@@ -87,11 +85,14 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: list
     else:
         Trace.fatal(f"unknown package name '{package_name}'")
 
-    Trace.result(f"results: {len(results)}")
+    filename = f"{package_name}_COMPLETE_{set_name}.json"
+    timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR, filename, results, filename_timestamp=False)
+    ret = write_file(RESULT_DIR / set_name, filename, results, filename_timestamp=timestamp)
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
+
+    Trace.result(f"results: {len(results)}")
 
 @timeit("Pyphen test all")
 def test_Pyphen(words: dict, language: str, trace:bool = True) -> list:
@@ -146,14 +147,12 @@ def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace
         for word in difference:
             Trace.update(f"patched '{word}': '{difference[word][0]}' => '{difference[word][1]}'")
 
-    if set_name != "":
-        timestamp = (set_name == "test_sample")
+    filename = f"PyHyphen_PATCH_{set_name}.json"
+    timestamp = (set_name == "samples")
 
-        filename = f"PyHyphen_PATCH_{set_name}.json"
-
-        ret = write_file(RESULT_DIR, filename, difference, filename_timestamp=timestamp)
-        if is_err(ret):
-            Trace.error(f"Error: {ret.err_value}")
+    ret = write_file(RESULT_DIR / set_name, filename, difference, filename_timestamp=timestamp)
+    if is_err(ret):
+        Trace.error(f"Error: {ret.err_value}")
 
     Trace.result(f"all: {len(samples)}, identical: {len(identical)}, different: {len(difference)}")
 
@@ -198,14 +197,12 @@ def compare_samples( language: str, set_name: str, sub_set: list = [], trace: bo
         for word in difference:
             Trace.info(f"'{word}': {Color.RED}{Color.BOLD}Pyphen{Color.RESET} '{difference[word][0]}', {Color.BLUE}{Color.BOLD}PyHyphen{Color.RESET} '{difference[word][1]}'")
 
-    if set_name != "":
-        timestamp = (set_name == "test_sample")
+    filename = f"Pyphen-PyHyphen_DIFF_{set_name}.json"
+    timestamp = (set_name == "samples")
 
-        filename = f"Pyphen-PyHyphen_DIFF_{set_name}.json"
-
-        ret = write_file(RESULT_DIR, filename, difference, filename_timestamp=timestamp )
-        if is_err(ret):
-            Trace.error(f"Error: {ret.err_value}")
+    ret = write_file(RESULT_DIR / set_name, filename, difference, filename_timestamp=timestamp )
+    if is_err(ret):
+        Trace.error(f"Error: {ret.err_value}")
 
     Trace.result(f"all: {len(samples)}, identical: {len(identical)}, different: {len(difference)}")
 
@@ -217,31 +214,35 @@ if __name__ == "__main__":
     # PyHyphen - Patch (on, off)
 
     check_patch_samples("de_DE", "samples", ["test_patch", "special", "dashes", "upper"])
-    check_patch_samples("de_DE", "AlleDeutschenWoerter")
-    check_patch_samples("de_DE", "wortliste")
-    check_patch_samples("de_DE", "german_words")
-    check_patch_samples("de_DE", "de_DE_frami")
+    # check_patch_samples("de_DE", "AlleDeutschenWoerter")
+    # check_patch_samples("de_DE", "wortliste")
+    # check_patch_samples("de_DE", "german_words")
+    # check_patch_samples("de_DE", "de_DE_frami")
+    # check_patch_samples("de_DE", "wordlist-german")
 
     # PyHyphen (mit Patch)
 
     check_samples("PyHyphen", "de_DE", "samples", ["test_patch", "special", "dashes", "upper"], trace=True)
-    check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
-    check_samples("PyHyphen", "de_DE", "wortliste")
-    check_samples("PyHyphen", "de_DE", "german_words")
-    check_samples("PyHyphen", "de_DE", "de_DE_frami")
+    # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
+    # check_samples("PyHyphen", "de_DE", "wortliste")
+    # check_samples("PyHyphen", "de_DE", "german_words")
+    # check_samples("PyHyphen", "de_DE", "de_DE_frami")
+    # check_samples("PyHyphen", "de_DE", "wordlist-german")
 
     # Pyphen
 
     check_samples("Pyphen", "de_DE", "samples", ["test_patch", "special", "dashes", "upper"])
-    check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
-    check_samples("Pyphen", "de_DE", "wortliste")
-    check_samples("Pyphen", "de_DE", "german_words")
-    check_samples("Pyphen", "de_DE", "de_DE_frami")
+    # check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
+    # check_samples("Pyphen", "de_DE", "wortliste")
+    # check_samples("Pyphen", "de_DE", "german_words")
+    # check_samples("Pyphen", "de_DE", "de_DE_frami")
+    # check_samples("Pyphen", "de_DE", "wordlist-german")
 
     # PyHyphen (with patch) <-> Pyphen
 
     compare_samples("de_DE", "samples", ["test_patch", "special", "dashes", "upper"])
-    compare_samples("de_DE", "AlleDeutschenWoerter")
-    compare_samples("de_DE", "wortliste")
-    compare_samples("de_DE", "german_words")
-    compare_samples("de_DE", "de_DE_frami")
+    # compare_samples("de_DE", "AlleDeutschenWoerter")
+    # compare_samples("de_DE", "wortliste")
+    # compare_samples("de_DE", "german_words")
+    # compare_samples("de_DE", "de_DE_frami")
+    # compare_samples("de_DE", "wordlist-german")

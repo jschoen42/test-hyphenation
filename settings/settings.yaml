@@ -48,3 +48,11 @@ samples_all:
     encoding: utf-8
     files:
       - german_words.txt
+
+  # https://gist.github.com/MarvinJWendt/2f4f4154b8ae218600eb091a5706b5f4
+
+  wordlist-german:
+    type: text
+    encoding: utf-8
+    files:
+      - wordlist-german.txt
