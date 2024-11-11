@@ -1,90 +1,129 @@
 import sys
 from pathlib import Path
 
+import yaml
+
 from src.utils.trace import Trace, timeit
 
-# Testsets:
-# AlleDeutschenWoerter
-# wortliste
-# german_words
+#  externe Liste -> settings/settings.yaml
+#
+#  - AlleDeutschenWoerter: https://github.com/cpos/AlleDeutschenWoerter
+#  - wortliste:            https://github.com/davidak/wortliste
+#  - german_words:         https://github.com/0LL13/german_words
+#  - de_DE_frami:          https://github.com/LibreOffice/dictionaries/tree/master/de
+#
 
-BASE_PATH = Path(sys.argv[0]).parent / "samples"
-
-word_lists = {
-    "AlleDeutschenWoerter": {
-        "encoding": "utf-8",
-        "files": [
-            "Adjektive/Adjektive.txt",
-            "Substantive/substantiv_singular_der.txt",
-            "Substantive/substantiv_singular_die.txt",
-            "Substantive/substantiv_singular_das.txt",
-            "Verben/Verben_regelmaeßig.txt",
-            "Verben/Verben_unregelmaeßig_Infinitiv.txt",
-        ]
-    },
-    "wortliste": {
-        "encoding": "utf-8",
-        "files": [
-            "wortliste.txt"
-        ],
-    },
-    "german_words": {
-        "encoding": "utf-8",
-        "files": [
-            "german_words.txt"
-        ]
-    },
-    "de_DE_frami": {
-        "encoding": "cp1252",
-        "files":  [
-            "de_DE_frami.dic"
-        ],
-    }
-}
+BASE_PATH = Path(sys.argv[0]).parent
+SAMPLES_DIR = BASE_PATH / "samples"
+SETTING_DIR = BASE_PATH / "settings"
 
 @timeit("import samples")
-def import_samples( test_set: str ):
-    words = set()
+def import_samples( sample_name: str, sub_samples: list = [] ) -> list | set:
 
-    dirpath = BASE_PATH / test_set
+    with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
+        settings = yaml.safe_load(file)
 
-    infos = word_lists[test_set]
-    encoding = infos["encoding"]
-    files    = infos["files"]
+    sample = settings['samples_all'][sample_name]
+    type     = sample["type"]
+    encoding = sample["encoding"]
+    files    = sample["files"]
+
+    if type == "yaml":
+        words = list()
+    elif type in ["dic", "text"]:
+        words = set()
+    else:
+        Trace.fatal(f"unknown type '{type}'")
 
     for file in files:
-        suffix = Path(file).suffix
+        if type == "yaml":
+            words.extend(import_samples_yaml(SAMPLES_DIR, file, sub_samples))
 
-        with open(dirpath / file, "r", encoding=encoding) as file:
+        elif type == "dic":
+            words = words | import_samples_dictionary(SAMPLES_DIR / sample_name, file, encoding)
+
+        elif type == "text":
+            words = words | import_samples_text(SAMPLES_DIR / sample_name, file, encoding)
+
+    Trace.info(f"{sample_name}-{type}: {len(words)} samples"  )
+
+    if type == "yaml":
+        return (sample_name, words)
+    else:
+        return (sample_name, sorted(words))
+
+# YAML
+
+def import_samples_yaml( dirpath: Path, filename: str, sub_samples: list ) -> list:
+    words = []
+
+    try:
+        with open( dirpath / filename, "r", encoding="utf-8") as file:
+            samples = yaml.safe_load(file)
+
+    except OSError as err:
+        Trace.error(f"{err}")
+        return words
+
+    except yaml.scanner.ScannerError as err:
+        Trace.error(f"{filename}: {err}")
+        return words
+
+    found = []
+    for sub_sample in sub_samples:
+        if sub_sample in samples:
+            words.extend(samples[sub_sample])
+            found.append(sub_sample)
+        else:
+            Trace.warning(f"'{filename}' unknown sub_sample '{sub_sample}'")
+
+    Trace.info(f"'{filename}' - {found}: {len(words)} samples")
+    return words
+
+# DICTIONARY
+
+def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> set:
+    words = set()
+
+    try:
+        with open(dirpath / filename, "r", encoding=encoding) as file:
             for i, line in enumerate(file):
+                if i==0 or len(line) == 0 or line.startswith("#") :
+                    continue
+
+                word = line.split("/")[0]
+                words.add(word)
+
+    except OSError as err:
+        Trace.error(f"{err}")
+
+    return words
+
+# TEXT
+
+def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> set:
+    words = set()
+
+    try:
+        with open(dirpath / filename, "r", encoding=encoding) as file:
+            for line in file:
                 line = line.strip().replace("\ufeff", "") # german_words.txt
 
-                if len(line) == 0:
+                if len(line) == 0 or line.startswith("#"):
                     continue
 
-                if line.startswith("#"):
+                if "[Bearbeiten]" in line: # -> AlleDeutschenWoerter
                     continue
 
-                if suffix == ".dic":
-                    if i==0:
+                parts = line.split(",")    # sein, war, gewesen
+                for part in parts:
+                    part = part.strip()
+                    if len(part) == 0:
                         continue
 
-                    word = line.split("/")[0]
-                    words.add(word)
+                    words.add(part)
 
-                else:
-                    # -> AlleDeutschenWoerter
+    except OSError as err:
+        Trace.error(f"{err}")
 
-                    if "[Bearbeiten]" in line:
-                        continue
-
-                    parts = line.split(",") # sein, war, gewesen
-                    for part in parts:
-                        part = part.strip()
-                        if len(part) == 0:
-                            continue
-
-                        words.add(part) #.title())
-
-    Trace.info(f"{test_set}: words {len(words)}"  )
-    return (test_set, sorted(words))
+    return words

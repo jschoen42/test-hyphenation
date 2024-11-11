@@ -1,4 +1,8 @@
 {
+  "Aach\n": [
+    "Aach\n",
+    "Aa|ch\n"
+  ],
   "Aalen": [
     "Aa|len",
     "Aalen"
@@ -19,17 +23,21 @@
     "Aa|l|fi|sche|rei",
     "Aal|fi|sche|rei"
   ],
+  "Aar\n": [
+    "Aa|r\n",
+    "Aar\n"
+  ],
   "Aarau": [
     "Aa|rau",
     "Aar|au"
   ],
-  "Aarauer": [
-    "Aa|rau|er",
-    "Aar|au|er"
+  "Aarauer\n": [
+    "Aa|rau|er\n",
+    "Aar|au|er\n"
   ],
-  "Aarburg": [
-    "Aa|r|burg",
-    "Aar|burg"
+  "Aarburg\n": [
+    "Aa|r|bur|g\n",
+    "Aar|bur|g\n"
   ],
   "Abart": [
     "Abart",
@@ -39,9 +47,9 @@
     "Abar|tig|keit",
     "Ab|ar|tig|keit"
   ],
-  "Abb.": [
-    "Ab|b.",
-    "Abb."
+  "Abb.\n": [
+    "Ab|b.\n",
+    "Abb.\n"
   ],
   "Abblas": [
     "Ab|blas",
@@ -323,9 +331,9 @@
     "Abrau|schen",
     "Ab|rau|schen"
   ],
-  "Abraxas": [
-    "Abra|xas",
-    "Ab|ra|xas"
+  "Abraxas\n": [
+    "Abra|xas\n",
+    "Ab|ra|xas\n"
   ],
   "Abrechnen": [
     "Abrech|nen",
@@ -431,9 +439,9 @@
     "Abstra|hie|ren",
     "Abs|tra|hie|ren"
   ],
-  "Abstrakta": [
-    "Abstrak|ta",
-    "Abs|trak|ta"
+  "Abstrakta\n": [
+    "Abstrak|ta\n",
+    "Abs|trak|ta\n"
   ],
   "Abstraktheit": [
     "Abstrakt|heit",
@@ -479,9 +487,9 @@
     "Ab|teihö|fe",
     "Ab|tei|hö|fe"
   ],
-  "Abugida": [
-    "Abu|gi|da",
-    "Ab|u|gi|da"
+  "Abugida\n": [
+    "Abu|gi|da\n",
+    "Ab|u|gi|da\n"
   ],
   "Abuja": [
     "Abu|ja",
@@ -607,9 +615,9 @@
     "Adres|soff|set",
     "Adress|off|set"
   ],
-  "Aeroflot": [
-    "Aer|oflot",
-    "Ae|ro|flot"
+  "Aeroflot\n": [
+    "Aer|oflot\n",
+    "Ae|ro|flot\n"
   ],
   "Aeroklimatologie": [
     "Aero|kli|ma|to|lo|gie",
@@ -651,9 +659,9 @@
     "Agnat",
     "Ag|nat"
   ],
-  "Agnes": [
-    "Ag|nes",
-    "Agnes"
+  "Agnes\n": [
+    "Ag|nes\n",
+    "Agnes\n"
   ],
   "Agnesstraße": [
     "Ag|ness|tra|ße",
@@ -683,13 +691,13 @@
     "Ahrens|hoop",
     "Ah|rens|hoop"
   ],
-  "Aires": [
-    "Ai|res",
-    "Aires"
+  "Aires\n": [
+    "Ai|res\n",
+    "Aires\n"
   ],
-  "Aisne": [
-    "Ais|ne",
-    "Aisne"
+  "Aisne\n": [
+    "Ais|ne\n",
+    "Aisne\n"
   ],
   "Akronym": [
     "Akronym",
@@ -863,9 +871,9 @@
     "Anal|pha|be|ten|tum",
     "An|al|pha|be|ten|tum"
   ],
-  "Analphabetie": [
-    "Anal|pha|be|tie",
-    "An|al|pha|be|tie"
+  "Analphabetie\n": [
+    "Anal|pha|be|tie\n",
+    "An|al|pha|be|tie\n"
   ],
   "Analphabetismus": [
     "Anal|pha|be|tis|mus",
@@ -1307,9 +1315,9 @@
     "Aphro|di|te|kult",
     "Aph|ro|di|te|kult"
   ],
-  "Apoptose": [
-    "Apop|to|se",
-    "Apo|pto|se"
+  "Apoptose\n": [
+    "Apop|to|se\n",
+    "Apo|pto|se\n"
   ],
   "Apoptoseprozess": [
     "Apop|to|se|pro|zess",
@@ -1411,13 +1419,13 @@
     "Ar|beit|su|che",
     "Ar|beits|uche"
   ],
-  "Archaismen": [
-    "Archais|men",
-    "Ar|chais|men"
+  "Archaismen\n": [
+    "Archais|men\n",
+    "Ar|chais|men\n"
   ],
-  "Archaismus": [
-    "Archa|is|mus",
-    "Ar|cha|is|mus"
+  "Archaismus\n": [
+    "Archa|is|mus\n",
+    "Ar|cha|is|mus\n"
   ],
   "Archangelsk": [
     "Archan|gelsk",
@@ -1435,9 +1443,9 @@
     "Archi|man|drit",
     "Ar|chi|mandrit"
   ],
-  "Archimedes": [
-    "Archi|me|des",
-    "Ar|chi|me|des"
+  "Archimedes\n": [
+    "Archi|me|des\n",
+    "Ar|chi|me|des\n"
   ],
   "Archipel": [
     "Archi|pel",
@@ -1483,13 +1491,13 @@
     "Archiv",
     "Ar|chiv"
   ],
-  "Archivale": [
-    "Archi|va|le",
-    "Ar|chi|va|le"
+  "Archivale\n": [
+    "Archi|va|le\n",
+    "Ar|chi|va|le\n"
   ],
-  "Archivalien": [
-    "Archi|va|li|en",
-    "Ar|chi|va|li|en"
+  "Archivalien\n": [
+    "Archi|va|li|en\n",
+    "Ar|chi|va|li|en\n"
   ],
   "Archivar": [
     "Archi|var",
@@ -1507,9 +1515,9 @@
     "Archi|vie|rungs",
     "Ar|chi|vie|rungs"
   ],
-  "Archivistik": [
-    "Archi|vis|tik",
-    "Ar|chi|vis|tik"
+  "Archivistik\n": [
+    "Archi|vis|ti|k\n",
+    "Ar|chi|vis|ti|k\n"
   ],
   "Archivolte": [
     "Archi|vol|te",
@@ -1659,9 +1667,9 @@
     "Aron|st|ab|ge|wächs",
     "Aron|stab|ge|wächs"
   ],
-  "Artaxerxes": [
-    "Ar|ta|xer|xes",
-    "Arta|xer|xes"
+  "Artaxerxes\n": [
+    "Ar|ta|xer|xes\n",
+    "Arta|xer|xes\n"
   ],
   "Arterienast": [
     "Ar|te|rie|n|ast",
@@ -1678,6 +1686,10 @@
   "Arteriosklerose": [
     "Ar|te|ri|o|skle|ro|se",
     "Ar|te|rio|skle|ro|se"
+  ],
+  "Asklepios\n": [
+    "As|kle|pios\n",
+    "As|kle|pi|os\n"
   ],
   "Asklepiostempel": [
     "As|kle|pio|stem|pel",
@@ -1731,9 +1743,9 @@
     "As|s|ump|ti|o|nist",
     "As|sump|ti|o|nist"
   ],
-  "Asthenie": [
-    "Asthe|nie",
-    "As|the|nie"
+  "Asthenie\n": [
+    "Asthe|nie\n",
+    "As|the|nie\n"
   ],
   "Astheniker": [
     "Asthe|ni|ker",
@@ -1763,9 +1775,9 @@
     "Astro|gra|phie",
     "As|tro|gra|phie"
   ],
-  "Astrolabium": [
-    "Astro|la|bi|um",
-    "As|tro|la|bi|um"
+  "Astrolabium\n": [
+    "Astro|la|bi|um\n",
+    "As|tro|la|bi|um\n"
   ],
   "Astrologe": [
     "Astro|lo|ge",
@@ -1775,9 +1787,9 @@
     "Astro|lo|gie",
     "As|tro|lo|gie"
   ],
-  "Astrometrie": [
-    "Astro|me|trie",
-    "As|tro|me|trie"
+  "Astrometrie\n": [
+    "Astro|me|trie\n",
+    "As|tro|me|trie\n"
   ],
   "Astronaut": [
     "Astro|naut",
@@ -1894,6 +1906,10 @@
   "Auenwälder": [
     "Auen|wäl|der",
     "Au|en|wäl|der"
+  ],
+  "Auer\n": [
+    "Au|er\n",
+    "Au|e|r\n"
   ],
   "Auerbach": [
     "Au|er|bach",
@@ -2127,9 +2143,9 @@
     "Ausch|witz|be|frei|ung",
     "Au|schwitz|be|frei|ung"
   ],
-  "Auschwitzer": [
-    "Ausch|wit|zer",
-    "Au|schwit|zer"
+  "Auschwitzer\n": [
+    "Ausch|wit|zer\n",
+    "Au|schwit|zer\n"
   ],
   "Auschwitzhäftling": [
     "Ausch|witz|häft|ling",
@@ -2175,9 +2191,9 @@
     "Au|s|ein|an|der|wei|chen",
     "Aus|ein|an|der|wei|chen"
   ],
-  "Auserlesenheit": [
-    "Au|ser|le|sen|heit",
-    "Aus|er|le|sen|heit"
+  "Auserlesenheit\n": [
+    "Au|ser|le|sen|heit\n",
+    "Aus|er|le|sen|heit\n"
   ],
   "Auserwählen": [
     "Au|ser|wäh|len",
@@ -2555,9 +2571,9 @@
     "Austra|si|en",
     "Aus|tra|si|en"
   ],
-  "Austria": [
-    "Austria",
-    "Aus|tria"
+  "Austria\n": [
+    "Austria\n",
+    "Aus|tria\n"
   ],
   "Austriazismen": [
     "Austri|a|zis|men",
@@ -2727,9 +2743,9 @@
     "Ba|ben|hau|sen",
     "Baben|hau|sen"
   ],
-  "Babenhausener": [
-    "Ba|ben|hau|se|ner",
-    "Baben|hau|se|ner"
+  "Babenhausener\n": [
+    "Ba|ben|hau|se|ner\n",
+    "Baben|hau|se|ner\n"
   ],
   "Babesie": [
     "Ba|be|sie",
@@ -2775,9 +2791,9 @@
     "Badrei|ni|ger",
     "Bad|rei|ni|ger"
   ],
-  "Baedeker": [
-    "Ba|ede|ker",
-    "Bae|de|ker"
+  "Baedeker\n": [
+    "Ba|ede|ker\n",
+    "Bae|de|ker\n"
   ],
   "Bahnexpress": [
     "Bah|nex|press",
@@ -2799,9 +2815,9 @@
     "Bais|se|spe|ku|lant",
     "Baisse|spe|ku|lant"
   ],
-  "Bakkalaureus": [
-    "Bak|ka|lau|reus",
-    "Bak|ka|lau|re|us"
+  "Bakkalaureus\n": [
+    "Bak|ka|lau|reus\n",
+    "Bak|ka|lau|re|us\n"
   ],
   "Baldrianextrakt": [
     "Bal|dri|a|nex|trakt",
@@ -2823,9 +2839,9 @@
     "Ba|l|ve",
     "Bal|ve"
   ],
-  "Balver": [
-    "Ba|l|ver",
-    "Bal|ver"
+  "Balver\n": [
+    "Ba|l|ver\n",
+    "Bal|ver\n"
   ],
   "Balz": [
     "Ba|lz",
@@ -2923,9 +2939,9 @@
     "Ban|kiers|ver|mö|gen",
     "Ban|ki|ers|ver|mö|gen"
   ],
-  "Barbados": [
-    "Ba|r|ba|dos",
-    "Bar|ba|dos"
+  "Barbados\n": [
+    "Ba|r|ba|dos\n",
+    "Bar|ba|dos\n"
   ],
   "Barbar": [
     "Ba|r|bar",
@@ -2943,9 +2959,9 @@
     "Ba|r|ba|ra|kraut",
     "Bar|ba|ra|kraut"
   ],
-  "Barbarathermen": [
-    "Ba|r|ba|rat|her|men",
-    "Bar|ba|rat|her|men"
+  "Barbarathermen\n": [
+    "Ba|r|ba|rat|her|men\n",
+    "Bar|ba|rat|her|men\n"
   ],
   "Barbarei": [
     "Ba|r|ba|rei",
@@ -2975,9 +2991,9 @@
     "Ba|r|ba|ri|sie|ren",
     "Bar|ba|ri|sie|ren"
   ],
-  "Barbarismus": [
-    "Ba|r|ba|ris|mus",
-    "Bar|ba|ris|mus"
+  "Barbarismus\n": [
+    "Ba|r|ba|ris|mus\n",
+    "Bar|ba|ris|mus\n"
   ],
   "Barbarossa": [
     "Ba|r|ba|ros|sa",
@@ -3007,9 +3023,9 @@
     "Ba|r|bell|schmuck",
     "Bar|bell|schmuck"
   ],
-  "Barberini": [
-    "Ba|r|ber|ini",
-    "Bar|ber|ini"
+  "Barberini\n": [
+    "Ba|r|ber|in|i\n",
+    "Bar|ber|in|i\n"
   ],
   "Barbie": [
     "Ba|r|bie",
@@ -3059,9 +3075,9 @@
     "Ba|rch|feld",
     "Barch|feld"
   ],
-  "Barclays": [
-    "Ba|r|clays",
-    "Bar|clays"
+  "Barclays\n": [
+    "Ba|r|clays\n",
+    "Bar|clays\n"
   ],
   "Barfrankierung": [
     "Ba|r|fran|kie|rung",
@@ -3138,6 +3154,10 @@
   "Barrierewirkung": [
     "Bar|rie|re|wir|kung",
     "Bar|ri|e|re|wir|kung"
+  ],
+  "Bartholomäus\n": [
+    "Bar|tho|lo|mäus\n",
+    "Bar|tho|lo|mä|us\n"
   ],
   "Bartholomäusdom": [
     "Bar|tho|lo|mäus|dom",
@@ -3231,9 +3251,9 @@
     "Bea|tri|ce",
     "Be|a|trice"
   ],
-  "Beatrix": [
-    "Bea|trix",
-    "Be|a|trix"
+  "Beatrix\n": [
+    "Bea|trix\n",
+    "Be|a|trix\n"
   ],
   "Beaufortskala": [
     "Beau|forts|ka|la",
@@ -3263,9 +3283,9 @@
     "Be|dan|ken",
     "Bedan|ken"
   ],
-  "Bedauerns": [
-    "Be|dau|erns",
-    "Bedau|erns"
+  "Bedauerns\n": [
+    "Be|dau|erns\n",
+    "Bedau|erns\n"
   ],
   "Bedien": [
     "Be|di|en",
@@ -3303,9 +3323,9 @@
     "Beefs|teak",
     "Beef|steak"
   ],
-  "Beelitz": [
-    "Bee|litz",
-    "Be|e|litz"
+  "Beelitz\n": [
+    "Bee|litz\n",
+    "Be|e|litz\n"
   ],
   "Beelzebub": [
     "Beel|ze|bub",
@@ -3363,9 +3383,9 @@
     "Beetho|ven|fest",
     "Beet|ho|ven|fest"
   ],
-  "Beethovenhalle": [
-    "Beetho|ven|hal|le",
-    "Beet|ho|ven|hal|le"
+  "Beethovenhalle\n": [
+    "Beetho|ven|hal|le\n",
+    "Beet|ho|ven|hal|le\n"
   ],
   "Beethovenpark": [
     "Beetho|ven|park",
@@ -3387,9 +3407,9 @@
     "Beetho|ven|stra|ße",
     "Beet|ho|ven|stra|ße"
   ],
-  "Beflissenheit": [
-    "Be|f|lis|sen|heit",
-    "Be|flis|sen|heit"
+  "Beflissenheit\n": [
+    "Be|f|lis|sen|heit\n",
+    "Be|flis|sen|heit\n"
   ],
   "Beflügeln": [
     "Be|f|lü|geln",
@@ -3511,9 +3531,9 @@
     "Benüt|zer",
     "Be|nüt|zer"
   ],
-  "Beobachtbarkeit": [
-    "Beob|acht|bar|keit",
-    "Beo|b|acht|bar|keit"
+  "Beobachtbarkeit\n": [
+    "Beob|acht|bar|keit\n",
+    "Beo|b|acht|bar|keit\n"
   ],
   "Beobachten": [
     "Beob|ach|ten",
@@ -3739,17 +3759,17 @@
     "Biblio|ma|ne",
     "Bi|blio|ma|ne"
   ],
-  "Bibliomanie": [
-    "Biblio|ma|nie",
-    "Bi|blio|ma|nie"
+  "Bibliomanie\n": [
+    "Biblio|ma|nie\n",
+    "Bi|blio|ma|nie\n"
   ],
-  "Bibliometrie": [
-    "Bibli|o|me|trie",
-    "Bi|blio|me|trie"
+  "Bibliometrie\n": [
+    "Bibli|o|me|trie\n",
+    "Bi|blio|me|trie\n"
   ],
-  "Bibliophilie": [
-    "Biblio|phi|lie",
-    "Bi|blio|phi|lie"
+  "Bibliophilie\n": [
+    "Biblio|phi|lie\n",
+    "Bi|blio|phi|lie\n"
   ],
   "Bibliothek": [
     "Biblio|thek",
@@ -3931,9 +3951,9 @@
     "Blau|be|u|ren",
     "Blau|beu|ren"
   ],
-  "Blaubeurer": [
-    "Blau|be|u|rer",
-    "Blau|beu|rer"
+  "Blaubeurer\n": [
+    "Blau|be|u|rer\n",
+    "Blau|beu|rer\n"
   ],
   "Blechtrommel": [
     "Blechtrom|mel",
@@ -4007,9 +4027,9 @@
     "Bochol|ter",
     "Bo|chol|ter"
   ],
-  "Bodstedter": [
-    "Bods|ted|ter",
-    "Bo|ds|ted|ter"
+  "Bodstedter\n": [
+    "Bods|ted|ter\n",
+    "Bo|ds|ted|ter\n"
   ],
   "Boeing": [
     "Boeing",
@@ -4019,9 +4039,9 @@
     "Boek|ze|te|ler|fehn",
     "Boe|k|ze|te|ler|fehn"
   ],
-  "Boethius": [
-    "Boethi|us",
-    "Boe|thi|us"
+  "Boethius\n": [
+    "Boethi|us\n",
+    "Boe|thi|us\n"
   ],
   "Bonboniere": [
     "Bon|bo|nie|re",
@@ -4042,6 +4062,10 @@
   "Bootstörn": [
     "Boot|störn",
     "Boots|törn"
+  ],
+  "Bora\n": [
+    "Bora\n",
+    "Bo|ra\n"
   ],
   "Boran": [
     "Boran",
@@ -4091,9 +4115,9 @@
     "Bou|let|te",
     "Boulet|te"
   ],
-  "Brahmsstraße": [
-    "Brahms|s|tra|ße",
-    "Brahms|stra|ße"
+  "Brahmsstraße\n": [
+    "Brahms|s|tra|ße\n",
+    "Brahms|stra|ße\n"
   ],
   "Braille": [
     "Brail|le",
@@ -4167,9 +4191,9 @@
     "Bru|ste|pi|the|se",
     "Bruste|pi|the|se"
   ],
-  "Brückenauer": [
-    "Brü|cke|nau|er",
-    "Brü|cken|au|er"
+  "Brückenauer\n": [
+    "Brü|cke|nau|e|r\n",
+    "Brü|cken|au|e|r\n"
   ],
   "Buchausleihe": [
     "Buchaus|lei|he",
@@ -4183,9 +4207,9 @@
     "Bu|che|nau",
     "Bu|chen|au"
   ],
-  "Buchenauer": [
-    "Bu|che|nau|er",
-    "Bu|chen|au|er"
+  "Buchenauer\n": [
+    "Bu|che|nau|e|r\n",
+    "Bu|chen|au|e|r\n"
   ],
   "Buenos": [
     "Bue|nos",
@@ -4327,9 +4351,9 @@
     "Ca|l|vin",
     "Cal|vin"
   ],
-  "Calvinismus": [
-    "Ca|l|vi|nis|mus",
-    "Cal|vi|nis|mus"
+  "Calvinismus\n": [
+    "Ca|l|vi|nis|mus\n",
+    "Cal|vi|nis|mus\n"
   ],
   "Calvinist": [
     "Ca|l|vi|nist",
@@ -4343,9 +4367,9 @@
     "Ca|l|vin|zy|klus",
     "Cal|vin|zy|klus"
   ],
-  "Calzone": [
-    "Ca|l|zo|ne",
-    "Cal|zo|ne"
+  "Calzone\n": [
+    "Ca|l|zo|ne\n",
+    "Cal|zo|ne\n"
   ],
   "Cannes": [
     "Can|nes",
@@ -4367,9 +4391,9 @@
     "Ca|ra|bi|nie|re",
     "Ca|ra|bi|ni|e|re"
   ],
-  "Carabinieri": [
-    "Ca|ra|bi|nie|ri",
-    "Ca|ra|bi|ni|e|ri"
+  "Carabinieri\n": [
+    "Ca|ra|bi|nie|ri\n",
+    "Ca|ra|bi|ni|e|ri\n"
   ],
   "Carbamat": [
     "Ca|r|ba|mat",
@@ -4915,9 +4939,9 @@
     "Con|cha",
     "Concha"
   ],
-  "Conchen": [
-    "Con|chen",
-    "Conchen"
+  "Conchen\n": [
+    "Con|chen\n",
+    "Conchen\n"
   ],
   "Conchierverfahren": [
     "Con|chier|ver|fah|ren",
@@ -4934,6 +4958,10 @@
   "Cornflakes": [
     "Corn|fla|kes",
     "Corn|flakes"
+  ],
+  "Costa\n": [
+    "Co|sta\n",
+    "Cos|ta\n"
   ],
   "Cotta": [
     "Cot|ta",
@@ -5059,9 +5087,9 @@
     "Da|la|dier",
     "Dala|dier"
   ],
-  "Dalai": [
-    "Da|lai",
-    "Dalai"
+  "Dalai\n": [
+    "Da|lai\n",
+    "Dalai\n"
   ],
   "Damaskuserlebnis": [
     "Da|mas|ku|ser|leb|nis",
@@ -5123,9 +5151,9 @@
     "Da|r|brin|gen",
     "Dar|brin|gen"
   ],
-  "Dareios": [
-    "Da|rei|os",
-    "Darei|os"
+  "Dareios\n": [
+    "Da|rei|os\n",
+    "Darei|os\n"
   ],
   "Dareiosbild": [
     "Da|rei|os|bild",
@@ -5139,9 +5167,9 @@
     "Da|ri",
     "Dari"
   ],
-  "Darius": [
-    "Da|ri|us",
-    "Dari|us"
+  "Darius\n": [
+    "Da|ri|us\n",
+    "Dari|us\n"
   ],
   "Darlegen": [
     "Da|r|le|gen",
@@ -5183,17 +5211,17 @@
     "Da|r|win|fink",
     "Dar|win|fink"
   ],
-  "Darwinismus": [
-    "Da|r|wi|nis|mus",
-    "Dar|wi|nis|mus"
+  "Darwinismus\n": [
+    "Da|r|wi|nis|mus\n",
+    "Dar|wi|nis|mus\n"
   ],
   "Darwinist": [
     "Da|r|wi|nist",
     "Dar|wi|nist"
   ],
-  "Darß": [
-    "Da|rß",
-    "Darß"
+  "Darß\n": [
+    "Da|rß\n",
+    "Darß\n"
   ],
   "Darßbahn": [
     "Da|rß|bahn",
@@ -5219,9 +5247,9 @@
     "Da|vids|tern",
     "Da|vid|stern"
   ],
-  "Davis": [
-    "Da|vis",
-    "Davis"
+  "Davis\n": [
+    "Da|vis\n",
+    "Davis\n"
   ],
   "Daviscup": [
     "Da|vis|cup",
@@ -5303,13 +5331,13 @@
     "De|ckens|tuck",
     "De|cken|stuck"
   ],
-  "Deesen": [
-    "Dee|sen",
-    "De|e|sen"
+  "Deesen\n": [
+    "Dee|sen\n",
+    "De|e|sen\n"
   ],
-  "Deesis": [
-    "Dee|sis",
-    "De|e|sis"
+  "Deesis\n": [
+    "Dee|sis\n",
+    "De|e|sis\n"
   ],
   "Deeskalation": [
     "Dees|ka|la|ti|on",
@@ -5403,9 +5431,9 @@
     "De|men|zer|kran|kung",
     "De|menz|er|kran|kung"
   ],
-  "Demosthenes": [
-    "De|mo|sthe|nes",
-    "De|mosthe|nes"
+  "Demosthenes\n": [
+    "De|mo|sthe|nes\n",
+    "De|mosthe|nes\n"
   ],
   "Denkerstirn": [
     "Den|kerstirn",
@@ -5499,13 +5527,13 @@
     "Deskto|psys|tem",
     "Desk|top|sys|tem"
   ],
-  "Desorientiertheit": [
-    "De|so|ri|en|tiert|heit",
-    "Des|ori|en|tiert|heit"
+  "Desorientiertheit\n": [
+    "De|so|ri|en|tiert|heit\n",
+    "Des|ori|en|tiert|heit\n"
   ],
-  "Desorientierung": [
-    "De|so|ri|en|tie|rung",
-    "Des|ori|en|tie|rung"
+  "Desorientierung\n": [
+    "De|so|ri|en|tie|rung\n",
+    "Des|ori|en|tie|rung\n"
   ],
   "Desorption": [
     "De|sorp|ti|on",
@@ -5563,9 +5591,9 @@
     "Des|ti|na|ti|ons|ma|na|ge|ment",
     "De|sti|na|ti|ons|ma|nage|ment"
   ],
-  "Deszendenz": [
-    "Deszen|denz",
-    "De|szen|denz"
+  "Deszendenz\n": [
+    "Deszen|denz\n",
+    "De|szen|denz\n"
   ],
   "Deszendenztheorie": [
     "Deszen|denz|the|o|rie",
@@ -5755,9 +5783,9 @@
     "Dia|bo|lo",
     "Di|a|bo|lo"
   ],
-  "Diachronie": [
-    "Diachro|nie",
-    "Dia|chro|nie"
+  "Diachronie\n": [
+    "Diachro|nie\n",
+    "Dia|chro|nie\n"
   ],
   "Diadem": [
     "Dia|dem",
@@ -5831,9 +5859,9 @@
     "Dia|ko|nie|zen|trum",
     "Di|a|ko|nie|zen|trum"
   ],
-  "Diakonik": [
-    "Dia|ko|nik",
-    "Di|a|ko|nik"
+  "Diakonik\n": [
+    "Dia|ko|ni|k\n",
+    "Di|a|ko|ni|k\n"
   ],
   "Diakonisse": [
     "Dia|ko|nis|se",
@@ -6043,9 +6071,9 @@
     "Die|go",
     "Di|e|go"
   ],
-  "Dienlichkeit": [
-    "Dien|lich|keit",
-    "Die|n|lich|keit"
+  "Dienlichkeit\n": [
+    "Dien|lich|keit\n",
+    "Die|n|lich|keit\n"
   ],
   "Dignität": [
     "Digni|tät",
@@ -6139,9 +6167,9 @@
     "Dio|den",
     "Di|oden"
   ],
-  "Diogenes": [
-    "Dio|ge|nes",
-    "Di|o|ge|nes"
+  "Diogenes\n": [
+    "Dio|ge|nes\n",
+    "Di|o|ge|nes\n"
   ],
   "Diokletian": [
     "Dio|kle|ti|an",
@@ -6155,21 +6183,21 @@
     "Dio|kle|tiansther|me",
     "Di|o|kle|tiansther|me"
   ],
-  "Dionysios": [
-    "Dio|ny|si|os",
-    "Di|o|ny|si|os"
+  "Dionysios\n": [
+    "Dio|ny|sios\n",
+    "Di|o|ny|si|os\n"
   ],
-  "Dionysius": [
-    "Dio|ny|si|us",
-    "Di|o|ny|si|us"
+  "Dionysius\n": [
+    "Dio|ny|si|us\n",
+    "Di|o|ny|si|us\n"
   ],
   "Dionysiusflut": [
     "Dio|ny|si|us|flut",
     "Di|o|ny|si|us|flut"
   ],
-  "Dionysos": [
-    "Dio|ny|sos",
-    "Di|o|ny|sos"
+  "Dionysos\n": [
+    "Dio|ny|sos\n",
+    "Di|o|ny|sos\n"
   ],
   "Dionysostempel": [
     "Dio|ny|so|stem|pel",
@@ -6187,21 +6215,21 @@
     "Dio|rit",
     "Di|o|rit"
   ],
-  "Dioscurides": [
-    "Dios|cu|ri|des",
-    "Di|os|cu|ri|des"
+  "Dioscurides\n": [
+    "Dios|cu|ri|des\n",
+    "Di|os|cu|ri|des\n"
   ],
-  "Dioskuren": [
-    "Dios|ku|ren",
-    "Di|os|ku|ren"
+  "Dioskuren\n": [
+    "Dios|ku|ren\n",
+    "Di|os|ku|ren\n"
   ],
   "Dioskurentempel": [
     "Dios|ku|ren|tem|pel",
     "Di|os|ku|ren|tem|pel"
   ],
-  "Dioskurides": [
-    "Dios|ku|ri|des",
-    "Di|os|ku|ri|des"
+  "Dioskurides\n": [
+    "Dios|ku|ri|des\n",
+    "Di|os|ku|ri|des\n"
   ],
   "Diptam": [
     "Dip|tam",
@@ -6215,9 +6243,9 @@
     "Di|sagio|kos|ten",
     "Dis|agio|kos|ten"
   ],
-  "Disentis": [
-    "Di|sen|tis",
-    "Disen|tis"
+  "Disentis\n": [
+    "Di|sen|tis\n",
+    "Disen|tis\n"
   ],
   "Disparität": [
     "Dispa|ri|tät",
@@ -6395,9 +6423,9 @@
     "Di|öze|sen|gren|zen",
     "Di|ö|ze|sen|gren|zen"
   ],
-  "Diözie": [
-    "Di|özie",
-    "Diö|zie"
+  "Diözie\n": [
+    "Di|özie\n",
+    "Diö|zie\n"
   ],
   "Dnjepr": [
     "Dn|je|pr",
@@ -6575,9 +6603,9 @@
     "Drü|ckjagd",
     "Drück|jagd"
   ],
-  "Dualismen": [
-    "Dua|lis|men",
-    "Du|a|lis|men"
+  "Dualismen\n": [
+    "Dua|lis|men\n",
+    "Du|a|lis|men\n"
   ],
   "Dualismus": [
     "Dua|lis|mus",
@@ -6855,9 +6883,9 @@
     "Edin|bur|gh",
     "Edin|burgh"
   ],
-  "Edinburgher": [
-    "Edin|bur|gher",
-    "Edin|burgher"
+  "Edinburgher\n": [
+    "Edin|bur|gher\n",
+    "Edin|burgher\n"
   ],
   "Editorinstallation": [
     "Edi|to|rin|stal|la|ti|on",
@@ -6871,9 +6899,9 @@
     "Edu|s|cho",
     "Edu|scho"
   ],
-  "Effeff": [
-    "Ef|feff",
-    "Eff|eff"
+  "Effeff\n": [
+    "Ef|feff\n",
+    "Eff|eff\n"
   ],
   "Eheanbahnungsinstitut": [
     "Ehean|bah|nungs|in|sti|tut",
@@ -6883,9 +6911,9 @@
     "Ehrab|schnei|der",
     "Ehr|ab|schnei|der"
   ],
-  "Ehrabschneiderei": [
-    "Ehrab|schnei|de|rei",
-    "Ehr|ab|schnei|de|rei"
+  "Ehrabschneiderei\n": [
+    "Ehrab|schnei|de|rei\n",
+    "Ehr|ab|schnei|de|rei\n"
   ],
   "Ehrang": [
     "Ehrang",
@@ -6903,9 +6931,9 @@
     "Ehren|amt|ler",
     "Eh|ren|amt|ler"
   ],
-  "Ehrenamtlichkeit": [
-    "Ehren|amt|lich|keit",
-    "Eh|ren|amt|lich|keit"
+  "Ehrenamtlichkeit\n": [
+    "Ehren|amt|lich|keit\n",
+    "Eh|ren|amt|lich|keit\n"
   ],
   "Ehrenbezeigung": [
     "Ehren|be|zei|gung",
@@ -6927,9 +6955,9 @@
     "Ehren|gast",
     "Eh|ren|gast"
   ],
-  "Ehrenhaftigkeit": [
-    "Ehren|haf|tig|keit",
-    "Eh|ren|haf|tig|keit"
+  "Ehrenhaftigkeit\n": [
+    "Ehren|haf|tig|keit\n",
+    "Eh|ren|haf|tig|keit\n"
   ],
   "Ehrenhändel": [
     "Ehren|hän|del",
@@ -7183,13 +7211,13 @@
     "Enan|tio|me|ren|form",
     "En|an|tio|me|ren|form"
   ],
-  "Enantiomerie": [
-    "Enan|tio|me|rie",
-    "En|an|tio|me|rie"
+  "Enantiomerie\n": [
+    "Enan|tio|me|rie\n",
+    "En|an|tio|me|rie\n"
   ],
-  "Enceladus": [
-    "En|ce|la|dus",
-    "Ence|la|dus"
+  "Enceladus\n": [
+    "En|ce|la|dus\n",
+    "Ence|la|dus\n"
   ],
   "Endabschalter": [
     "En|dab|schal|ter",
@@ -7231,9 +7259,9 @@
     "En|gagie|ren",
     "En|ga|gie|ren"
   ],
-  "Engagiertheit": [
-    "En|gagiert|heit",
-    "En|ga|giert|heit"
+  "Engagiertheit\n": [
+    "En|gagiert|heit\n",
+    "En|ga|giert|heit\n"
   ],
   "Engelschar": [
     "En|gel|schar",
@@ -7247,9 +7275,9 @@
     "Enk|heim",
     "En|kheim"
   ],
-  "Enklitika": [
-    "Enk|li|ti|ka",
-    "En|kli|ti|ka"
+  "Enklitika\n": [
+    "Enk|li|ti|ka\n",
+    "En|kli|ti|ka\n"
   ],
   "Ensslin": [
     "Enss|lin",
@@ -7267,9 +7295,9 @@
     "En|ta|se",
     "Entase"
   ],
-  "Entasis": [
-    "En|ta|sis",
-    "Entasis"
+  "Entasis\n": [
+    "En|ta|sis\n",
+    "Entasis\n"
   ],
   "Entasten": [
     "En|tas|ten",
@@ -7387,9 +7415,9 @@
     "Ep|fen|dorf",
     "Epfen|dorf"
   ],
-  "Epikureismus": [
-    "Epi|ku|reis|mus",
-    "Epi|ku|re|is|mus"
+  "Epikureismus\n": [
+    "Epi|ku|reis|mus\n",
+    "Epi|ku|re|is|mus\n"
   ],
   "Epoxyd": [
     "Epoxyd",
@@ -7459,9 +7487,9 @@
     "Er|bun|ter|tä|nig|keit",
     "Erb|un|ter|tä|nig|keit"
   ],
-  "Erbunwürdigkeit": [
-    "Er|bun|wür|dig|keit",
-    "Erb|un|wür|dig|keit"
+  "Erbunwürdigkeit\n": [
+    "Er|bun|wür|dig|keit\n",
+    "Erb|un|wür|dig|keit\n"
   ],
   "Erdinnere": [
     "Er|din|ne|re",
@@ -7503,9 +7531,9 @@
     "Erin|nye",
     "Er|in|nye"
   ],
-  "Erinnys": [
-    "Erin|nys",
-    "Er|in|nys"
+  "Erinnys\n": [
+    "Erin|nys\n",
+    "Er|in|nys\n"
   ],
   "Erklimmen": [
     "Erklim|men",
@@ -7759,9 +7787,9 @@
     "Exal|ta|ti|on",
     "Ex|al|ta|ti|on"
   ],
-  "Exaltiertheit": [
-    "Exal|tiert|heit",
-    "Ex|al|tiert|heit"
+  "Exaltiertheit\n": [
+    "Exal|tiert|heit\n",
+    "Ex|al|tiert|heit\n"
   ],
   "Examina": [
     "Exa|mi|na",
@@ -7823,9 +7851,9 @@
     "Exem|ti|ons|pri|vi|le|gi|en",
     "Ex|em|ti|ons|pri|vi|le|gi|en"
   ],
-  "Exorzismen": [
-    "Exor|zis|men",
-    "Ex|or|zis|men"
+  "Exorzismen\n": [
+    "Exor|zis|men\n",
+    "Ex|or|zis|men\n"
   ],
   "Exorzismus": [
     "Exor|zis|mus",
@@ -7999,9 +8027,9 @@
     "Fa|lai|se",
     "Falai|se"
   ],
-  "Falangismus": [
-    "Fa|lan|gis|mus",
-    "Falan|gis|mus"
+  "Falangismus\n": [
+    "Fa|lan|gis|mus\n",
+    "Falan|gis|mus\n"
   ],
   "Falkenauge": [
     "Fal|ke|n|au|ge",
@@ -8103,9 +8131,9 @@
     "Fanal",
     "Fa|nal"
   ],
-  "Fanausschreitungen": [
-    "Fanaus|schrei|tun|gen",
-    "Fa|naus|schrei|tun|gen"
+  "Fanausschreitungen\n": [
+    "Fanaus|schrei|tun|gen\n",
+    "Fa|naus|schrei|tun|gen\n"
   ],
   "Fangreflektor": [
     "Fan|g|re|flek|tor",
@@ -8711,9 +8739,9 @@
     "Fina|list",
     "Fi|na|list"
   ],
-  "Finalität": [
-    "Fina|li|tät",
-    "Fi|na|li|tät"
+  "Finalität\n": [
+    "Fina|li|tät\n",
+    "Fi|na|li|tät\n"
   ],
   "Finallauf": [
     "Final|lauf",
@@ -8911,6 +8939,10 @@
     "Fix|fo|ku|sob|jek|tiv",
     "Fix|fo|kus|ob|jek|tiv"
   ],
+  "Fkt\n": [
+    "Fk|t\n",
+    "Fkt\n"
+  ],
   "Flachsernte": [
     "Flach|sern|te",
     "Flachs|ern|te"
@@ -8995,9 +9027,9 @@
     "Fla|vier",
     "Flavier"
   ],
-  "Flavius": [
-    "Fla|vi|us",
-    "Flavi|us"
+  "Flavius\n": [
+    "Fla|vi|us\n",
+    "Flavi|us\n"
   ],
   "Flavobakterie": [
     "Fla|vo|bak|te|rie",
@@ -9063,9 +9095,9 @@
     "Flei|sche|rin|nung",
     "Flei|scher|in|nung"
   ],
-  "Fleischigkeit": [
-    "Fleis|chig|keit",
-    "Flei|schig|keit"
+  "Fleischigkeit\n": [
+    "Fleis|chig|keit\n",
+    "Flei|schig|keit\n"
   ],
   "Flettnerruder": [
     "Flettn|er|ru|der",
@@ -9131,17 +9163,17 @@
     "Fluid",
     "Flu|id"
   ],
-  "Fluida": [
-    "Flui|da",
-    "Flu|ida"
+  "Fluida\n": [
+    "Flui|da\n",
+    "Flu|ida\n"
   ],
-  "Fluidik": [
-    "Flui|dik",
-    "Flu|idik"
+  "Fluidik\n": [
+    "Flui|di|k\n",
+    "Flu|idi|k\n"
   ],
-  "Fluidität": [
-    "Flui|di|tät",
-    "Flu|idi|tät"
+  "Fluidität\n": [
+    "Flui|di|tät\n",
+    "Flu|idi|tät\n"
   ],
   "Fluidmechanik": [
     "Fluid|me|cha|nik",
@@ -9923,6 +9955,10 @@
     "Funk|ti|onen|the|o|rie",
     "Funk|ti|o|nen|the|o|rie"
   ],
+  "Funktionierens\n": [
+    "Funk|ti|o|nie|ren|s\n",
+    "Funk|ti|o|nie|rens\n"
+  ],
   "Funktionsarthrografie": [
     "Funk|ti|onsar|thro|gra|fie",
     "Funk|ti|ons|ar|thro|gra|fie"
@@ -10055,6 +10091,10 @@
     "Ga|bler",
     "Gab|ler"
   ],
+  "Gal\n": [
+    "Ga|l\n",
+    "Gal\n"
+  ],
   "Galaxienhaufen": [
     "Ga|la|xien|hau|fen",
     "Ga|la|xi|en|hau|fen"
@@ -10131,9 +10171,9 @@
     "Ga|l|va|ni|sie|rungs|pro|zess",
     "Gal|va|ni|sie|rungs|pro|zess"
   ],
-  "Galvanismus": [
-    "Ga|l|va|nis|mus",
-    "Gal|va|nis|mus"
+  "Galvanismus\n": [
+    "Ga|l|va|nis|mus\n",
+    "Gal|va|nis|mus\n"
   ],
   "Galvanometer": [
     "Ga|l|va|no|me|ter",
@@ -10163,9 +10203,9 @@
     "Ga|me|boy",
     "Game|boy"
   ],
-  "Gamelan": [
-    "Ga|me|lan",
-    "Game|lan"
+  "Gamelan\n": [
+    "Ga|me|lan\n",
+    "Game|lan\n"
   ],
   "Gamelanorchester": [
     "Ga|me|la|nor|ches|ter",
@@ -10403,9 +10443,9 @@
     "Ga|te|lei|tung",
     "Gate|lei|tung"
   ],
-  "Gates": [
-    "Ga|tes",
-    "Gates"
+  "Gates\n": [
+    "Ga|tes\n",
+    "Gates\n"
   ],
   "Gateway": [
     "Ga|te|way",
@@ -10683,13 +10723,13 @@
     "Ge|or|gier",
     "Ge|or|gi|er"
   ],
-  "Georgios": [
-    "Ge|or|gi|os",
-    "Georgi|os"
+  "Georgios\n": [
+    "Ge|or|gi|o|s\n",
+    "Georgi|o|s\n"
   ],
-  "Georgius": [
-    "Ge|or|gi|us",
-    "Georgi|us"
+  "Georgius\n": [
+    "Ge|or|gi|us\n",
+    "Georgi|us\n"
   ],
   "Georgsfeld": [
     "Ge|orgs|feld",
@@ -10823,9 +10863,9 @@
     "Gerad|füh|rung",
     "Ge|rad|füh|rung"
   ],
-  "Geradheit": [
-    "Gerad|heit",
-    "Ge|rad|heit"
+  "Geradheit\n": [
+    "Gerad|heit\n",
+    "Ge|rad|heit\n"
   ],
   "Geradlage": [
     "Gerad|la|ge",
@@ -11463,21 +11503,25 @@
     "Gna|de|nin|stanz",
     "Gna|den|in|stanz"
   ],
-  "Gnostik": [
-    "Gno|s|tik",
-    "Gnos|tik"
+  "Gnostik\n": [
+    "Gno|s|ti|k\n",
+    "Gnos|ti|k\n"
   ],
   "Gnostiker": [
     "Gno|s|ti|ker",
     "Gnos|ti|ker"
   ],
-  "Goebbels": [
-    "Go|eb|bels",
-    "Goeb|bels"
+  "Goebbels\n": [
+    "Go|eb|bels\n",
+    "Goebbels\n"
   ],
-  "Goebenstraße": [
-    "Go|eben|stra|ße",
-    "Goe|ben|stra|ße"
+  "Goebenstraße\n": [
+    "Go|eben|stra|ße\n",
+    "Goe|ben|stra|ße\n"
+  ],
+  "Gog\n": [
+    "Go|g\n",
+    "Gog\n"
   ],
   "Gogh": [
     "Go|gh",
@@ -11511,9 +11555,9 @@
     "Gon|do|lie|re",
     "Gon|do|li|e|re"
   ],
-  "Gondolieri": [
-    "Gon|do|lie|ri",
-    "Gon|do|li|e|ri"
+  "Gondolieri\n": [
+    "Gon|do|lie|ri\n",
+    "Gon|do|li|e|ri\n"
   ],
   "Goral": [
     "Goral",
@@ -11771,13 +11815,13 @@
     "Grü|belei",
     "Grü|be|lei"
   ],
-  "Grützwurst": [
-    "Grützwurst",
-    "Grütz|wurst"
+  "Grützwurst\n": [
+    "Grützwur|st\n",
+    "Grütz|wur|st\n"
   ],
-  "Guadalquivir": [
-    "Gua|dal|qui|vir",
-    "Guadal|qui|vir"
+  "Guadalquivir\n": [
+    "Gua|dal|qui|vir\n",
+    "Guadal|qui|vir\n"
   ],
   "Guadeloupe": [
     "Gua|de|lou|pe",
@@ -11847,9 +11891,9 @@
     "Gui|ness|buch",
     "Gu|i|ness|buch"
   ],
-  "Guinness": [
-    "Guin|ness",
-    "Gu|i|n|ness"
+  "Guinness\n": [
+    "Guin|ness\n",
+    "Gu|i|n|ness\n"
   ],
   "Gustav": [
     "Gu|stav",
@@ -12179,9 +12223,9 @@
     "Ha|rf|ner|lied|vor|la|ge",
     "Harf|ner|lied|vor|la|ge"
   ],
-  "Harle": [
-    "Ha|r|le",
-    "Har|le"
+  "Harle\n": [
+    "Ha|r|le\n",
+    "Har|le\n"
   ],
   "Harlebucht": [
     "Ha|r|le|bucht",
@@ -12207,9 +12251,9 @@
     "Ha|rle|stadt",
     "Harle|stadt"
   ],
-  "Harlinger": [
-    "Ha|r|lin|ger",
-    "Har|lin|ger"
+  "Harlinger\n": [
+    "Ha|r|lin|ger\n",
+    "Har|lin|ger\n"
   ],
   "Harlingerland": [
     "Ha|r|lin|ger|land",
@@ -12503,6 +12547,10 @@
     "Ha|wai|i|gi|tar|re",
     "Ha|waii|gi|tar|re"
   ],
+  "Hbf\n": [
+    "Hb|f\n",
+    "Hbf\n"
+  ],
   "Hebeinstrument": [
     "He|bein|stru|ment",
     "He|be|in|stru|ment"
@@ -12523,9 +12571,9 @@
     "Hechtrol|le",
     "Hecht|rol|le"
   ],
-  "Hedschas": [
-    "Hed|schas",
-    "He|dschas"
+  "Hedschas\n": [
+    "Hed|schas\n",
+    "He|dschas\n"
   ],
   "Hedschasbahn": [
     "Hed|schas|bahn",
@@ -12583,9 +12631,9 @@
     "Hei|ligabend",
     "Hei|lig|abend"
   ],
-  "Heilsamkeit": [
-    "Heil|sam|keit",
-    "Heils|am|keit"
+  "Heilsamkeit\n": [
+    "Heil|sam|keit\n",
+    "Heils|am|keit\n"
   ],
   "Heilsangebot": [
     "Heil|san|ge|bot",
@@ -12675,9 +12723,9 @@
     "He|mer",
     "Hemer"
   ],
-  "Hemeraner": [
-    "He|me|ra|ner",
-    "Heme|ra|ner"
+  "Hemeraner\n": [
+    "He|me|ra|ner\n",
+    "Heme|ra|ner\n"
   ],
   "Hemerer": [
     "He|me|rer",
@@ -12694,6 +12742,10 @@
   "Hemithyreoidektomie": [
     "He|mi|t|hy|reoi|dek|to|mie",
     "He|mi|thy|reoi|dek|to|mie"
+  ],
+  "Hephaistos\n": [
+    "He|phais|to|s\n",
+    "He|phais|tos\n"
   ],
   "Hephaistostempel": [
     "He|phais|to|stem|pel",
@@ -12715,9 +12767,9 @@
     "Herab|re|gu|lie|ren",
     "Her|ab|re|gu|lie|ren"
   ],
-  "Herakles": [
-    "Hera|kles",
-    "He|ra|kles"
+  "Herakles\n": [
+    "Hera|kles\n",
+    "He|ra|kles\n"
   ],
   "Heraklesbild": [
     "Hera|kles|bild",
@@ -12899,9 +12951,9 @@
     "Herd|wa|ge|nofen",
     "Herd|wa|gen|ofen"
   ],
-  "Heredität": [
-    "He|re|di|tät",
-    "Here|di|tät"
+  "Heredität\n": [
+    "He|re|di|tät\n",
+    "Here|di|tät\n"
   ],
   "Hereinfall": [
     "He|rein|fall",
@@ -13079,9 +13131,9 @@
     "Hexa|chlo|ro|pla|ti|nat",
     "He|xa|chlo|ro|pla|ti|nat"
   ],
-  "Hexadaktylie": [
-    "Hexa|dak|ty|lie",
-    "He|xa|dak|ty|lie"
+  "Hexadaktylie\n": [
+    "Hexa|dak|ty|lie\n",
+    "He|xa|dak|ty|lie\n"
   ],
   "Hexadezimalanzeige": [
     "Hexa|de|zi|ma|lan|zei|ge",
@@ -13171,9 +13223,9 @@
     "Hexyl|grup|pe",
     "He|xyl|grup|pe"
   ],
-  "Hiatus": [
-    "Hia|tus",
-    "Hi|a|tus"
+  "Hiatus\n": [
+    "Hia|tus\n",
+    "Hi|a|tus\n"
   ],
   "Hierarchie": [
     "Hier|ar|chie",
@@ -13203,9 +13255,9 @@
     "Hie|ro|gly|phen|zei|chen",
     "Hi|e|ro|gly|phen|zei|chen"
   ],
-  "Hieronymus": [
-    "Hie|rony|mus",
-    "Hi|e|ro|ny|mus"
+  "Hieronymus\n": [
+    "Hie|rony|mus\n",
+    "Hi|e|ro|ny|mus\n"
   ],
   "Highlife": [
     "Highli|fe",
@@ -13279,6 +13331,10 @@
     "Hint|schin|gen",
     "Hin|t|schin|gen"
   ],
+  "Hinz\n": [
+    "Hinz\n",
+    "Hin|z\n"
+  ],
   "Hiob": [
     "Hiob",
     "Hi|ob"
@@ -13347,9 +13403,9 @@
     "Hochal|pen",
     "Hoch|al|pen"
   ],
-  "Hochnäsigkeit": [
-    "Hochnä|sig|keit",
-    "Hoch|nä|sig|keit"
+  "Hochnäsigkeit\n": [
+    "Hochnä|sig|keit\n",
+    "Hoch|nä|sig|keit\n"
   ],
   "Hochofenabstich": [
     "Hochofe|n|ab|stich",
@@ -13415,9 +13471,9 @@
     "Holan|wei|sung",
     "Hol|an|wei|sung"
   ],
-  "Holarktis": [
-    "Ho|lark|tis",
-    "Hol|ark|tis"
+  "Holarktis\n": [
+    "Ho|lark|tis\n",
+    "Hol|ark|tis\n"
   ],
   "Holocaustopfer": [
     "Ho|lo|cau|stop|fer",
@@ -13431,9 +13487,9 @@
     "Hol|stei|ner",
     "Hols|tei|ner"
   ],
-  "Holsten": [
-    "Hol|s|ten",
-    "Hols|ten"
+  "Holsten\n": [
+    "Hol|s|ten\n",
+    "Hols|ten\n"
   ],
   "Holstentor": [
     "Hol|s|ten|tor",
@@ -13483,9 +13539,9 @@
     "Ho|meraus|ga|be",
     "Homeraus|ga|be"
   ],
-  "Homert": [
-    "Ho|mert",
-    "Homert"
+  "Homert\n": [
+    "Ho|mer|t\n",
+    "Homer|t\n"
   ],
   "Homerübersetzung": [
     "Ho|mer|über|set|zung",
@@ -13539,9 +13595,9 @@
     "Hop|fenklee",
     "Hop|fen|klee"
   ],
-  "Horaz": [
-    "Horaz",
-    "Ho|raz"
+  "Horaz\n": [
+    "Hora|z\n",
+    "Ho|ra|z\n"
   ],
   "Horndrechsler": [
     "Hornd|rechs|ler",
@@ -13783,9 +13839,9 @@
     "Hy|dera|bad",
     "Hydera|bad"
   ],
-  "Hydrien": [
-    "Hy|dri|en",
-    "Hydri|en"
+  "Hydrien\n": [
+    "Hy|dri|en\n",
+    "Hydri|en\n"
   ],
   "Hydroxid": [
     "Hy|droxid",
@@ -13835,17 +13891,17 @@
     "Hyper|re|a|li|tät",
     "Hy|per|re|a|li|tät"
   ],
-  "Hypochondrie": [
-    "Hy|po|chondrie",
-    "Hy|po|chon|drie"
+  "Hypochondrie\n": [
+    "Hy|po|chondrie\n",
+    "Hy|po|chon|drie\n"
   ],
   "Hyponym": [
     "Hy|po|nym",
     "Hyp|onym"
   ],
-  "Hyponymie": [
-    "Hy|po|ny|mie",
-    "Hyp|ony|mie"
+  "Hyponymie\n": [
+    "Hy|po|ny|mie\n",
+    "Hyp|ony|mie\n"
   ],
   "Hypophysenstiel": [
     "Hy|po|phy|senstiel",
@@ -13947,9 +14003,9 @@
     "Iglu",
     "Ig|lu"
   ],
-  "Ignatius": [
-    "Ig|na|ti|us",
-    "Igna|ti|us"
+  "Ignatius\n": [
+    "Ig|na|ti|us\n",
+    "Igna|ti|us\n"
   ],
   "Ignatiusaltar": [
     "Ig|na|ti|u|sal|tar",
@@ -13963,9 +14019,9 @@
     "Ig|nim|brit",
     "Ignim|brit"
   ],
-  "Ileus": [
-    "Ileus",
-    "Ile|us"
+  "Ileus\n": [
+    "Ileus\n",
+    "Ile|us\n"
   ],
   "Illusionsstil": [
     "Il|lu|si|ons|s|til",
@@ -14071,9 +14127,9 @@
     "In|ak|ti|vi|täts|a|tro|phie",
     "In|ak|ti|vi|täts|atro|phie"
   ],
-  "Inangriffnahme": [
-    "Inan|griff|nah|me",
-    "In|an|griff|nah|me"
+  "Inangriffnahme\n": [
+    "Inan|griff|nah|me\n",
+    "In|an|griff|nah|me\n"
   ],
   "Inanspruchnahme": [
     "Inan|spruch|nah|me",
@@ -14183,9 +14239,9 @@
     "Iner|ti|al|sys|tem",
     "In|er|ti|al|sys|tem"
   ],
-  "Ines": [
-    "Ines",
-    "In|es"
+  "Ines\n": [
+    "Ines\n",
+    "In|es\n"
   ],
   "Inexaktheit": [
     "Inex|akt|heit",
@@ -14359,9 +14415,9 @@
     "In|fras|truk|tur|zen|trum",
     "In|fra|struk|tur|zen|trum"
   ],
-  "Ing.": [
-    "Ing.",
-    "In|g."
+  "Ing.\n": [
+    "Ing.\n",
+    "In|g.\n"
   ],
   "Ingrediens": [
     "In|gre|diens",
@@ -14651,6 +14707,10 @@
     "In|li|nes|ka|ter",
     "In|line|ska|ter"
   ],
+  "Inn\n": [
+    "Inn\n",
+    "In|n\n"
+  ],
   "Innbrücke": [
     "Inn|brü|cke",
     "In|n|brü|cke"
@@ -14675,13 +14735,17 @@
     "In|si|g|ne",
     "In|si|gne"
   ],
+  "Inst\n": [
+    "Inst\n",
+    "In|st\n"
+  ],
   "Insterburg": [
     "Ins|ter|burg",
     "In|s|ter|burg"
   ],
-  "Institionismus": [
-    "Ins|ti|ti|o|nis|mus",
-    "In|sti|ti|o|nis|mus"
+  "Institionismus\n": [
+    "Ins|ti|ti|o|nis|mus\n",
+    "In|sti|ti|o|nis|mus\n"
   ],
   "Inszenator": [
     "Ins|ze|na|tor",
@@ -14743,9 +14807,9 @@
     "In|ter|ak|ti|vi|tät",
     "In|terak|ti|vi|tät"
   ],
-  "Interdefinierbarkeit": [
-    "In|t|er|de|fi|nier|bar|keit",
-    "In|ter|de|fi|nier|bar|keit"
+  "Interdefinierbarkeit\n": [
+    "In|t|er|de|fi|nier|bar|keit\n",
+    "In|ter|de|fi|nier|bar|keit\n"
   ],
   "Interessensallianz": [
     "In|ter|es|sens|al|li|anz",
@@ -14879,9 +14943,9 @@
     "Int|ri|gant",
     "In|tri|gant"
   ],
-  "Intriganz": [
-    "Int|ri|ganz",
-    "In|tri|ganz"
+  "Intriganz\n": [
+    "Int|ri|ganz\n",
+    "In|tri|ganz\n"
   ],
   "Intrige": [
     "Int|ri|ge",
@@ -14963,9 +15027,9 @@
     "Is|chias|neur|al|gie",
     "Is|chi|as|neur|al|gie"
   ],
-  "Ischämie": [
-    "Ischä|mie",
-    "Isch|ämie"
+  "Ischämie\n": [
+    "Ischä|mi|e\n",
+    "Isch|ämi|e\n"
   ],
   "Isolationseinrichtung": [
     "Iso|la|ti|on|s|ein|rich|tung",
@@ -15015,9 +15079,9 @@
     "Jac|que|li|ne",
     "Jacque|li|ne"
   ],
-  "Jacques": [
-    "Jac|ques",
-    "Jacques"
+  "Jacques\n": [
+    "Jac|ques\n",
+    "Jacques\n"
   ],
   "Jahrmarktsplätze": [
     "Jahr|markt|splät|ze",
@@ -15071,9 +15135,9 @@
     "Ja|maikap|fef|fer",
     "Ja|mai|ka|pfef|fer"
   ],
-  "James": [
-    "Ja|mes",
-    "James"
+  "James\n": [
+    "Ja|mes\n",
+    "James\n"
   ],
   "Janeiro": [
     "Ja|nei|ro",
@@ -15423,17 +15487,17 @@
     "Ka|l|va|ri|en|berg|kir|che",
     "Kal|va|ri|en|berg|kir|che"
   ],
-  "Kalvinismus": [
-    "Ka|l|vi|nis|mus",
-    "Kal|vi|nis|mus"
+  "Kalvinismus\n": [
+    "Ka|l|vi|nis|mus\n",
+    "Kal|vi|nis|mus\n"
   ],
   "Kalvinist": [
     "Ka|l|vi|nist",
     "Kal|vi|nist"
   ],
-  "Kalzifikation": [
-    "Ka|l|zi|fi|ka|ti|on",
-    "Kal|zi|fi|ka|ti|on"
+  "Kalzifikation\n": [
+    "Ka|l|zi|fi|ka|ti|o|n\n",
+    "Kal|zi|fi|ka|ti|o|n\n"
   ],
   "Kalzit": [
     "Ka|l|zit",
@@ -15511,9 +15575,9 @@
     "Kamts|chat|ka|bi|ber",
     "Kam|ts|chat|ka|bi|ber"
   ],
-  "Kanaan": [
-    "Kanaan",
-    "Ka|na|an"
+  "Kanaan\n": [
+    "Kanaan\n",
+    "Ka|na|an\n"
   ],
   "Kanaaniter": [
     "Kanaa|ni|ter",
@@ -15939,9 +16003,9 @@
     "Ka|rl|chen",
     "Karl|chen"
   ],
-  "Karlheinz": [
-    "Ka|rlheinz",
-    "Karl|heinz"
+  "Karlheinz\n": [
+    "Ka|rlheinz\n",
+    "Karl|heinz\n"
   ],
   "Karlist": [
     "Ka|r|list",
@@ -15951,9 +16015,9 @@
     "Ka|rl|mann",
     "Karl|mann"
   ],
-  "Karlowitz": [
-    "Ka|r|lo|wi|tz",
-    "Kar|lo|wi|tz"
+  "Karlowitz\n": [
+    "Ka|r|lo|wi|tz\n",
+    "Kar|lo|wi|tz\n"
   ],
   "Karlsbad": [
     "Ka|rls|bad",
@@ -15991,9 +16055,9 @@
     "Ka|rls|fest",
     "Karls|fest"
   ],
-  "Karlsfurter": [
-    "Ka|rls|fur|ter",
-    "Karls|fur|ter"
+  "Karlsfurter\n": [
+    "Ka|rls|fur|ter\n",
+    "Karls|fur|ter\n"
   ],
   "Karlsgraben": [
     "Ka|rls|gra|ben",
@@ -16163,13 +16227,13 @@
     "Ka|r|pell",
     "Kar|pell"
   ],
-  "Karpella": [
-    "Ka|r|pel|la",
-    "Kar|pel|la"
+  "Karpella\n": [
+    "Ka|r|pel|la\n",
+    "Kar|pel|la\n"
   ],
-  "Karpellum": [
-    "Ka|r|pel|lum",
-    "Kar|pel|lum"
+  "Karpellum\n": [
+    "Ka|r|pel|lum\n",
+    "Kar|pel|lum\n"
   ],
   "Karpfen": [
     "Ka|r|pfen",
@@ -16219,9 +16283,9 @@
     "Kar|tel|lent|flech|tungs|be|hör|de",
     "Kar|tell|ent|flech|tungs|be|hör|de"
   ],
-  "Karwendel": [
-    "Ka|r|wen|del",
-    "Kar|wen|del"
+  "Karwendel\n": [
+    "Ka|r|wen|del\n",
+    "Kar|wen|del\n"
   ],
   "Karwendelbahn": [
     "Ka|r|wen|del|bahn",
@@ -16503,6 +16567,10 @@
     "Ket|ten|k|lir|ren",
     "Ket|ten|klir|ren"
   ],
+  "Kfz\n": [
+    "Kf|z\n",
+    "Kfz\n"
+  ],
   "Khakifrucht": [
     "Kha|kifrucht",
     "Kha|ki|frucht"
@@ -16683,9 +16751,9 @@
     "Kitha|ra",
     "Ki|tha|ra"
   ],
-  "Kitharen": [
-    "Kitha|ren",
-    "Ki|tha|ren"
+  "Kitharen\n": [
+    "Kitha|ren\n",
+    "Ki|tha|ren\n"
   ],
   "Kitschroman": [
     "Kit|schro|man",
@@ -16694,6 +16762,10 @@
   "Kladderadatsch": [
     "Klad|dera|datsch",
     "Klad|de|ra|datsch"
+  ],
+  "Klagens\n": [
+    "Kla|gen|s\n",
+    "Kla|gens\n"
   ],
   "Klarheitshriterium": [
     "Klar|heitshri|te|ri|um",
@@ -16711,9 +16783,9 @@
     "Klau|b|ar|beit",
     "Klaub|ar|beit"
   ],
-  "Klaustrophilie": [
-    "Klaustro|phi|lie",
-    "Klaus|tro|phi|lie"
+  "Klaustrophilie\n": [
+    "Klaustro|phi|lie\n",
+    "Klaus|tro|phi|lie\n"
   ],
   "Klaustrophobie": [
     "Klaustro|pho|bie",
@@ -16723,9 +16795,9 @@
     "Kle|be|rei|weiß",
     "Kle|ber|ei|weiß"
   ],
-  "Klebrigkeit": [
-    "Kle|b|rig|keit",
-    "Kleb|rig|keit"
+  "Klebrigkeit\n": [
+    "Kle|b|rig|keit\n",
+    "Kleb|rig|keit\n"
   ],
   "Klebstoffauftragdüse": [
     "Kleb|stof|fauf|trag|dü|se",
@@ -16859,9 +16931,9 @@
     "Kno|chen|mark|s|pen|der|da|tei",
     "Kno|chen|mark|spen|der|da|tei"
   ],
-  "Knox": [
-    "Kn|ox",
-    "Knox"
+  "Knox\n": [
+    "Kn|ox\n",
+    "Knox\n"
   ],
   "Knutschecke": [
     "Knut|sche|cke",
@@ -17087,9 +17159,9 @@
     "Ko|me|te|n|er|schei|nung",
     "Ko|me|ten|er|schei|nung"
   ],
-  "Komintern": [
-    "Ko|min|tern",
-    "Komin|tern"
+  "Komintern\n": [
+    "Ko|min|tern\n",
+    "Komin|tern\n"
   ],
   "Kommaausrichtung": [
     "Kom|maaus|rich|tung",
@@ -17363,9 +17435,9 @@
     "Kope|ke",
     "Ko|pe|ke"
   ],
-  "Kopflastigkeit": [
-    "Kopflas|tig|keit",
-    "Kopf|las|tig|keit"
+  "Kopflastigkeit\n": [
+    "Kopflas|tig|keit\n",
+    "Kopf|las|tig|keit\n"
   ],
   "Koralle": [
     "Koral|le",
@@ -17707,9 +17779,9 @@
     "Kre|di|tun|wür|dig|keit",
     "Kre|dit|un|wür|dig|keit"
   ],
-  "Kreiensen": [
-    "Krei|en|sen",
-    "Kre|i|en|sen"
+  "Kreiensen\n": [
+    "Krei|en|sen\n",
+    "Kre|i|en|sen\n"
   ],
   "Kreieren": [
     "Krei|e|ren",
@@ -17919,9 +17991,9 @@
     "Kurzaus|lei|he",
     "Kurz|aus|lei|he"
   ],
-  "Kurzweil": [
-    "Kurzweil",
-    "Kurz|weil"
+  "Kurzweil\n": [
+    "Kurzweil\n",
+    "Kurz|weil\n"
   ],
   "Kurzzeiterhitzung": [
     "Kurz|zei|ter|hit|zung",
@@ -18555,9 +18627,9 @@
     "Lei|n|öl|fir|nis",
     "Lein|öl|fir|nis"
   ],
-  "Leitha": [
-    "Lei|t|ha",
-    "Lei|tha"
+  "Leitha\n": [
+    "Leit|ha\n",
+    "Lei|tha\n"
   ],
   "Leithagebirge": [
     "Leit|ha|ge|bir|ge",
@@ -18587,9 +18659,9 @@
     "Leon|berg",
     "Le|o|n|berg"
   ],
-  "Leonberger": [
-    "Leon|ber|ger",
-    "Le|o|n|ber|ger"
+  "Leonberger\n": [
+    "Leon|ber|ger\n",
+    "Le|o|n|ber|ger\n"
   ],
   "Leonding": [
     "Leon|ding",
@@ -18738,6 +18810,10 @@
   "Lianenwälder": [
     "Lia|nen|wäl|der",
     "Li|a|nen|wäl|der"
+  ],
+  "Lias\n": [
+    "Lias\n",
+    "Li|as\n"
   ],
   "Liasformation": [
     "Lias|for|ma|ti|on",
@@ -18927,6 +19003,10 @@
     "Li|non",
     "Linon"
   ],
+  "Linotype\n": [
+    "Li|no|type\n",
+    "Linotype\n"
+  ],
   "Linotypemaschine": [
     "Li|no|type|ma|schi|ne",
     "Linotype|ma|schi|ne"
@@ -19019,9 +19099,9 @@
     "Li|ving|sto|ne",
     "Living|sto|ne"
   ],
-  "Livius": [
-    "Li|vi|us",
-    "Livi|us"
+  "Livius\n": [
+    "Li|vi|us\n",
+    "Livi|us\n"
   ],
   "Livornese": [
     "Li|vor|ne|se",
@@ -19451,17 +19531,17 @@
     "Ma|g|ni|tu|de",
     "Ma|gni|tu|de"
   ],
-  "Magnum": [
-    "Ma|g|num",
-    "Ma|gnum"
+  "Magnum\n": [
+    "Ma|g|num\n",
+    "Ma|gnum\n"
   ],
   "Magnumflasche": [
     "Ma|g|num|fla|sche",
     "Ma|gnum|fla|sche"
   ],
-  "Magnus": [
-    "Ma|g|nus",
-    "Ma|gnus"
+  "Magnus\n": [
+    "Ma|g|nus\n",
+    "Ma|gnus\n"
   ],
   "Mahagonischrank": [
     "Ma|ha|go|nischrank",
@@ -19527,9 +19607,9 @@
     "Ma|kel",
     "Makel"
   ],
-  "Makellosigkeit": [
-    "Ma|kel|lo|sig|keit",
-    "Makel|lo|sig|keit"
+  "Makellosigkeit\n": [
+    "Ma|kel|lo|sig|keit\n",
+    "Makel|lo|sig|keit\n"
   ],
   "Maklergebühr": [
     "Makler|ge|bühr",
@@ -19587,9 +19667,9 @@
     "Ma|lu|ku",
     "Ma|luku"
   ],
-  "Malutensilien": [
-    "Ma|lu|ten|si|li|en",
-    "Maluten|si|li|en"
+  "Malutensilien\n": [
+    "Ma|lu|ten|si|li|en\n",
+    "Maluten|si|li|en\n"
   ],
   "Malve": [
     "Ma|l|ve",
@@ -19715,9 +19795,9 @@
     "Man|dan|ten|kreis",
     "Mandan|ten|kreis"
   ],
-  "Mandarin": [
-    "Man|da|rin",
-    "Manda|rin"
+  "Mandarin\n": [
+    "Man|da|rin\n",
+    "Manda|rin\n"
   ],
   "Mandarine": [
     "Man|da|ri|ne",
@@ -19875,9 +19955,9 @@
     "Ma|r|cel|lo",
     "Mar|cel|lo"
   ],
-  "Marcellus": [
-    "Ma|r|cel|lus",
-    "Mar|cel|lus"
+  "Marcellus\n": [
+    "Ma|r|cel|lus\n",
+    "Mar|cel|lus\n"
   ],
   "Marcellusflut": [
     "Ma|r|cel|lus|flut",
@@ -19895,9 +19975,9 @@
     "Ma|r|co",
     "Mar|co"
   ],
-  "Marcus": [
-    "Ma|r|cus",
-    "Mar|cus"
+  "Marcus\n": [
+    "Ma|r|cus\n",
+    "Mar|cus\n"
   ],
   "Marcuse": [
     "Ma|r|cu|se",
@@ -19955,9 +20035,9 @@
     "Ma|rl",
     "Marl"
   ],
-  "Marlboro": [
-    "Ma|rl|bo|ro",
-    "Marl|bo|ro"
+  "Marlboro\n": [
+    "Ma|rl|bo|ro\n",
+    "Marl|bo|ro\n"
   ],
   "Marlene": [
     "Ma|r|le|ne",
@@ -19967,9 +20047,9 @@
     "Ma|r|ler",
     "Mar|ler"
   ],
-  "Marlies": [
-    "Ma|r|lies",
-    "Mar|lies"
+  "Marlies\n": [
+    "Ma|r|lies\n",
+    "Mar|lies\n"
   ],
   "Marlon": [
     "Ma|r|lon",
@@ -20007,9 +20087,9 @@
     "Mars|halb|ku|gel",
     "Marshalb|ku|gel"
   ],
-  "Marshallinseln": [
-    "Mars|hal|lin|seln",
-    "Mar|shall|in|seln"
+  "Marshallinseln\n": [
+    "Mars|hal|lin|seln\n",
+    "Mar|shall|in|seln\n"
   ],
   "Marshallplan": [
     "Mars|hall|plan",
@@ -20059,9 +20139,9 @@
     "Ma|r|vin",
     "Mar|vin"
   ],
-  "Marx": [
-    "Ma|rx",
-    "Marx"
+  "Marx\n": [
+    "Ma|r|x\n",
+    "Mar|x\n"
   ],
   "Marxismus": [
     "Ma|r|xis|mus",
@@ -20075,13 +20155,13 @@
     "Ma|r|z|abot|to",
     "Mar|z|abot|to"
   ],
-  "Marzahn": [
-    "Ma|r|zahn",
-    "Mar|zahn"
+  "Marzahn\n": [
+    "Ma|r|zahn\n",
+    "Mar|zahn\n"
   ],
-  "Marzahner": [
-    "Ma|r|zah|ner",
-    "Mar|zah|ner"
+  "Marzahner\n": [
+    "Ma|r|zah|ner\n",
+    "Mar|zah|ner\n"
   ],
   "Marzell": [
     "Ma|r|zell",
@@ -20175,9 +20255,9 @@
     "Ma|te|ri|ali|en|sam|meln",
     "Ma|te|ri|a|li|en|sam|meln"
   ],
-  "Materialisation": [
-    "Ma|te|ri|ali|sa|ti|on",
-    "Ma|te|ri|a|li|sa|ti|on"
+  "Materialisation\n": [
+    "Ma|te|ri|ali|sa|ti|o|n\n",
+    "Ma|te|ri|a|li|sa|ti|o|n\n"
   ],
   "Materialisieren": [
     "Ma|te|ri|ali|sie|ren",
@@ -20223,9 +20303,13 @@
     "Matschwet|ter",
     "Matsch|wet|ter"
   ],
-  "Matthias": [
-    "Matt|hi|as",
-    "Mat|thi|as"
+  "Matsushita\n": [
+    "Mat|su|shi|ta\n",
+    "Matsushita\n"
+  ],
+  "Matthias\n": [
+    "Matt|hias\n",
+    "Mat|thi|as\n"
   ],
   "Matthiasaltar": [
     "Matt|hia|sal|tar",
@@ -20234,6 +20318,10 @@
   "Matthiaskapelle": [
     "Matt|hias|ka|pel|le",
     "Mat|thi|as|ka|pel|le"
+  ],
+  "Matthäus\n": [
+    "Mat|thäus\n",
+    "Mat|thä|us\n"
   ],
   "Matthäusevangelium": [
     "Mat|thäu|sevan|ge|li|um",
@@ -20259,17 +20347,17 @@
     "Mau|rerblei|stift",
     "Mau|rer|blei|stift"
   ],
-  "Maurice": [
-    "Mau|ri|ce",
-    "Mau|rice"
+  "Maurice\n": [
+    "Mau|ri|ce\n",
+    "Maurice\n"
   ],
   "Mauritier": [
     "Mau|ri|tier",
     "Mau|ri|ti|er"
   ],
-  "Mauritz": [
-    "Mau|ritz",
-    "Mauritz"
+  "Mauritz\n": [
+    "Mau|ritz\n",
+    "Mauritz\n"
   ],
   "Mauselöcher": [
     "Mau|selö|cher",
@@ -20282,6 +20370,10 @@
   "Maximiliansbahn": [
     "Ma|xi|mi|lians|bahn",
     "Ma|xi|mi|li|ans|bahn"
+  ],
+  "Maximiliansbahn\n": [
+    "Ma|xi|mi|lians|bahn\n",
+    "Ma|xi|mi|li|ans|bahn\n"
   ],
   "Maximiliansgrotte": [
     "Ma|xi|mi|lians|grot|te",
@@ -20383,9 +20475,9 @@
     "Mecha|no|re|zep|tor",
     "Me|cha|no|re|zep|tor"
   ],
-  "Mechatronik": [
-    "Mecha|tro|nik",
-    "Me|cha|tro|nik"
+  "Mechatronik\n": [
+    "Mecha|tro|ni|k\n",
+    "Me|cha|tro|ni|k\n"
   ],
   "Mechatroniker": [
     "Mecha|tro|ni|ker",
@@ -20779,9 +20871,9 @@
     "Metha|no|ge|ne|se",
     "Me|tha|no|ge|ne|se"
   ],
-  "Methanol": [
-    "Metha|nol",
-    "Me|tha|nol"
+  "Methanol\n": [
+    "Metha|nol\n",
+    "Me|tha|nol\n"
   ],
   "Methanolabbau": [
     "Metha|no|lab|bau",
@@ -20919,9 +21011,9 @@
     "Metho|di|sie|ren",
     "Me|tho|di|sie|ren"
   ],
-  "Methodismus": [
-    "Metho|dis|mus",
-    "Me|tho|dis|mus"
+  "Methodismus\n": [
+    "Metho|dis|mus\n",
+    "Me|tho|dis|mus\n"
   ],
   "Methodist": [
     "Metho|dist",
@@ -20983,9 +21075,13 @@
     "Meu|terer|schiff",
     "Meu|te|rer|schiff"
   ],
-  "Miami": [
-    "Mia|mi",
-    "Mi|a|mi"
+  "Mezzogiorno\n": [
+    "Mez|zo|gior|no\n",
+    "Mez|zo|giorno\n"
+  ],
+  "Miami\n": [
+    "Mia|mi\n",
+    "Mi|a|mi\n"
   ],
   "Micha": [
     "Micha",
@@ -20995,9 +21091,9 @@
     "Mi|chae|la",
     "Mi|cha|e|la"
   ],
-  "Michaeli": [
-    "Mi|chae|li",
-    "Mi|cha|e|li"
+  "Michaeli\n": [
+    "Mi|chae|li\n",
+    "Mi|cha|e|li\n"
   ],
   "Michaelis": [
     "Mi|chae|lis",
@@ -21031,13 +21127,13 @@
     "Mi|che|lan|ge|lo",
     "Mi|chel|an|ge|lo"
   ],
-  "Mickymaus": [
-    "Micky|maus",
-    "Mi|cky|maus"
+  "Mickymaus\n": [
+    "Micky|maus\n",
+    "Mi|cky|maus\n"
   ],
-  "Midas": [
-    "Mi|das",
-    "Midas"
+  "Midas\n": [
+    "Mi|das\n",
+    "Midas\n"
   ],
   "Midlifecrisis": [
     "Mid|li|fe|cri|sis",
@@ -21047,9 +21143,9 @@
     "Mid|lum",
     "Midlum"
   ],
-  "Miesepetrigkeit": [
-    "Mie|se|pe|trig|keit",
-    "Mie|se|pet|rig|keit"
+  "Miesepetrigkeit\n": [
+    "Mie|se|pe|trig|keit\n",
+    "Mie|se|pet|rig|keit\n"
   ],
   "Mietshausbesitzer": [
     "Miets|h|aus|be|sit|zer",
@@ -21219,29 +21315,29 @@
     "Mi|nis|te|ri|aler",
     "Mi|nis|te|ri|a|ler"
   ],
-  "Ministerialität": [
-    "Mi|nis|te|ri|ali|tät",
-    "Mi|nis|te|ri|a|li|tät"
+  "Ministerialität\n": [
+    "Mi|nis|te|ri|ali|tät\n",
+    "Mi|nis|te|ri|a|li|tät\n"
   ],
   "Minustemperaturen": [
     "Mi|nu|stem|pe|ra|tu|ren",
     "Mi|nus|tem|pe|ra|tu|ren"
   ],
-  "Minütchen": [
-    "Minüt|chen",
-    "Mi|nüt|chen"
+  "Minütchen\n": [
+    "Minüt|chen\n",
+    "Mi|nüt|chen\n"
   ],
-  "Misandrie": [
-    "Mi|san|drie",
-    "Mis|an|drie"
+  "Misandrie\n": [
+    "Mi|san|drie\n",
+    "Mis|an|drie\n"
   ],
   "Misanthrop": [
     "Mi|san|throp",
     "Mis|an|throp"
   ],
-  "Misanthropie": [
-    "Mi|san|thro|pie",
-    "Mis|an|thro|pie"
+  "Misanthropie\n": [
+    "Mi|san|thro|pie\n",
+    "Mis|an|thro|pie\n"
   ],
   "Mischehenfrage": [
     "Mische|hen|fra|ge",
@@ -21331,9 +21427,9 @@
     "Mi|stel|zweig",
     "Mis|tel|zweig"
   ],
-  "Mitanni": [
-    "Mi|tan|ni",
-    "Mit|an|ni"
+  "Mitanni\n": [
+    "Mi|tan|ni\n",
+    "Mit|an|ni\n"
   ],
   "Miteinander": [
     "Mi|tein|an|der",
@@ -21371,9 +21467,9 @@
     "Mit|glied|s|taat",
     "Mit|glieds|taat"
   ],
-  "Mitigation": [
-    "Mi|ti|ga|ti|on",
-    "Mit|i|ga|ti|on"
+  "Mitigation\n": [
+    "Mi|ti|ga|ti|o|n\n",
+    "Mit|i|ga|ti|o|n\n"
   ],
   "Mitleidsethik": [
     "Mit|leid|sethik",
@@ -21631,9 +21727,9 @@
     "Mo|nat|sil|lus|trier|te",
     "Mo|nats|il|lus|trier|te"
   ],
-  "Mondamin": [
-    "Monda|min",
-    "Mon|da|min"
+  "Mondamin\n": [
+    "Monda|min\n",
+    "Mon|da|min\n"
   ],
   "Mondorf": [
     "Mon|dorf",
@@ -21663,9 +21759,9 @@
     "Mo|no|dra|ma",
     "Mon|o|dra|ma"
   ],
-  "Monodramen": [
-    "Mo|no|dra|men",
-    "Mon|o|dra|men"
+  "Monodramen\n": [
+    "Mo|no|dra|men\n",
+    "Mon|o|dra|men\n"
   ],
   "Monrovia": [
     "Mon|ro|via",
@@ -21675,9 +21771,9 @@
     "Mon|stranz",
     "Mons|tranz"
   ],
-  "Monstren": [
-    "Mon|stren",
-    "Mons|tren"
+  "Monstren\n": [
+    "Mon|stren\n",
+    "Mons|tren\n"
   ],
   "Monstrosität": [
     "Mon|stro|si|tät",
@@ -21699,9 +21795,9 @@
     "Mont|pel|lier",
     "Mont|pel|li|er"
   ],
-  "Montrealer": [
-    "Mon|tre|a|ler",
-    "Mon|tre|aler"
+  "Montrealer\n": [
+    "Mon|tre|a|le|r\n",
+    "Mon|tre|ale|r\n"
   ],
   "Moosachat": [
     "Moosachat",
@@ -21727,9 +21823,9 @@
     "Mora|li|sie|ren",
     "Mo|ra|li|sie|ren"
   ],
-  "Moralismus": [
-    "Mora|lis|mus",
-    "Mo|ra|lis|mus"
+  "Moralismus\n": [
+    "Mora|lis|mus\n",
+    "Mo|ra|lis|mus\n"
   ],
   "Moralist": [
     "Mora|list",
@@ -21811,17 +21907,17 @@
     "Muck|ser",
     "Mucks|er"
   ],
-  "Mudschahed": [
-    "Mud|scha|hed",
-    "Mu|dscha|hed"
+  "Mudschahed\n": [
+    "Mud|scha|he|d\n",
+    "Mu|dscha|he|d\n"
   ],
   "Mudschaheddin": [
     "Mud|scha|hed|din",
     "Mu|dscha|hed|din"
   ],
-  "Mudschahedin": [
-    "Mud|scha|he|din",
-    "Mu|dscha|he|din"
+  "Mudschahedin\n": [
+    "Mud|scha|he|din\n",
+    "Mu|dscha|he|din\n"
   ],
   "Mudschahedinführer": [
     "Mud|scha|hedin|füh|rer",
@@ -22403,9 +22499,9 @@
     "Nar|ko|se|s|pe|zi|a|list",
     "Nar|ko|se|spe|zi|a|list"
   ],
-  "Narva": [
-    "Na|r|va",
-    "Nar|va"
+  "Narva\n": [
+    "Na|r|va\n",
+    "Nar|va\n"
   ],
   "Narvik": [
     "Na|r|vik",
@@ -22751,17 +22847,17 @@
     "Neu|ro|lin|gu|is|tik",
     "Neu|ro|lin|guis|tik"
   ],
-  "Neuschanz": [
-    "Neuschanz",
-    "Neu|schanz"
+  "Neuschanz\n": [
+    "Neuschanz\n",
+    "Neu|schanz\n"
   ],
-  "Neuschwanstein": [
-    "Neuschwan|stein",
-    "Neu|schwan|stein"
+  "Neuschwanstein\n": [
+    "Neuschwan|stein\n",
+    "Neu|schwan|stein\n"
   ],
-  "Neuschwansteiner": [
-    "Neuschwan|stei|ner",
-    "Neu|schwan|stei|ner"
+  "Neuschwansteiner\n": [
+    "Neuschwan|stei|ner\n",
+    "Neu|schwan|stei|ner\n"
   ],
   "Neuthomismus": [
     "Neut|ho|mis|mus",
@@ -22783,9 +22879,9 @@
     "Nia|cin",
     "Ni|a|cin"
   ],
-  "Niagara": [
-    "Nia|ga|ra",
-    "Ni|a|ga|ra"
+  "Niagara\n": [
+    "Nia|ga|ra\n",
+    "Ni|a|ga|ra\n"
   ],
   "Niagarafälle": [
     "Nia|gara|fäl|le",
@@ -22995,9 +23091,9 @@
     "Nitro|zel|lu|lo|se",
     "Ni|tro|zel|lu|lo|se"
   ],
-  "Nivea": [
-    "Ni|vea",
-    "Nivea"
+  "Nivea\n": [
+    "Ni|vea\n",
+    "Nivea\n"
   ],
   "Niveauangleichung": [
     "Ni|veau|an|glei|chung",
@@ -23027,9 +23123,9 @@
     "Ni|veau|li|nie",
     "Niveau|li|nie"
   ],
-  "Niveaulosigkeit": [
-    "Ni|veau|lo|sig|keit",
-    "Niveau|lo|sig|keit"
+  "Niveaulosigkeit\n": [
+    "Ni|veau|lo|sig|keit\n",
+    "Niveau|lo|sig|keit\n"
   ],
   "Niveaunivellierung": [
     "Ni|veau|ni|vel|lie|rung",
@@ -23075,9 +23171,9 @@
     "No|cke|rl",
     "No|ckerl"
   ],
-  "Nodien": [
-    "No|di|en",
-    "Nodi|en"
+  "Nodien\n": [
+    "No|dien\n",
+    "Nodien\n"
   ],
   "Nonplusultra": [
     "Non|plusul|tra",
@@ -23127,9 +23223,9 @@
     "Nor|di|ta|li|en",
     "Nord|ita|li|en"
   ],
-  "Norfolkinsel": [
-    "Nor|fol|kin|sel",
-    "Nor|folk|in|sel"
+  "Norfolkinsel\n": [
+    "Nor|fol|kin|sel\n",
+    "Nor|folk|in|sel\n"
   ],
   "Normalsterbliche": [
     "Nor|mals|terb|li|che",
@@ -23179,9 +23275,9 @@
     "Nuan|cie|ren",
     "Nu|an|cie|ren"
   ],
-  "Nukleus": [
-    "Nu|kleus",
-    "Nu|kle|us"
+  "Nukleus\n": [
+    "Nu|kleus\n",
+    "Nu|kle|us\n"
   ],
   "Nuraghe": [
     "Nu|raghe",
@@ -23199,9 +23295,9 @@
     "Nutab|stän|de",
     "Nut|ab|stän|de"
   ],
-  "Nutation": [
-    "Nuta|ti|on",
-    "Nu|ta|ti|on"
+  "Nutation\n": [
+    "Nuta|ti|o|n\n",
+    "Nu|ta|ti|o|n\n"
   ],
   "Nutationsbewegung": [
     "Nuta|ti|ons|be|we|gung",
@@ -23239,9 +23335,9 @@
     "Nütz|lich|keit|sas|pekt",
     "Nütz|lich|keits|as|pekt"
   ],
-  "Obacht": [
-    "Obacht",
-    "Ob|acht"
+  "Obacht\n": [
+    "Obacht\n",
+    "Ob|acht\n"
   ],
   "Obdachlosenasyl": [
     "Ob|da|ch|lo|sen|asyl",
@@ -23359,9 +23455,9 @@
     "Obs|ku|ran|tis|mus",
     "Ob|sku|ran|tis|mus"
   ],
-  "Obskurität": [
-    "Obs|ku|ri|tät",
-    "Ob|sku|ri|tät"
+  "Obskurität\n": [
+    "Obs|ku|ri|tät\n",
+    "Ob|sku|ri|tät\n"
   ],
   "Obster": [
     "Obs|ter",
@@ -23539,9 +23635,9 @@
     "Ori|o|n|ne|bel",
     "Ori|on|ne|bel"
   ],
-  "Ortenau": [
-    "Or|tenau",
-    "Or|ten|au"
+  "Ortenau\n": [
+    "Or|tenau\n",
+    "Or|ten|au\n"
   ],
   "Orthoborsäure": [
     "Or|t|ho|bor|säu|re",
@@ -23591,9 +23687,9 @@
     "Ostalb|kreis",
     "Ost|alb|kreis"
   ],
-  "Ostalgie": [
-    "Ostal|gie",
-    "Ost|al|gie"
+  "Ostalgie\n": [
+    "Ostal|gie\n",
+    "Ost|al|gie\n"
   ],
   "Ostasien": [
     "Ostasi|en",
@@ -23627,9 +23723,9 @@
     "Oze|a|nier",
     "Oze|a|ni|er"
   ],
-  "Packard": [
-    "Packard",
-    "Pa|ckard"
+  "Packard\n": [
+    "Packard\n",
+    "Pa|ckard\n"
   ],
   "Pakistan": [
     "Pa|kis|tan",
@@ -23643,13 +23739,13 @@
     "Pa|läs|ti|nafra|ge",
     "Pa|läs|ti|na|fra|ge"
   ],
-  "Panamerikanismus": [
-    "Pana|me|ri|ka|nis|mus",
-    "Pan|ame|ri|ka|nis|mus"
+  "Panamerikanismus\n": [
+    "Pana|me|ri|ka|nis|mus\n",
+    "Pan|ame|ri|ka|nis|mus\n"
   ],
-  "Panathenäen": [
-    "Pa|na|the|nä|en",
-    "Panathe|nä|en"
+  "Panathenäen\n": [
+    "Pa|na|the|nä|en\n",
+    "Panathe|nä|en\n"
   ],
   "Pandapaar": [
     "Pan|d|a|paar",
@@ -23907,9 +24003,9 @@
     "Pa|r|la|men|ta|ri|sie|ren",
     "Par|la|men|ta|ri|sie|ren"
   ],
-  "Parlamentarismen": [
-    "Pa|r|la|men|ta|ris|men",
-    "Par|la|men|ta|ris|men"
+  "Parlamentarismen\n": [
+    "Pa|r|la|men|ta|ris|men\n",
+    "Par|la|men|ta|ris|men\n"
   ],
   "Parlamentarismus": [
     "Pa|r|la|men|ta|ris|mus",
@@ -23995,9 +24091,9 @@
     "Pa|r|vo|vi|rus",
     "Par|vo|vi|rus"
   ],
-  "Parvus": [
-    "Pa|r|vus",
-    "Par|vus"
+  "Parvus\n": [
+    "Pa|r|vus\n",
+    "Par|vus\n"
   ],
   "Parzelle": [
     "Pa|r|zel|le",
@@ -24139,9 +24235,9 @@
     "Pat|sche",
     "Pa|tsche"
   ],
-  "Paypal": [
-    "Paypal",
-    "Pay|pal"
+  "Paypal\n": [
+    "Paypal\n",
+    "Pay|pal\n"
   ],
   "Pedalkombination": [
     "Ped|al|kom|bi|na|ti|on",
@@ -24219,9 +24315,9 @@
     "Per|for|ma|ti|on",
     "Performa|ti|on"
   ],
-  "Performativität": [
-    "Per|for|ma|ti|vi|tät",
-    "Performa|ti|vi|tät"
+  "Performativität\n": [
+    "Per|for|ma|ti|vi|tät\n",
+    "Performa|ti|vi|tät\n"
   ],
   "Performator": [
     "Per|for|ma|tor",
@@ -24231,9 +24327,9 @@
     "Per|for|ma|to|ren|re|gel",
     "Performa|to|ren|re|gel"
   ],
-  "Performatorik": [
-    "Per|for|ma|to|rik",
-    "Performa|to|rik"
+  "Performatorik\n": [
+    "Per|for|ma|to|ri|k\n",
+    "Performa|to|ri|k\n"
   ],
   "Performatorphrase": [
     "Per|for|ma|tor|phra|se",
@@ -24283,9 +24379,9 @@
     "Per|man|ent|spei|cher",
     "Per|ma|nent|spei|cher"
   ],
-  "Pers.": [
-    "Per|s.",
-    "Pers."
+  "Pers.\n": [
+    "Per|s.\n",
+    "Pers.\n"
   ],
   "Personalityshow": [
     "Per|so|na|li|ty|s|how",
@@ -24587,13 +24683,13 @@
     "Phil|ip|pi",
     "Phi|lip|pi"
   ],
-  "Philippika": [
-    "Phil|ip|pi|ka",
-    "Phi|lip|pi|ka"
+  "Philippika\n": [
+    "Phil|ip|pi|ka\n",
+    "Phi|lip|pi|ka\n"
   ],
-  "Philippiken": [
-    "Phil|ip|pi|ken",
-    "Phi|lip|pi|ken"
+  "Philippiken\n": [
+    "Phil|ip|pi|ken\n",
+    "Phi|lip|pi|ken\n"
   ],
   "Philippine": [
     "Phil|ip|pi|ne",
@@ -24627,9 +24723,9 @@
     "Phil|ipps|burg",
     "Phi|lipps|burg"
   ],
-  "Philippus": [
-    "Phil|ip|pus",
-    "Phi|lip|pus"
+  "Philippus\n": [
+    "Phil|ip|pus\n",
+    "Phi|lip|pus\n"
   ],
   "Philippuskirche": [
     "Phil|ip|pus|kir|che",
@@ -24643,9 +24739,9 @@
     "Phi|lo|so|phem",
     "Phi|lo|sophem"
   ],
-  "Philosophika": [
-    "Phi|lo|so|phi|ka",
-    "Phi|lo|sophi|ka"
+  "Philosophika\n": [
+    "Phi|lo|so|phi|ka\n",
+    "Phi|lo|sophi|ka\n"
   ],
   "Philosophikum": [
     "Phi|lo|so|phi|kum",
@@ -24679,9 +24775,9 @@
     "Ph|re|no|lo|gie",
     "Phre|no|lo|gie"
   ],
-  "Phthisis": [
-    "Ph|thi|sis",
-    "Phthi|sis"
+  "Phthisis\n": [
+    "Ph|thi|sis\n",
+    "Phthi|sis\n"
   ],
   "Phuket": [
     "Phu|ket",
@@ -24735,9 +24831,9 @@
     "Pia|no|for|te|fa|brik",
     "Pi|a|no|for|te|fa|brik"
   ],
-  "Pianola": [
-    "Pia|no|la",
-    "Pi|a|no|la"
+  "Pianola\n": [
+    "Pia|no|la\n",
+    "Pi|a|no|la\n"
   ],
   "Pianolack": [
     "Pia|no|lack",
@@ -24759,13 +24855,13 @@
     "Pier|re",
     "Pi|erre"
   ],
-  "Pieta": [
-    "Pie|ta",
-    "Pi|e|ta"
+  "Pieta\n": [
+    "Pie|ta\n",
+    "Pi|e|ta\n"
   ],
-  "Pietismus": [
-    "Pie|tis|mus",
-    "Pi|e|tis|mus"
+  "Pietismus\n": [
+    "Pie|tis|mus\n",
+    "Pi|e|tis|mus\n"
   ],
   "Pietist": [
     "Pie|tist",
@@ -24807,9 +24903,9 @@
     "Pila|tes",
     "Pi|la|tes"
   ],
-  "Pilatus": [
-    "Pila|tus",
-    "Pi|la|tus"
+  "Pilatus\n": [
+    "Pila|tus\n",
+    "Pi|la|tus\n"
   ],
   "Pilatusberg": [
     "Pila|tus|berg",
@@ -24859,9 +24955,9 @@
     "Pinakol",
     "Pi|nakol"
   ],
-  "Pinakothek": [
-    "Pina|ko|thek",
-    "Pi|na|ko|thek"
+  "Pinakothek\n": [
+    "Pina|ko|thek\n",
+    "Pi|na|ko|thek\n"
   ],
   "Pinasse": [
     "Pinas|se",
@@ -25399,9 +25495,9 @@
     "Po|lyamin|über|schuss",
     "Po|ly|amin|über|schuss"
   ],
-  "Polyamory": [
-    "Po|lyamo|ry",
-    "Po|ly|amo|ry"
+  "Polyamory\n": [
+    "Po|lyamo|ry\n",
+    "Po|ly|amo|ry\n"
   ],
   "Polyanion": [
     "Po|lyan|ion",
@@ -25471,9 +25567,9 @@
     "Po|lyvi|nyl|pyr|ro|li|don",
     "Po|ly|vi|nyl|pyr|ro|li|don"
   ],
-  "Pontiac": [
-    "Pon|tiac",
-    "Pon|ti|ac"
+  "Pontiac\n": [
+    "Pon|tiac\n",
+    "Pon|ti|ac\n"
   ],
   "Pony": [
     "Pony",
@@ -25991,9 +26087,9 @@
     "Präla|tur",
     "Prä|la|tur"
   ],
-  "Präludien": [
-    "Prälu|di|en",
-    "Prä|lu|di|en"
+  "Präludien\n": [
+    "Prälu|dien\n",
+    "Prä|lu|dien\n"
   ],
   "Präludium": [
     "Prälu|di|um",
@@ -26031,9 +26127,9 @@
     "Prä|si|di|a|läm|ter",
     "Prä|si|di|al|äm|ter"
   ],
-  "Präterita": [
-    "Prä|te|r|ita",
-    "Prä|ter|ita"
+  "Präterita\n": [
+    "Prä|te|r|ita\n",
+    "Prä|ter|ita\n"
   ],
   "Präteritopräsens": [
     "Prä|te|r|ito|prä|sens",
@@ -26114,6 +26210,14 @@
   "Psychotraumatologie": [
     "Psy|chotrau|ma|to|lo|gie",
     "Psy|cho|trau|ma|to|lo|gie"
+  ],
+  "Ptolemaios\n": [
+    "Pto|le|maios\n",
+    "Pto|le|mai|os\n"
+  ],
+  "Ptolemäus\n": [
+    "Pto|le|mäus\n",
+    "Pto|le|mä|us\n"
   ],
   "Publikation": [
     "Pub|li|ka|ti|on",
@@ -26255,9 +26359,9 @@
     "Pub|li|zis|tik",
     "Pu|bli|zis|tik"
   ],
-  "Publizität": [
-    "Pub|li|zi|tät",
-    "Pu|bli|zi|tät"
+  "Publizität\n": [
+    "Pub|li|zi|tät\n",
+    "Pu|bli|zi|tät\n"
   ],
   "Publizitätspflicht": [
     "Pub|li|zi|täts|pflicht",
@@ -26266,6 +26370,10 @@
   "Pueblo": [
     "Pue|blo",
     "Pu|e|blo"
+  ],
+  "Pueblo\n": [
+    "Pue|blo\n",
+    "Pu|e|blo\n"
   ],
   "Puebloindianer": [
     "Pue|bloin|di|a|ner",
@@ -26351,13 +26459,13 @@
     "Py|ra|mi|deno|ber|bau",
     "Py|ra|mi|den|ober|bau"
   ],
-  "Pyxiden": [
-    "Pyxi|den",
-    "Py|xi|den"
+  "Pyxiden\n": [
+    "Pyxi|den\n",
+    "Py|xi|den\n"
   ],
-  "Pyxides": [
-    "Pyxi|des",
-    "Py|xi|des"
+  "Pyxides\n": [
+    "Pyxi|des\n",
+    "Py|xi|des\n"
   ],
   "Päderast": [
     "Pä|d|erast",
@@ -26395,9 +26503,9 @@
     "Qu|bit",
     "Qubit"
   ],
-  "Queich": [
-    "Qu|eich",
-    "Queich"
+  "Queich\n": [
+    "Qu|eich\n",
+    "Queich\n"
   ],
   "Queichtal": [
     "Qu|eichtal",
@@ -26543,9 +26651,9 @@
     "Quicks|tepp",
     "Quick|stepp"
   ],
-  "Quietismus": [
-    "Quie|tis|mus",
-    "Qui|e|tis|mus"
+  "Quietismus\n": [
+    "Quie|tis|mus\n",
+    "Qui|e|tis|mus\n"
   ],
   "Quietschton": [
     "Quietschton",
@@ -26567,9 +26675,9 @@
     "Ra|benau",
     "Ra|ben|au"
   ],
-  "Rabenauer": [
-    "Ra|be|nau|er",
-    "Ra|ben|au|er"
+  "Rabenauer\n": [
+    "Ra|be|nau|e|r\n",
+    "Ra|ben|au|e|r\n"
   ],
   "Rabeneltern": [
     "Ra|be|nel|tern",
@@ -26627,9 +26735,9 @@
     "Ra|di|o|me|trie",
     "Ra|dio|me|trie"
   ],
-  "Radioskopie": [
-    "Ra|di|o|sko|pie",
-    "Ra|dio|sko|pie"
+  "Radioskopie\n": [
+    "Ra|di|o|sko|pie\n",
+    "Ra|dio|sko|pie\n"
   ],
   "Ragtime": [
     "Rag|ti|me",
@@ -26787,9 +26895,9 @@
     "Reak|ku|mu|la|ti|on",
     "Re|ak|ku|mu|la|ti|on"
   ],
-  "Realien": [
-    "Rea|li|en",
-    "Re|a|li|en"
+  "Realien\n": [
+    "Rea|li|en\n",
+    "Re|a|li|en\n"
   ],
   "Realisation": [
     "Rea|li|sa|ti|on",
@@ -26998,6 +27106,10 @@
   "Regelausschlag": [
     "Re|gelaus|schlag",
     "Re|gel|aus|schlag"
+  ],
+  "Reggio\n": [
+    "Reg|gio\n",
+    "Reggio\n"
   ],
   "Regimefeind": [
     "Re|gi|me|feind",
@@ -27523,9 +27635,9 @@
     "Re|per|toire|wahl",
     "Repertoire|wahl"
   ],
-  "Repertorien": [
-    "Re|per|to|ri|en",
-    "Reperto|ri|en"
+  "Repertorien\n": [
+    "Re|per|to|ri|en\n",
+    "Reperto|ri|en\n"
   ],
   "Repetiergewehr": [
     "Re|pe|tier|ge|wehr",
@@ -27635,9 +27747,9 @@
     "Riet|berg",
     "Ri|et|berg"
   ],
-  "Rietberger": [
-    "Riet|ber|ger",
-    "Ri|et|ber|ger"
+  "Rietberger\n": [
+    "Riet|ber|ger\n",
+    "Ri|et|ber|ger\n"
   ],
   "Rietheim": [
     "Rie|theim",
@@ -27695,9 +27807,9 @@
     "Ri|vie|ra",
     "Ri|vi|e|ra"
   ],
-  "Rivieraküste": [
-    "Ri|viera|küs|te",
-    "Ri|vi|e|ra|küs|te"
+  "Rivieraküste\n": [
+    "Ri|viera|küs|te\n",
+    "Ri|vi|e|ra|küs|te\n"
   ],
   "Robespierre": [
     "Ro|be|spi|er|re",
@@ -28127,9 +28239,9 @@
     "Rü|ck|keh|rer|quo|te",
     "Rück|keh|rer|quo|te"
   ],
-  "Rückläufigkeit": [
-    "Rü|ck|läu|fig|keit",
-    "Rück|läu|fig|keit"
+  "Rückläufigkeit\n": [
+    "Rü|ck|läu|fig|keit\n",
+    "Rück|läu|fig|keit\n"
   ],
   "Rückspulen": [
     "Rückspu|len",
@@ -28271,13 +28383,13 @@
     "Sa|len|ti|ner",
     "Salen|ti|ner"
   ],
-  "Salento": [
-    "Sa|len|to",
-    "Salen|to"
+  "Salento\n": [
+    "Sa|len|to\n",
+    "Salen|to\n"
   ],
-  "Saleph": [
-    "Sa|leph",
-    "Saleph"
+  "Saleph\n": [
+    "Sa|le|ph\n",
+    "Sale|ph\n"
   ],
   "Salerno": [
     "Sa|ler|no",
@@ -28371,9 +28483,9 @@
     "Sa|lz|ab|bau",
     "Salz|ab|bau"
   ],
-  "Salzach": [
-    "Sa|lzach",
-    "Salz|ach"
+  "Salzach\n": [
+    "Sa|lzach\n",
+    "Salz|ach\n"
   ],
   "Salzachkreis": [
     "Sa|lzach|kreis",
@@ -28431,9 +28543,9 @@
     "Sa|lz|kam|mer|gut|bahn",
     "Salz|kam|mer|gut|bahn"
   ],
-  "Salzlake": [
-    "Sa|lz|la|ke",
-    "Salz|la|ke"
+  "Salzlake\n": [
+    "Sa|lz|la|ke\n",
+    "Salz|la|ke\n"
   ],
   "Salzlauge": [
     "Sa|lz|l|au|ge",
@@ -28475,13 +28587,13 @@
     "Sa|l|zwie|sen|be|stän|de",
     "Sal|zwie|sen|be|stän|de"
   ],
-  "Sapphismus": [
-    "Sapp|his|mus",
-    "Sap|phis|mus"
+  "Sapphismus\n": [
+    "Sapp|his|mus\n",
+    "Sap|phis|mus\n"
   ],
-  "Sappho": [
-    "Sapp|ho",
-    "Sap|pho"
+  "Sappho\n": [
+    "Sapp|ho\n",
+    "Sap|pho\n"
   ],
   "Sarcinaxanthin": [
     "Sa|r|cina|x|an|thin",
@@ -28703,9 +28815,9 @@
     "Schizir|kus",
     "Schi|zir|kus"
   ],
-  "Schkeuditz": [
-    "Sch|keu|ditz",
-    "Schkeu|ditz"
+  "Schkeuditz\n": [
+    "Sch|keu|ditz\n",
+    "Schkeu|ditz\n"
   ],
   "Schlackenabstich": [
     "Schla|cke|n|ab|stich",
@@ -28971,9 +29083,9 @@
     "Sch|mant",
     "Schmant"
   ],
-  "Schmitt": [
-    "Sch|mitt",
-    "Schmitt"
+  "Schmitt\n": [
+    "Sch|mit|t\n",
+    "Schmit|t\n"
   ],
   "Schneckenantrieb": [
     "Schne|cke|n|an|trieb",
@@ -29083,9 +29195,9 @@
     "Sch|wechat",
     "Schwechat"
   ],
-  "Schwechater": [
-    "Sch|wecha|ter",
-    "Schwecha|ter"
+  "Schwechater\n": [
+    "Sch|wecha|ter\n",
+    "Schwecha|ter\n"
   ],
   "Schwechatflüsse": [
     "Sch|wechat|flüs|se",
@@ -29279,9 +29391,9 @@
     "Se|mes|te|ren|de",
     "Se|mes|ter|en|de"
   ],
-  "Semiologie": [
-    "Se|mi|o|lo|gie",
-    "Se|mio|lo|gie"
+  "Semiologie\n": [
+    "Se|mi|o|lo|gie\n",
+    "Se|mio|lo|gie\n"
   ],
   "Semperoper": [
     "Sem|pe|ro|per",
@@ -29323,9 +29435,9 @@
     "Sep|t|ak|kord",
     "Sept|ak|kord"
   ],
-  "Serafim": [
-    "Sera|fim",
-    "Se|ra|fim"
+  "Serafim\n": [
+    "Sera|fim\n",
+    "Se|ra|fim\n"
   ],
   "Serail": [
     "Serail",
@@ -29335,9 +29447,9 @@
     "Se|ri|ali|sie|ren",
     "Seri|a|li|sie|ren"
   ],
-  "Serialismus": [
-    "Se|ri|alis|mus",
-    "Seri|a|lis|mus"
+  "Serialismus\n": [
+    "Se|ri|alis|mus\n",
+    "Seri|a|lis|mus\n"
   ],
   "Serie": [
     "Se|rie",
@@ -29375,9 +29487,9 @@
     "Se|ri|o|si|tät",
     "Seri|o|si|tät"
   ],
-  "Servilität": [
-    "Ser|vi|li|tät",
-    "Servi|li|tät"
+  "Servilität\n": [
+    "Ser|vi|li|tät\n",
+    "Servi|li|tät\n"
   ],
   "Servitut": [
     "Ser|vi|tut",
@@ -29531,9 +29643,9 @@
     "Sie|n|ascha|le",
     "Si|e|na|scha|le"
   ],
-  "Sierra": [
-    "Sier|ra",
-    "Si|er|ra"
+  "Sierra\n": [
+    "Sier|ra\n",
+    "Si|er|ra\n"
   ],
   "Siesta": [
     "Sies|ta",
@@ -29603,9 +29715,9 @@
     "Si|grun",
     "Sig|run"
   ],
-  "Sikhismus": [
-    "Sik|his|mus",
-    "Sikhis|mus"
+  "Sikhismus\n": [
+    "Sik|his|mus\n",
+    "Sikhis|mus\n"
   ],
   "Sikhstaat": [
     "Sik|h|staat",
@@ -29683,9 +29795,9 @@
     "Sin|ne|stäu|schung",
     "Sin|nes|täu|schung"
   ],
-  "Sioux": [
-    "Sioux",
-    "Si|oux"
+  "Sioux\n": [
+    "Sioux\n",
+    "Si|oux\n"
   ],
   "Sirene": [
     "Si|re|ne",
@@ -29763,9 +29875,9 @@
     "Sk|le|ro|se",
     "Skle|ro|se"
   ],
-  "Skype": [
-    "Sky|pe",
-    "Skype"
+  "Skype\n": [
+    "Sky|pe\n",
+    "Skype\n"
   ],
   "Slipeinlage": [
     "Sli|pein|la|ge",
@@ -29839,17 +29951,17 @@
     "Sonn|aben|dmor|gen",
     "Sonn|abend|mor|gen"
   ],
-  "Sonnabendnacht": [
-    "Sonn|aben|dnacht",
-    "Sonn|abend|nacht"
+  "Sonnabendnacht\n": [
+    "Sonn|aben|dnacht\n",
+    "Sonn|abend|nacht\n"
   ],
   "Sonnabendvormittag": [
     "Sonn|aben|dvor|mit|tag",
     "Sonn|abend|vor|mit|tag"
   ],
-  "Sophismen": [
-    "So|phis|men",
-    "Sophis|men"
+  "Sophismen\n": [
+    "So|phis|men\n",
+    "Sophis|men\n"
   ],
   "Sopranrezitativ": [
     "So|pran|re|zi|ta|tiv",
@@ -29991,9 +30103,9 @@
     "Spiel|zeugher|stel|ler",
     "Spiel|zeug|her|stel|ler"
   ],
-  "Spietz": [
-    "Spi|etz",
-    "Spietz"
+  "Spietz\n": [
+    "Spi|etz\n",
+    "Spietz\n"
   ],
   "Spießente": [
     "Spie|ßen|te",
@@ -30143,9 +30255,9 @@
     "Stad|t|o|be|re",
     "Stadt|obe|re"
   ],
-  "Stahleck": [
-    "Stahl|eck",
-    "Stah|leck"
+  "Stahleck\n": [
+    "Stahl|eck\n",
+    "Stah|leck\n"
   ],
   "Stahlskelettbau": [
     "Stahl|ske|lett|bau",
@@ -30159,9 +30271,9 @@
     "Stahl|zar|ge",
     "Stahlzar|ge"
   ],
-  "Stalag": [
-    "Stalag",
-    "Sta|lag"
+  "Stalag\n": [
+    "Stalag\n",
+    "Sta|lag\n"
   ],
   "Stalagmit": [
     "Stalag|mit",
@@ -30175,9 +30287,9 @@
     "Stalak|tit",
     "Sta|lak|tit"
   ],
-  "Stalinallee": [
-    "Sta|li|nal|lee",
-    "Sta|lin|al|lee"
+  "Stalinallee\n": [
+    "Sta|li|nal|lee\n",
+    "Sta|lin|al|lee\n"
   ],
   "Stallfliege": [
     "Stall|f|lie|ge",
@@ -30283,9 +30395,9 @@
     "Staustrahl|trieb|werk",
     "Stau|strahl|trieb|werk"
   ],
-  "Std.": [
-    "St|d.",
-    "Std."
+  "Std.\n": [
+    "St|d.\n",
+    "Std.\n"
   ],
   "Steckeradapter": [
     "Ste|cke|rad|ap|ter",
@@ -30371,9 +30483,9 @@
     "Stei|nei|ben|art",
     "Stein|ei|ben|art"
   ],
-  "Steinheimer": [
-    "St|ein|hei|mer",
-    "Stein|hei|mer"
+  "Steinheimer\n": [
+    "St|ein|hei|mer\n",
+    "Stein|hei|mer\n"
   ],
   "Stellungsuchenden": [
     "Stel|lungs|u|chen|den",
@@ -31087,9 +31199,9 @@
     "Sy|ner|gie|po|ten|zi|al",
     "Syn|er|gie|po|ten|zi|al"
   ],
-  "Synergismus": [
-    "Sy|ner|gis|mus",
-    "Syn|er|gis|mus"
+  "Synergismus\n": [
+    "Sy|ner|gis|mus\n",
+    "Syn|er|gis|mus\n"
   ],
   "Synergist": [
     "Sy|ner|gist",
@@ -31139,9 +31251,9 @@
     "Synop|se",
     "Syn|op|se"
   ],
-  "Synopsis": [
-    "Synop|sis",
-    "Syn|op|sis"
+  "Synopsis\n": [
+    "Synop|sis\n",
+    "Syn|op|sis\n"
   ],
   "Synoptometer": [
     "Synop|to|me|ter",
@@ -31223,9 +31335,9 @@
     "Ta|g|an|rog",
     "Tag|an|rog"
   ],
-  "Taganroger": [
-    "Ta|g|an|ro|ger",
-    "Tag|an|ro|ger"
+  "Taganroger\n": [
+    "Ta|g|an|ro|ger\n",
+    "Tag|an|ro|ger\n"
   ],
   "Tagebuchaufzeichnung": [
     "Ta|ge|buchauf|zeich|nung",
@@ -31243,9 +31355,9 @@
     "Ta|ge|s|neu|ig|keit",
     "Ta|ges|neu|ig|keit"
   ],
-  "Tagliatelle": [
-    "Tag|lia|tel|le",
-    "Ta|gli|a|tel|le"
+  "Tagliatelle\n": [
+    "Tag|lia|tel|le\n",
+    "Ta|gli|a|tel|le\n"
   ],
   "Taillenumfang": [
     "Tail|le|n|um|fang",
@@ -31399,9 +31511,9 @@
     "Tan|sa|nier",
     "Tan|sa|ni|er"
   ],
-  "Tantra": [
-    "Tantra",
-    "Tan|tra"
+  "Tantra\n": [
+    "Tantra\n",
+    "Tan|tra\n"
   ],
   "Tarfaya": [
     "Ta|r|fa|ya",
@@ -31470,6 +31582,10 @@
   "Taunusstraße": [
     "Tau|nuss|tra|ße",
     "Tau|nus|stra|ße"
+  ],
+  "Tbc\n": [
+    "Tb|c\n",
+    "Tbc\n"
   ],
   "Team": [
     "Te|am",
@@ -31719,9 +31835,9 @@
     "Te|her|an",
     "Te|he|ran"
   ],
-  "Teheraner": [
-    "Te|her|an|er",
-    "Te|he|ra|ner"
+  "Teheraner\n": [
+    "Te|her|an|er\n",
+    "Te|he|ra|ner\n"
   ],
   "Teighülle": [
     "Teighül|le",
@@ -31779,9 +31895,9 @@
     "Tenk|terer",
     "Ten|k|terer"
   ],
-  "Teplitz": [
-    "Te|p|litz",
-    "Tep|litz"
+  "Teplitz\n": [
+    "Te|p|litz\n",
+    "Tep|litz\n"
   ],
   "Terabyte": [
     "Tera|byte",
@@ -32123,13 +32239,13 @@
     "Tho|mass|tift",
     "Tho|mas|stift"
   ],
-  "Tiara": [
-    "Tia|ra",
-    "Ti|a|ra"
+  "Tiara\n": [
+    "Tia|ra\n",
+    "Ti|a|ra\n"
   ],
-  "Tiaren": [
-    "Tia|ren",
-    "Ti|a|ren"
+  "Tiaren\n": [
+    "Tia|ren\n",
+    "Ti|a|ren\n"
   ],
   "Tiefenabhängigkeit": [
     "Tie|fe|n|ab|hän|gig|keit",
@@ -32179,9 +32295,9 @@
     "Ti|me|lo|berg",
     "Time|lo|berg"
   ],
-  "Times": [
-    "Ti|mes",
-    "Times"
+  "Times\n": [
+    "Ti|mes\n",
+    "Times\n"
   ],
   "Timinglogik": [
     "Ti|minglo|gik",
@@ -32258,6 +32374,14 @@
   "Topflappen": [
     "Topflap|pen",
     "Topf|lap|pen"
+  ],
+  "Tora\n": [
+    "Tora\n",
+    "To|ra\n"
+  ],
+  "Toraus\n": [
+    "Toraus\n",
+    "To|raus\n"
   ],
   "Toreck": [
     "To|reck",
@@ -32507,9 +32631,9 @@
     "Tsu|n|a|miop|fer",
     "Tsu|na|miop|fer"
   ],
-  "Tuareg": [
-    "Tua|reg",
-    "Tu|a|reg"
+  "Tuareg\n": [
+    "Tua|reg\n",
+    "Tu|a|reg\n"
   ],
   "Tuaregkrieger": [
     "Tua|reg|krie|ger",
@@ -32623,9 +32747,9 @@
     "Uhlen|horst",
     "Uh|len|horst"
   ],
-  "Uhlenkrug": [
-    "Uhlen|krug",
-    "Uh|len|krug"
+  "Uhlenkrug\n": [
+    "Uhlen|krug\n",
+    "Uh|len|krug\n"
   ],
   "Uhrenausstellung": [
     "Uhren|aus|stel|lung",
@@ -32839,9 +32963,9 @@
     "Umpf|lü|gen",
     "Um|pflü|gen"
   ],
-  "Umpqua": [
-    "Umpqua",
-    "Um|pqua"
+  "Umpqua\n": [
+    "Umpqua\n",
+    "Um|pqua\n"
   ],
   "Umskalieren": [
     "Ums|ka|lie|ren",
@@ -32855,13 +32979,13 @@
     "Umän|dern",
     "Um|än|dern"
   ],
-  "Unabdingbarkeit": [
-    "Unab|ding|bar|keit",
-    "Un|ab|ding|bar|keit"
+  "Unabdingbarkeit\n": [
+    "Unab|ding|bar|keit\n",
+    "Un|ab|ding|bar|keit\n"
   ],
-  "Unabkömmlichkeit": [
-    "Unab|kömm|lich|keit",
-    "Un|ab|kömm|lich|keit"
+  "Unabkömmlichkeit\n": [
+    "Unab|kömm|lich|keit\n",
+    "Un|ab|kömm|lich|keit\n"
   ],
   "Unabkömmlichkeitsbescheinigung": [
     "Unab|kömm|lich|keits|be|schei|ni|gung",
@@ -32871,9 +32995,9 @@
     "Unab|än|der|bar|keit",
     "Un|ab|än|der|bar|keit"
   ],
-  "Unabänderlichkeit": [
-    "Unab|än|der|lich|keit",
-    "Un|ab|än|der|lich|keit"
+  "Unabänderlichkeit\n": [
+    "Unab|än|der|lich|keit\n",
+    "Un|ab|än|der|lich|keit\n"
   ],
   "Unachtsamkeit": [
     "Unacht|sam|keit",
@@ -32887,9 +33011,9 @@
     "Unan|nehm|lich|keit",
     "Un|an|nehm|lich|keit"
   ],
-  "Unantastbarkeit": [
-    "Unan|tast|bar|keit",
-    "Un|an|tast|bar|keit"
+  "Unantastbarkeit\n": [
+    "Unan|tast|bar|keit\n",
+    "Un|an|tast|bar|keit\n"
   ],
   "Unattraktivität": [
     "Unat|trak|ti|vi|tät",
@@ -32907,9 +33031,9 @@
     "Unauf|fäl|lig|keit",
     "Un|auf|fäl|lig|keit"
   ],
-  "Unaufgeregtheit": [
-    "Unauf|ge|regt|heit",
-    "Un|auf|ge|regt|heit"
+  "Unaufgeregtheit\n": [
+    "Unauf|ge|regt|heit\n",
+    "Un|auf|ge|regt|heit\n"
   ],
   "Unaufhebbarkeit": [
     "Unauf|heb|bar|keit",
@@ -32919,9 +33043,9 @@
     "Unauf|lös|bar|keit",
     "Un|auf|lös|bar|keit"
   ],
-  "Unauflöslichkeit": [
-    "Unauf|lös|lich|keit",
-    "Un|auf|lös|lich|keit"
+  "Unauflöslichkeit\n": [
+    "Unauf|lös|lich|keit\n",
+    "Un|auf|lös|lich|keit\n"
   ],
   "Unaufmerksamkeit": [
     "Unauf|merk|sam|keit",
@@ -32931,9 +33055,9 @@
     "Unauf|rich|tig|keit",
     "Un|auf|rich|tig|keit"
   ],
-  "Unaufschiebbarkeit": [
-    "Unauf|schieb|bar|keit",
-    "Un|auf|schieb|bar|keit"
+  "Unaufschiebbarkeit\n": [
+    "Unauf|schieb|bar|keit\n",
+    "Un|auf|schieb|bar|keit\n"
   ],
   "Unebenheit": [
     "Une|ben|heit",
@@ -32983,21 +33107,21 @@
     "Un|en|t|halt|sam|keit",
     "Un|ent|halt|sam|keit"
   ],
-  "Unentrinnbarkeit": [
-    "Unent|rinn|bar|keit",
-    "Un|ent|rinn|bar|keit"
+  "Unentrinnbarkeit\n": [
+    "Unent|rinn|bar|keit\n",
+    "Un|ent|rinn|bar|keit\n"
   ],
   "Unentscheidbarkeit": [
     "Unent|scheid|bar|keit",
     "Un|ent|scheid|bar|keit"
   ],
-  "Unentwegtheit": [
-    "Unent|wegt|heit",
-    "Un|ent|wegt|heit"
+  "Unentwegtheit\n": [
+    "Unent|wegt|heit\n",
+    "Un|ent|wegt|heit\n"
   ],
-  "Unerbittlichkeit": [
-    "Uner|bitt|lich|keit",
-    "Un|er|bitt|lich|keit"
+  "Unerbittlichkeit\n": [
+    "Uner|bitt|lich|keit\n",
+    "Un|er|bitt|lich|keit\n"
   ],
   "Unerfahrenheit": [
     "Uner|fah|ren|heit",
@@ -33007,9 +33131,9 @@
     "Uner|forsch|bar|keit",
     "Un|er|forsch|bar|keit"
   ],
-  "Unerforschlichkeit": [
-    "Uner|forsch|lich|keit",
-    "Un|er|forsch|lich|keit"
+  "Unerforschlichkeit\n": [
+    "Uner|forsch|lich|keit\n",
+    "Un|er|forsch|lich|keit\n"
   ],
   "Unergründbarkeit": [
     "Uner|gründ|bar|keit",
@@ -33027,9 +33151,9 @@
     "Uner|kenn|bar|keit",
     "Un|er|kenn|bar|keit"
   ],
-  "Unermesslichkeit": [
-    "Uner|mess|lich|keit",
-    "Un|er|mess|lich|keit"
+  "Unermesslichkeit\n": [
+    "Uner|mess|lich|keit\n",
+    "Un|er|mess|lich|keit\n"
   ],
   "Unermüdlichkeit": [
     "Uner|müd|lich|keit",
@@ -33047,21 +33171,21 @@
     "Uner|schwing|lich|keit",
     "Un|er|schwing|lich|keit"
   ],
-  "Unerschöpflichkeit": [
-    "Uner|schöpf|lich|keit",
-    "Un|er|schöpf|lich|keit"
+  "Unerschöpflichkeit\n": [
+    "Uner|schöpf|lich|keit\n",
+    "Un|er|schöpf|lich|keit\n"
   ],
-  "Unerschütterlichkeit": [
-    "Uner|schüt|ter|lich|keit",
-    "Un|er|schüt|ter|lich|keit"
+  "Unerschütterlichkeit\n": [
+    "Uner|schüt|ter|lich|keit\n",
+    "Un|er|schüt|ter|lich|keit\n"
   ],
   "Unersetzbarkeit": [
     "Uner|setz|bar|keit",
     "Un|er|setz|bar|keit"
   ],
-  "Unersättlichkeit": [
-    "Uner|sätt|lich|keit",
-    "Un|er|sätt|lich|keit"
+  "Unersättlichkeit\n": [
+    "Uner|sätt|lich|keit\n",
+    "Un|er|sätt|lich|keit\n"
   ],
   "Unerträglichkeit": [
     "Uner|träg|lich|keit",
@@ -33083,13 +33207,13 @@
     "Uni|formja|cke",
     "Uni|form|ja|cke"
   ],
-  "Uninformiertheit": [
-    "Unin|for|miert|heit",
-    "Un|in|for|miert|heit"
+  "Uninformiertheit\n": [
+    "Unin|for|miert|heit\n",
+    "Un|in|for|miert|heit\n"
   ],
-  "Univozität": [
-    "Uni|vo|zi|tät",
-    "Un|ivo|zi|tät"
+  "Univozität\n": [
+    "Uni|vo|zi|tät\n",
+    "Un|ivo|zi|tät\n"
   ],
   "Unklugheit": [
     "Unklug|heit",
@@ -33167,9 +33291,9 @@
     "Un|ter|aarglet|scher",
     "Un|ter|aar|glet|scher"
   ],
-  "Unterhaltsamkeit": [
-    "Un|ter|halt|sam|keit",
-    "Un|ter|halts|am|keit"
+  "Unterhaltsamkeit\n": [
+    "Un|ter|halt|sam|keit\n",
+    "Un|ter|halts|am|keit\n"
   ],
   "Unternehmensteuer": [
     "Un|ter|neh|men|steu|er",
@@ -33179,9 +33303,9 @@
     "Un|ter|neh|men|steu|er|re|form",
     "Un|ter|neh|mens|teu|er|re|form"
   ],
-  "Untersteiermark": [
-    "Un|ters|tei|er|mark",
-    "Un|ter|stei|er|mark"
+  "Untersteiermark\n": [
+    "Un|ters|tei|er|mark\n",
+    "Un|ter|stei|er|mark\n"
   ],
   "Untertantreue": [
     "Un|tert|an|treue",
@@ -33291,9 +33415,9 @@
     "Urein|woh|ner|völ|ker",
     "Ur|ein|woh|ner|völ|ker"
   ],
-  "Urenergie": [
-    "Ure|ner|gie",
-    "Ur|e|ner|gie"
+  "Urenergie\n": [
+    "Ure|ner|gie\n",
+    "Ur|e|ner|gie\n"
   ],
   "Urenkel": [
     "Uren|kel",
@@ -33519,9 +33643,9 @@
     "Verab|so|lu|tie|ren",
     "Ver|ab|so|lu|tie|ren"
   ],
-  "Veracruz": [
-    "Veracruz",
-    "Ver|acruz"
+  "Veracruz\n": [
+    "Veracruz\n",
+    "Ver|acruz\n"
   ],
   "Verakruz": [
     "Vera|kruz",
@@ -34103,9 +34227,9 @@
     "Viet|cong",
     "Vi|et|cong"
   ],
-  "Vietkong": [
-    "Viet|kong",
-    "Vi|et|kong"
+  "Vietkong\n": [
+    "Viet|kong\n",
+    "Vi|et|kong\n"
   ],
   "Vietnampolitik": [
     "Vi|et|n|am|po|li|tik",
@@ -34138,10 +34262,6 @@
   "Villasanta": [
     "Vil|lasan|ta",
     "Villasan|ta"
-  ],
-  "Ville": [
-    "Vil|le",
-    "Ville"
   ],
   "Viola": [
     "Vio|la",
@@ -34967,9 +35087,9 @@
     "We|in|säu|resalz",
     "Wein|säu|resalz"
   ],
-  "Weiträumigkeit": [
-    "Weiträu|mig|keit",
-    "Weit|räu|mig|keit"
+  "Weiträumigkeit\n": [
+    "Weiträu|mig|keit\n",
+    "Weit|räu|mig|keit\n"
   ],
   "Weitsprünge": [
     "Weitsprün|ge",
@@ -35283,17 +35403,17 @@
     "Wol|fach",
     "Wolfach"
   ],
-  "Wolfacher": [
-    "Wol|fa|cher",
-    "Wolfa|cher"
+  "Wolfacher\n": [
+    "Wol|fa|cher\n",
+    "Wolfa|cher\n"
   ],
   "Wolfegg": [
     "Wol|fegg",
     "Wolfegg"
   ],
-  "Wolfegger": [
-    "Wol|feg|ger",
-    "Wolfeg|ger"
+  "Wolfegger\n": [
+    "Wol|feg|ger\n",
+    "Wolfeg|ger\n"
   ],
   "Wolfenbüttel": [
     "Wol|fen|büt|tel",
@@ -35435,6 +35555,10 @@
     "Wol|frats|hau|sen",
     "Wolfrats|hau|sen"
   ],
+  "Worcester\n": [
+    "Worces|ter\n",
+    "Worcester\n"
+  ],
   "Worcestersauce": [
     "Worces|ter|sau|ce",
     "Worcester|sau|ce"
@@ -35499,9 +35623,9 @@
     "Wu|trausch",
     "Wut|rausch"
   ],
-  "Wyandot": [
-    "Wyan|dot",
-    "Wy|an|dot"
+  "Wyandot\n": [
+    "Wyan|dot\n",
+    "Wy|an|dot\n"
   ],
   "Würgengel": [
     "Würgen|gel",
@@ -35515,9 +35639,9 @@
     "Xero|ko|pie",
     "Xe|ro|ko|pie"
   ],
-  "Xerox": [
-    "Xer|ox",
-    "Xe|rox"
+  "Xerox\n": [
+    "Xer|ox\n",
+    "Xe|rox\n"
   ],
   "Xeroxkopie": [
     "Xer|ox|ko|pie",
@@ -35543,9 +35667,9 @@
     "Za|bern",
     "Zabern"
   ],
-  "Zaberner": [
-    "Za|ber|ner",
-    "Zaber|ner"
+  "Zaberner\n": [
+    "Za|ber|ner\n",
+    "Zaber|ner\n"
   ],
   "Zaire": [
     "Zaire",
@@ -35567,9 +35691,9 @@
     "Za|ra|thustra",
     "Za|ra|thus|tra"
   ],
-  "Zarow": [
-    "Za|row",
-    "Zarow"
+  "Zarow\n": [
+    "Za|row\n",
+    "Zarow\n"
   ],
   "Zechenarbeiter": [
     "Ze|che|n|ar|bei|ter",
@@ -35666,6 +35790,10 @@
   "Zerebralsklerose": [
     "Ze|re|brals|kle|ro|se",
     "Ze|re|bral|skle|ro|se"
+  ],
+  "Zero\n": [
+    "Zero\n",
+    "Ze|ro\n"
   ],
   "Zieheisen": [
     "Zie|hei|sen",
@@ -35871,9 +35999,9 @@
     "Zo|roas|trier",
     "Zo|ro|as|tri|er"
   ],
-  "Zoroastrismus": [
-    "Zo|roast|ris|mus",
-    "Zo|ro|as|tris|mus"
+  "Zoroastrismus\n": [
+    "Zo|roast|ris|mus\n",
+    "Zo|ro|as|tris|mus\n"
   ],
   "Zottenatrophie": [
     "Zot|te|na|tro|phie",
@@ -36167,9 +36295,9 @@
     "Zusp|ät|kom|men",
     "Zu|spät|kom|men"
   ],
-  "Zustandsnr.": [
-    "Zu|stands|n|r.",
-    "Zu|stands|nr."
+  "Zustandsnr.\n": [
+    "Zu|stands|n|r.\n",
+    "Zu|stands|nr.\n"
   ],
   "Zustandspassiv": [
     "Zu|stand|spas|siv",
@@ -36327,9 +36455,9 @@
     "Ähren|le|se",
     "Äh|ren|le|se"
   ],
-  "Äneis": [
-    "Äneis",
-    "Äne|is"
+  "Äneis\n": [
+    "Äneis\n",
+    "Äne|is\n"
   ],
   "Äquatortaufe": [
     "Äqua|tortau|fe",

@@ -11,7 +11,7 @@ from result import is_err #, is_ok
 from src.hyphen import init_hyphen, get_hyphen # PyHyphen
 from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
-from src.samples import import_samples
+from src.samples import import_samples, import_samples_yaml
 
 from src.utils.trace import Trace, Color, timeit
 from src.utils.files import write_file
@@ -19,42 +19,43 @@ from src.utils.files import write_file
 RESULT_DIR = Path(sys.argv[0]).parent / "results"
 
 test_sample = [
-    "Fortschritt",
-    "Blumentopferde",
-    "Administrationsoberfläche",
-    "Bedarfsanflughafen",
-    "Benutzerauthentifizierungs-",
-    "Bildredaktionsausschuss",
-    "Blechblasinstrument",
-    "Blitzeinschaltsignal",
-    "Brückeneinsturz",
-    "Zeichentrickfilme",
-    "Zebrastreifen-",
-    "Alkoholausschank",
+    # "Fortschritt",
+    # "Blumentopferde",
+    # "Administrationsoberfläche",
+    # "Bedarfsanflughafen",
+    # "Benutzerauthentifizierungs-",
+    # "Bildredaktionsausschuss",
+    # "Blechblasinstrument",
+    # "Blitzeinschaltsignal",
+    # "Brückeneinsturz",
+    # "Zeichentrickfilme",
+    # "Zebrastreifen-",
+    # "Alkoholausschank",
 
-    "Silbentrennung",
-    "Universität",
-    "Abenduniversität",
-    "Mindestentfernung",
-    "Miniaturausgabe",
-    "Haustechnikraum",
-    "Technik",
+    # "Silbentrennung",
+    # "Universität",
+    # "Abenduniversität",
+    # "Mindestentfernung",
+    # "Miniaturausgabe",
+    # "Haustechnikraum",
+    # "Technik",
 
-    "Technikraum",
-    "technikraum",
+    # "Technikraum",
+    # "technikraum",
 
-    "Technikvorraum",
-    "Abendstern",
-    "Morgenstern",
-    "Morgenthau",
-    "Gastherme",
-    "Funktionentheorie",
-    "Gemeindebibliothek",
-    "Nennwertherabsetzung",
+    # "Technikvorraum",
+    # "Abendstern",
+    # "Morgenstern",
+    # "Morgenthau",
+    # "Gastherme",
+    # "Funktionentheorie",
+    # "Gemeindebibliothek",
+    # "Nennwertherabsetzung",
 
-    "Schiffahrt",
+    # "Schiffahrt",
 
-    "Baden-Württemberg"
+    "Baden-Württemberg",
+    "ZUGFeRD",
 ]
 
 ##############################################################
@@ -254,17 +255,19 @@ if __name__ == "__main__":
     Trace.set( debug_mode=False, show_timestamp=False )
     Trace.action(f"Python version {sys.version}")
 
+    # import_samples("samples", ["test_patch", "special", "dashes", "upper"])
+
     # PyHyphen - Patch (on, off)
     # check_patch_sample("de_DE")
-    check_patch_samples("de_DE", "test_sample")
+    # check_patch_samples("de_DE", "test_sample")
     # check_patch_samples("de_DE", "AlleDeutschenWoerter")
-    # check_patch_samples("de_DE", "wortliste")
+    check_patch_samples("de_DE", "wortliste")
     # check_patch_samples("de_DE", "german_words")
     # check_patch_samples("de_DE", "de_DE_frami")
 
     # PyHyphen (mit Patch)
     # check_sample("PyHyphen", "de_DE")
-    check_samples("PyHyphen", "de_DE", "test_sample")
+    # check_samples("PyHyphen", "de_DE", "test_sample")
     # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
     # check_samples("PyHyphen", "de_DE", "wortliste")
     # check_samples("PyHyphen", "de_DE", "german_words")
@@ -272,15 +275,15 @@ if __name__ == "__main__":
 
     # Pyphen
     # check_sample("Pyphen", "de_DE")
-    check_samples("Pyphen", "de_DE", "test_sample")
+    # check_samples("Pyphen", "de_DE", "test_sample")
     # check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
     # check_samples("Pyphen", "de_DE", "wortliste")
     # check_samples("Pyphen", "de_DE", "german_words")
     # check_samples("Pyphen", "de_DE", "de_DE_frami")
 
     # PyHyphen (with patch) <-> Pyphen
-    compare_sample("de_DE" )
-    compare_samples("de_DE", "test_sample")
+    # compare_sample("de_DE" )
+    # compare_samples("de_DE", "test_sample")
     # compare_samples("de_DE", "AlleDeutschenWoerter")
     # compare_samples("de_DE", "wortliste")
     # compare_samples("de_DE", "german_words")

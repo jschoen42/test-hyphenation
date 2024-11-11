@@ -1,0 +1,39 @@
+# -*- coding: utf-8; mode: yaml; indent-tabs-mode: nil; -*-
+%YAML 1.1
+---
+
+samples_all:
+  samples:
+    type: yaml
+    encoding: utf-8
+    files:
+      - samples.yaml
+
+  de_DE_frami:
+    type: dic
+    encoding: cp1252
+    files:
+      - de_DE_frami.dic
+
+  AlleDeutschenWoerter:
+    type: text
+    encoding: utf-8
+    files:
+      - Adjektive/Adjektive.txt
+      - Substantive/substantiv_singular_der.txt
+      - Substantive/substantiv_singular_die.txt
+      - Substantive/substantiv_singular_das.txt
+      - Verben/Verben_regelmaeßig.txt
+      - Verben/Verben_unregelmaeßig_Infinitiv.txt
+
+  wortliste:
+    type: text
+    encoding: utf-8
+    files:
+      - wortliste.txt
+
+  german_words:
+    type: text
+    encoding: utf-8
+    files:
+      - german_words.txt

@@ -1,0 +1,47 @@
+# -*- coding: utf-8; mode: yaml; indent-tabs-mode: nil; -*-
+%YAML 1.1
+---
+
+test_patch:
+ - Abendstern
+ - Abenduniversität
+ - Administrationsoberfläche
+ - Alkoholausschank
+ - Bedarfsanflughafen
+ - Benutzerauthentifizierungs-
+ - Bildredaktionsausschuss
+ - Blechblasinstrument
+ - Blitzeinschaltsignal
+ - Brückeneinsturz
+ - Fortschritt
+ - Funktionentheorie
+ - Gastherme
+ - Gemeindebibliothek
+ - Haustechnikraum
+ - Mindestentfernung
+ - Miniaturausgabe
+ - Morgenstern
+ - Morgenthau
+ - Nennwertherabsetzung
+ - Silbentrennung
+ - Technik
+ - technikraum
+ - Technikraum
+ - Technikvorraum
+ - Universität
+ - Zebrastreifen-
+ - Zeichentrickfilme
+
+special:
+ - Blumentopferde
+ - Schiffahrt
+
+dashes:
+ - Baden-Württemberg
+
+upper:
+ - ADAC
+ - E-Rechnung
+ - E-RechV
+ - ZUGFeRD
+
