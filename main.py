@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
     # PyHyphen - Patch (on, off)
 
-    check_patch_samples("de_DE", "samples", ["test_patch", "special", "dashes", "upper"])
+    check_patch_samples("de_DE", "samples", ["test_patch", "error", "dashes", "upper", "error"])
     # check_patch_samples("de_DE", "AlleDeutschenWoerter")
     # check_patch_samples("de_DE", "wortliste")
     # check_patch_samples("de_DE", "german_words")
@@ -222,7 +222,7 @@ if __name__ == "__main__":
 
     # PyHyphen (mit Patch)
 
-    check_samples("PyHyphen", "de_DE", "samples", ["test_patch", "special", "dashes", "upper"], trace=True)
+    check_samples("PyHyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "error"], trace=True)
     # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
     # check_samples("PyHyphen", "de_DE", "wortliste")
     # check_samples("PyHyphen", "de_DE", "german_words")
@@ -231,7 +231,7 @@ if __name__ == "__main__":
 
     # Pyphen
 
-    check_samples("Pyphen", "de_DE", "samples", ["test_patch", "special", "dashes", "upper"])
+    check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "error"])
     # check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
     # check_samples("Pyphen", "de_DE", "wortliste")
     # check_samples("Pyphen", "de_DE", "german_words")
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
     # PyHyphen (with patch) <-> Pyphen
 
-    compare_samples("de_DE", "samples", ["test_patch", "special", "dashes", "upper"])
+    compare_samples("de_DE", "samples", ["test_patch", "dashes", "upper", "error"])
     # compare_samples("de_DE", "AlleDeutschenWoerter")
     # compare_samples("de_DE", "wortliste")
     # compare_samples("de_DE", "german_words")

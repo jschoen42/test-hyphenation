@@ -25,23 +25,21 @@ test_patch:
  - Nennwertherabsetzung
  - Silbentrennung
  - Technik
- - technikraum
- - Technikraum
  - Technikvorraum
  - Universität
  - Zebrastreifen-
  - Zeichentrickfilme
 
-special:
- - Blumentopferde
- - Schiffahrt
-
 dashes:
  - Baden-Württemberg
 
 upper:
- - ADAC
  - E-Rechnung
  - E-RechV
  - ZUGFeRD
 
+error:
+ - Technikraum
+ - Blumentopferde
+ - Schiffahrt
+ - ADAC
