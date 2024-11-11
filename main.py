@@ -3,7 +3,7 @@
 #
 
 import sys
-from datetime import datetime
+# from datetime import datetime
 from pathlib import Path
 
 from result import is_err #, is_ok
@@ -89,12 +89,12 @@ def check_samples(package_name: str, language: str, set_name: str ) -> None:
 
     if set_name == "test_sample":
         samples = test_sample
-        dt = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        timestamp = True
     else:
+        timestamp = False
         set_name, samples = import_samples(set_name)
-        dt = ""
 
-    filename = f"{package_name}-{set_name}{dt}.json"
+    filename = f"{package_name}-{set_name}.json"
 
     if package_name == "Pyphen":
         results = test_Pyphen(samples, language, trace=False)
@@ -107,7 +107,7 @@ def check_samples(package_name: str, language: str, set_name: str ) -> None:
 
     Trace.result(f"results: {len(results)}")
 
-    ret = write_file(RESULT_DIR, filename, results )
+    ret = write_file(RESULT_DIR, filename, results, filename_timestamp=timestamp)
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 
@@ -175,14 +175,11 @@ def check_patch( set_name: str, words: list, language: str, trace:bool = True ) 
             Trace.update(f"patched '{word}': '{difference[word][0]}' => '{difference[word][1]}'")
 
     if set_name != "":
-        if set_name == "test_sample":
-            dt = "-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        else:
-            dt = ""
+        timestamp = (set_name == "test_sample")
 
-        filename = f"PyHypen-PATCH-{set_name}{dt}.json"
+        filename = f"PyHypen-PATCH-{set_name}.json"
 
-        ret = write_file(RESULT_DIR, filename, difference )
+        ret = write_file(RESULT_DIR, filename, difference, filename_timestamp=timestamp)
         if is_err(ret):
             Trace.error(f"Error: {ret.err_value}")
 
@@ -242,14 +239,11 @@ def compare_words( set_name: str, samples: list, language: str, trace: bool) -> 
             Trace.info(f"'{word}': {Color.RED}{Color.BOLD}Pyphen{Color.RESET} '{difference[word][0]}', {Color.BLUE}{Color.BOLD}PyHyphen{Color.RESET} '{difference[word][1]}'")
 
     if set_name != "":
-        if set_name == "test_sample":
-            dt = "-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        else:
-            dt = ""
+        timestamp = (set_name == "test_sample")
 
-        filename = f"PyHypen-Python-differences{set_name}{dt}.json"
+        filename = f"PyHypen-Python-differences{set_name}.json"
 
-        ret = write_file(RESULT_DIR, filename, difference )
+        ret = write_file(RESULT_DIR, filename, difference, filename_timestamp=timestamp )
         if is_err(ret):
             Trace.error(f"Error: {ret.err_value}")
 
@@ -285,7 +279,7 @@ if __name__ == "__main__":
     # check_samples("Pyphen", "de_DE", "de_DE_frami")
 
     # PyHyphen (with patch) <-> Pyphen
-    # compare_sample("de_DE" )
+    compare_sample("de_DE" )
     compare_samples("de_DE", "test_sample")
     # compare_samples("de_DE", "AlleDeutschenWoerter")
     # compare_samples("de_DE", "wortliste")

@@ -27,6 +27,8 @@
 import os
 import sys
 
+from datetime import datetime
+
 import xml.etree.ElementTree as ET
 
 if "orjson" in sys.modules:
@@ -39,6 +41,7 @@ from result import Result, Ok, Err
 
 from src.utils.trace import Trace
 
+TIMESTAMP = '%Y-%m-%d_%H-%M-%S'
 
 def get_timestamp(filepath: Path | str) -> Result[float, str]:
     """
@@ -66,7 +69,7 @@ def get_timestamp(filepath: Path | str) -> Result[float, str]:
 
     return Ok(ret)
 
-def set_timestamp(filepath: Path | str, timestamp: float) -> Result[str, str]:
+def set_timestamp(filepath: Path | str, timestamp: int|float) -> Result[str, str]:
     """
     ---
     set timestamp of a file
@@ -86,7 +89,7 @@ def set_timestamp(filepath: Path | str, timestamp: float) -> Result[str, str]:
         return Err(err)
 
     try:
-        os.utime(Path(filepath), (timestamp, timestamp)) # atime and mtime
+        os.utime(Path(filepath), times = (timestamp, timestamp)) # atime and mtime
     except OSError as err:
         Trace.error(f"set_timestamp: {err}")
 
@@ -166,7 +169,7 @@ def read_file(dirpath: Path | str, filename: str, encoding: str="utf-8") -> Resu
         return Ok(data)
 
 
-def write_file(dirpath: Path | str, filename: str, data: any, encoding: str="utf-8", newline: str="\n" , create_dir: bool = True) -> Result[str, str]:
+def write_file(dirpath: Path | str, filename: str, data: any, filename_timestamp: bool = False, timestamp: int|float = 0, encoding: str="utf-8", newline: str="\n" , create_dir: bool = True) -> Result[str, str]:
     """
     ---
     write file (text, json, xml)
@@ -174,6 +177,8 @@ def write_file(dirpath: Path | str, filename: str, data: any, encoding: str="utf
     Parameters
      - dirpath: Path or str
      - filename: str - supported extentions: '.txt', '.json', '.xml'
+     - filename_timestamp: bool - add to filename a timestamp
+     - timestamp: float - timestamp in sec
      - encoding: str - used only for '.txt'
      - newline: str - "\\n" or "\\r\\n"
      - create_dir: bool - create directory if not exists (default: True)
@@ -187,9 +192,13 @@ def write_file(dirpath: Path | str, filename: str, data: any, encoding: str="utf
      - the identical check is only content based, newline char is ignored
     """
 
-    # 1. type check + serialization
-
     suffix = Path(filename).suffix
+    stem = Path(filename).stem
+
+    if filename_timestamp:
+        filename = f"{stem}_{datetime.now().strftime(TIMESTAMP)}{suffix}"
+
+    # 1. type check + serialization
 
     if suffix in [".txt", ".csv"]:
         if not isinstance(data, str):
@@ -257,6 +266,14 @@ def write_file(dirpath: Path | str, filename: str, data: any, encoding: str="utf
         except OSError as err:
             return Err(f"{err}")
         Trace.update(f"'{filepath}' created")
+
+    # 4: optional: set file timestamp
+
+    if timestamp > 0:
+        try:
+            os.utime(filepath, times = (timestamp, timestamp)) # atime and mtime
+        except OSError as err:
+            return Err(f"timestamp: {err}")
 
     return Ok(())
 
