@@ -92,6 +92,7 @@ def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> 
     try:
         with open(dirpath / filename, "r", encoding=encoding) as file:
             for i, line in enumerate(file):
+                line = line.strip()
                 if i==0 or len(line) == 0 or line.startswith("#") :
                     continue
 
