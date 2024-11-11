@@ -18,7 +18,7 @@ SAMPLES_DIR = BASE_PATH / "samples"
 SETTING_DIR = BASE_PATH / "settings"
 
 @timeit("import samples")
-def import_samples( sample_name: str, sub_samples: list = [] ) -> list | set:
+def import_samples( sample_name: str, sub_samples: list = [], language = "#" ) -> list | set:
 
     with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
         settings = yaml.safe_load(file)
@@ -37,13 +37,13 @@ def import_samples( sample_name: str, sub_samples: list = [] ) -> list | set:
 
     for file in files:
         if type == "yaml":
-            words.extend(import_samples_yaml(SAMPLES_DIR, file, sub_samples))
+            words.extend(import_samples_yaml(SAMPLES_DIR / language, file, sub_samples))
 
         elif type == "dic":
-            words = words | import_samples_dictionary(SAMPLES_DIR / sample_name, file, encoding)
+            words = words | import_samples_dictionary(SAMPLES_DIR / language / sample_name, file, encoding)
 
         elif type == "text":
-            words = words | import_samples_text(SAMPLES_DIR / sample_name, file, encoding)
+            words = words | import_samples_text(SAMPLES_DIR / language / sample_name, file, encoding)
 
     Trace.info(f"{sample_name}-{type}: {len(words)} samples"  )
 

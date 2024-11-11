@@ -74,7 +74,7 @@ test_sample = [
 
 def check_samples(package_name: str, language: str, set_name: str, sub_set: list = [], trace: bool = False ) -> None:
 
-    set_name, samples = import_samples(set_name, sub_set)
+    set_name, samples = import_samples(set_name, sub_set, language)
 
     if package_name == "Pyphen":
         results = test_Pyphen(samples, language, trace)
@@ -88,7 +88,7 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: list
     filename = f"{package_name}_COMPLETE_{set_name}.json"
     timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR / set_name, filename, results, filename_timestamp=timestamp)
+    ret = write_file(RESULT_DIR / language / set_name, filename, results, filename_timestamp=timestamp)
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 
@@ -128,7 +128,7 @@ def test_PyHyphen(words: dict, language: str, trace:bool = True) -> list:
 
 def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace: bool = False ) -> None:
 
-    set_name, samples = import_samples(set_name, sub_set)
+    set_name, samples = import_samples(set_name, sub_set, language)
 
     difference = {}
     identical = {}
@@ -150,7 +150,7 @@ def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace
     filename = f"PyHyphen_PATCH_{set_name}.json"
     timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR / set_name, filename, difference, filename_timestamp=timestamp)
+    ret = write_file(RESULT_DIR / language / set_name, filename, difference, filename_timestamp=timestamp)
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 
@@ -170,7 +170,7 @@ def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace
 
 def compare_samples( language: str, set_name: str, sub_set: list = [], trace: bool = False ) -> None:
 
-    set_name, samples = import_samples(set_name, sub_set)
+    set_name, samples = import_samples(set_name, sub_set, language)
 
     difference = {}
     identical = {}
@@ -200,7 +200,7 @@ def compare_samples( language: str, set_name: str, sub_set: list = [], trace: bo
     filename = f"Pyphen-PyHyphen_DIFF_{set_name}.json"
     timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR / set_name, filename, difference, filename_timestamp=timestamp )
+    ret = write_file(RESULT_DIR / language / set_name, filename, difference, filename_timestamp=timestamp )
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 
