@@ -29,17 +29,31 @@ test_patch:
  - Universität
  - Zebrastreifen-
  - Zeichentrickfilme
+ - Schaltsignal
 
 dashes:
  - Baden-Württemberg
+ - E-Rechnung
 
 upper:
- - E-Rechnung
  - E-RechV
  - ZUGFeRD
 
-error:
- - Technikraum
- - Blumentopferde
+special:
  - Schiffahrt
+
+corrected:
+ - Aalangeln
+ - Blumentopferde
+ - Farbrezeptor
+ - Farbrezeptoren
+ - Technikraum
+ - Technikräume
+ - außerhalb
+
+wrong:
  - ADAC
+ - ANSI
+ - ASCII
+
+# https://www.korrekturen.de/worttrennung/de/

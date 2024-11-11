@@ -2,57 +2,55 @@
 %YAML 1.1
 ---
 
-samples_all:
+# ./samples/samples.yaml
 
-  # ./samples/samples.yaml
+samples:
+  type: yaml
+  encoding: utf-8
+  files:
+    - samples.yaml
 
-  samples:
-    type: yaml
-    encoding: utf-8
-    files:
-      - samples.yaml
+# https://github.com/LibreOffice/dictionaries/tree/master/de
 
-  # https://github.com/LibreOffice/dictionaries/tree/master/de
+de_DE_frami:
+  type: dic
+  encoding: cp1252
+  files:
+    - de_DE_frami.dic
 
-  de_DE_frami:
-    type: dic
-    encoding: cp1252
-    files:
-      - de_DE_frami.dic
+# https://github.com/cpos/AlleDeutschenWoerter
 
-  # https://github.com/cpos/AlleDeutschenWoerter
+AlleDeutschenWoerter:
+  type: text
+  encoding: utf-8
+  files:
+    - Adjektive/Adjektive.txt
+    - Substantive/substantiv_singular_der.txt
+    - Substantive/substantiv_singular_die.txt
+    - Substantive/substantiv_singular_das.txt
+    - Verben/Verben_regelmaeßig.txt
+    - Verben/Verben_unregelmaeßig_Infinitiv.txt
 
-  AlleDeutschenWoerter:
-    type: text
-    encoding: utf-8
-    files:
-      - Adjektive/Adjektive.txt
-      - Substantive/substantiv_singular_der.txt
-      - Substantive/substantiv_singular_die.txt
-      - Substantive/substantiv_singular_das.txt
-      - Verben/Verben_regelmaeßig.txt
-      - Verben/Verben_unregelmaeßig_Infinitiv.txt
+# https://github.com/davidak/wortliste
 
-  # https://github.com/davidak/wortliste
+wortliste:
+  type: text
+  encoding: utf-8
+  files:
+    - wortliste.txt
 
-  wortliste:
-    type: text
-    encoding: utf-8
-    files:
-      - wortliste.txt
+# https://github.com/0LL13/german_words
 
-  # https://github.com/0LL13/german_words
+german_words:
+  type: text
+  encoding: utf-8
+  files:
+    - german_words.txt
 
-  german_words:
-    type: text
-    encoding: utf-8
-    files:
-      - german_words.txt
+# https://gist.github.com/MarvinJWendt/2f4f4154b8ae218600eb091a5706b5f4
 
-  # https://gist.github.com/MarvinJWendt/2f4f4154b8ae218600eb091a5706b5f4
-
-  wordlist-german:
-    type: text
-    encoding: utf-8
-    files:
-      - wordlist-german.txt
+wordlist-german:
+  type: text
+  encoding: utf-8
+  files:
+    - wordlist-german.txt

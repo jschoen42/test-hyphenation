@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 
 import yaml
+from yaml.parser import ParserError
 
 from src.utils.trace import Trace, timeit
 
@@ -21,10 +22,13 @@ SETTING_DIR = BASE_PATH / "settings"
 @timeit("import samples")
 def import_samples( sample_name: str, sub_samples: list = [], language = "#" ) -> list | set:
 
-    with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
-        settings = yaml.safe_load(file)
+    try:
+        with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
+            settings = yaml.safe_load(file)
+    except ParserError as err:
+        Trace.fatal(f"settings.yaml: {err}")
 
-    sample = settings['samples_all'][sample_name]
+    sample = settings[sample_name]
     type     = sample["type"]
     encoding = sample["encoding"]
     files    = sample["files"]
@@ -66,9 +70,8 @@ def import_samples_yaml( dirpath: Path, filename: str, sub_samples: list ) -> li
         Trace.error(f"{err}")
         return words
 
-    except yaml.scanner.ScannerError as err:
-        Trace.error(f"{filename}: {err}")
-        return words
+    except ParserError as err:
+        Trace.fatal(f"{filename}: {err}")
 
     found = []
     for sub_sample in sub_samples:

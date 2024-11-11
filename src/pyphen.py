@@ -31,7 +31,7 @@ def get_pyphen( word:str, trace: bool = False ):
 
     result = []
     for part in parts:
-        result.append(pyphen_dic.inserted(part, "|"))
+        result.append(pyphen_dic.inserted(part, "·"))
 
     if trace:
         Trace.result(f"Pyphen:   {"-".join(result)}")

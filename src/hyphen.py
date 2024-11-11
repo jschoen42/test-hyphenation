@@ -20,10 +20,6 @@ def init_hyphen( language: str = "de_DE" ):
     if not dirpath.exists():
         Trace.fatal(f"PyHyphen directory '{dirpath}' not found")
 
-    # filepath = dirpath / f"hyph_{language}.dic"
-    # if not filepath.exists():
-    #     Trace.fatal(f"PyHyphen dictionary '{filepath}' not found")
-
     hyphen = Hyphenator(language, directory=dirpath)
 
 def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
@@ -62,7 +58,7 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
 def pprint_hyphen( parts: list ):
     result = ""
     for part in parts:
-        result = result + "|".join(part) + "-"
+        result = result + "·".join(part) + "-"
 
     return result[:-1]
 
