@@ -1,5 +1,5 @@
 """
-    (c) Jürgen Schoenemeyer, 02.11.2024
+    (c) Jürgen Schoenemeyer, 26.11.2024
 
     PUBLIC:
     remove_colors(text: str) -> str:
@@ -7,6 +7,9 @@
     @timeit(pre_text: str = "", rounds: int = 1)
 
     @timeit("argon2 (20 rounds)", 20) # test with 20 rounds => average duration for a round
+
+    @timeit("ttx => font '{0}'")      # 0 -> args
+    @timeit("ttx => font '{type}'")   # type -> kwargs
 
     class Trace:
 
@@ -43,12 +46,13 @@ import re
 import inspect
 import time
 
-from typing import Any
 from enum import StrEnum
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from zoneinfo._common import ZoneInfoNotFoundError
+
+BASE_PATH = Path(sys.argv[0]).parent
 
 system = platform.system()
 if system == "Windows":
@@ -93,9 +97,10 @@ class Color(StrEnum):
 def remove_colors(text: str) -> str:
     return re.sub(r"\033\[[0-9;]*m", "", text)
 
+
 # decorator for time measure
 
-def timeit(pre_text:str = "", rounds:int = 1):
+def timeit(pre_text: str = "", rounds: int = 1):
     def decorator(func):
         def wrapper(*args, **kwargs):
             start_time = time.perf_counter()
@@ -105,11 +110,21 @@ def timeit(pre_text:str = "", rounds:int = 1):
             end_time = time.perf_counter()
             total_time = (end_time - start_time) / rounds
 
+            def replace_args(match):
+                word = match.group(1)
+                if word.isnumeric():
+                    return str(args[int(word)]) # {1} -> args[1]
+                else:
+                    return kwargs.get(word)     # {type} -> kwargs["type"]
+
+            pattern = r"\{(.*?)\}"
+            pretext = re.sub(pattern, replace_args, pre_text)
+
             text = f"{Color.GREEN}{Color.BOLD}{total_time:.3f} sec{Color.RESET}"
-            if pre_text == "":
+            if pretext == "":
                 Trace.time(f"{text}")
             else:
-                Trace.time(f"{pre_text}: {text}")
+                Trace.time(f"{pretext}: {text}")
 
             return result
         return wrapper
@@ -127,19 +142,22 @@ pattern = {
     "download":  ">>>>>",
 
     "warning":   "*****",
-    "error":     "#####",
+    "error":     "#####", # + rot
     "exception": "!!!!!",
     "fatal":     "FATAL",
 
-    "debug":     "@@@@@",
-    "wait":      "WAIT ", # only in debug mode
+    "debug":     "DEBUG", # only in special debug mode
+    "wait":      "WAIT ", # only in special debug mode
 }
 
 class Trace:
-    default_base_folder = os.getcwd().replace("\\", "/").split("/")[-1]
+    # default_base_folder = os.getcwd().replace("\\", "/").split("/")[-1]
+
+    default_base = BASE_PATH.resolve()
+    default_base_folder = str(default_base).replace("\\", "/")
 
     settings = {
-        "appl_folder":   "/" + default_base_folder + "/",
+        "appl_folder":    default_base_folder + "/",
 
         "color":          True,
         "reduced_mode":   False,
@@ -181,15 +199,15 @@ class Trace:
 
         try:
             timezone = ZoneInfo(cls.settings["time_zone"])
-            curr_time = datetime.now().astimezone(timezone).strftime("%Y-%d-%m_%H-%M-%S")
+            curr_time = datetime.now().astimezone(timezone).strftime("%Y.%d.%m • %H-%M-%S")
         except ZoneInfoNotFoundError:
-            curr_time = datetime.now().strftime("%Y-%d-%m_%H-%M-%S") # "tzdata" not installed
+            curr_time = datetime.now().strftime("%Y.%d.%m • %H-%M-%S") # "tzdata" not installed
 
         try:
             if not trace_path.is_dir():
                 os.makedirs(path)
 
-            with open(Path(trace_path, filename + "_" + curr_time + ".txt"), "w", encoding="utf-8") as file:
+            with open(Path(trace_path, f"{filename} • {curr_time}.txt"), "w", encoding="utf-8") as file:
                 file.write(text)
 
         except OSError as err:
@@ -200,34 +218,34 @@ class Trace:
     # action, result, info, update, download
 
     @classmethod
-    def action(cls, message: str = "", *optional: Any) -> None:
+    def action(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def result(cls, message: str = "", *optional: Any) -> None:
+    def result(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def time(cls, message: str = "", *optional: Any) -> None:
+    def time(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_custom_caller('duration')}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def info(cls, message: str = "", *optional: Any) -> None:
+    def info(cls, message: str = "", *optional: any) -> None:
         if not cls.settings["reduced_mode"]:
             pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
             cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def update(cls, message: str = "", *optional: Any) -> None:
+    def update(cls, message: str = "", *optional: any) -> None:
         if not cls.settings["reduced_mode"]:
             pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
             cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def download(cls, message: str = "", *optional: Any) -> None:
+    def download(cls, message: str = "", *optional: any) -> None:
         if not cls.settings["reduced_mode"]:
             pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
             cls.__show_message(cls.__check_file_output(), pre, message, *optional)
@@ -235,22 +253,22 @@ class Trace:
     # warning, error, exception, fatal => RED
 
     @classmethod
-    def warning(cls, message: str = "", *optional: Any) -> None:
+    def warning(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def error(cls, message: str = "", *optional: Any) -> None:
+    def error(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{Color.RED}{cls.__get_pattern()}{cls.__get_caller()}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def exception(cls, message: str = "", *optional: Any) -> None:
+    def exception(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{Color.RED}{cls.__get_pattern()}{cls.__get_caller()}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def fatal(cls, message: str = "", *optional: Any) -> None:
+    def fatal(cls, message: str = "", *optional: any) -> None:
         pre = f"{cls.__get_time()}{Color.RED}{Color.BOLD}{cls.__get_pattern()}{cls.__get_caller()}"
         cls.__show_message(cls.__check_file_output(), pre, message, *optional)
         raise SystemExit
@@ -258,13 +276,13 @@ class Trace:
     # debug, wait
 
     @classmethod
-    def debug(cls, message: str = "", *optional: Any) -> None:
+    def debug(cls, message: str = "", *optional: any) -> None:
         if cls.settings["debug_mode"] and not cls.settings["reduced_mode"]:
             pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
             cls.__show_message(cls.__check_file_output(), pre, message, *optional)
 
     @classmethod
-    def wait(cls, message: str = "", *optional: Any) -> None:
+    def wait(cls, message: str = "", *optional: any) -> None:
         if cls.settings["debug_mode"]:
             pre = f"{cls.__get_time()}{cls.__get_pattern()}{cls.__get_caller()}"
             cls.__show_message(cls.__check_file_output(), pre, message, *optional)
@@ -291,7 +309,7 @@ class Trace:
                 sys.exit()
 
     @classmethod
-    def __show_message(cls, file_output: bool, pre: str, message: str, *optional: Any) -> None:
+    def __show_message(cls, file_output: bool, pre: str, message: str, *optional: any) -> None:
         extra = ""
         for opt in optional:
             extra += " > " + str(opt)
@@ -376,18 +394,3 @@ class ProcessLog:
     def get(self):
         return self.log
 
-""" locale
-
-    locale.setlocale(locale.LC_NUMERIC, "de_DE")
-
-
-    locale.setlocale(locale.LC_ALL, "de_DE")
-    locale.localeconv()
-
-    "en_GB": {'int_curr_symbol': 'GBP', 'currency_symbol': '£',   'mon_decimal_point': '.', 'mon_thousands_sep': ',', 'mon_grouping': [3, 0], 'positive_sign': '', 'negative_sign': '-', 'int_frac_digits': 2, 'frac_digits': 2, 'p_cs_precedes': 1, 'p_sep_by_space': 0, 'n_cs_precedes': 1, 'n_sep_by_space': 0, 'p_sign_posn': 3, 'n_sign_posn': 3, 'decimal_point': '.', 'thousands_sep': ',', 'grouping': [3, 0]}
-    "en_US": {'int_curr_symbol': 'USD', 'currency_symbol': '$',   'mon_decimal_point': '.', 'mon_thousands_sep': ',', 'mon_grouping': [3, 0], 'positive_sign': '', 'negative_sign': '-', 'int_frac_digits': 2, 'frac_digits': 2, 'p_cs_precedes': 1, 'p_sep_by_space': 0, 'n_cs_precedes': 1, 'n_sep_by_space': 0, 'p_sign_posn': 3, 'n_sign_posn': 0, 'decimal_point': '.', 'thousands_sep': ',', 'grouping': [3, 0]}
-
-    "de_DE": {'int_curr_symbol': 'EUR', 'currency_symbol': '€',   'mon_decimal_point': ',', 'mon_thousands_sep': '.', 'mon_grouping': [3, 0], 'positive_sign': '', 'negative_sign': '-', 'int_frac_digits': 2, 'frac_digits': 2, 'p_cs_precedes': 0, 'p_sep_by_space': 1, 'n_cs_precedes': 0, 'n_sep_by_space': 1, 'p_sign_posn': 1, 'n_sign_posn': 1, 'decimal_point': ',', 'thousands_sep': '.', 'grouping': [3, 0]}
-    "de_CH": {'int_curr_symbol': 'CHF', 'currency_symbol': 'CHF', 'mon_decimal_point': '.', 'mon_thousands_sep': '’', 'mon_grouping': [3, 0], 'positive_sign': '', 'negative_sign': '-', 'int_frac_digits': 2, 'frac_digits': 2, 'p_cs_precedes': 1, 'p_sep_by_space': 1, 'n_cs_precedes': 1, 'n_sep_by_space': 0, 'p_sign_posn': 4, 'n_sign_posn': 4, 'decimal_point': '.', 'thousands_sep': '’', 'grouping': [3, 0]}
-
-"""
