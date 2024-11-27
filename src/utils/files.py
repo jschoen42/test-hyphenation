@@ -1,14 +1,14 @@
 """
-    (c) Jürgen Schoenemeyer, 10.11.2024
+    (c) Jürgen Schoenemeyer, 25.11.2024
 
     error channel -> rustedpy/result
 
     PUBLIC:
     result = get_timestamp(filepath: Path | str) -> Result[float, str]:
-    result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[str, str]:
+    result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[(), str]:
 
-    result = read_file(path: Path | str, filename: str, encoding: str="utf-8" ) -> Result[str, str]
-    result = write_file(path: Path | str, filename: str, data: any, encoding: str="utf-8", create_dir: bool = True) -> Result[str, str]:
+    result = read_file(filepath: Path | str, encoding: str="utf-8" ) -> Result[any, str]
+    result = write_file(filepath: Path | str, data: any, encoding: str="utf-8", create_dir: bool = True) -> Result[str, str]:
 
     from result import is_err, is_ok
 
@@ -19,8 +19,8 @@
 
     supported types
      - .txt
-     - .json
-     - .xml
+     - .json (json or orjson)
+     - .xml (minidom or xml.etree.ElementTree)
 
 """
 
@@ -29,10 +29,17 @@ import sys
 
 from datetime import datetime
 
+from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
+if "xmltodict" in sys.modules:
+    import xmltodict
+
+if "dicttoxml" in sys.modules:
+    from dicttoxml import dicttoxml
+
 if "orjson" in sys.modules:
-    import orjson # optional
+    import orjson # Rust library optional
 else:
     import json
 
@@ -41,74 +48,83 @@ from result import Result, Ok, Err
 
 from src.utils.trace import Trace
 
-TIMESTAMP = '%Y-%m-%d_%H-%M-%S'
+TIMESTAMP = "%Y-%m-%d_%H-%M-%S"
 
 def get_timestamp(filepath: Path | str) -> Result[float, str]:
     """
-    ---
-    get timestamp of a file
+    ### get timestamp of a file
 
-    Parameters
+    #### Arguments
      - filepath: Path or str
 
-    Result [rustedpy]
+    #### Return [rustedpy]
      - Ok: timestamp as float
      - Err: errortext as str
     """
 
     if not filepath.exists():
-        err = "'{filepath}' does not exist"
-        Trace.error(f"{err}")
+        err = f"'{filepath}' does not exist"
+        Trace.debug(f"{err}")
         return Err(err)
 
     try:
         ret = os.path.getmtime(Path(filepath))
     except OSError as err:
-        Trace.error(f"{err}")
+        Trace.debug(f"{err}")
         return Err(f"{err}")
 
     return Ok(ret)
 
 def set_timestamp(filepath: Path | str, timestamp: int|float) -> Result[str, str]:
     """
-    ---
-    set timestamp of a file
+    ### set timestamp of a file
 
-    Parameters
+    #### Arguments
      - filepath: Path or str
      - timestamp: float
 
-    Result [rustedpy]
+    #### Return [rustedpy]
      - Ok: -
      - Err: errortext as str
     """
 
+    filepath = Path(filepath)
+
     if not filepath.exists():
-        err = "'{filepath}' does not exist"
-        Trace.error(f"{err}")
+        err = f"'{filepath}' does not exist"
+        Trace.debug(f"{err}")
         return Err(err)
 
     try:
         os.utime(Path(filepath), times = (timestamp, timestamp)) # atime and mtime
     except OSError as err:
-        Trace.error(f"set_timestamp: {err}")
+        Trace.debug(f"{err}")
+        return Err(f"{err}")
 
-    return Ok(())
+    return Ok("")
 
-def read_file(dirpath: Path | str, filename: str, encoding: str="utf-8") -> Result[str, str]:
+
+def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[any, str]:
     """
-    ---
-    read file (text, json, xml)
+    ### read file (text, json, xml)
 
-    Parameters
-     - dirpath: Path or str
-     - filename: str - supported extentions: '.txt', '.json', '.xml'
+    #### Arguments
+     - filepath: Path or str  - supported suffixes: '.txt', '.json', '.xml'
      - encoding: str - used only for '.txt'
 
-    Result [rustedpy]
-     - Ok: text as str
+    #### Return [rustedpy]
+     - Ok: data as any
      - Err: errortext as str
+    ---
+    #### Infos
+     - using orjson (if installed) for '.json' files
+     - auto convert (xml <-> json)
+     - xml used minidom or xml.etree.ElementTree
     """
+
+    filepath = Path(filepath)
+    dirpath  = Path(filepath).parent
+    filename = Path(filepath).name
 
     # 1. type check
 
@@ -124,24 +140,29 @@ def read_file(dirpath: Path | str, filename: str, encoding: str="utf-8") -> Resu
         type = "xml"
 
     else:
-        return Err(f"Type '{suffix}' is not supported")
+        err = f"Type '{suffix}' is not supported"
+        Trace.debug(err)
+        return Err(err)
 
     # 2. directory check
 
-    dirpath = Path(dirpath)
     if not dirpath.exists():
-        return Err(f"DirNotFoundError: '{dirpath}'")
+        err = f"DirNotFoundError: '{dirpath}'"
+        Trace.debug(err)
+        return Err(err)
 
     # 3. file check + deserialization
 
-    filepath = dirpath / filename
     if not filepath.exists():
-        return Err(f"FileNotFoundError: '{filepath}'")
+        err = f"FileNotFoundError: '{filepath}'"
+        Trace.debug(err)
+        return Err(err)
 
     try:
         with open(filepath, "r", encoding=encoding) as f:
             text = f.read()
     except OSError as err:
+        Trace.debug(f"{err}")
         return Err(f"{err}")
 
     if type == "text":
@@ -152,45 +173,55 @@ def read_file(dirpath: Path | str, filename: str, encoding: str="utf-8") -> Resu
             try:
                 data = orjson.loads(text)
             except orjson.JSONDecodeError as err:
-                return Err(f"JSONDecodeError: {filepath} => {err}")
+                err = f"JSONDecodeError: {filepath} => {err}"
+                Trace.debug(err)
+                return Err(err)
             return Ok(data)
         else:
             try:
                 data = json.loads(text)
             except json.JSONDecodeError as err:
-                return Err(f"JSONDecodeError: {filepath} => {err}")
+                err = f"JSONDecodeError: {filepath} => {err}"
+                Trace.debug(err)
+                return Err(err)
             return Ok(data)
 
     elif type == "xml":
         try:
-            data = ET.fromstring(text)
-        except ET.ParseError as err:
-            return Err(f"ParseError: {err}")
+            # data = ET.fromstring(text)
+            data = minidom.parseString(text)
+        except (TypeError, AttributeError) as err:
+            err = f"ParseError: {err}"
+            Trace.debug(err)
+            return Err(err)
         return Ok(data)
 
 
-def write_file(dirpath: Path | str, filename: str, data: any, filename_timestamp: bool = False, timestamp: int|float = 0, encoding: str="utf-8", newline: str="\n" , create_dir: bool = True) -> Result[str, str]:
+def write_file(filepath: Path | str, data: any, filename_timestamp: bool = False, timestamp: int|float = 0, encoding: str="utf-8", newline: str="\n" , create_dir: bool = True) -> Result[str, str]:
     """
-    ---
-    write file (text, json, xml)
+    ### write file (text, json, xml)
 
-    Parameters
-     - dirpath: Path or str
-     - filename: str - supported extentions: '.txt', '.json', '.xml'
-     - filename_timestamp: bool - add to filename a timestamp
+    #### Arguments
+     - filepath: Path or str - supported suffixes: '.txt', '.json', '.xml'
+     - filename_timestamp: bool - add timestamp to filename
      - timestamp: float - timestamp in sec
      - encoding: str - used only for '.txt'
      - newline: str - "\\n" or "\\r\\n"
      - create_dir: bool - create directory if not exists (default: True)
 
-    Result [rustedpy]
+    #### Returns [rustedpy]
      - Ok: -
      - Err: errortext as str
-
-    Infos
-     - using orjson for '.json' files
-     - the identical check is only content based, newline char is ignored
+    ----
+    #### Infos
+     - using orjson (if installed) for '.json' files
+     - auto convert (xml <-> json)
+     - xml used minidom or xml.etree.ElementTree
     """
+
+    filepath = Path(filepath)
+    dirpath  = Path(filepath).parent
+    filename = Path(filepath).name
 
     suffix = Path(filename).suffix
     stem = Path(filename).stem
@@ -202,49 +233,86 @@ def write_file(dirpath: Path | str, filename: str, data: any, filename_timestamp
 
     if suffix in [".txt", ".csv"]:
         if not isinstance(data, str):
-            return Err(f'write_file \'{suffix}\': "{str(data)[:50]} …" is not a string')
+            err = f'write_file \'{suffix}\': "{str(data)[:50]} …" is not a string'
+            Trace.debug(err)
+            return Err(err)
         else:
             text = data
 
     elif suffix == ".json":
-        if not isinstance(data, str):
+
+        # xxl -> json
+
+        if isinstance(data, minidom.Document):
+            text = data.toxml()
+            data = xmltodict.parse(text)
+
+        elif isinstance(data, ET.Element):
+            text = ET.tostring(data, method="xml", xml_declaration=True, encoding="unicode")
+            data = xmltodict.parse(text)
+
+        # json -> json
+
+        if isinstance(data, dict) or isinstance(data, list):
             if "orjson" in sys.modules:
                 text = orjson.dumps(data, option=orjson.OPT_INDENT_2).decode("utf-8")
             else:
                 text = json.dumps(data, indent=2, ensure_ascii=False)
+
         else:
-            text = data
+            err = f"Type '{type(data)}' is not supported for '{suffix}'"
+            Trace.debug(err)
+            return Err(err)
 
     elif suffix == ".xml":
-        if not isinstance(data, str):
+
+        # xml -> xml
+
+        if isinstance(data, minidom.Document):
+            text = data.toxml()
+            text = text.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n')
+
+        elif isinstance(data, ET.Element):
             text = ET.tostring(data, method="xml", xml_declaration=True, encoding="unicode")
+            text = text.replace("<?xml version='1.0' encoding='utf-8'?>", '<?xml version="1.0" encoding="utf-8" standalone="yes"?>')
+
+        # json -> xml
+
+        elif isinstance(data, dict):
+            text = minidom.parseString(dicttoxml(data)).toprettyxml(indent="  ")
+            text = text.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="utf-8" standalone="yes"?>')
+
         else:
-            text = data
+            err = f"Type '{type(data)}' is not supported for '{suffix}'"
+            Trace.debug(err)
+            return Err(err)
 
     else:
-        return Err(f"Type '{suffix}' is not supported")
+        err = f"Type '{suffix}' is not supported"
+        Trace.debug(err)
+        return Err(err)
 
     # 2. directory check
 
-    dirpath = Path(dirpath)
     if not dirpath.exists():
         if create_dir:
             try:
                 os.makedirs(dirpath)
                 Trace.update(f"'{dirpath}' created")
             except OSError as err:
+                Trace.debug(f"{err}")
                 return Err(f"{err}")
         else:
             return Err(f"DirNotFoundError: '{dirpath}'")
 
     # 3. file check
 
-    filepath = dirpath / filename
     if filepath.exists():
         try:
             with open(filepath, "r", encoding=encoding) as f:
                 text_old = f.read()
         except OSError as err:
+            Trace.debug(f"{err}")
             return Err(f"{err}")
 
         if text == text_old:
@@ -264,6 +332,7 @@ def write_file(dirpath: Path | str, filename: str, data: any, filename_timestamp
             with open(filepath, "w", encoding=encoding, newline=newline) as f:
                 f.write(text)
         except OSError as err:
+            Trace.debug(f"{err}")
             return Err(f"{err}")
         Trace.update(f"'{filepath}' created")
 
@@ -273,28 +342,29 @@ def write_file(dirpath: Path | str, filename: str, data: any, filename_timestamp
         try:
             os.utime(filepath, times = (timestamp, timestamp)) # atime and mtime
         except OSError as err:
+            Trace.debug(f"{err}")
             return Err(f"timestamp: {err}")
 
-    return Ok(())
+    return Ok("")
 
 def listdir_ext(dirpath: Path | str, extensions: list = None) -> Result[list, str]:
     """
-    ---
-    list all files in directory which matches the extentions
+    ### list all files in directory which matches the extentions
 
-    Parameters
+    #### Arguments
      - dirpath: Path or str
      - extensions: e.g. str [".zip", ".story", ".xlsx", ".docx"], None => all
 
-    Result [rustedpy]
+    #### Return [rustedpy]
      - Ok: files as list
      - Err: errortext as str
-
     """
 
     dirpath = Path(dirpath)
     if not dirpath.exists():
-        return Err(f"DirNotFoundError: '{dirpath}'")
+        err = f"DirNotFoundError: '{dirpath}'"
+        Trace.debug(err)
+        return Err(err)
 
     ret = []
     files = os.listdir(dirpath)
