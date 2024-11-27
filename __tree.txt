@@ -1,0 +1,18 @@
+test-hyphenation v0.1.0
+├── arrow v1.3.0
+│   ├── python-dateutil v2.9.0.post0
+│   │   └── six v1.16.0
+│   └── types-python-dateutil v2.9.0.20241003
+├── orjson v3.10.12
+├── pyhyphen v4.0.4
+│   ├── appdirs v1.4.4
+│   ├── requests v2.32.3
+│   │   ├── certifi v2024.8.30
+│   │   ├── charset-normalizer v3.4.0
+│   │   ├── idna v3.10
+│   │   └── urllib3 v2.2.3
+│   ├── setuptools v75.6.0
+│   └── wheel v0.45.1
+├── pyphen v0.17.0
+├── pyyaml v6.0.2
+└── result v0.17.0
