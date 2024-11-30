@@ -12,6 +12,3 @@ dependencies = [
     "pyyaml>=6.0.2",
     "result>=0.17.0",
 ]
-
-[tool.uv]
-cache-dir = "G:/.uv_cache"
