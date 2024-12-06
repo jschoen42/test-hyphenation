@@ -1,6 +1,5 @@
 # .venv\Scripts\activate
 # python main.py
-#
 
 import sys
 # from datetime import datetime
@@ -13,7 +12,7 @@ from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
 from src.samples import import_samples
 
-from src.utils.trace import Trace, Color, timeit
+from src.utils.trace import Trace, Color, duration
 from src.utils.files import write_file
 
 RESULT_DIR = Path(sys.argv[0]).parent / "results"
@@ -88,13 +87,13 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: list
     filename = f"{package_name}_COMPLETE_{set_name}.json"
     timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR / language / set_name, filename, results, filename_timestamp=timestamp)
+    ret = write_file(RESULT_DIR / language / set_name / filename, results, filename_timestamp=timestamp)
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 
     Trace.result(f"results: {len(results)}")
 
-@timeit("Pyphen test all")
+@duration("Pyphen test all")
 def test_Pyphen(words: dict, language: str, trace:bool = True) -> list:
     Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
     init_pyphen(language)
@@ -105,7 +104,7 @@ def test_Pyphen(words: dict, language: str, trace:bool = True) -> list:
 
     return result
 
-@timeit("PyHyphen test all")
+@duration("PyHyphen test all")
 def test_PyHyphen(words: dict, language: str, trace:bool = True) -> list:
     Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen with patch ...{Color.RESET}")
     init_hyphen(language)
@@ -150,7 +149,7 @@ def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace
     filename = f"PyHyphen_PATCH_{set_name}.json"
     timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR / language / set_name, filename, difference, filename_timestamp=timestamp)
+    ret = write_file(RESULT_DIR / language / set_name / filename, difference, filename_timestamp=timestamp)
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 
@@ -200,7 +199,7 @@ def compare_samples( language: str, set_name: str, sub_set: list = [], trace: bo
     filename = f"Pyphen-PyHyphen_DIFF_{set_name}.json"
     timestamp = (set_name == "samples")
 
-    ret = write_file(RESULT_DIR / language / set_name, filename, difference, filename_timestamp=timestamp )
+    ret = write_file(RESULT_DIR / language / set_name / filename, difference, filename_timestamp=timestamp )
     if is_err(ret):
         Trace.error(f"Error: {ret.err_value}")
 

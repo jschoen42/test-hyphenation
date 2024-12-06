@@ -4,7 +4,7 @@ from pathlib import Path
 import yaml
 from yaml.parser import ParserError
 
-from src.utils.trace import Trace, timeit
+from src.utils.trace import Trace, duration
 
 #  externe Liste -> settings/settings.yaml
 #
@@ -19,7 +19,7 @@ BASE_PATH = Path(sys.argv[0]).parent
 SAMPLES_DIR = BASE_PATH / "samples"
 SETTING_DIR = BASE_PATH / "settings"
 
-@timeit("import samples")
+@duration("import samples")
 def import_samples( sample_name: str, sub_samples: list = [], language = "#" ) -> list | set:
 
     try:

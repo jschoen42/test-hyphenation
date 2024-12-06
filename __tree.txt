@@ -1,8 +1,8 @@
-test-hyphenation v0.1.0
+hyphenation-test v0.1.0
 ├── arrow v1.3.0
 │   ├── python-dateutil v2.9.0.post0
-│   │   └── six v1.16.0
-│   └── types-python-dateutil v2.9.0.20241003
+│   │   └── six v1.17.0
+│   └── types-python-dateutil v2.9.0.20241206
 ├── orjson v3.10.12
 ├── pyhyphen v4.0.4
 │   ├── appdirs v1.4.4

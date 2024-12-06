@@ -1,16 +1,15 @@
-# Pyphen
 import sys
 from pathlib import Path
 
 import pyphen
 
-from src.utils.trace import Trace, timeit
+from src.utils.trace import Trace, duration
 
 DICT_DIR = Path(sys.argv[0]).parent / "dict"
 
 pyphen_dic = None
 
-@timeit("Pyphon init")
+@duration("Pyphon init")
 def init_pyphen( language: str="de_DE" ):
     global pyphen_dic
 
