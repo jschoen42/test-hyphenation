@@ -3,7 +3,8 @@ from pathlib import Path
 
 import pyphen
 
-from src.utils.trace import Trace, duration
+from src.utils.trace     import Trace
+from src.utils.decorator import duration
 
 DICT_DIR = Path(sys.argv[0]).parent / "dict"
 

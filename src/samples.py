@@ -4,7 +4,8 @@ from pathlib import Path
 import yaml
 from yaml.parser import ParserError
 
-from src.utils.trace import Trace, duration
+from src.utils.trace     import Trace
+from src.utils.decorator import duration
 
 #  externe Liste -> settings/settings.yaml
 #

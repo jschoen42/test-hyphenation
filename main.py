@@ -12,8 +12,9 @@ from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
 from src.samples import import_samples
 
-from src.utils.trace import Trace, Color, duration
-from src.utils.files import write_file
+from src.utils.trace     import Trace, Color
+from src.utils.decorator import duration
+from src.utils.files     import write_file
 
 RESULT_DIR = Path(sys.argv[0]).parent / "results"
 

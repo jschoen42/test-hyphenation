@@ -4,7 +4,8 @@ from pathlib import Path
 from hyphen import Hyphenator
 from hyphen import dictools
 
-from src.utils.trace import Trace, duration
+from src.utils.trace     import Trace
+from src.utils.decorator import duration
 
 DICT_DIR = Path(sys.argv[0]).parent / "dict"
 
