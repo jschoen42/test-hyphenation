@@ -3,11 +3,12 @@ hyphenation-test v0.1.0
 │   ├── python-dateutil v2.9.0.post0
 │   │   └── six v1.17.0
 │   └── types-python-dateutil v2.9.0.20241206
+├── certifi v2024.12.14
 ├── orjson v3.10.12
 ├── pyhyphen v4.0.4
 │   ├── appdirs v1.4.4
 │   ├── requests v2.32.3
-│   │   ├── certifi v2024.8.30
+│   │   ├── certifi v2024.12.14
 │   │   ├── charset-normalizer v3.4.0
 │   │   ├── idna v3.10
 │   │   └── urllib3 v2.2.3
