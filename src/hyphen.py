@@ -4,10 +4,11 @@ from pathlib import Path
 from hyphen import Hyphenator
 from hyphen import dictools
 
+from src.utils.globals   import BASE_PATH
 from src.utils.trace     import Trace
 from src.utils.decorator import duration
 
-DICT_DIR = Path(sys.argv[0]).parent / "dict"
+DICT_DIR = BASE_PATH / "dict"
 
 hyphen = None
 

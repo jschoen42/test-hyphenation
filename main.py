@@ -2,8 +2,6 @@
 # python main.py
 
 import sys
-# from datetime import datetime
-from pathlib import Path
 
 from result import is_err #, is_ok
 
@@ -12,11 +10,12 @@ from src.pyphen import init_pyphen, get_pyphen # Pyphon
 
 from src.samples import import_samples
 
+from src.utils.globals   import BASE_PATH
 from src.utils.trace     import Trace, Color
 from src.utils.decorator import duration
 from src.utils.files     import write_file
 
-RESULT_DIR = Path(sys.argv[0]).parent / "results"
+RESULT_DIR = BASE_PATH / "results"
 
 test_sample = [
     # "Fortschritt",

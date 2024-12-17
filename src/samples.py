@@ -4,6 +4,7 @@ from pathlib import Path
 import yaml
 from yaml.parser import ParserError
 
+from src.utils.globals   import BASE_PATH
 from src.utils.trace     import Trace
 from src.utils.decorator import duration
 
@@ -16,7 +17,6 @@ from src.utils.decorator import duration
 #  - de_DE_frami:          https://github.com/LibreOffice/dictionaries/tree/master/de
 #
 
-BASE_PATH = Path(sys.argv[0]).parent
 SAMPLES_DIR = BASE_PATH / "samples"
 SETTING_DIR = BASE_PATH / "settings"
 
