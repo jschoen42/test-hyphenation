@@ -17,46 +17,6 @@ from utils.files     import write_file
 
 RESULT_DIR = BASE_PATH / "results"
 
-test_sample = [
-    # "Fortschritt",
-    # "Blumentopferde",
-    # "Administrationsoberfläche",
-    # "Bedarfsanflughafen",
-    # "Benutzerauthentifizierungs-",
-    # "Bildredaktionsausschuss",
-    # "Blechblasinstrument",
-    # "Blitzeinschaltsignal",
-    # "Brückeneinsturz",
-    # "Zeichentrickfilme",
-    # "Zebrastreifen-",
-    # "Alkoholausschank",
-
-    # "Silbentrennung",
-    # "Universität",
-    # "Abenduniversität",
-    # "Mindestentfernung",
-    # "Miniaturausgabe",
-    # "Haustechnikraum",
-    # "Technik",
-
-    # "Technikraum",
-    # "technikraum",
-
-    # "Technikvorraum",
-    # "Abendstern",
-    # "Morgenstern",
-    # "Morgenthau",
-    # "Gastherme",
-    # "Funktionentheorie",
-    # "Gemeindebibliothek",
-    # "Nennwertherabsetzung",
-
-    # "Schiffahrt",
-
-    "Baden-Württemberg",
-    "ZUGFeRD",
-]
-
 ##############################################################
 # check_samples("PyHyphen", "de_DE", "samples", ["test_patch, special, dashes, upper"])
 # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
@@ -230,7 +190,7 @@ if __name__ == "__main__":
 
     # Pyphen
 
-    # check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
+    check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
     # check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
     # check_samples("Pyphen", "de_DE", "wortliste")
     # check_samples("Pyphen", "de_DE", "german_words")

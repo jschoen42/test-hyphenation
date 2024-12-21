@@ -1,6 +1,3 @@
-import sys
-from pathlib import Path
-
 import pyphen
 
 from utils.globals   import BASE_PATH

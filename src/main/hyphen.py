@@ -1,6 +1,3 @@
-import sys
-from pathlib import Path
-
 from hyphen import Hyphenator
 from hyphen import dictools
 
