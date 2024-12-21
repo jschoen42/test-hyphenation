@@ -1,12 +1,11 @@
-import sys
 from pathlib import Path
 
 import yaml
 from yaml.parser import ParserError
 
-from src.utils.globals   import BASE_PATH
-from src.utils.trace     import Trace
-from src.utils.decorator import duration
+from utils.globals   import BASE_PATH
+from utils.trace     import Trace
+from utils.decorator import duration
 
 #  externe Liste -> settings/settings.yaml
 #
