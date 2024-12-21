@@ -1,8 +1,6 @@
 result/*
 !result/.gitkeep
 
-_result/*
-
 data/*
 !data/.gitkeep
 
