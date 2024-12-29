@@ -6,6 +6,9 @@ data/*
 
 _old/*
 
+*.7z
+__history.txt
+
 ### Python
 
 __pycache__/
