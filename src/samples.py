@@ -1,3 +1,4 @@
+from typing import List, Set, Tuple
 from pathlib import Path
 
 import yaml
@@ -20,7 +21,10 @@ SAMPLES_DIR = BASE_PATH / "samples"
 SETTING_DIR = BASE_PATH / "settings"
 
 @duration("import samples")
-def import_samples( sample_name: str, sub_samples: list = [], language = "#" ) -> list | set:
+def import_samples( sample_name: str, sub_samples: List | None = None, language: str = "#" ) -> Tuple[str, List | Set]:
+
+    if sub_samples is None:
+        sub_samples = []
 
     try:
         with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
@@ -28,39 +32,43 @@ def import_samples( sample_name: str, sub_samples: list = [], language = "#" ) -
     except ParserError as err:
         Trace.fatal(f"settings.yaml: {err}")
 
-    sample = settings[sample_name]
+    sample   = settings[sample_name]
     type     = sample["type"]
     encoding = sample["encoding"]
     files    = sample["files"]
 
     if type == "yaml":
-        words = list()
-    elif type in ["dic", "text"]:
-        words = set()
+        words_yaml: List = list()
+        for file in files:
+            words_yaml.extend(import_samples_yaml(SAMPLES_DIR / language, str(file), sub_samples))
+
+        Trace.info(f"{sample_name}-{type}: {len(words_yaml)} samples"  )
+        return (sample_name, words_yaml)
+
+    elif type == "dic":
+        words_dict: Set = set()
+        for file in files:
+            words_dict = words_dict | import_samples_dictionary(SAMPLES_DIR / language / sample_name, str(file), encoding)
+
+        Trace.info(f"{sample_name}-{type}: {len(words_dict)} samples"  )
+        return (sample_name, sorted(words_dict))
+
+    elif type == "text":
+        words_text: Set = set()
+        for file in files:
+            words_text = words_text | import_samples_text(SAMPLES_DIR / language / sample_name, str(file), encoding)
+
+        Trace.info(f"{sample_name}-{type}: {len(words_text)} samples"  )
+        return (sample_name, sorted(words_text))
+
     else:
         Trace.fatal(f"unknown type '{type}'")
-
-    for file in files:
-        if type == "yaml":
-            words.extend(import_samples_yaml(SAMPLES_DIR / language, file, sub_samples))
-
-        elif type == "dic":
-            words = words | import_samples_dictionary(SAMPLES_DIR / language / sample_name, file, encoding)
-
-        elif type == "text":
-            words = words | import_samples_text(SAMPLES_DIR / language / sample_name, file, encoding)
-
-    Trace.info(f"{sample_name}-{type}: {len(words)} samples"  )
-
-    if type == "yaml":
-        return (sample_name, words)
-    else:
-        return (sample_name, sorted(words))
+        return (sample_name, [])
 
 # YAML
 
-def import_samples_yaml( dirpath: Path, filename: str, sub_samples: list ) -> list:
-    words = []
+def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List ) -> List:
+    words: List = []
 
     try:
         with open( dirpath / filename, "r", encoding="utf-8") as file:

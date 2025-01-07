@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 20.12.2024
+    © Jürgen Schoenemeyer, 04.01.2025
 
     error channel -> rustedpy/result
 
@@ -7,7 +7,7 @@
      - result = get_timestamp(filepath: Path | str) -> Result[float, str]:
      - result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[(), str]:
     #
-     - result = get_files_dirs(path: str, extensions: list) -> Result[Tuple[list, list], str]:
+     - result = get_files_dirs(path: str, extensions: List) -> Result[Tuple[List, List], str]:
     #
      - result = read_file(filepath: Path | str, encoding: str="utf-8" ) -> Result[Any, str]
      - result = write_file(filepath: Path | str, data: Any, encoding: str="utf-8", create_dir: bool = True, show_message: bool=True) -> Result[str, str]:
@@ -24,12 +24,15 @@
      - .txt
      - .json (json or orjson)
      - .xml (minidom or xml.etree.ElementTree)
+     #
+     ------
+     check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=False) -> Result[str, str]
 """
 
 import os
 import sys
 
-from typing import Any, Tuple
+from typing import Any, Dict, List, Tuple
 from datetime import datetime
 from pathlib import Path
 
@@ -42,7 +45,7 @@ except ModuleNotFoundError:
     pass
 
 try:
-    import dicttoxml
+    import dicttoxml  # type: ignore # mypy
 except ModuleNotFoundError:
     pass
 
@@ -53,7 +56,7 @@ except ModuleNotFoundError:
 
 from result import Result, Ok, Err
 
-from utils.trace import Trace
+from utils.trace import Trace, Color
 
 TIMESTAMP = "%Y-%m-%d_%H-%M-%S"
 
@@ -69,9 +72,11 @@ def get_timestamp(filepath: Path | str) -> Result[float, str]:
      - Err: errortext as str
     """
 
+    filepath = Path(filepath)
+
     if not filepath.exists():
         err = f"'{filepath}' does not exist"
-        Trace.debug(f"{err}")
+        Trace.debug(err)
         return Err(err)
 
     try:
@@ -112,8 +117,8 @@ def set_timestamp(filepath: Path | str, timestamp: int|float) -> Result[str, str
 
 # dir listing -> list of files and dirs
 
-def get_files_dirs(path: str, extensions: list) -> Result[Tuple[list, list], str]:
-    files: list = []
+def get_files_dirs(path: str, extensions: List) -> Result[Tuple[List, List], str]:
+    files: List = []
     dirs = []
     try:
         for filename in os.listdir(path):
@@ -131,7 +136,7 @@ def get_files_dirs(path: str, extensions: list) -> Result[Tuple[list, list], str
         Trace.error(f"{err}")
         return Err(f"{err}")
 
-    return Ok(files, dirs)
+    return Ok((files, dirs))
 
 def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
     """
@@ -202,17 +207,17 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
             try:
                 data = orjson.loads(text)
             except orjson.JSONDecodeError as err:
-                err = f"JSONDecodeError: {filepath} => {err}"
-                Trace.debug(err)
-                return Err(err)
+                error = f"JSONDecodeError: {filepath} => {err}"
+                Trace.debug(error)
+                return Err(error)
             return Ok(data)
         else:
             try:
                 data = json.loads(text)
             except json.JSONDecodeError as err:
-                err = f"JSONDecodeError: {filepath} => {err}"
-                Trace.debug(err)
-                return Err(err)
+                error = f"JSONDecodeError: {filepath} => {err}"
+                Trace.debug(error)
+                return Err(error)
             return Ok(data)
 
     elif type == "xml":
@@ -220,10 +225,14 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
             # data = ET.fromstring(text)
             data = minidom.parseString(text)
         except (TypeError, AttributeError) as err:
-            err = f"ParseError: {err}"
-            Trace.debug(err)
-            return Err(err)
+            error = f"ParseError: {err}"
+            Trace.debug(error)
+            return Err(error)
         return Ok(data)
+
+    else:
+        Trace.error(f"Type '{type}' is not supported")
+        return Err(f"Type '{type}' is not supported")
 
 
 def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False, timestamp: int|float = 0, encoding: str="utf-8", newline: str="\n", create_dir: bool = True, show_message: bool=True) -> Result[str, str]:
@@ -282,25 +291,26 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
         # json -> json
 
-        def serialize_sets(obj):
+        def serialize_sets(obj: Any) -> Any:
             if isinstance(obj, set):
                 return sorted(obj)
 
             return obj
 
-        if isinstance(data, dict) or isinstance(data, list):
+        if isinstance(data, Dict) or isinstance(data, List):
             try:
                 if "orjson" in sys.modules:
                     text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8")
                 else:
                     text = json.dumps(data, default=serialize_sets, indent=2, ensure_ascii=False)
             except TypeError as err:
-                Trace.error(f"TypeError: {err}")
-                return Err(err)
+                error = f"TypeError: {err}"
+                Trace.error(error)
+                return Err(error)
         else:
-            err = f"Type '{type(data)}' is not supported for '{suffix}'"
-            Trace.error(err)
-            return Err(err)
+            error = f"Type '{type(data)}' is not supported for '{suffix}'"
+            Trace.error(error)
+            return Err(error)
 
     elif suffix == ".xml":
 
@@ -316,19 +326,19 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
         # json -> xml
 
-        elif isinstance(data, dict):
+        elif isinstance(data, Dict):
             text = minidom.parseString(dicttoxml(data)).toprettyxml(indent="  ")
             text = text.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="utf-8" standalone="yes"?>')
 
         else:
-            err = f"Type '{type(data)}' is not supported for '{suffix}'"
-            Trace.debug(err)
-            return Err(err)
+            error = f"Type '{type(data)}' is not supported for '{suffix}'"
+            Trace.debug(f"{error}")
+            return Err(error)
 
     else:
-        err = f"Type '{suffix}' is not supported"
-        Trace.debug(err)
-        return Err(err)
+        error = f"Type '{suffix}' is not supported"
+        Trace.debug(error)
+        return Err(error)
 
     # 2. directory check
 
@@ -388,16 +398,16 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
     return Ok("")
 
-def listdir_ext(dirpath: Path | str, extensions: list = None) -> Result[list, str]:
+def Listdir_ext(dirpath: Path | str, extensions: List | None = None) -> Result[List, str]:
     """
-    ### list all files in directory which matches the extentions
+    ### List all files in directory which matches the extentions
 
     #### Arguments
      - dirpath: Path or str
      - extensions: e.g. str [".zip", ".story", ".xlsx", ".docx"], None => all
 
     #### Return [rustedpy]
-     - Ok: files as list
+     - Ok: files as List
      - Err: errortext as str
     """
 
@@ -415,3 +425,61 @@ def listdir_ext(dirpath: Path | str, extensions: list = None) -> Result[list, st
                 ret.append(file)
 
     return Ok(ret)
+
+def check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=False) -> Result[str, str]:
+    if str(path)[-1] == ":":
+        path = str(path) + "/"
+
+    path = Path(path)
+
+    if path.exists():
+        if not case_sensitive:
+            return Ok(f"{Color.GREEN}{path.as_posix()}{Color.RESET}")
+
+        if os.path.abspath(path) == os.path.realpath(path):
+            return Ok(f"{Color.GREEN}{path.as_posix()}{Color.RESET}")
+
+    name = ""
+    suffix = path.suffix
+
+    if suffix != "":
+        name = path.name
+        path = path.parent
+
+    error = False
+    success = Path()
+
+    txt = f"{Color.GREEN}"
+    for part in path.parts:
+        if not error:
+            if case_sensitive:
+                if (success / part).exists() and os.path.abspath(success / part) == os.path.realpath(success / part):
+                    success = success / part
+                else:
+                    error = True
+                    txt += f"{Color.RED}{Color.BOLD}"
+
+            else:
+                if (success / part).exists():
+                    success = success / part
+                else:
+                    error = True
+                    txt += f"{Color.RED}{Color.BOLD}"
+
+        txt += part + "/"
+
+    if name == "":
+        txt = txt[:-1]
+    else:
+        if error:
+            txt += name
+        else:
+            txt += f"{Color.RED}{Color.BOLD}{name}"
+
+    txt += f"{Color.RESET}"
+
+    txt = str(Path(txt).as_posix())
+    if debug:
+        Trace.error( f"path '{txt}' not found" )
+
+    return Err(f"{txt}")

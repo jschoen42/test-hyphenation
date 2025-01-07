@@ -1,5 +1,5 @@
-from hyphen import Hyphenator
-from hyphen import dictools
+from hyphen import Hyphenator # type: ignore # mypy
+from hyphen import dictools   # type: ignore # mypy
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace
@@ -7,10 +7,10 @@ from utils.decorator import duration
 
 DICT_DIR = BASE_PATH / "dict"
 
-hyphen = None
+hyphen: Hyphenator
 
 @duration("PyHyphen init")
-def init_hyphen( language: str = "de_DE" ):
+def init_hyphen( language: str = "de_DE" ) -> None:
     global hyphen
 
     dirpath = DICT_DIR
@@ -19,7 +19,7 @@ def init_hyphen( language: str = "de_DE" ):
 
     hyphen = Hyphenator(language, directory=dirpath)
 
-def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
+def get_hyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
 
     parts = word.split("-") # e.g. "Baden-Württemberg"
 
@@ -52,14 +52,14 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ):
 
     return pprint_hyphen(result)
 
-def pprint_hyphen( parts: list ):
+def pprint_hyphen( parts: list ) -> str:
     result = ""
     for part in parts:
         result = result + "·".join(part) + "-"
 
     return result[:-1]
 
-def download_all():
+def download_all() -> None:
     languages = dictools.LANGUAGES
     for language in languages:
         try:

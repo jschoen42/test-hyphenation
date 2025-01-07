@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 23.12.2024
+    © Jürgen Schoenemeyer, 04.01.2025
 
     PUBLIC:
     class Prefs:
@@ -7,8 +7,8 @@
       - load(cls, pref_name: str) -> bool
       - get(cls, key_path: str) -> Any
 
-    merge_dicts(a: dict, b: dict) -> dict
-    build_tree(tree: list, in_key: str, value: str) -> dict
+    merge_dicts(a: Dict, b: Dict) -> Dict
+    build_tree(tree: List, in_key: str, value: str) -> Dict
 """
 
 import json
@@ -16,7 +16,7 @@ import re
 
 from json    import JSONDecodeError
 from pathlib import Path
-from typing  import Any, Tuple
+from typing  import Any, Dict, List, Tuple
 
 import yaml
 
@@ -25,12 +25,12 @@ from utils.trace   import Trace
 from utils.file    import beautify_path
 
 class Prefs:
-    pref_path   = BASE_PATH / "prefs"
-    pref_prefix = ""
-    data = {}
+    pref_path: Path = BASE_PATH / "prefs"
+    pref_prefix: str = ""
+    data: dict = {}
 
     @classmethod
-    def init(cls, pref_path = None, pref_prefix = None ) -> None:
+    def init(cls, pref_path: Path | str | None = None, pref_prefix: str | None = None ) -> None:
         if pref_path is not None:
             cls.pref_path = BASE_PATH / pref_path
         if pref_prefix is not None:
@@ -68,7 +68,7 @@ class Prefs:
         return True
 
     @classmethod
-    def get_all(cls) -> dict:
+    def get_all(cls) -> Dict:
         return cls.data
 
     @classmethod
@@ -114,12 +114,12 @@ class Prefs:
         return ret
 
 
-def get_pref_special(pref_path: Path, pref_prexix, pref_name: str, key: str) -> str:
+def get_pref_special(pref_path: Path, pref_prexix: str, pref_name: str, key: str) -> str:
     try:
         with open(Path(pref_path, pref_prexix + pref_name + ".yaml"), "r", encoding="utf-8") as file:
             pref = yaml.safe_load(file)
     except OSError as err:
-        Trace.error(f"{beautify_path(err)}")
+        Trace.error(f"{beautify_path(str(err))}")
         return ""
 
     if key in pref:
@@ -128,7 +128,7 @@ def get_pref_special(pref_path: Path, pref_prexix, pref_name: str, key: str) -> 
         Trace.error(f"unknown pref: {pref_name} / {key}")
         return ""
 
-def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, dict]:
+def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, Dict]:
     try:
         with open( Path(pref_path, pref_name), "r", encoding="utf-8") as file:
             data = yaml.safe_load(file)
@@ -137,15 +137,15 @@ def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, dict]:
         return False, data
 
     except OSError as err:
-        Trace.error( f"{beautify_path(err)}" )
+        Trace.error( f"{beautify_path(str(err))}" )
         return True, {}
 
 # https://stackoverflow.com/questions/7204805/deep-merge-dictionaries-of-dictionaries-in-python?page=1&tab=scoredesc#answer-7205672
 
-def merge_dicts(a: dict, b: dict) -> Any:
+def merge_dicts(a: Dict, b: Dict) -> Any:
     for k in set(a.keys()).union(b.keys()):
         if k in a and k in b:
-            if isinstance(a[k], dict) and isinstance(b[k], dict):
+            if isinstance(a[k], dict) and isinstance(b[k], Dict):
                 yield (k, dict(merge_dicts(a[k], b[k])))
             else:
                 # If one of the values is not a dict, you can't continue merging it.
@@ -159,10 +159,10 @@ def merge_dicts(a: dict, b: dict) -> Any:
 
 # https://stackoverflow.com/questions/7204805/deep-merge-dictionaries-of-dictionaries-in-python?page=1&tab=scoredesc#answer-7205107
 
-def merge(a: dict, b: dict, path=[]) -> Any:
+def merge(a: Dict, b: Dict, path: List[str] = []) -> Any:
     for key in b:
         if key in a:
-            if isinstance(a[key], dict) and isinstance(b[key], dict):
+            if isinstance(a[key], dict) and isinstance(b[key], Dict):
                 merge(a[key], b[key], path + [str(key)])
             elif a[key] != b[key]:
                 raise Exception("Conflict at " + ".".join(path + [str(key)]))
@@ -170,7 +170,7 @@ def merge(a: dict, b: dict, path=[]) -> Any:
             a[key] = b[key]
     return a
 
-def build_tree(tree: list, in_key: str, value: str) -> dict:
+def build_tree(tree: List, in_key: str, value: str) -> Dict:
     if tree:
         return {tree[0]: build_tree(tree[1:], in_key, value)}
 

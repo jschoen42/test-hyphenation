@@ -3,6 +3,7 @@
 
 import sys
 
+from typing import Dict, List
 from result import is_err #, is_ok
 
 from main.hyphen import init_hyphen, get_hyphen # PyHyphen
@@ -31,7 +32,7 @@ RESULT_DIR = BASE_PATH / "results"
 # check_samples("Pyphen", "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_samples(package_name: str, language: str, set_name: str, sub_set: list = [], trace: bool = False ) -> None:
+def check_samples(package_name: str, language: str, set_name: str, sub_set: List = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
@@ -54,7 +55,7 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: list
     Trace.result(f"results: {len(results)}")
 
 @duration("Pyphen test all")
-def test_Pyphen(words: dict, language: str, trace:bool = True) -> list:
+def test_Pyphen(words: dict, language: str, trace:bool = True) -> Dict:
     Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
     init_pyphen(language)
 
@@ -65,11 +66,11 @@ def test_Pyphen(words: dict, language: str, trace:bool = True) -> list:
     return result
 
 @duration("PyHyphen test all")
-def test_PyHyphen(words: dict, language: str, trace:bool = True) -> list:
+def test_PyHyphen(words: dict, language: str, trace:bool = True) -> Dict:
     Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen with patch ...{Color.RESET}")
     init_hyphen(language)
 
-    result = {}
+    result: Dict = {}
     for word in words:
         result[word] = get_hyphen(word, trace = trace)
 
@@ -85,12 +86,12 @@ def test_PyHyphen(words: dict, language: str, trace:bool = True) -> list:
 # compare_samples( "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace: bool = False ) -> None:
+def check_patch_samples( language: str, set_name: str, sub_set: List = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
-    difference = {}
-    identical = {}
+    difference: Dict = {}
+    identical: Dict = {}
 
     init_hyphen(language)
 
@@ -127,12 +128,12 @@ def check_patch_samples( language: str, set_name: str, sub_set: list = [], trace
 #
 ##############################################################
 
-def compare_samples( language: str, set_name: str, sub_set: list = [], trace: bool = False ) -> None:
+def compare_samples( language: str, set_name: str, sub_set: List = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
-    difference = {}
-    identical = {}
+    difference: Dict = {}
+    identical: Dict = {}
 
     # Pyphen
 
@@ -166,10 +167,7 @@ def compare_samples( language: str, set_name: str, sub_set: list = [], trace: bo
     Trace.result(f"all: {len(samples)}, identical: {len(identical)}, different: {len(difference)}")
 
 
-if __name__ == "__main__":
-    Trace.set( debug_mode=False, show_timestamp=False )
-    Trace.action(f"Python version {sys.version}")
-
+def main() -> None:
     # PyHyphen - Patch (on, off)
 
     # check_patch_samples("de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"])
@@ -182,15 +180,15 @@ if __name__ == "__main__":
     # PyHyphen (mit Patch)
 
     check_samples("PyHyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
-    # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
-    # check_samples("PyHyphen", "de_DE", "wortliste")
-    # check_samples("PyHyphen", "de_DE", "german_words")
-    # check_samples("PyHyphen", "de_DE", "de_DE_frami")
-    # check_samples("PyHyphen", "de_DE", "wordlist-german")
+    check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
+    check_samples("PyHyphen", "de_DE", "wortliste")
+    check_samples("PyHyphen", "de_DE", "german_words")
+    check_samples("PyHyphen", "de_DE", "de_DE_frami")
+    check_samples("PyHyphen", "de_DE", "wordlist-german")
 
     # Pyphen
 
-    check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
+    # check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
     # check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
     # check_samples("Pyphen", "de_DE", "wortliste")
     # check_samples("Pyphen", "de_DE", "german_words")
@@ -205,3 +203,13 @@ if __name__ == "__main__":
     # compare_samples("de_DE", "german_words")
     # compare_samples("de_DE", "de_DE_frami")
     # compare_samples("de_DE", "wordlist-german")
+
+if __name__ == "__main__":
+    Trace.set( debug_mode=False, timezone=False )
+    Trace.action(f"Python version {sys.version}")
+
+    try:
+        main()
+    except KeyboardInterrupt:
+        Trace.exception("KeyboardInterrupt")
+        sys.exit()

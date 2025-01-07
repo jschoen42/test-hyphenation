@@ -1,4 +1,4 @@
-import pyphen
+import pyphen  # type: ignore # mypy
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace
@@ -6,10 +6,10 @@ from utils.decorator import duration
 
 DICT_DIR = BASE_PATH / "dict"
 
-pyphen_dic = None
+pyphen_dic: pyphen.Pyphen
 
 @duration("Pyphon init")
-def init_pyphen( language: str="de_DE" ):
+def init_pyphen( language: str="de_DE" ) -> None:
     global pyphen_dic
 
     dirpath = DICT_DIR
@@ -22,7 +22,7 @@ def init_pyphen( language: str="de_DE" ):
 
     pyphen_dic = pyphen.Pyphen(filename=filepath)
 
-def get_pyphen( word:str, trace: bool = False ):
+def get_pyphen( word:str, trace: bool = False ) -> str:
     global pyphen_dic
 
     parts = word.split("-") # e.g. "Baden-Württemberg"
