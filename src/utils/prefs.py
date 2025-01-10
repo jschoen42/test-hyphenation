@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 04.01.2025
+    © Jürgen Schoenemeyer, 09.01.2025
 
     PUBLIC:
     class Prefs:
@@ -22,12 +22,11 @@ import yaml
 
 from utils.globals import BASE_PATH
 from utils.trace   import Trace
-from utils.file    import beautify_path
 
 class Prefs:
     pref_path: Path = BASE_PATH / "prefs"
     pref_prefix: str = ""
-    data: dict = {}
+    data: Dict[Any, Any] = {}
 
     @classmethod
     def init(cls, pref_path: Path | str | None = None, pref_prefix: str | None = None ) -> None:
@@ -68,24 +67,29 @@ class Prefs:
         return True
 
     @classmethod
-    def get_all(cls) -> Dict:
+    def get_all(cls) -> Dict[Any, Any]:
         return cls.data
 
     @classmethod
-    def get(cls, key: str) -> Any:
+    def get(cls, key_path: str, default:Any = None) -> Any:
 
-        def get_pref_key(key_path: str) -> Any:
+        def get_pref_key(key_path: str) -> Any: # key_path = "one.two.three" -
             keys = key_path.split(".")
 
             data = cls.data
+
             for key in keys:
-                if key in data:
-                    data = data[key]
-                else:
-                    Trace.fatal(f"unknown pref: {key}")
+                if data is None or key not in data:
+                    if default is None:
+                        Trace.fatal(f"unknown pref '{key_path}'")
+
+                    Trace.info(f"unknown pref '{key_path}' -> {default}")
+                    return default
+
+                data = data[key]
             return data
 
-        result = get_pref_key(key)
+        result = get_pref_key(key_path)
 
         # pref.yaml
         #   filename:  'data.xlsx'
@@ -108,7 +112,7 @@ class Prefs:
         try:
             ret = json.loads(tmp)
         except JSONDecodeError as err:
-            Trace.error(f"json error: {key} -> {tmp} ({err})")
+            Trace.error(f"json error: {key_path} -> {tmp} ({err})")
             ret = ""
 
         return ret
@@ -123,12 +127,12 @@ def get_pref_special(pref_path: Path, pref_prexix: str, pref_name: str, key: str
         return ""
 
     if key in pref:
-        return pref[key]
+        return str(pref[key])
     else:
         Trace.error(f"unknown pref: {pref_name} / {key}")
         return ""
 
-def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, Dict]:
+def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, Dict[Any, Any]]:
     try:
         with open( Path(pref_path, pref_name), "r", encoding="utf-8") as file:
             data = yaml.safe_load(file)
@@ -140,9 +144,12 @@ def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, Dict]:
         Trace.error( f"{beautify_path(str(err))}" )
         return True, {}
 
+def beautify_path( path: Path | str ) -> str:
+    return str( path ).replace("\\\\", "/")
+
 # https://stackoverflow.com/questions/7204805/deep-merge-dictionaries-of-dictionaries-in-python?page=1&tab=scoredesc#answer-7205672
 
-def merge_dicts(a: Dict, b: Dict) -> Any:
+def merge_dicts(a: Dict[Any, Any], b: Dict[Any, Any]) -> Any:
     for k in set(a.keys()).union(b.keys()):
         if k in a and k in b:
             if isinstance(a[k], dict) and isinstance(b[k], Dict):
@@ -159,7 +166,7 @@ def merge_dicts(a: Dict, b: Dict) -> Any:
 
 # https://stackoverflow.com/questions/7204805/deep-merge-dictionaries-of-dictionaries-in-python?page=1&tab=scoredesc#answer-7205107
 
-def merge(a: Dict, b: Dict, path: List[str] = []) -> Any:
+def merge(a: Dict[Any, Any], b: Dict[Any, Any], path: List[str] = []) -> Any:
     for key in b:
         if key in a:
             if isinstance(a[key], dict) and isinstance(b[key], Dict):
@@ -170,7 +177,7 @@ def merge(a: Dict, b: Dict, path: List[str] = []) -> Any:
             a[key] = b[key]
     return a
 
-def build_tree(tree: List, in_key: str, value: str) -> Dict:
+def build_tree(tree: List[str], in_key: str, value: str) -> Dict[str, Any]:
     if tree:
         return {tree[0]: build_tree(tree[1:], in_key, value)}
 

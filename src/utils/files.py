@@ -1,16 +1,16 @@
 """
-    © Jürgen Schoenemeyer, 04.01.2025
+    © Jürgen Schoenemeyer, 10.01.2025
 
     error channel -> rustedpy/result
 
     PUBLIC:
-     - result = get_timestamp(filepath: Path | str) -> Result[float, str]:
-     - result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[(), str]:
+     - result = get_timestamp(filepath: Path | str) -> Result[float, str]
+     - result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[(), str]
     #
-     - result = get_files_dirs(path: str, extensions: List) -> Result[Tuple[List, List], str]:
+     - result = get_files_dirs(path: str, extensions: List) -> Result[Tuple[List, List], str]
     #
      - result = read_file(filepath: Path | str, encoding: str="utf-8" ) -> Result[Any, str]
-     - result = write_file(filepath: Path | str, data: Any, encoding: str="utf-8", create_dir: bool = True, show_message: bool=True) -> Result[str, str]:
+     - result = write_file(filepath: Path | str, data: Any, encoding: str="utf-8", create_dir: bool = True, show_message: bool=True) -> Result[str, str]
     #
     ------
     from result import is_err, is_ok
@@ -26,7 +26,8 @@
      - .xml (minidom or xml.etree.ElementTree)
      #
      ------
-     check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=False) -> Result[str, str]
+     - result = listdir_ext(dirpath: Path | str, extensions: List | None = None) -> Result[List, str]
+     - result = check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=False) -> Result[str, str]
 """
 
 import os
@@ -45,7 +46,7 @@ except ModuleNotFoundError:
     pass
 
 try:
-    import dicttoxml  # type: ignore # mypy
+    import dicttoxml # type: ignore # -> mypy
 except ModuleNotFoundError:
     pass
 
@@ -117,9 +118,9 @@ def set_timestamp(filepath: Path | str, timestamp: int|float) -> Result[str, str
 
 # dir listing -> list of files and dirs
 
-def get_files_dirs(path: str, extensions: List) -> Result[Tuple[List, List], str]:
-    files: List = []
-    dirs = []
+def get_files_dirs(path: str, extensions: List[str]) -> Result[Tuple[List[str], List[str]], str]:
+    files: List[str] = []
+    dirs: List[str] = []
     try:
         for filename in os.listdir(path):
             filepath = os.path.join(path, filename)
@@ -398,7 +399,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
     return Ok("")
 
-def Listdir_ext(dirpath: Path | str, extensions: List | None = None) -> Result[List, str]:
+def listdir_ext(dirpath: Path | str, extensions: List[str] | None = None) -> Result[List[str], str]:
     """
     ### List all files in directory which matches the extentions
 

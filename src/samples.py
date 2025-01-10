@@ -21,7 +21,7 @@ SAMPLES_DIR = BASE_PATH / "samples"
 SETTING_DIR = BASE_PATH / "settings"
 
 @duration("import samples")
-def import_samples( sample_name: str, sub_samples: List | None = None, language: str = "#" ) -> Tuple[str, List | Set]:
+def import_samples( sample_name: str, sub_samples: List[str] | None = None, language: str = "#" ) -> Tuple[str, List[str] | Set[str]]:
 
     if sub_samples is None:
         sub_samples = []
@@ -38,7 +38,7 @@ def import_samples( sample_name: str, sub_samples: List | None = None, language:
     files    = sample["files"]
 
     if type == "yaml":
-        words_yaml: List = list()
+        words_yaml: List[str] = list()
         for file in files:
             words_yaml.extend(import_samples_yaml(SAMPLES_DIR / language, str(file), sub_samples))
 
@@ -46,7 +46,7 @@ def import_samples( sample_name: str, sub_samples: List | None = None, language:
         return (sample_name, words_yaml)
 
     elif type == "dic":
-        words_dict: Set = set()
+        words_dict: Set[str] = set()
         for file in files:
             words_dict = words_dict | import_samples_dictionary(SAMPLES_DIR / language / sample_name, str(file), encoding)
 
@@ -54,7 +54,7 @@ def import_samples( sample_name: str, sub_samples: List | None = None, language:
         return (sample_name, sorted(words_dict))
 
     elif type == "text":
-        words_text: Set = set()
+        words_text: Set[str] = set()
         for file in files:
             words_text = words_text | import_samples_text(SAMPLES_DIR / language / sample_name, str(file), encoding)
 
@@ -67,8 +67,8 @@ def import_samples( sample_name: str, sub_samples: List | None = None, language:
 
 # YAML
 
-def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List ) -> List:
-    words: List = []
+def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List[str] ) -> List[str]:
+    words: List[str] = []
 
     try:
         with open( dirpath / filename, "r", encoding="utf-8") as file:
@@ -94,7 +94,7 @@ def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List ) -> Li
 
 # DICTIONARY
 
-def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> set:
+def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> set[str]:
     words = set()
 
     try:
@@ -114,7 +114,7 @@ def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> 
 
 # TEXT
 
-def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> set:
+def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> set[str]:
     words = set()
 
     try:

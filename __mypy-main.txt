@@ -1,0 +1,18 @@
+Python:   3.12.8 (main, Dec  6 2024, 18:10:20) [MSC v.1942 64 bit (AMD64)]
+Platform: Windows-11-10.0.22631-SP0
+Date:     10.01.2025 22:28:22
+Path:     G:\Python\hyphenation-test
+
+MyPy settings:
+ --sqlite-cache
+ --disallow-untyped-calls
+ --disallow-untyped-defs
+ --disallow-untyped-decorators
+ --disallow-incomplete-defs
+ --warn-redundant-casts
+ --warn-unused-ignores
+ --warn-unreachable
+ --strict-equality
+ --show-column-numbers
+
+Success: no issues found in 1 source file

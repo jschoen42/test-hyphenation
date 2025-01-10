@@ -32,7 +32,7 @@ RESULT_DIR = BASE_PATH / "results"
 # check_samples("Pyphen", "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_samples(package_name: str, language: str, set_name: str, sub_set: List = [], trace: bool = False ) -> None:
+def check_samples(package_name: str, language: str, set_name: str, sub_set: List[str] = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
@@ -55,7 +55,7 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: List
     Trace.result(f"results: {len(results)}")
 
 @duration("Pyphen test all")
-def test_Pyphen(words: dict, language: str, trace:bool = True) -> Dict:
+def test_Pyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict[str, str]:
     Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
     init_pyphen(language)
 
@@ -66,11 +66,11 @@ def test_Pyphen(words: dict, language: str, trace:bool = True) -> Dict:
     return result
 
 @duration("PyHyphen test all")
-def test_PyHyphen(words: dict, language: str, trace:bool = True) -> Dict:
+def test_PyHyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict[str, str]:
     Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen with patch ...{Color.RESET}")
     init_hyphen(language)
 
-    result: Dict = {}
+    result: Dict[str, str] = {}
     for word in words:
         result[word] = get_hyphen(word, trace = trace)
 
@@ -86,12 +86,12 @@ def test_PyHyphen(words: dict, language: str, trace:bool = True) -> Dict:
 # compare_samples( "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_patch_samples( language: str, set_name: str, sub_set: List = [], trace: bool = False ) -> None:
+def check_patch_samples( language: str, set_name: str, sub_set: List[str] = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
-    difference: Dict = {}
-    identical: Dict = {}
+    difference: Dict[str, List[str]] = {}
+    identical: Dict[str, str] = {}
 
     init_hyphen(language)
 
@@ -128,12 +128,12 @@ def check_patch_samples( language: str, set_name: str, sub_set: List = [], trace
 #
 ##############################################################
 
-def compare_samples( language: str, set_name: str, sub_set: List = [], trace: bool = False ) -> None:
+def compare_samples( language: str, set_name: str, sub_set: List[str] = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
-    difference: Dict = {}
-    identical: Dict = {}
+    difference: Dict[str, List[str]] = {}
+    identical: Dict[str, str] = {}
 
     # Pyphen
 

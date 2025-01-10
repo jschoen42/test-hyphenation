@@ -16,4 +16,9 @@ hyphenation-test v0.1.0
 │   └── wheel v0.45.1
 ├── pyphen v0.17.0
 ├── pyyaml v6.0.2
-└── result v0.17.0
+├── result v0.17.0
+├── mypy v1.14.1 (group: dev)
+│   ├── mypy-extensions v1.0.0
+│   └── typing-extensions v4.12.2
+├── types-pyyaml v6.0.12.20241230 (group: dev)
+└── types-xmltodict v0.14.0.20241009 (group: dev)

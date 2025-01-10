@@ -4,3 +4,5 @@ deactivate
 
 python src/main.py
 uv run src/main.py
+
+uv run __mypy.py src/main.py
