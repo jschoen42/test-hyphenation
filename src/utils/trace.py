@@ -1,5 +1,7 @@
 """
-    © Jürgen Schoenemeyer, 10.01.2025
+    © Jürgen Schoenemeyer, 19.01.2025
+
+    src/utils/trace.py
 
     class Trace:
       - Trace.set(debug_mode=True)
@@ -30,7 +32,6 @@
     class Color:
       - Color.<color_name>
       - Color.clear(text: str) -> str:
-
 """
 
 import platform
@@ -45,7 +46,7 @@ from enum import StrEnum
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from zoneinfo._common import ZoneInfoNotFoundError
+from zoneinfo import ZoneInfoNotFoundError
 
 system = platform.system()
 if system == "Windows":
@@ -181,7 +182,7 @@ class Trace:
                             cls.settings[key] = True
 
             else:
-                print(f"trace settings: unknown parameter {key}")
+                Trace.fatal(f"trace settings: unknown parameter '{key}'")
 
     @classmethod
     def redirect(cls, output: Callable[..., None]) -> None:
@@ -305,21 +306,21 @@ class Trace:
                 print(f"{Color.RED}{Color.BOLD} >>> Press Any key to continue or ESC to exit <<< {Color.RESET}", end="", flush=True)
 
                 if system == "Windows":
-                    key = msvcrt.getch()
+                    key = msvcrt.getch()                   # type: ignore[reportPossiblyUnboundVariable]
                     print()
                 else:
 
                     # unix terminal
 
-                    fd = sys.stdin.fileno()
-                    old_settings = term.tcgetattr(fd)  # type: ignore
+                    fd: int = sys.stdin.fileno()
+                    old_settings: Any = term.tcgetattr(fd) # type: ignore[attr-defined]
                     try:
-                        tty.setraw(sys.stdin.fileno()) # type: ignore
-                        key = sys.stdin.read(1)        # type: ignore
+                        tty.setraw(sys.stdin.fileno())     # type: ignore[attr-defined]
+                        key = sys.stdin.buffer.read(1)
                     finally:
-                        term.tcsetattr(                # type: ignore
+                        term.tcsetattr(                    # type: ignore[attr-defined]
                             fd,
-                            term.TCSADRAIN,            # type: ignore
+                            term.TCSADRAIN,                # type: ignore[attr-defined]
                             old_settings
                         )
                         print()

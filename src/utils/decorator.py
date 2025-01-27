@@ -1,5 +1,7 @@
 """
-    © Jürgen Schoenemeyer, 10.01.2025
+    © Jürgen Schoenemeyer, 15.01.2025
+
+    src/utils/decorator.py
 
     PUBLIC:
      - @duration(text: str=None, rounds: int=1)
@@ -9,7 +11,6 @@
     PRIVAT:
       - def get_args_values( func: Callable, *args: Any, **kwargs: Any ) -> Tuple[List, Dict]:
       - def replace_arguments(match: Match, func_name: str, *args: Any, **kwargs: Any) -> str:
-
 """
 
 import contextlib

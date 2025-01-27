@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 10.01.2025
+    © Jürgen Schoenemeyer, 19.01.2025
 
     error channel -> rustedpy/result
 
@@ -46,7 +46,7 @@ except ModuleNotFoundError:
     pass
 
 try:
-    import dicttoxml # type: ignore # -> mypy
+    from dicttoxml import dicttoxml # type: ignore[import-untyped] # mypy + pyright
 except ModuleNotFoundError:
     pass
 
@@ -206,16 +206,16 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
     elif type == "json":
         if "orjson" in sys.modules:
             try:
-                data = orjson.loads(text)
-            except orjson.JSONDecodeError as err:
+                data = orjson.loads(text)           # type: ignore[reportPossiblyUnboundVariable]
+            except orjson.JSONDecodeError as err:   # type: ignore[reportPossiblyUnboundVariable]
                 error = f"JSONDecodeError: {filepath} => {err}"
                 Trace.debug(error)
                 return Err(error)
             return Ok(data)
         else:
             try:
-                data = json.loads(text)
-            except json.JSONDecodeError as err:
+                data = json.loads(text)             # type: ignore[reportPossiblyUnboundVariable]
+            except json.JSONDecodeError as err:     # type: ignore[reportPossiblyUnboundVariable]
                 error = f"JSONDecodeError: {filepath} => {err}"
                 Trace.debug(error)
                 return Err(error)
@@ -282,36 +282,41 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
         # xxl -> json
 
-        if isinstance(data, minidom.Document):
-            text = data.toxml()
-            data = xmltodict.parse(text)
+        if "xmltodict" in sys.modules:
+            if isinstance(data, minidom.Document):
+                text = data.toxml()
+                data = xmltodict.parse(text) # type: ignore[reportPossiblyUnboundVariable]
 
-        elif isinstance(data, ET.Element):
-            text = ET.tostring(data, method="xml", xml_declaration=True, encoding="unicode")
-            data = xmltodict.parse(text)
+            elif isinstance(data, ET.Element):
+                text = ET.tostring(data, method="xml", xml_declaration=True, encoding="unicode")
+                data = xmltodict.parse(text) # type: ignore[reportPossiblyUnboundVariable]
+        else:
+            err = "module 'xmltodict' not installed"
+            Trace.debug(err)
+            return Err(err)
 
         # json -> json
 
         def serialize_sets(obj: Any) -> Any:
             if isinstance(obj, set):
-                return sorted(obj)
+                return sorted(obj) # type: ignore[reportUnknownVariableType]
 
             return obj
 
         if isinstance(data, Dict) or isinstance(data, List):
             try:
                 if "orjson" in sys.modules:
-                    text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8")
+                    text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8") # type: ignore[reportPossiblyUnboundVariable]
                 else:
-                    text = json.dumps(data, default=serialize_sets, indent=2, ensure_ascii=False)
-            except TypeError as err:
-                error = f"TypeError: {err}"
-                Trace.error(error)
-                return Err(error)
+                    text = json.dumps(data, default=serialize_sets, indent=2, ensure_ascii=False)                 # type: ignore[reportPossiblyUnboundVariable]
+            except TypeError as error:
+                err = f"TypeError: {error}"
+                Trace.error(err)
+                return Err(err)
         else:
-            error = f"Type '{type(data)}' is not supported for '{suffix}'"
-            Trace.error(error)
-            return Err(error)
+            err = f"Type '{type(data)}' is not supported for '{suffix}'"
+            Trace.error(err)
+            return Err(err)
 
     elif suffix == ".xml":
 
@@ -328,18 +333,23 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
         # json -> xml
 
         elif isinstance(data, Dict):
-            text = minidom.parseString(dicttoxml(data)).toprettyxml(indent="  ")
-            text = text.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="utf-8" standalone="yes"?>')
-
+            if "dicttoxml" in sys.modules:
+                xml = dicttoxml(data) # type: ignore[reportPossiblyUnboundVariable]
+                text = minidom.parseString(xml).toprettyxml(indent="  ")
+                text = text.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="utf-8" standalone="yes"?>')
+            else:
+                err = "module 'dicttoxml' not installed"
+                Trace.debug(err)
+                return Err(err)
         else:
-            error = f"Type '{type(data)}' is not supported for '{suffix}'"
-            Trace.debug(f"{error}")
-            return Err(error)
+            err = f"Type '{type(data)}' is not supported for '{suffix}'"
+            Trace.debug(f"{err}")
+            return Err(err)
 
     else:
-        error = f"Type '{suffix}' is not supported"
-        Trace.debug(error)
-        return Err(error)
+        err = f"Type '{suffix}' is not supported"
+        Trace.debug(err)
+        return Err(err)
 
     # 2. directory check
 
@@ -418,7 +428,7 @@ def listdir_ext(dirpath: Path | str, extensions: List[str] | None = None) -> Res
         Trace.debug(err)
         return Err(err)
 
-    ret = []
+    ret: List[str] = []
     files = os.listdir(dirpath)
     for file in files:
         if (dirpath / file).is_file():

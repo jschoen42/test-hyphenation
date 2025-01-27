@@ -1,5 +1,7 @@
 """
-    © Jürgen Schoenemeyer, 09.01.2025
+    © Jürgen Schoenemeyer, 19.01.2025
+
+    src/utils/prefs.py
 
     PUBLIC:
     class Prefs:
@@ -7,8 +9,8 @@
       - load(cls, pref_name: str) -> bool
       - get(cls, key_path: str) -> Any
 
-    merge_dicts(a: Dict, b: Dict) -> Dict
-    build_tree(tree: List, in_key: str, value: str) -> Dict
+     - merge_dicts(a: Dict, b: Dict) -> Dict
+     - build_tree(tree: List, in_key: str, value: str) -> Dict
 """
 
 import json
@@ -54,11 +56,9 @@ class Prefs:
             cls.data = dict(merge_dicts(cls.data, data))
             # cls.data = merge(dict(cls.data), data) # -> Exception: Conflict at trainingCompany
 
-        except yaml.parser.ParserError as err:
-            Trace.fatal(f"ParserError '{pref_name}':\n{err}")
-
-        except yaml.scanner.ScannerError as err:
-            Trace.fatal(f"ScannerError '{pref_name}':\n{err}")
+        except yaml.YAMLError as err:
+            Trace.fatal(f"YAMLError '{pref_name}':\n{err}")
+            return False
 
         except OSError as err:
             Trace.error(f"{pref_name}: {err}")
@@ -122,6 +122,11 @@ def get_pref_special(pref_path: Path, pref_prexix: str, pref_name: str, key: str
     try:
         with open(Path(pref_path, pref_prexix + pref_name + ".yaml"), "r", encoding="utf-8") as file:
             pref = yaml.safe_load(file)
+
+    except yaml.YAMLError as err:
+        Trace.fatal(f"YAMLError '{pref_name}':\n{err}")
+        return ""
+
     except OSError as err:
         Trace.error(f"{beautify_path(str(err))}")
         return ""
@@ -139,6 +144,10 @@ def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, Dict[Any, Any]]:
 
         # Trace.wait( f"{pref_name}: {json.dumps(data, sort_keys=True, indent=2)}" )
         return False, data
+
+    except yaml.YAMLError as err:
+        Trace.fatal(f"YAMLError '{pref_name}':\n{err}")
+        return True, {}
 
     except OSError as err:
         Trace.error( f"{beautify_path(str(err))}" )
@@ -166,7 +175,21 @@ def merge_dicts(a: Dict[Any, Any], b: Dict[Any, Any]) -> Any:
 
 # https://stackoverflow.com/questions/7204805/deep-merge-dictionaries-of-dictionaries-in-python?page=1&tab=scoredesc#answer-7205107
 
-def merge(a: Dict[Any, Any], b: Dict[Any, Any], path: List[str] = []) -> Any:
+# def merge(a: Dict[Any, Any], b: Dict[Any, Any], path: List[str] = []) -> Any:
+#     for key in b:
+#         if key in a:
+#             if isinstance(a[key], dict) and isinstance(b[key], Dict):
+#                 merge(a[key], b[key], path + [str(key)])
+#             elif a[key] != b[key]:
+#                 raise Exception("Conflict at " + ".".join(path + [str(key)]))
+#         else:
+#             a[key] = b[key]
+#     return a
+
+def merge(a: Dict[Any, Any], b: Dict[Any, Any], path: List[str] | None = None) -> Any:
+    if path is None:
+        path = []
+
     for key in b:
         if key in a:
             if isinstance(a[key], dict) and isinstance(b[key], Dict):

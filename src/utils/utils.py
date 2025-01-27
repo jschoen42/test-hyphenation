@@ -1,12 +1,13 @@
 """
-    © Jürgen Schoenemeyer, 20.12.2024
+    © Jürgen Schoenemeyer, 19.01.2025
+
+    src/utils/utils.py
 
     PUBLIC:
      - camel_to_snake(name: str) -> str
      - snake_to_camel(name: str) -> str
      - pascal_to_snake(name: str) -> str
      - snake_to_pascal(name: str) -> str
-
 """
 
 import re
