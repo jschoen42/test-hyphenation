@@ -1,5 +1,7 @@
 """
-    © Jürgen Schoenemeyer, 19.01.2025
+    © Jürgen Schoenemeyer, 27.01.2025
+
+    src/utils/files.py
 
     error channel -> rustedpy/result
 
