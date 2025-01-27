@@ -1,4 +1,4 @@
-from typing import List, Set, Tuple
+from typing import Any, List, Set, Tuple
 from pathlib import Path
 
 import yaml
@@ -26,6 +26,7 @@ def import_samples( sample_name: str, sub_samples: List[str] | None = None, lang
     if sub_samples is None:
         sub_samples = []
 
+    settings: Any = {}
     try:
         with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
             settings = yaml.safe_load(file)
@@ -70,6 +71,7 @@ def import_samples( sample_name: str, sub_samples: List[str] | None = None, lang
 def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List[str] ) -> List[str]:
     words: List[str] = []
 
+    samples: Any = {}
     try:
         with open( dirpath / filename, "r", encoding="utf-8") as file:
             samples = yaml.safe_load(file)

@@ -1,7 +1,7 @@
-from typing import List
+from typing import Any, List
 
-from hyphen import Hyphenator # type: ignore # mypy
-from hyphen import dictools
+from hyphen import Hyphenator # type: ignore[import-untyped] # mypy + pyright
+from hyphen import dictools   # type: ignore[import-untyped] # mypy + pyright
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace
@@ -25,7 +25,7 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
 
     parts = word.split("-") # e.g. "Baden-Württemberg"
 
-    result: List[str] = []
+    result: List[Any] = []
     for part in parts:
         part_original = part
 
@@ -54,7 +54,7 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
 
     return pprint_hyphen(result)
 
-def pprint_hyphen( parts: List ) -> str:
+def pprint_hyphen( parts: List[Any] ) -> str:
     result = ""
     for part in parts:
         result = result + "·".join(part) + "-"

@@ -3,7 +3,7 @@
 
 import sys
 
-from typing import Dict, List
+from typing import Any, Dict, List
 from result import is_err #, is_ok
 
 from main.hyphen import init_hyphen, get_hyphen # PyHyphen
@@ -32,10 +32,11 @@ RESULT_DIR = BASE_PATH / "results"
 # check_samples("Pyphen", "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_samples(package_name: str, language: str, set_name: str, sub_set: List[str] = [], trace: bool = False ) -> None:
+def check_samples(package_name: str, language: str, set_name: str, sub_set: List[Any] = [], trace: bool = False ) -> None:
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
+    results: List[Any] = []
     if package_name == "Pyphen":
         results = test_Pyphen(samples, language, trace)
 

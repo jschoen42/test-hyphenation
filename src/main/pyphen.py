@@ -1,4 +1,4 @@
-import pyphen  # type: ignore # mypy
+import pyphen  # type: ignore[import-untyped] # mypy + pyright
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace
