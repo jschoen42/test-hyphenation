@@ -1,6 +1,7 @@
-## Test german hypenation
+## Test German hyphenation
 
 test with
+
 ``` bash
 - PyHyphen             https://github.com/dr-leo/PyHyphen
 - PyHyphen (patched)
@@ -8,6 +9,7 @@ test with
 ```
 
 test cases
+
 ``` bash
 - AlleDeutschenWoerter: https://github.com/cpos/AlleDeutschenWoerter
 - wortliste:            https://github.com/davidak/wortliste
