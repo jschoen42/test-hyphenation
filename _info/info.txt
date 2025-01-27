@@ -1,8 +1,29 @@
-OCR - Vocabulary List - General and Topic Areas 1-5
-https://www.ocr.org.uk/images/68532-vocabulary-list-by-topic.pdf
 
-Goethe Institute - A1 Wortliste
-https://ankiweb.net/shared/info/293204297
+# Mark Liang Standford University 1983
+# https://www.tug.org/docs/liang/liang-thesis.pdf
+#
+# >>>> https://hyphenation.org/
+#
+# https://tex.stackexchange.com/questions/398491/how-does-texs-hyphenation-algorithm-work
+#
+# https://github.com/dr-leo/PyHyphen/
+#
+# https://github.com/Kozea/Pyphen
+#
+# https://github.com/mnater/Hyphenopoly
+#
+# https://ctan.org/tex-archive/language/hyphenation/dehyph
+#
+# https://github.com/voikko/libreoffice-voikko/blob/master/oxt/pythonpath/Hyphenator.py
 
-https://github.com/cpos/AlleDeutschenWoerter/tree/main
+# hunspell implementation
+# https://github.com/hunspell/hyphen/blob/master/README.compound
 
+# LibreOffice
+# C:\Program Files\LibreOffice\share\extensions\dict-de
+# https://github.com/libreoffice
+# https://github.com/hunspell/hyphen/blob/master/hyphen.c
+# https://github.com/voikko/libreoffice-voikko/blob/master/oxt/pythonpath/HyphenatedWord.py
+# -> com.sun.star.linguistic2 - XHyphenatedWord
+# https://api.libreoffice.org/docs/idl//ref/interfacecom_1_1sun_1_1star_1_1linguistic2_1_1XHyphenatedWord.html#details
+# D:\downloads\core-master\linguistic\source\hyphdsp.cxx

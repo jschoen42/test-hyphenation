@@ -4,6 +4,7 @@ hyphenation-test v0.1.0
 │   │   └── six v1.17.0
 │   └── types-python-dateutil v2.9.0.20241206
 ├── certifi v2024.12.14
+├── dicttoxml v1.7.16
 ├── orjson v3.10.12
 ├── pyhyphen v4.0.4
 │   ├── appdirs v1.4.4
@@ -17,6 +18,7 @@ hyphenation-test v0.1.0
 ├── pyphen v0.17.0
 ├── pyyaml v6.0.2
 ├── result v0.17.0
+├── xmltodict v0.14.2
 ├── mypy v1.14.1 (group: dev)
 │   ├── mypy-extensions v1.0.0
 │   └── typing-extensions v4.12.2

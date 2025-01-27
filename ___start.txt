@@ -3,6 +3,9 @@ bash: source .venv/Scripts/activate
 deactivate
 
 python src/main.py
-uv run src/main.py
 
-uv run __mypy.py src/main.py
+python _mypy.py src
+python _pyright.py src
+
+uv run _mypy.py src
+uv run _pyright.py src
