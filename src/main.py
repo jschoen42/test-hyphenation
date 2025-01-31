@@ -9,7 +9,7 @@ from result import is_err #, is_ok
 from main.hyphen import init_hyphen, get_hyphen # PyHyphen
 from main.pyphen import init_pyphen, get_pyphen # Pyphon
 
-from samples import import_samples
+from helper.samples import import_samples
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace, Color
