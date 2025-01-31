@@ -42,7 +42,7 @@ def run_pyright(target_file: str) -> None:
         "enableExperimentalFeatures":          True,
         "reportImplicitOverride":              True,
         "reportImplicitStringConcatenation":   True,
-        "reportImportCycles":                  False,
+        "reportImportCycles":                  True,
         "reportMissingSuperCall":              True,
         "reportPropertyTypeMismatch":          True,
         "reportShadowedImports":               True,
@@ -54,9 +54,6 @@ def run_pyright(target_file: str) -> None:
         "deprecateTypingAliases": False,       # always False -> typing: List, Dict, ...
         "reportUnusedCallResult": False,       # always False -> _vars
 
-        "include": [
-            "src"
-        ],
         "exclude": [
             "src/faster_whisper/*",
             "src/extras/*",
