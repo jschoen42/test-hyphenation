@@ -17,17 +17,19 @@ from datetime import datetime
 BASE_PATH = Path(sys.argv[0]).parent.parent.resolve()
 RESULT_FOLDER = ".type-check-result"
 
-# {
-#     "exclude": [
-#         "path/to/exclude"
-#     ]
-# }
-
 def run_pyright(target_file: str) -> None:
+
+    try:
+        with open(".python-version", "r") as f:
+            version = f.read().strip()
+    except OSError:
+        version = f"{sys.version_info.major}.{sys.version_info.minor}"
 
     # https://microsoft.github.io/pyright/#/configuration?id=diagnostic-settings-defaults
 
     settings = {
+        "pythonVersion": version,
+
         # "typeCheckingMode": "off",
         # "typeCheckingMode": "basic",
         # "typeCheckingMode": "standard",
@@ -57,12 +59,12 @@ def run_pyright(target_file: str) -> None:
         "exclude": [
             "src/faster_whisper/*",
             "src/extras/*",
-        ],
+        ]
     }
 
     filepath = Path(sys.argv[1])
     if not filepath.exists():
-        print(f"Error: '{filepath}' not found ")
+        print(f"Error: '{filepath}' not found")
         return
 
     folder_path = BASE_PATH / RESULT_FOLDER

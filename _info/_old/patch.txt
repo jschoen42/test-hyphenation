@@ -1,0 +1,17 @@
+Zusammengestze Wörter:
+wenn wortTrennung direkt vor "s", dann darf nach bei "st" nicht mehr getrennt werden
+
+nur im Bereich COMPOUND (ab Anfang -> NEXTLEVEL)
+1st -> 1s2t
+
+es bleibt
+ - .o1st3a
+ - an1st
+ - an1sta
+ - a1str6
+ - elb1st5a
+ ...
+
+abend1s2tern -> abend3s2tern
+
+nicht nötig für PyHyphen

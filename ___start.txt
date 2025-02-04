@@ -7,5 +7,3 @@ python src/main.py
 python _mypy.py src
 python _pyright.py src
 
-python _mypy.py src
-python _pyright.py src

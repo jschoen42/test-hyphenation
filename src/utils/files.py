@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 27.01.2025
+    © Jürgen Schoenemeyer, 04.02.2025
 
     src/utils/files.py
 
@@ -35,7 +35,7 @@
 import os
 import sys
 
-from typing import Any, Dict, List, Tuple
+from typing import Any, List, Tuple
 from datetime import datetime
 from pathlib import Path
 
@@ -305,7 +305,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
             return obj
 
-        if isinstance(data, Dict) or isinstance(data, List):
+        if isinstance(data, dict) or isinstance(data, list):
             try:
                 if "orjson" in sys.modules:
                     text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8") # type: ignore[reportPossiblyUnboundVariable]
@@ -334,7 +334,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
         # json -> xml
 
-        elif isinstance(data, Dict):
+        elif isinstance(data, dict):
             if "dicttoxml" in sys.modules:
                 xml = dicttoxml(data) # type: ignore[reportPossiblyUnboundVariable]
                 text = minidom.parseString(xml).toprettyxml(indent="  ")
