@@ -1,7 +1,7 @@
 from typing import Any, List
 
-from hyphen import Hyphenator # type: ignore[import-untyped] # mypy + pyright
-from hyphen import dictools   # type: ignore[import-untyped] # mypy + pyright
+from hyphen import Hyphenator # type: ignore[import-untyped]
+from hyphen import dictools   # type: ignore[import-untyped]
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace

@@ -1,6 +1,6 @@
 {
   "scan": {
-    "date": "2025-02-04T16:15:08.695033",
+    "date": "2025-02-16T21:16:00.737908",
     "path": "G:/Python/hyphenation-test",
     "files": 290,
     "ignore": {
@@ -25,15 +25,25 @@
     }
   },
   "metadata": {
+    ".gitattributes": {
+      "md5": "03b83402426aaabd192200041078d48a",
+      "path": "",
+      "name": ".gitattributes",
+      "size": 2090,
+      "attr": "A",
+      "modified": "2025-02-15 23:00:22.411864+0100",
+      "created": "2025-02-15 22:42:30.734002+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
     ".gitignore": {
-      "md5": "284433d55a8fc5733c0bf02b6f3e00ea",
+      "md5": "416d668a7485b0162337337e9d897e2a",
       "path": "",
       "name": ".gitignore",
-      "size": 640,
+      "size": 712,
       "attr": "A",
-      "modified": "2025-02-04 15:14:21.658877+0100",
+      "modified": "2025-02-16 11:46:51.650298+0100",
       "created": "2025-01-07 12:33:06.514040+0100",
-      "access": "2025-02-04 16:15:06.577999+0100"
+      "access": "2025-02-16 21:15:58.631747+0100"
     },
     ".python-version": {
       "md5": "789ee353b44223a8ed8031aa190631dd",
@@ -43,7 +53,7 @@
       "attr": "A",
       "modified": "2025-01-31 20:35:25.323519+0100",
       "created": "2024-11-26 10:04:15.627458+0100",
-      "access": "2025-02-04 16:15:06.579002+0100"
+      "access": "2025-02-16 21:15:58.631747+0100"
     },
     ".Python313-GitHub": {
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
@@ -55,16 +65,6 @@
       "created": "2024-11-30 11:07:59.331649+0100",
       "access": "2024-11-30 11:07:59.331649+0100"
     },
-    ".vscode/launch.json": {
-      "md5": "56e0e9f5b753844c0891c3abb39327ef",
-      "path": ".vscode",
-      "name": "launch.json",
-      "size": 270,
-      "attr": "A",
-      "modified": "2024-11-06 13:19:44.124773+0100",
-      "created": "2024-11-26 00:38:09.539389+0100",
-      "access": "2025-02-04 16:15:06.585069+0100"
-    },
     ".vscode/settings.json": {
       "md5": "7f0484790204d8b50ae8dd960aba8865",
       "path": ".vscode",
@@ -73,47 +73,407 @@
       "attr": "A",
       "modified": "2025-01-21 21:19:52.325255+0100",
       "created": "2024-11-26 00:38:09.544378+0100",
-      "access": "2025-02-04 16:15:06.587075+0100"
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/dictionaries.json": {
+      "md5": "299da7e0d6d534b7001a61d00cd2e7fc",
+      "path": "dict",
+      "name": "dictionaries.json",
+      "size": 298,
+      "attr": "A",
+      "modified": "2024-11-10 16:12:17.757965+0100",
+      "created": "2024-11-26 00:38:09.564483+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/hyph_af_ZA.dic": {
+      "md5": "f4b88e4558edb06d1a1af011b590ef4a",
+      "path": "dict",
+      "name": "hyph_af_ZA.dic",
+      "size": 62925,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.237300+0100",
+      "created": "2024-11-26 00:38:09.570036+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/hyph_be_BY.dic": {
+      "md5": "c4ae7a965c85a6f7ee582b7149badf7a",
+      "path": "dict",
+      "name": "hyph_be_BY.dic",
+      "size": 31963,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.238304+0100",
+      "created": "2024-11-26 00:38:09.576591+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/hyph_bg_BG.dic": {
+      "md5": "a066518e463ed79398126df254355fdd",
+      "path": "dict",
+      "name": "hyph_bg_BG.dic",
+      "size": 59388,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.239301+0100",
+      "created": "2024-11-26 00:38:09.582590+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/hyph_cs_CZ.dic": {
+      "md5": "c9cbd906b7884d88b00a3a0a6a7773c7",
+      "path": "dict",
+      "name": "hyph_cs_CZ.dic",
+      "size": 20049,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.240299+0100",
+      "created": "2024-11-26 00:38:09.587126+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/hyph_da_DK.dic": {
+      "md5": "f06096ee79723b129375b9a8dd5c149f",
+      "path": "dict",
+      "name": "hyph_da_DK.dic",
+      "size": 6049,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.241303+0100",
+      "created": "2024-11-26 00:38:09.592124+0100",
+      "access": "2025-02-16 21:15:58.631747+0100"
+    },
+    "dict/hyph_de_DE.dic": {
+      "md5": "929e904dc9af3bba4a60745aaa362bc2",
+      "path": "dict",
+      "name": "hyph_de_DE.dic",
+      "size": 1093686,
+      "attr": "A",
+      "modified": "2024-11-11 17:44:01.805714+0100",
+      "created": "2024-11-26 00:38:09.596704+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_de_US.dic": {
+      "md5": "59831ccfe6d30d7de5f7bd5e49246fe3",
+      "path": "dict",
+      "name": "hyph_de_US.dic",
+      "size": 106414,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.178756+0100",
+      "created": "2024-11-26 00:38:09.607255+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_el_GR.dic": {
+      "md5": "670feb19496fe5a330a1feae16a311c6",
+      "path": "dict",
+      "name": "hyph_el_GR.dic",
+      "size": 3205,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.252298+0100",
+      "created": "2024-11-26 00:38:09.612275+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_en.dic": {
+      "md5": "eca18332835f88521becb504e530aefc",
+      "path": "dict",
+      "name": "hyph_en.dic",
+      "size": 107031,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.254304+0100",
+      "created": "2024-11-26 00:38:09.617838+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_eo.dic": {
+      "md5": "f73d9bafb436f2c2ffef4244afb253bd",
+      "path": "dict",
+      "name": "hyph_eo.dic",
+      "size": 29876,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.255302+0100",
+      "created": "2024-11-26 00:38:09.622838+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_es.dic": {
+      "md5": "729e8e25d4f609353c46dfa60e65a6a6",
+      "path": "dict",
+      "name": "hyph_es.dic",
+      "size": 5699,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.256299+0100",
+      "created": "2024-11-26 00:38:09.629381+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_et_EE.dic": {
+      "md5": "32fe829598e124edc9b5e93c6844edeb",
+      "path": "dict",
+      "name": "hyph_et_EE.dic",
+      "size": 22637,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.257318+0100",
+      "created": "2024-11-26 00:38:09.634378+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_fr_FR.dic": {
+      "md5": "2e1f99d09be03f14e49f24174dc901f4",
+      "path": "dict",
+      "name": "hyph_fr_FR.dic",
+      "size": 23631,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.257318+0100",
+      "created": "2024-11-26 00:38:09.638919+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_gl.dic": {
+      "md5": "a8e26373eb44b506f465ee558bce4c0c",
+      "path": "dict",
+      "name": "hyph_gl.dic",
+      "size": 1420,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.258299+0100",
+      "created": "2024-11-26 00:38:09.645494+0100",
+      "access": "2025-02-16 21:15:58.647380+0100"
+    },
+    "dict/hyph_hr_HR.dic": {
+      "md5": "fe773ce7f4c4b7fba923332d509013d1",
+      "path": "dict",
+      "name": "hyph_hr_HR.dic",
+      "size": 7789,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.258299+0100",
+      "created": "2024-11-26 00:38:09.649509+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_hu_HU.dic": {
+      "md5": "ade9ed7896b5a3d732c87ce096639331",
+      "path": "dict",
+      "name": "hyph_hu_HU.dic",
+      "size": 937807,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.268301+0100",
+      "created": "2024-11-26 00:38:09.653118+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_id.dic": {
+      "md5": "ee9610d9ba686499b989a886041fe03d",
+      "path": "dict",
+      "name": "hyph_id.dic",
+      "size": 104072,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.269298+0100",
+      "created": "2024-11-26 00:38:09.662646+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_is.dic": {
+      "md5": "c3d6962699834a97ec69a5da1eb944a5",
+      "path": "dict",
+      "name": "hyph_is.dic",
+      "size": 50011,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.271302+0100",
+      "created": "2024-11-26 00:38:09.669210+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_it_IT.dic": {
+      "md5": "2ac3ec34de5707a1ed5f43dce902bcfe",
+      "path": "dict",
+      "name": "hyph_it_IT.dic",
+      "size": 2308,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.271302+0100",
+      "created": "2024-11-26 00:38:09.675280+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_lt_LT.dic": {
+      "md5": "0cb081fa82fa5949070b8ab367e426fd",
+      "path": "dict",
+      "name": "hyph_lt_LT.dic",
+      "size": 7817,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.272304+0100",
+      "created": "2024-11-26 00:38:09.680294+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_lv_LV.dic": {
+      "md5": "13e74ab4895cdc470c1aa76b52128770",
+      "path": "dict",
+      "name": "hyph_lv_LV.dic",
+      "size": 79409,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.273304+0100",
+      "created": "2024-11-26 00:38:09.684294+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_nl_NL.dic": {
+      "md5": "69a5f17c4ec830b4991bfe440dfcac5a",
+      "path": "dict",
+      "name": "hyph_nl_NL.dic",
+      "size": 116507,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.275304+0100",
+      "created": "2024-11-26 00:38:09.688834+0100",
+      "access": "2025-02-16 21:15:58.662992+0100"
+    },
+    "dict/hyph_pl_PL.dic": {
+      "md5": "a9ec853d1bf09f7989826500064384e1",
+      "path": "dict",
+      "name": "hyph_pl_PL.dic",
+      "size": 37931,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.276305+0100",
+      "created": "2024-11-26 00:38:09.694354+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_pt_BR.dic": {
+      "md5": "320322b8c584b77d16c5ccc3a9342c57",
+      "path": "dict",
+      "name": "hyph_pt_BR.dic",
+      "size": 11260,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.276305+0100",
+      "created": "2024-11-26 00:38:09.699382+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_pt_PT.dic": {
+      "md5": "88973f456eb570c1238d6674448da032",
+      "path": "dict",
+      "name": "hyph_pt_PT.dic",
+      "size": 1288,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.277307+0100",
+      "created": "2024-11-26 00:38:09.703389+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_ro.dic": {
+      "md5": "e375f3925b4a18fd1b3565c082a8983c",
+      "path": "dict",
+      "name": "hyph_ro.dic",
+      "size": 34597,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.278306+0100",
+      "created": "2024-11-26 00:38:09.708503+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_ru_RU.dic": {
+      "md5": "ea31d0feb965f8b3faa04a4a8665e159",
+      "path": "dict",
+      "name": "hyph_ru_RU.dic",
+      "size": 35415,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.278306+0100",
+      "created": "2024-11-26 00:38:09.715025+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_sk_SK.dic": {
+      "md5": "cbf863985cf7febfc310b52cbb5882d9",
+      "path": "dict",
+      "name": "hyph_sk_SK.dic",
+      "size": 18205,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.279307+0100",
+      "created": "2024-11-26 00:38:09.720057+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_sl_SI.dic": {
+      "md5": "5b02efd66c8c216b2d36626fb8c37e08",
+      "path": "dict",
+      "name": "hyph_sl_SI.dic",
+      "size": 8245,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.279307+0100",
+      "created": "2024-11-26 00:38:09.724582+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_sq_AL.dic": {
+      "md5": "5bf00416678e4237061701d2ff4cd36c",
+      "path": "dict",
+      "name": "hyph_sq_AL.dic",
+      "size": 127201,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.281305+0100",
+      "created": "2024-11-26 00:38:09.729618+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_sr.dic": {
+      "md5": "fd9cb54bf673afddf60eda1851a5b841",
+      "path": "dict",
+      "name": "hyph_sr.dic",
+      "size": 27355,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.282307+0100",
+      "created": "2024-11-26 00:38:09.735134+0100",
+      "access": "2025-02-16 21:15:58.678610+0100"
+    },
+    "dict/hyph_sv_SE.dic": {
+      "md5": "3f5463f024ba7ba06f52a5f3ead6c875",
+      "path": "dict",
+      "name": "hyph_sv_SE.dic",
+      "size": 102979,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.284319+0100",
+      "created": "2024-11-26 00:38:09.740152+0100",
+      "access": "2025-02-16 21:15:58.692124+0100"
+    },
+    "dict/hyph_te_IN.dic": {
+      "md5": "f4fbbc29a6956451318c54290475e7d8",
+      "path": "dict",
+      "name": "hyph_te_IN.dic",
+      "size": 1592,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.285298+0100",
+      "created": "2024-11-26 00:38:09.745681+0100",
+      "access": "2025-02-16 21:15:58.692124+0100"
+    },
+    "dict/hyph_uk_UA.dic": {
+      "md5": "50d6d6af9548de7bf02846b81744373e",
+      "path": "dict",
+      "name": "hyph_uk_UA.dic",
+      "size": 20222,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.286320+0100",
+      "created": "2024-11-26 00:38:09.750712+0100",
+      "access": "2025-02-16 21:15:58.694641+0100"
+    },
+    "dict/hyph_zu_ZA.dic": {
+      "md5": "fbd4f5b3d0ff5e2bb43863179adbbfba",
+      "path": "dict",
+      "name": "hyph_zu_ZA.dic",
+      "size": 1956,
+      "attr": "A",
+      "modified": "2024-11-06 17:22:49.287320+0100",
+      "created": "2024-11-26 00:38:09.754760+0100",
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "LICENSE": {
-      "md5": "43633bbc230bb0f031171b9d6e7fed00",
+      "md5": "4a8108bb590d09f072eb8d23df2de67e",
       "path": "",
       "name": "LICENSE",
-      "size": 1064,
+      "size": 1077,
       "attr": "A",
-      "modified": "2024-12-29 22:06:12.764633+0100",
+      "modified": "2025-02-15 22:35:34.725402+0100",
       "created": "2024-12-29 22:08:05.753589+0100",
-      "access": "2025-02-04 16:15:06.588067+0100"
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "pyproject.toml": {
-      "md5": "d7054a95c3743dfc30f317c991f3f682",
+      "md5": "372f245f7fe2706682b6ed02d1a26df9",
       "path": "",
       "name": "pyproject.toml",
-      "size": 636,
+      "size": 575,
       "attr": "A",
-      "modified": "2025-02-03 23:30:47.611118+0100",
+      "modified": "2025-02-16 20:55:11.604535+0100",
       "created": "2024-11-26 10:04:15.553898+0100",
-      "access": "2025-02-04 16:15:06.590074+0100"
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "README.md": {
-      "md5": "20e261b7324fc13729c1848627c43bb7",
+      "md5": "503ddfc9705ad91abebfa778e6b37c8f",
       "path": "",
       "name": "README.md",
-      "size": 600,
+      "size": 581,
       "attr": "A",
-      "modified": "2025-01-27 14:36:49.745534+0100",
+      "modified": "2025-02-16 16:00:24.842177+0100",
       "created": "2024-11-26 10:04:30.788493+0100",
-      "access": "2025-02-04 16:15:06.591074+0100"
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "requirements.txt": {
-      "md5": "49763dd6f12156aafd042677daa80caa",
+      "md5": "5d1dd4ad4f35c56e16ac13f34c04cb4b",
       "path": "",
       "name": "requirements.txt",
-      "size": 91,
+      "size": 85,
       "attr": "A",
-      "modified": "2024-11-10 17:20:15.957634+0100",
+      "modified": "2025-02-16 16:00:32.111157+0100",
       "created": "2024-11-26 00:37:48.312090+0100",
-      "access": "2025-02-04 16:15:06.592072+0100"
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "results/,gitkeep": {
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
@@ -133,7 +493,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:34:30.000000+0100",
       "created": "2025-01-07 12:14:07.998154+0100",
-      "access": "2025-02-04 16:15:06.595094+0100"
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "results/de_DE/AlleDeutschenWoerter/PyHyphen_COMPLETE_AlleDeutschenWoerter.json": {
       "md5": "32995d1eac80180d6aa5fbeb657b1094",
@@ -143,7 +503,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:44:20.000000+0100",
       "created": "2025-01-07 12:14:04.970191+0100",
-      "access": "2025-02-04 16:15:06.599162+0100"
+      "access": "2025-02-16 21:15:58.694641+0100"
     },
     "results/de_DE/AlleDeutschenWoerter/PyHyphen_PATCH_AlleDeutschenWoerter.json": {
       "md5": "7e05bb7c96b62ec20740015ce4849972",
@@ -153,7 +513,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:42:40.000000+0100",
       "created": "2025-01-07 12:14:04.985787+0100",
-      "access": "2025-02-04 16:15:06.599162+0100"
+      "access": "2025-02-16 21:15:58.710284+0100"
     },
     "results/de_DE/AlleDeutschenWoerter/Pyphen-PyHyphen_DIFF_AlleDeutschenWoerter.json": {
       "md5": "eddc3e7adfe45875b6a83520ed61a86b",
@@ -163,7 +523,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:51:10.000000+0100",
       "created": "2025-01-07 12:14:05.001818+0100",
-      "access": "2025-02-04 16:15:06.609178+0100"
+      "access": "2025-02-16 21:15:58.710284+0100"
     },
     "results/de_DE/AlleDeutschenWoerter/Pyphen_COMPLETE_AlleDeutschenWoerter.json": {
       "md5": "cd63e2eeb67571556a4c70cb30371685",
@@ -173,7 +533,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:45:28.000000+0100",
       "created": "2025-01-07 12:14:05.001818+0100",
-      "access": "2025-02-04 16:15:06.615193+0100"
+      "access": "2025-02-16 21:15:58.710284+0100"
     },
     "results/de_DE/de_DE_frami/PyHyphen_COMPLETE_de_DE_frami.json": {
       "md5": "3909c008551e061193bbe7bf7363312b",
@@ -183,7 +543,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:44:46.000000+0100",
       "created": "2025-01-07 12:14:05.033089+0100",
-      "access": "2025-02-04 16:15:06.677714+0100"
+      "access": "2025-02-16 21:15:58.772784+0100"
     },
     "results/de_DE/de_DE_frami/PyHyphen_PATCH_de_DE_frami.json": {
       "md5": "d9170d9c41dfeb1e0997caff6b03be0b",
@@ -193,7 +553,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:43:12.000000+0100",
       "created": "2025-01-07 12:14:05.378136+0100",
-      "access": "2025-02-04 16:15:06.677714+0100"
+      "access": "2025-02-16 21:15:58.772784+0100"
     },
     "results/de_DE/de_DE_frami/Pyphen-PyHyphen_DIFF_de_DE_frami.json": {
       "md5": "659927375b4d42e5996c1860b95cdbb4",
@@ -203,7 +563,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:51:40.000000+0100",
       "created": "2025-01-07 12:14:05.378136+0100",
-      "access": "2025-02-04 16:15:06.693345+0100"
+      "access": "2025-02-16 21:15:58.792425+0100"
     },
     "results/de_DE/de_DE_frami/Pyphen_COMPLETE_de_DE_frami.json": {
       "md5": "35e3bdc1535b63c56bea15824e8ee899",
@@ -213,7 +573,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:46:50.000000+0100",
       "created": "2025-01-07 12:14:05.409778+0100",
-      "access": "2025-02-04 16:15:06.740646+0100"
+      "access": "2025-02-16 21:15:58.851339+0100"
     },
     "results/de_DE/german_words/PyHyphen_COMPLETE_german_words.json": {
       "md5": "106e3044b3735b57fa45b5ebb525a61a",
@@ -223,7 +583,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:44:36.000000+0100",
       "created": "2025-01-07 12:14:05.519583+0100",
-      "access": "2025-02-04 16:15:06.829666+0100"
+      "access": "2025-02-16 21:15:58.961141+0100"
     },
     "results/de_DE/german_words/PyHyphen_PATCH_german_words.json": {
       "md5": "eb5c2a1c223b65016b55eda554c23e5f",
@@ -233,7 +593,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:43:02.000000+0100",
       "created": "2025-01-07 12:14:05.645005+0100",
-      "access": "2025-02-04 16:15:06.834558+0100"
+      "access": "2025-02-16 21:15:58.961141+0100"
     },
     "results/de_DE/german_words/Pyphen-PyHyphen_DIFF_german_words.json": {
       "md5": "5ec3849919f34e76fef3105fc8e9f898",
@@ -243,7 +603,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:51:30.000000+0100",
       "created": "2025-01-07 12:14:05.660643+0100",
-      "access": "2025-02-04 16:15:06.841555+0100"
+      "access": "2025-02-16 21:15:58.961141+0100"
     },
     "results/de_DE/german_words/Pyphen_COMPLETE_german_words.json": {
       "md5": "43e2ed774272e3f25a596b1247fde714",
@@ -253,7 +613,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:46:34.000000+0100",
       "created": "2025-01-07 12:14:05.676259+0100",
-      "access": "2025-02-04 16:15:06.913433+0100"
+      "access": "2025-02-16 21:15:59.055319+0100"
     },
     "results/de_DE/samples/PyHyphen_COMPLETE_samples.json": {
       "md5": "26d79612ef4938f8f11bfed94f96b181",
@@ -263,7 +623,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:44:16.000000+0100",
       "created": "2025-01-07 12:14:05.848970+0100",
-      "access": "2025-02-04 16:15:06.913433+0100"
+      "access": "2025-02-16 21:15:59.070935+0100"
     },
     "results/de_DE/samples/PyHyphen_PATCH_samples.json": {
       "md5": "d0118e5e94b42cd46e0477c9d4eaa961",
@@ -273,7 +633,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:42:36.000000+0100",
       "created": "2025-01-07 12:14:05.864593+0100",
-      "access": "2025-02-04 16:15:06.913433+0100"
+      "access": "2025-02-16 21:15:59.070935+0100"
     },
     "results/de_DE/samples/Pyphen-PyHyphen_DIFF_samples.json": {
       "md5": "be6e6bdf4424c4e832797ba2bae075cd",
@@ -283,7 +643,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:51:08.000000+0100",
       "created": "2025-01-07 12:14:05.864593+0100",
-      "access": "2025-02-04 16:15:06.913433+0100"
+      "access": "2025-02-16 21:15:59.070935+0100"
     },
     "results/de_DE/samples/Pyphen_COMPLETE_samples.json": {
       "md5": "64eaabe29cc5d2bc590092a89a9de088",
@@ -293,7 +653,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:45:26.000000+0100",
       "created": "2025-01-07 12:14:05.880220+0100",
-      "access": "2025-02-04 16:15:06.913433+0100"
+      "access": "2025-02-16 21:15:59.070935+0100"
     },
     "results/de_DE/wordlist-german/PyHyphen_COMPLETE_wordlist-german.json": {
       "md5": "afce24d64785716a7870a57c22c86a5d",
@@ -303,7 +663,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:45:22.000000+0100",
       "created": "2025-01-07 12:14:05.902368+0100",
-      "access": "2025-02-04 16:15:07.381254+0100"
+      "access": "2025-02-16 21:15:59.558142+0100"
     },
     "results/de_DE/wordlist-german/PyHyphen_PATCH_wordlist-german.json": {
       "md5": "2358e3c9577b9ee4e226bb49235721d2",
@@ -313,7 +673,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:44:14.000000+0100",
       "created": "2025-01-07 12:14:06.743521+0100",
-      "access": "2025-02-04 16:15:07.444173+0100"
+      "access": "2025-02-16 21:15:59.621066+0100"
     },
     "results/de_DE/wordlist-german/Pyphen-PyHyphen_DIFF_wordlist-german.json": {
       "md5": "f08e2cf37446b01d310a9e9ecb4a219f",
@@ -323,7 +683,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:52:36.000000+0100",
       "created": "2025-01-07 12:14:06.868965+0100",
-      "access": "2025-02-04 16:15:07.538349+0100"
+      "access": "2025-02-16 21:15:59.699622+0100"
     },
     "results/de_DE/wordlist-german/Pyphen_COMPLETE_wordlist-german.json": {
       "md5": "4adf9ad9cf7c014dca9a5bf93854dd2b",
@@ -333,7 +693,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:51:04.000000+0100",
       "created": "2025-01-07 12:14:07.010433+0100",
-      "access": "2025-02-04 16:15:08.111262+0100"
+      "access": "2025-02-16 21:16:00.154490+0100"
     },
     "results/de_DE/wortliste/PyHyphen_COMPLETE_wortliste.json": {
       "md5": "dd7938d5957196b6fd3df5f3a7ba1e04",
@@ -343,7 +703,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:44:28.000000+0100",
       "created": "2025-01-07 12:14:07.731686+0100",
-      "access": "2025-02-04 16:15:08.150765+0100"
+      "access": "2025-02-16 21:16:00.201780+0100"
     },
     "results/de_DE/wortliste/PyHyphen_PATCH_wortliste.json": {
       "md5": "0fbff092e45b8238f4cd0e4c0835efc6",
@@ -353,7 +713,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:42:50.000000+0100",
       "created": "2025-01-07 12:14:07.825852+0100",
-      "access": "2025-02-04 16:15:08.171594+0100"
+      "access": "2025-02-16 21:16:00.217420+0100"
     },
     "results/de_DE/wortliste/Pyphen-PyHyphen_DIFF_wortliste.json": {
       "md5": "b6e2841afb580e7584b28082b91819be",
@@ -363,7 +723,7 @@
       "attr": "A",
       "modified": "2024-12-21 14:51:20.000000+0100",
       "created": "2025-01-07 12:14:07.857107+0100",
-      "access": "2025-02-04 16:15:08.179585+0100"
+      "access": "2025-02-16 21:16:00.217420+0100"
     },
     "results/de_DE/wortliste/Pyphen_COMPLETE_wortliste.json": {
       "md5": "addb6cb44da6cd5a4fb67d899b2e985f",
@@ -373,17 +733,17 @@
       "attr": "A",
       "modified": "2024-12-21 14:45:58.000000+0100",
       "created": "2025-01-07 12:14:07.872734+0100",
-      "access": "2025-02-04 16:15:08.215774+0100"
+      "access": "2025-02-16 21:16:00.264303+0100"
     },
     "ruff.toml": {
-      "md5": "8d90a4d239ad09f87cfdd86afb961fa9",
+      "md5": "36d734b6a2160e24a2ca72672ea49ab2",
       "path": "",
       "name": "ruff.toml",
-      "size": 71,
+      "size": 68,
       "attr": "A",
-      "modified": "2024-12-04 21:58:59.993012+0100",
+      "modified": "2025-02-16 13:11:03.448156+0100",
       "created": "2024-11-26 00:37:48.317657+0100",
-      "access": "2025-02-04 16:15:08.215774+0100"
+      "access": "2025-02-16 21:16:00.264303+0100"
     },
     "samples/de_DE/AlleDeutschenWoerter/Adjektive/Adjektive.txt": {
       "md5": "17eed7617297b9688c28f5f2357d6ac1",
@@ -393,7 +753,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.487550+0100",
       "created": "2024-11-26 00:38:11.109447+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/AlleDeutschenWoerter/Substantive/substantiv_singular_das.txt": {
       "md5": "38ef7c7f854db92a20bc05e9eae6fa09",
@@ -403,7 +763,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.489336+0100",
       "created": "2024-11-26 00:38:11.127543+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/AlleDeutschenWoerter/Substantive/substantiv_singular_der.txt": {
       "md5": "52cd6b85e0d26fb107851edc0c8fc00b",
@@ -413,7 +773,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.494160+0100",
       "created": "2024-11-26 00:38:11.135052+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/AlleDeutschenWoerter/Substantive/substantiv_singular_die.txt": {
       "md5": "28f847732d44790ca72b2898ecb6c091",
@@ -423,7 +783,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.497042+0100",
       "created": "2024-11-26 00:38:11.140074+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/AlleDeutschenWoerter/Verben/Verben_regelmaeßig.txt": {
       "md5": "b0ad37713d7466d24292d246c816a536",
@@ -433,7 +793,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.499715+0100",
       "created": "2024-11-26 00:38:11.157184+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/AlleDeutschenWoerter/Verben/Verben_unregelmaeßig_Infinitiv.txt": {
       "md5": "04bd67ea2ecf96b88659d2382c9f9795",
@@ -443,7 +803,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.501789+0100",
       "created": "2024-11-26 00:38:11.162186+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/de_DE_frami/COPYING_GPLv2.txt": {
       "md5": "46bc4dc3f0a2f299883ab9ee6d8daaf6",
@@ -453,7 +813,7 @@
       "attr": "A",
       "modified": "2015-12-28 17:00:00.000000+0100",
       "created": "2024-11-26 00:38:11.178243+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/de_DE_frami/COPYING_GPLv3.txt": {
       "md5": "d32239bcb673463ab874e80d47fae504",
@@ -463,7 +823,7 @@
       "attr": "A",
       "modified": "2015-12-28 17:00:00.000000+0100",
       "created": "2024-11-26 00:38:11.182250+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.279926+0100"
     },
     "samples/de_DE/de_DE_frami/de_DE_frami.aff": {
       "md5": "601a05d0785ca99fdbdf712ca9326302",
@@ -473,7 +833,7 @@
       "attr": "A",
       "modified": "2017-01-12 20:01:07.545357+0100",
       "created": "2024-11-26 00:38:11.190670+0100",
-      "access": "2025-02-04 16:15:08.231425+0100"
+      "access": "2025-02-16 21:16:00.295450+0100"
     },
     "samples/de_DE/de_DE_frami/de_DE_frami.dic": {
       "md5": "4dbae1ca0db9375162ce5cdbea5c2b63",
@@ -483,7 +843,7 @@
       "attr": "A",
       "modified": "2017-01-12 19:45:31.200512+0100",
       "created": "2024-11-26 00:38:11.196213+0100",
-      "access": "2025-02-04 16:15:08.247045+0100"
+      "access": "2025-02-16 21:16:00.311092+0100"
     },
     "samples/de_DE/de_DE_frami/de_DE_frami_README.txt": {
       "md5": "5a42b56c6507964cbb189d6fa4c9599d",
@@ -493,7 +853,7 @@
       "attr": "A",
       "modified": "2015-12-28 17:00:00.000000+0100",
       "created": "2024-11-26 00:38:11.217840+0100",
-      "access": "2025-02-04 16:15:08.247045+0100"
+      "access": "2025-02-16 21:16:00.311092+0100"
     },
     "samples/de_DE/german_words/german_words.txt": {
       "md5": "7df5e30b492ca9ec368565751596ec8e",
@@ -503,7 +863,7 @@
       "attr": "A",
       "modified": "2024-11-09 18:36:16.897791+0100",
       "created": "2024-11-26 00:38:11.233412+0100",
-      "access": "2025-02-04 16:15:08.278300+0100"
+      "access": "2025-02-16 21:16:00.342345+0100"
     },
     "samples/de_DE/german_words/LICENCE": {
       "md5": "1c9b9b903597fa8ed8a1a801d4f6c1e5",
@@ -513,7 +873,7 @@
       "attr": "A",
       "modified": "2019-02-08 13:25:23.000000+0100",
       "created": "2024-11-26 00:38:11.259303+0100",
-      "access": "2025-02-04 16:15:08.278300+0100"
+      "access": "2025-02-16 21:16:00.342345+0100"
     },
     "samples/de_DE/german_words/README.md": {
       "md5": "b1618c70bf9125fed0665670d85d24ba",
@@ -523,7 +883,7 @@
       "attr": "A",
       "modified": "2019-02-08 13:25:23.000000+0100",
       "created": "2024-11-26 00:38:11.263286+0100",
-      "access": "2025-02-04 16:15:08.278300+0100"
+      "access": "2025-02-16 21:16:00.342345+0100"
     },
     "samples/de_DE/samples.yaml": {
       "md5": "0212c6e94b9a92c8da11376c2def1be7",
@@ -533,7 +893,7 @@
       "attr": "A",
       "modified": "2024-12-28 18:21:43.376127+0100",
       "created": "2024-11-26 00:38:11.086316+0100",
-      "access": "2025-02-04 16:15:08.278300+0100"
+      "access": "2025-02-16 21:16:00.342345+0100"
     },
     "samples/de_DE/wordlist-german/wordlist-german.txt": {
       "md5": "6bd90abea6d21b29a4cdaebfe60f3fc5",
@@ -543,7 +903,7 @@
       "attr": "A",
       "modified": "2017-09-07 05:19:01.000000+0200",
       "created": "2024-11-26 00:38:11.280385+0100",
-      "access": "2025-02-04 16:15:08.416530+0100"
+      "access": "2025-02-16 21:16:00.515085+0100"
     },
     "samples/de_DE/wortliste/LICENSE": {
       "md5": "d4333f07cbfa8fe036e90820f556b2ad",
@@ -553,7 +913,7 @@
       "attr": "A",
       "modified": "2024-11-09 16:12:32.821823+0100",
       "created": "2024-11-26 00:38:11.404374+0100",
-      "access": "2025-02-04 16:15:08.416530+0100"
+      "access": "2025-02-16 21:16:00.515085+0100"
     },
     "samples/de_DE/wortliste/README.md": {
       "md5": "d1b0d2b022b766d3de0bd94ca2faebe7",
@@ -563,7 +923,7 @@
       "attr": "A",
       "modified": "2024-11-09 16:12:32.822825+0100",
       "created": "2024-11-26 00:38:11.411356+0100",
-      "access": "2025-02-04 16:15:08.416530+0100"
+      "access": "2025-02-16 21:16:00.515085+0100"
     },
     "samples/de_DE/wortliste/wortliste-generieren.sh": {
       "md5": "5110ac2e1ff841eab1fe4c8874077f4c",
@@ -573,7 +933,7 @@
       "attr": "A",
       "modified": "2024-11-09 16:12:32.826823+0100",
       "created": "2024-11-26 00:38:11.417531+0100",
-      "access": "2025-02-04 16:15:08.416530+0100"
+      "access": "2025-02-16 21:16:00.515085+0100"
     },
     "samples/de_DE/wortliste/wortliste.txt": {
       "md5": "72710f8f51f029ed3847d78ccd31eb88",
@@ -583,27 +943,27 @@
       "attr": "A",
       "modified": "2024-11-09 16:12:32.867381+0100",
       "created": "2024-11-26 00:38:11.422544+0100",
-      "access": "2025-02-04 16:15:08.432152+0100"
+      "access": "2025-02-16 21:16:00.530717+0100"
     },
     "settings/settings.yaml": {
-      "md5": "329f759648033214ef88dcce8564dbc0",
+      "md5": "b14d2b272ec2b704bd6d3c2f4aa36e11",
       "path": "settings",
       "name": "settings.yaml",
-      "size": 1055,
+      "size": 1000,
       "attr": "A",
-      "modified": "2024-12-28 18:21:40.838717+0100",
+      "modified": "2025-02-16 20:53:24.918463+0100",
       "created": "2024-11-26 00:38:11.459325+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.530717+0100"
     },
     "src/helper/samples.py": {
-      "md5": "deca756ae782c5ef5a2a7cecc2aef223",
+      "md5": "f754dcea053f7140895e93068b8ff16d",
       "path": "src/helper",
       "name": "samples.py",
-      "size": 4633,
+      "size": 4489,
       "attr": "A",
-      "modified": "2025-01-27 13:43:22.524965+0100",
+      "modified": "2025-02-16 20:51:16.119934+0100",
       "created": "2024-11-26 00:38:11.488881+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.530717+0100"
     },
     "src/helper/__init__.py": {
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
@@ -616,24 +976,24 @@
       "access": "2025-01-31 20:07:24.108271+0100"
     },
     "src/main/hyphen.py": {
-      "md5": "45bd4bf847350e329c2a9c087fda5731",
+      "md5": "031003dab8307d27fad998f1058337dc",
       "path": "src/main",
       "name": "hyphen.py",
-      "size": 1902,
+      "size": 1797,
       "attr": "A",
-      "modified": "2025-01-27 13:55:35.656721+0100",
+      "modified": "2025-02-16 20:50:44.276903+0100",
       "created": "2024-11-26 00:38:11.478440+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.530717+0100"
     },
     "src/main/pyphen.py": {
-      "md5": "b85b60fc84318d9ff6b1ec59043fd22b",
+      "md5": "e4be23ffb19cfcc81e77c21f96dfb3a4",
       "path": "src/main",
       "name": "pyphen.py",
-      "size": 1011,
+      "size": 957,
       "attr": "A",
-      "modified": "2025-01-27 13:55:42.846418+0100",
+      "modified": "2025-02-16 21:00:37.321733+0100",
       "created": "2024-11-26 00:38:11.484446+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/main/__init__.py": {
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
@@ -646,64 +1006,64 @@
       "access": "2024-12-21 14:29:57.775924+0100"
     },
     "src/main.py": {
-      "md5": "4cde55ded7de82fe5ad742d966f4216a",
+      "md5": "231f27b9604e43b8954c789f5186c3ee",
       "path": "src",
       "name": "main.py",
-      "size": 8217,
+      "size": 8037,
       "attr": "A",
-      "modified": "2025-01-31 20:42:09.482158+0100",
+      "modified": "2025-02-16 21:07:15.057163+0100",
       "created": "2024-11-26 00:37:48.307091+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/decorator.py": {
-      "md5": "dbc61109d24411febaae143423b6297f",
+      "md5": "db4fd5928e082e8e0386f68c75de6e62",
       "path": "src/utils",
       "name": "decorator.py",
-      "size": 10371,
+      "size": 10057,
       "attr": "A",
-      "modified": "2025-01-27 20:02:01.279274+0100",
+      "modified": "2025-02-15 22:34:12.519152+0100",
       "created": "2024-12-08 18:19:48.447433+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/file.py": {
-      "md5": "40331e6e76ec21574a1bccf3608551b9",
+      "md5": "b6523a1525d136940f76f9bf3c644c7f",
       "path": "src/utils",
       "name": "file.py",
-      "size": 14154,
+      "size": 17823,
       "attr": "A",
-      "modified": "2025-01-29 22:02:54.505297+0100",
+      "modified": "2025-02-16 14:53:36.758002+0100",
       "created": "2024-12-26 13:10:48.714774+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/files.py": {
-      "md5": "6f20629629f905089e86289502ca9539",
+      "md5": "39fb0e0ceb9d78e21ecdc5105069dfe2",
       "path": "src/utils",
       "name": "files.py",
-      "size": 15042,
+      "size": 15292,
       "attr": "A",
-      "modified": "2025-01-27 19:53:50.960207+0100",
+      "modified": "2025-02-16 13:25:26.725864+0100",
       "created": "2024-11-26 00:38:11.509972+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/globals.py": {
-      "md5": "751cfa93af496a8c1531a19525514219",
+      "md5": "6ee255f0d256d323d3dba33dc6304ba8",
       "path": "src/utils",
       "name": "globals.py",
-      "size": 563,
+      "size": 535,
       "attr": "A",
-      "modified": "2025-01-27 19:37:56.760238+0100",
+      "modified": "2025-02-15 22:34:26.657128+0100",
       "created": "2024-12-17 14:09:20.418799+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/prefs.py": {
-      "md5": "09a08bce54a18d44fa263cb8db8c4640",
+      "md5": "73defd2bb28485fd026a66c2f74503a7",
       "path": "src/utils",
       "name": "prefs.py",
       "size": 6594,
       "attr": "AP",
-      "modified": "2025-02-03 17:57:23.867489+0100",
+      "modified": "2025-02-15 22:34:40.871817+0100",
       "created": "2024-11-26 00:38:11.515516+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/trace.py": {
       "md5": "ce53f99ffe4b1dcf57909bfb844f3f9d",
@@ -711,19 +1071,19 @@
       "name": "trace.py",
       "size": 15973,
       "attr": "A",
-      "modified": "2025-02-02 23:56:38.453645+0100",
+      "modified": "2025-02-15 22:34:50.093547+0100",
       "created": "2024-11-26 00:38:11.520539+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/utils.py": {
-      "md5": "83e5bbde09f734c8dca93a0bd482db6c",
+      "md5": "2751beaa3fe9d935b6ff4e84ed5dde19",
       "path": "src/utils",
       "name": "utils.py",
-      "size": 2006,
+      "size": 1940,
       "attr": "A",
-      "modified": "2025-01-19 18:10:54.927707+0100",
+      "modified": "2025-02-15 22:34:59.785852+0100",
       "created": "2024-11-27 17:40:10.949305+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "src/utils/__init__.py": {
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
@@ -746,14 +1106,14 @@
       "access": "2024-12-09 20:42:31.673863+0100"
     },
     "uv.lock": {
-      "md5": "781468ba49baf508f918758b0b214bc4",
+      "md5": "4b939e9a260ae7348715831572ef2909",
       "path": "",
       "name": "uv.lock",
-      "size": 39704,
+      "size": 28035,
       "attr": "A",
-      "modified": "2025-01-31 20:35:50.881476+0100",
+      "modified": "2025-02-16 20:46:06.737039+0100",
       "created": "2024-11-26 10:06:14.010123+0100",
-      "access": "2025-02-04 16:15:08.447780+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "_info/68532-vocabulary-list-by-topic.pdf": {
       "md5": "b264d80404d6085025ceea70eacd3527",
@@ -763,7 +1123,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.472104+0100",
       "created": "2024-11-26 00:38:11.623277+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
+      "access": "2025-02-16 21:16:00.546335+0100"
     },
     "_info/A1_SD1_Wortliste_02.pdf": {
       "md5": "d971a114081a45908aa5952e526281dd",
@@ -773,7 +1133,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.481959+0100",
       "created": "2024-11-26 00:38:11.630609+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/AlleDeutschenWoerter-main.zip": {
       "md5": "f41f7e8e1acb7455acaa995c1e735161",
@@ -783,7 +1143,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.484738+0100",
       "created": "2024-11-26 00:38:11.638157+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/dehyph - TeX/dehyphn.tex": {
       "md5": "5a26d30dc5e51aff43bb7c0c467a9b8e",
@@ -793,7 +1153,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.163758+0100",
       "created": "2024-11-26 00:38:11.693068+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/dehyph - TeX/dehypht.tex": {
       "md5": "7c449edbe0e8d7f69576df12dece9b01",
@@ -803,7 +1163,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.164757+0100",
       "created": "2024-11-26 00:38:11.699624+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/dehyph - TeX/dehyphtex.tex": {
       "md5": "0edef959faa8d7d0046533db02ebedea",
@@ -813,7 +1173,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.166764+0100",
       "created": "2024-11-26 00:38:11.704233+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/dehyph - TeX/README": {
       "md5": "24b344dd2fda277cb7570e432f88ffa3",
@@ -823,367 +1183,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.162758+0100",
       "created": "2024-11-26 00:38:11.711200+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
-    },
-    "_info/dict/dictionaries.json": {
-      "md5": "299da7e0d6d534b7001a61d00cd2e7fc",
-      "path": "_info/dict",
-      "name": "dictionaries.json",
-      "size": 298,
-      "attr": "A",
-      "modified": "2024-11-10 16:12:17.757965+0100",
-      "created": "2024-11-26 00:38:09.564483+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
-    },
-    "_info/dict/hyph_af_ZA.dic": {
-      "md5": "f4b88e4558edb06d1a1af011b590ef4a",
-      "path": "_info/dict",
-      "name": "hyph_af_ZA.dic",
-      "size": 62925,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.237300+0100",
-      "created": "2024-11-26 00:38:09.570036+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
-    },
-    "_info/dict/hyph_be_BY.dic": {
-      "md5": "c4ae7a965c85a6f7ee582b7149badf7a",
-      "path": "_info/dict",
-      "name": "hyph_be_BY.dic",
-      "size": 31963,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.238304+0100",
-      "created": "2024-11-26 00:38:09.576591+0100",
-      "access": "2025-02-04 16:15:08.463402+0100"
-    },
-    "_info/dict/hyph_bg_BG.dic": {
-      "md5": "a066518e463ed79398126df254355fdd",
-      "path": "_info/dict",
-      "name": "hyph_bg_BG.dic",
-      "size": 59388,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.239301+0100",
-      "created": "2024-11-26 00:38:09.582590+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_cs_CZ.dic": {
-      "md5": "c9cbd906b7884d88b00a3a0a6a7773c7",
-      "path": "_info/dict",
-      "name": "hyph_cs_CZ.dic",
-      "size": 20049,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.240299+0100",
-      "created": "2024-11-26 00:38:09.587126+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_da_DK.dic": {
-      "md5": "f06096ee79723b129375b9a8dd5c149f",
-      "path": "_info/dict",
-      "name": "hyph_da_DK.dic",
-      "size": 6049,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.241303+0100",
-      "created": "2024-11-26 00:38:09.592124+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_de_DE.dic": {
-      "md5": "929e904dc9af3bba4a60745aaa362bc2",
-      "path": "_info/dict",
-      "name": "hyph_de_DE.dic",
-      "size": 1093686,
-      "attr": "A",
-      "modified": "2024-11-11 17:44:01.805714+0100",
-      "created": "2024-11-26 00:38:09.596704+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_de_US.dic": {
-      "md5": "59831ccfe6d30d7de5f7bd5e49246fe3",
-      "path": "_info/dict",
-      "name": "hyph_de_US.dic",
-      "size": 106414,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.178756+0100",
-      "created": "2024-11-26 00:38:09.607255+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_el_GR.dic": {
-      "md5": "670feb19496fe5a330a1feae16a311c6",
-      "path": "_info/dict",
-      "name": "hyph_el_GR.dic",
-      "size": 3205,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.252298+0100",
-      "created": "2024-11-26 00:38:09.612275+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_en.dic": {
-      "md5": "eca18332835f88521becb504e530aefc",
-      "path": "_info/dict",
-      "name": "hyph_en.dic",
-      "size": 107031,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.254304+0100",
-      "created": "2024-11-26 00:38:09.617838+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_eo.dic": {
-      "md5": "f73d9bafb436f2c2ffef4244afb253bd",
-      "path": "_info/dict",
-      "name": "hyph_eo.dic",
-      "size": 29876,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.255302+0100",
-      "created": "2024-11-26 00:38:09.622838+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_es.dic": {
-      "md5": "729e8e25d4f609353c46dfa60e65a6a6",
-      "path": "_info/dict",
-      "name": "hyph_es.dic",
-      "size": 5699,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.256299+0100",
-      "created": "2024-11-26 00:38:09.629381+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_et_EE.dic": {
-      "md5": "32fe829598e124edc9b5e93c6844edeb",
-      "path": "_info/dict",
-      "name": "hyph_et_EE.dic",
-      "size": 22637,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.257318+0100",
-      "created": "2024-11-26 00:38:09.634378+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_fr_FR.dic": {
-      "md5": "2e1f99d09be03f14e49f24174dc901f4",
-      "path": "_info/dict",
-      "name": "hyph_fr_FR.dic",
-      "size": 23631,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.257318+0100",
-      "created": "2024-11-26 00:38:09.638919+0100",
-      "access": "2025-02-04 16:15:08.479040+0100"
-    },
-    "_info/dict/hyph_gl.dic": {
-      "md5": "a8e26373eb44b506f465ee558bce4c0c",
-      "path": "_info/dict",
-      "name": "hyph_gl.dic",
-      "size": 1420,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.258299+0100",
-      "created": "2024-11-26 00:38:09.645494+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_hr_HR.dic": {
-      "md5": "fe773ce7f4c4b7fba923332d509013d1",
-      "path": "_info/dict",
-      "name": "hyph_hr_HR.dic",
-      "size": 7789,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.258299+0100",
-      "created": "2024-11-26 00:38:09.649509+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_hu_HU.dic": {
-      "md5": "ade9ed7896b5a3d732c87ce096639331",
-      "path": "_info/dict",
-      "name": "hyph_hu_HU.dic",
-      "size": 937807,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.268301+0100",
-      "created": "2024-11-26 00:38:09.653118+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_id.dic": {
-      "md5": "ee9610d9ba686499b989a886041fe03d",
-      "path": "_info/dict",
-      "name": "hyph_id.dic",
-      "size": 104072,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.269298+0100",
-      "created": "2024-11-26 00:38:09.662646+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_is.dic": {
-      "md5": "c3d6962699834a97ec69a5da1eb944a5",
-      "path": "_info/dict",
-      "name": "hyph_is.dic",
-      "size": 50011,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.271302+0100",
-      "created": "2024-11-26 00:38:09.669210+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_it_IT.dic": {
-      "md5": "2ac3ec34de5707a1ed5f43dce902bcfe",
-      "path": "_info/dict",
-      "name": "hyph_it_IT.dic",
-      "size": 2308,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.271302+0100",
-      "created": "2024-11-26 00:38:09.675280+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_lt_LT.dic": {
-      "md5": "0cb081fa82fa5949070b8ab367e426fd",
-      "path": "_info/dict",
-      "name": "hyph_lt_LT.dic",
-      "size": 7817,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.272304+0100",
-      "created": "2024-11-26 00:38:09.680294+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_lv_LV.dic": {
-      "md5": "13e74ab4895cdc470c1aa76b52128770",
-      "path": "_info/dict",
-      "name": "hyph_lv_LV.dic",
-      "size": 79409,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.273304+0100",
-      "created": "2024-11-26 00:38:09.684294+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_nl_NL.dic": {
-      "md5": "69a5f17c4ec830b4991bfe440dfcac5a",
-      "path": "_info/dict",
-      "name": "hyph_nl_NL.dic",
-      "size": 116507,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.275304+0100",
-      "created": "2024-11-26 00:38:09.688834+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_pl_PL.dic": {
-      "md5": "a9ec853d1bf09f7989826500064384e1",
-      "path": "_info/dict",
-      "name": "hyph_pl_PL.dic",
-      "size": 37931,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.276305+0100",
-      "created": "2024-11-26 00:38:09.694354+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_pt_BR.dic": {
-      "md5": "320322b8c584b77d16c5ccc3a9342c57",
-      "path": "_info/dict",
-      "name": "hyph_pt_BR.dic",
-      "size": 11260,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.276305+0100",
-      "created": "2024-11-26 00:38:09.699382+0100",
-      "access": "2025-02-04 16:15:08.494668+0100"
-    },
-    "_info/dict/hyph_pt_PT.dic": {
-      "md5": "88973f456eb570c1238d6674448da032",
-      "path": "_info/dict",
-      "name": "hyph_pt_PT.dic",
-      "size": 1288,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.277307+0100",
-      "created": "2024-11-26 00:38:09.703389+0100",
-      "access": "2025-02-04 16:15:08.510291+0100"
-    },
-    "_info/dict/hyph_ro.dic": {
-      "md5": "e375f3925b4a18fd1b3565c082a8983c",
-      "path": "_info/dict",
-      "name": "hyph_ro.dic",
-      "size": 34597,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.278306+0100",
-      "created": "2024-11-26 00:38:09.708503+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_ru_RU.dic": {
-      "md5": "ea31d0feb965f8b3faa04a4a8665e159",
-      "path": "_info/dict",
-      "name": "hyph_ru_RU.dic",
-      "size": 35415,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.278306+0100",
-      "created": "2024-11-26 00:38:09.715025+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_sk_SK.dic": {
-      "md5": "cbf863985cf7febfc310b52cbb5882d9",
-      "path": "_info/dict",
-      "name": "hyph_sk_SK.dic",
-      "size": 18205,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.279307+0100",
-      "created": "2024-11-26 00:38:09.720057+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_sl_SI.dic": {
-      "md5": "5b02efd66c8c216b2d36626fb8c37e08",
-      "path": "_info/dict",
-      "name": "hyph_sl_SI.dic",
-      "size": 8245,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.279307+0100",
-      "created": "2024-11-26 00:38:09.724582+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_sq_AL.dic": {
-      "md5": "5bf00416678e4237061701d2ff4cd36c",
-      "path": "_info/dict",
-      "name": "hyph_sq_AL.dic",
-      "size": 127201,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.281305+0100",
-      "created": "2024-11-26 00:38:09.729618+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_sr.dic": {
-      "md5": "fd9cb54bf673afddf60eda1851a5b841",
-      "path": "_info/dict",
-      "name": "hyph_sr.dic",
-      "size": 27355,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.282307+0100",
-      "created": "2024-11-26 00:38:09.735134+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_sv_SE.dic": {
-      "md5": "3f5463f024ba7ba06f52a5f3ead6c875",
-      "path": "_info/dict",
-      "name": "hyph_sv_SE.dic",
-      "size": 102979,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.284319+0100",
-      "created": "2024-11-26 00:38:09.740152+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_te_IN.dic": {
-      "md5": "f4fbbc29a6956451318c54290475e7d8",
-      "path": "_info/dict",
-      "name": "hyph_te_IN.dic",
-      "size": 1592,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.285298+0100",
-      "created": "2024-11-26 00:38:09.745681+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_uk_UA.dic": {
-      "md5": "50d6d6af9548de7bf02846b81744373e",
-      "path": "_info/dict",
-      "name": "hyph_uk_UA.dic",
-      "size": 20222,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.286320+0100",
-      "created": "2024-11-26 00:38:09.750712+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
-    },
-    "_info/dict/hyph_zu_ZA.dic": {
-      "md5": "fbd4f5b3d0ff5e2bb43863179adbbfba",
-      "path": "_info/dict",
-      "name": "hyph_zu_ZA.dic",
-      "size": 1956,
-      "attr": "A",
-      "modified": "2024-11-06 17:22:49.287320+0100",
-      "created": "2024-11-26 00:38:09.754760+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/Goethe Institute A1 Wordlist.txt": {
       "md5": "79063dbd2884240454c0b827908e6973",
@@ -1193,7 +1193,7 @@
       "attr": "A",
       "modified": "2024-11-09 13:11:03.505322+0100",
       "created": "2024-11-26 00:38:11.643158+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/hyphen-2.8.8/aclocal.m4": {
       "md5": "2f7ddf967901c549b29a790b4ad88bf8",
@@ -1203,7 +1203,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:45:56.000000+0200",
       "created": "2024-11-26 00:38:11.734796+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/hyphen-2.8.8/AUTHORS": {
       "md5": "a3e2b6a92cd140999ff7a40e5c077925",
@@ -1213,7 +1213,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:55.000000+0200",
       "created": "2024-11-26 00:38:11.742814+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/hyphen-2.8.8/ChangeLog": {
       "md5": "355251ce1e557b41907f3b965bf3291e",
@@ -1223,7 +1223,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:41:58.000000+0200",
       "created": "2024-11-26 00:38:11.747367+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/hyphen-2.8.8/checkme.lst": {
       "md5": "63a575f909b27908d2353049fb1a4a4c",
@@ -1233,7 +1233,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:40.000000+0100",
       "created": "2024-11-26 00:38:11.759431+0100",
-      "access": "2025-02-04 16:15:08.511312+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/hyphen-2.8.8/config.guess": {
       "md5": "9c01fa8c4554cb2c7b92c95dfa0dbfcf",
@@ -1243,7 +1243,7 @@
       "attr": "A",
       "modified": "2014-06-27 10:59:40.000000+0200",
       "created": "2024-11-26 00:38:11.772984+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.561958+0100"
     },
     "_info/hyphen-2.8.8/config.sub": {
       "md5": "1803a1d601bcf4debccfe2902c4f0f65",
@@ -1253,7 +1253,7 @@
       "attr": "A",
       "modified": "2014-06-27 10:59:40.000000+0200",
       "created": "2024-11-26 00:38:11.782547+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/configure": {
       "md5": "21f9b3c12efb95b0e614c2db06006381",
@@ -1263,7 +1263,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:45:57.000000+0200",
       "created": "2024-11-26 00:38:11.786721+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/configure.in": {
       "md5": "8333923e5bb400e9e59df11422a67b7f",
@@ -1273,7 +1273,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:43:59.000000+0200",
       "created": "2024-11-26 00:38:11.794283+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/COPYING": {
       "md5": "d45e3467790c1cae990cc9ca3293bc97",
@@ -1283,7 +1283,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.799237+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/COPYING.LGPL": {
       "md5": "d8045f3b8f929c1cb29a1e3fd737b499",
@@ -1293,7 +1293,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.803252+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/COPYING.MPL": {
       "md5": "bfe1f75d606912a4111c90743d6c7325",
@@ -1303,7 +1303,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.807801+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/depcomp": {
       "md5": "58c7cd7c1dcfded98dd24ca21bd7e7ed",
@@ -1313,7 +1313,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:42.000000+0100",
       "created": "2024-11-26 00:38:11.811799+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/doc/Makefile.am": {
       "md5": "23b647133c9f9931c8f4e6e307e259fa",
@@ -1323,7 +1323,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.009781+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/doc/Makefile.in": {
       "md5": "006fece3a1605a6d0f84e114e11f5a23",
@@ -1333,7 +1333,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:45:56.000000+0200",
       "created": "2024-11-26 00:38:12.015325+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/doc/tb87nemeth.pdf": {
       "md5": "493c360dafd4d107f08df178201502b9",
@@ -1343,7 +1343,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.025872+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/example.c": {
       "md5": "3c791438d7c0e520e46df7808c6a2ce8",
@@ -1353,7 +1353,7 @@
       "attr": "A",
       "modified": "2012-06-29 12:02:24.000000+0200",
       "created": "2024-11-26 00:38:11.816320+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/hnjalloc.c": {
       "md5": "144b78e1db05503bf337ab3da77fdf79",
@@ -1363,7 +1363,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:44.000000+0100",
       "created": "2024-11-26 00:38:11.820351+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/hnjalloc.h": {
       "md5": "9fcb4967b0e28f657c2ace181c745b87",
@@ -1373,7 +1373,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:40.000000+0100",
       "created": "2024-11-26 00:38:11.823344+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.577582+0100"
     },
     "_info/hyphen-2.8.8/hyphen.c": {
       "md5": "7f11da9c687537cb711d8950ff4160ae",
@@ -1383,7 +1383,7 @@
       "attr": "A",
       "modified": "2014-06-26 15:42:28.000000+0200",
       "created": "2024-11-26 00:38:11.827598+0100",
-      "access": "2025-02-04 16:15:08.526336+0100"
+      "access": "2025-02-16 21:16:00.593205+0100"
     },
     "_info/hyphen-2.8.8/hyphen.h": {
       "md5": "5a1a552c7fcaef5aa17eee1028338bbb",
@@ -1393,7 +1393,7 @@
       "attr": "A",
       "modified": "2014-07-03 11:51:53.000000+0200",
       "created": "2024-11-26 00:38:11.834174+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.593205+0100"
     },
     "_info/hyphen-2.8.8/hyphen.patch": {
       "md5": "b8112f8ccc1d117a247a596577cf3ead",
@@ -1403,7 +1403,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:44.000000+0100",
       "created": "2024-11-26 00:38:11.846701+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.593205+0100"
     },
     "_info/hyphen-2.8.8/hyphen.tex": {
       "md5": "5647181de2aabbe0f408f6fc66751171",
@@ -1413,7 +1413,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.851698+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/hyph_en_US.dic": {
       "md5": "e4ecc2cc0bafb654cfc18da46f48ff72",
@@ -1423,7 +1423,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:46:18.000000+0200",
       "created": "2024-11-26 00:38:11.857271+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/INSTALL": {
       "md5": "9f3e20fdff9c78aa8e3f9b42be166769",
@@ -1433,7 +1433,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:40.000000+0100",
       "created": "2024-11-26 00:38:11.863272+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/install-sh": {
       "md5": "8bff9d6a50300d4b8147940002581a5d",
@@ -1443,7 +1443,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:45.000000+0100",
       "created": "2024-11-26 00:38:11.868766+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/lig.awk": {
       "md5": "3a9129b00fb604e392a355e4404f7eee",
@@ -1453,7 +1453,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.879303+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/ligpatch.txt": {
       "md5": "a36e542a5b9803f4ae75e10a12a5b03e",
@@ -1463,7 +1463,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:40.000000+0100",
       "created": "2024-11-26 00:38:11.884297+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/ltmain.sh": {
       "md5": "fddd00ca15b3cc3caa3b3f6d367a2daf",
@@ -1473,7 +1473,7 @@
       "attr": "A",
       "modified": "2012-06-29 12:02:24.000000+0200",
       "created": "2024-11-26 00:38:11.888855+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/Makefile.am": {
       "md5": "830527fe96f785852fbafe5b15c0b1a1",
@@ -1483,7 +1483,7 @@
       "attr": "A",
       "modified": "2013-03-18 11:49:03.000000+0100",
       "created": "2024-11-26 00:38:11.901371+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/Makefile.in": {
       "md5": "f4a1f2cbb41bfa2e08c9d45f72ada137",
@@ -1493,7 +1493,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:45:56.000000+0200",
       "created": "2024-11-26 00:38:11.904905+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/missing": {
       "md5": "c7645c248f924f07869059b76300fea9",
@@ -1503,7 +1503,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:40.000000+0100",
       "created": "2024-11-26 00:38:11.909939+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/NEWS": {
       "md5": "d7a85e4155fca408685ce1b666c4fbb5",
@@ -1513,7 +1513,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:43:44.000000+0200",
       "created": "2024-11-26 00:38:11.915483+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/README": {
       "md5": "7b2901e86a51f797f8972bfc78b23746",
@@ -1523,7 +1523,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:56.000000+0200",
       "created": "2024-11-26 00:38:11.920505+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/README.compound": {
       "md5": "9562488a545d323a4053f7f0d7837a6d",
@@ -1533,7 +1533,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:56.000000+0200",
       "created": "2024-11-26 00:38:11.933028+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/README.hyphen": {
       "md5": "c013011f754e5c69d7f738cd3992540e",
@@ -1543,7 +1543,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:50.000000+0100",
       "created": "2024-11-26 00:38:11.942593+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/README.nonstandard": {
       "md5": "70421ae5ede8af0f5d4d71aa01865e79",
@@ -1553,7 +1553,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:42.000000+0100",
       "created": "2024-11-26 00:38:11.952147+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/README_hyph_en_US.txt": {
       "md5": "f030ef781f928b64f27ec6bcf618c475",
@@ -1563,7 +1563,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:44.000000+0100",
       "created": "2024-11-26 00:38:11.956236+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.596225+0100"
     },
     "_info/hyphen-2.8.8/substrings.c": {
       "md5": "144f34aacb27390bc684574140d28618",
@@ -1573,7 +1573,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:37:51.000000+0200",
       "created": "2024-11-26 00:38:11.961274+0100",
-      "access": "2025-02-04 16:15:08.541977+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/substrings.pl": {
       "md5": "2f85e8f6e70ca0fbefac323769744674",
@@ -1583,7 +1583,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:50.000000+0100",
       "created": "2024-11-26 00:38:11.971589+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tbhyphext.sh": {
       "md5": "913846a31f26495c18987254423b4354",
@@ -1593,7 +1593,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:50.000000+0100",
       "created": "2024-11-26 00:38:11.976110+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tbhyphext.tex": {
       "md5": "642a1e8aab1a9a02af579aba9ea4ec6b",
@@ -1603,7 +1603,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.980099+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt.hyph": {
       "md5": "a194f249209619c11bfa95a0b9d1770f",
@@ -1613,7 +1613,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.060123+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt.pat": {
       "md5": "2bb2bcd5c2bae42229d2a60c792c2164",
@@ -1623,7 +1623,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.078204+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1633,7 +1633,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.090736+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt.word": {
       "md5": "dbe7ad414a86a79375123a055a69b201",
@@ -1643,7 +1643,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.100316+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt2.hyph": {
       "md5": "e68395df6ad641992a439aec05070ff1",
@@ -1653,7 +1653,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.104837+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt2.pat": {
       "md5": "aa66add03162e88ba2fc31cccbaf1337",
@@ -1663,7 +1663,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.109871+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt2.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1673,7 +1673,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.114393+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt2.word": {
       "md5": "eec99dc0e1f1dba77d54ace43fe5cd87",
@@ -1683,7 +1683,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.118422+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt3.hyph": {
       "md5": "733a97c42e13c90c511a3674805f1ae8",
@@ -1693,7 +1693,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.124437+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt3.pat": {
       "md5": "91f0338e5ea81780d8b171fa5a6d6616",
@@ -1703,7 +1703,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.128927+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt3.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1713,7 +1713,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.132937+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt3.word": {
       "md5": "0bc5d6114c5437ea7cc99dba84f8ae89",
@@ -1723,7 +1723,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.138486+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt4.hyph": {
       "md5": "f6f45395320034426d0c54a94d70cb3e",
@@ -1733,7 +1733,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.143484+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt4.pat": {
       "md5": "cf93aa3b6337870ee64f18f941fa318f",
@@ -1743,7 +1743,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.149063+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt4.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1753,7 +1753,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.155184+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt4.word": {
       "md5": "916c48a56a8081fc083854423b9a7e33",
@@ -1763,7 +1763,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.159182+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.609236+0100"
     },
     "_info/hyphen-2.8.8/tests/alt5.hyph": {
       "md5": "89281510a3c3a0929105b07ff67ad4a3",
@@ -1773,7 +1773,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.163196+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt5.pat": {
       "md5": "c247624ac11a08c040ac78e1f4762951",
@@ -1783,7 +1783,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.168340+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt5.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1793,7 +1793,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.172344+0100",
-      "access": "2025-02-04 16:15:08.557602+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt5.word": {
       "md5": "e8775e1a35b4ee643dbec0cb91d25b19",
@@ -1803,7 +1803,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.177684+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt6.hyph": {
       "md5": "d6ba8274207aad7e9ebee7694777826c",
@@ -1813,7 +1813,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.182689+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt6.pat": {
       "md5": "c6204a6597a57bef076a3f13593e06a2",
@@ -1823,7 +1823,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.188249+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt6.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1833,7 +1833,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.194253+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/alt6.word": {
       "md5": "84dfb6ae73189aeac4d123f2c7a64632",
@@ -1843,7 +1843,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.198819+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/base.hyph": {
       "md5": "30fc120ff6ea313150f31ae691e9e596",
@@ -1853,7 +1853,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.204469+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/base.pat": {
       "md5": "b6b3f62c853c43e9fc4ac8855df5728f",
@@ -1863,7 +1863,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.210382+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/base.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1873,7 +1873,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.216925+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/base.word": {
       "md5": "0a73aff3d8be414e31450f3391db497b",
@@ -1883,7 +1883,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.222922+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.624875+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt.hyph": {
       "md5": "31a9b9e6f75e9bc828a5d295e9a2796c",
@@ -1893,7 +1893,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.228482+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt.pat": {
       "md5": "5d6425c8550a767c3166ff790d8d49a5",
@@ -1903,7 +1903,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.233483+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1913,7 +1913,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.239035+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt.word": {
       "md5": "b3903506cbaecabb737b15e0d961bc1b",
@@ -1923,7 +1923,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.242035+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt2.hyph": {
       "md5": "efcd30d881fb44975c27eb737838c82e",
@@ -1933,7 +1933,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.247591+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt2.pat": {
       "md5": "ff8e710b11f46d06961900b9ffc80119",
@@ -1943,7 +1943,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.252593+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt2.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1953,7 +1953,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.257219+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/basealt2.word": {
       "md5": "ecefa3836f351257950984c291bf0e9e",
@@ -1963,7 +1963,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.261244+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound.hyph": {
       "md5": "5f7bb11d7242ff23b520ab44181646b5",
@@ -1973,7 +1973,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.265783+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound.pat": {
       "md5": "85a19f24a96c26dba067ad4f86265b8d",
@@ -1983,7 +1983,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.269814+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -1993,7 +1993,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.272808+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound.word": {
       "md5": "ca2513a3d2c041de8ebe05a1f0b10e44",
@@ -2003,7 +2003,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.278364+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound2.hyph": {
       "md5": "9a566849f33fe99db53abf022e859d83",
@@ -2013,7 +2013,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.281359+0100",
-      "access": "2025-02-04 16:15:08.573229+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound2.pat": {
       "md5": "72c113f4956c36f3bf8ecf9f8e57834e",
@@ -2023,7 +2023,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.285887+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound2.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2033,7 +2033,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.289894+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound2.word": {
       "md5": "dc149a3ac9c0caca8d461fb35edc6510",
@@ -2043,7 +2043,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.294478+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound3.hyph": {
       "md5": "eceedb527c0d04293dfb211acdf23bd1",
@@ -2053,7 +2053,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.299444+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound3.pat": {
       "md5": "40b3a77d36384cef2f86fb0995539751",
@@ -2063,7 +2063,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.305995+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound3.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2073,7 +2073,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.311020+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound3.word": {
       "md5": "4399682e726b47239a32c48588c851f0",
@@ -2083,7 +2083,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.316571+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound4.hyph": {
       "md5": "689115ea182b583df76ae70ad677eafa",
@@ -2093,7 +2093,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.321592+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.640500+0100"
     },
     "_info/hyphen-2.8.8/tests/compound4.pat": {
       "md5": "4aa1eda95e99acf80a53b82f4a049d0b",
@@ -2103,7 +2103,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.326099+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/compound4.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2113,7 +2113,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.330126+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/compound4.word": {
       "md5": "ca2513a3d2c041de8ebe05a1f0b10e44",
@@ -2123,7 +2123,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.335661+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/conv.dic": {
       "md5": "d973c6d7883f4f7ac0c35b0ed59da297",
@@ -2133,7 +2133,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.340682+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/conv.hyph": {
       "md5": "02738618fb34be42720ce2e2081950ff",
@@ -2143,7 +2143,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.345246+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/conv.pat": {
       "md5": "9247e009279dd85afb48b8f312fbad0d",
@@ -2153,7 +2153,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.349272+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/conv.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2163,7 +2163,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.352264+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/conv.word": {
       "md5": "13aacdbc988be0f285a5c66f66a7b9bf",
@@ -2173,7 +2173,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.357355+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/hyphen.hyph": {
       "md5": "69d5ffcd245a8b16defdd895f8e98e96",
@@ -2183,7 +2183,7 @@
       "attr": "A",
       "modified": "2010-11-27 03:20:33.000000+0100",
       "created": "2024-11-26 00:38:12.362334+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/hyphen.pat": {
       "md5": "72eae70b469f95ab9be3a17a97b951b1",
@@ -2193,7 +2193,7 @@
       "attr": "A",
       "modified": "2010-11-27 03:20:33.000000+0100",
       "created": "2024-11-26 00:38:12.366585+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/hyphen.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2203,7 +2203,7 @@
       "attr": "A",
       "modified": "2010-11-27 03:20:33.000000+0100",
       "created": "2024-11-26 00:38:12.370619+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/hyphen.word": {
       "md5": "69d5ffcd245a8b16defdd895f8e98e96",
@@ -2213,7 +2213,7 @@
       "attr": "A",
       "modified": "2010-11-27 03:20:33.000000+0100",
       "created": "2024-11-26 00:38:12.374212+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lhmin.hyph": {
       "md5": "d2fa3b61dfc094dd283661d50ba53df0",
@@ -2223,7 +2223,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.379157+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lhmin.pat": {
       "md5": "d2efaf2de5d7eee3706d83a0df1619b7",
@@ -2233,7 +2233,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.385701+0100",
-      "access": "2025-02-04 16:15:08.588856+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lhmin.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2243,7 +2243,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.391720+0100",
-      "access": "2025-02-04 16:15:08.604478+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lhmin.word": {
       "md5": "807e00eff0d664d084a72175db4f55f1",
@@ -2253,7 +2253,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.396255+0100",
-      "access": "2025-02-04 16:15:08.604478+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lig.hyph": {
       "md5": "a43063d9d21f0cf5ee38b132c5275f6f",
@@ -2263,7 +2263,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.400271+0100",
-      "access": "2025-02-04 16:15:08.604478+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lig.pat": {
       "md5": "98cbe9e6218c8e1d5a63b3929f39eba3",
@@ -2273,7 +2273,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.404784+0100",
-      "access": "2025-02-04 16:15:08.604478+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lig.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2283,7 +2283,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.408801+0100",
-      "access": "2025-02-04 16:15:08.604478+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/lig.word": {
       "md5": "3983c97f4d56c993934232e6d00edc9a",
@@ -2293,7 +2293,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.412800+0100",
-      "access": "2025-02-04 16:15:08.611494+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/Makefile.am": {
       "md5": "63f854dc59a41abbb30fdd7ed33eabef",
@@ -2303,7 +2303,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.417343+0100",
-      "access": "2025-02-04 16:15:08.611494+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/Makefile.in": {
       "md5": "84051b9bdb25635559c969a20cb59283",
@@ -2313,7 +2313,7 @@
       "attr": "A",
       "modified": "2014-09-18 17:45:56.000000+0200",
       "created": "2024-11-26 00:38:12.421366+0100",
-      "access": "2025-02-04 16:15:08.611494+0100"
+      "access": "2025-02-16 21:16:00.656125+0100"
     },
     "_info/hyphen-2.8.8/tests/num.hyph": {
       "md5": "c656ef57271e985face188c4efd30e84",
@@ -2323,7 +2323,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.426478+0100",
-      "access": "2025-02-04 16:15:08.611494+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/num.pat": {
       "md5": "50d55b3e45e254d73b4949c613322d43",
@@ -2333,7 +2333,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.429474+0100",
-      "access": "2025-02-04 16:15:08.611494+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/num.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2343,7 +2343,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.433471+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/num.word": {
       "md5": "dc03a75e4bf9c5512e00a24feeaccc42",
@@ -2353,7 +2353,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.439015+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/rhmin.hyph": {
       "md5": "920f473150ccd5950716e049fa3089d2",
@@ -2363,7 +2363,7 @@
       "attr": "A",
       "modified": "2012-09-13 09:50:50.000000+0200",
       "created": "2024-11-26 00:38:12.443018+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/rhmin.pat": {
       "md5": "1d667c5207599eca8bb525ecedffcf99",
@@ -2373,7 +2373,7 @@
       "attr": "A",
       "modified": "2012-09-13 09:50:50.000000+0200",
       "created": "2024-11-26 00:38:12.448583+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/rhmin.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2383,7 +2383,7 @@
       "attr": "A",
       "modified": "2010-11-27 03:20:33.000000+0100",
       "created": "2024-11-26 00:38:12.452584+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/rhmin.word": {
       "md5": "4c667918af17e416b459117c532d436b",
@@ -2393,7 +2393,7 @@
       "attr": "A",
       "modified": "2012-09-13 09:50:50.000000+0200",
       "created": "2024-11-26 00:38:12.457638+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings.hyph": {
       "md5": "a757fa0eb9309415d36353778873696a",
@@ -2403,7 +2403,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.462643+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings.pat": {
       "md5": "0dc56f701d94b7118c9cddde49e6d5ea",
@@ -2413,7 +2413,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.467214+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2423,7 +2423,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.473212+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings.word": {
       "md5": "7891eaba3e752cc889cc9552ebe8b86b",
@@ -2433,7 +2433,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.476811+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings2.hyph": {
       "md5": "e784ca87ca50d973c731383c7b3526e5",
@@ -2443,7 +2443,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.482788+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings2.pat": {
       "md5": "57d0ae8c156a5a5bada4d3470c68846a",
@@ -2453,7 +2453,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.488367+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings2.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2463,7 +2463,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.493361+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings2.word": {
       "md5": "35fb8e4b449b94dd631f5760eeb5c022",
@@ -2473,7 +2473,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.498902+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings3.hyph": {
       "md5": "fa9af5b731ec0f62b0f7f706fd496c22",
@@ -2483,7 +2483,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.502890+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings3.pat": {
       "md5": "46cdeee828076b5695c9f04a18bf3a7d",
@@ -2493,7 +2493,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.506447+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings3.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2503,7 +2503,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.510451+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings3.word": {
       "md5": "35fb8e4b449b94dd631f5760eeb5c022",
@@ -2513,7 +2513,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.516002+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings4.hyph": {
       "md5": "8d7a28ea461efcaac41c6dbca543612e",
@@ -2523,7 +2523,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.521018+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.671751+0100"
     },
     "_info/hyphen-2.8.8/tests/settings4.pat": {
       "md5": "5d54e19761dbd9b29f7cd338f19de5e6",
@@ -2533,7 +2533,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.524627+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/settings4.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2543,7 +2543,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.529585+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/settings4.word": {
       "md5": "8d7a28ea461efcaac41c6dbca543612e",
@@ -2553,7 +2553,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:53.000000+0100",
       "created": "2024-11-26 00:38:12.534114+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/test.sh": {
       "md5": "749e13318ed995b8ae3153f8c4fdd577",
@@ -2563,7 +2563,7 @@
       "attr": "A",
       "modified": "2012-06-29 10:18:32.000000+0200",
       "created": "2024-11-26 00:38:12.540134+0100",
-      "access": "2025-02-04 16:15:08.620529+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/unicode.hyph": {
       "md5": "32caed34431a0a52b7efbe9493265476",
@@ -2573,7 +2573,7 @@
       "attr": "A",
       "modified": "2010-07-19 11:23:18.000000+0200",
       "created": "2024-11-26 00:38:12.545668+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/unicode.pat": {
       "md5": "795590541aee9f75444a92e9823abf42",
@@ -2583,7 +2583,7 @@
       "attr": "A",
       "modified": "2012-06-29 09:10:58.000000+0200",
       "created": "2024-11-26 00:38:12.550690+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/unicode.test": {
       "md5": "1a774ebb61e5ab99e6f98e946df3edff",
@@ -2593,7 +2593,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:52.000000+0100",
       "created": "2024-11-26 00:38:12.555216+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/tests/unicode.word": {
       "md5": "9952b932955f45a3d9be165d8cae13dd",
@@ -2603,7 +2603,7 @@
       "attr": "A",
       "modified": "2010-07-19 11:23:18.000000+0200",
       "created": "2024-11-26 00:38:12.560220+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/THANKS": {
       "md5": "c6f1ae33c8c9dbfc296a5498226cfeb2",
@@ -2613,7 +2613,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:47.000000+0100",
       "created": "2024-11-26 00:38:11.984117+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphen-2.8.8/TODO": {
       "md5": "e760da879063f50b3c0aa8fd121945bc",
@@ -2623,7 +2623,7 @@
       "attr": "A",
       "modified": "2010-03-04 13:13:46.000000+0100",
       "created": "2024-11-26 00:38:11.991671+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/hyphenate.py": {
       "md5": "98d11faf45c1847cbf1a866a72b1caf9",
@@ -2633,7 +2633,7 @@
       "attr": "A",
       "modified": "2024-12-05 20:20:59.061471+0100",
       "created": "2024-11-26 00:38:11.649253+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.687374+0100"
     },
     "_info/info.txt": {
       "md5": "751d60eaa1a6479b0b0192322a3929fc",
@@ -2643,7 +2643,7 @@
       "attr": "A",
       "modified": "2024-11-26 10:02:12.507704+0100",
       "created": "2024-11-26 00:37:48.301541+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/patgen.pdf": {
       "md5": "5ca0527d8642823a303fb04488fd6de9",
@@ -2653,7 +2653,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.182764+0100",
       "created": "2024-11-26 00:38:11.659407+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/checksums.yaml/checksums.yaml": {
       "md5": "a75cecaf3e3ff493494eea680be8504c",
@@ -2663,7 +2663,7 @@
       "attr": "A",
       "modified": "2024-12-28 18:21:53.176633+0100",
       "created": "2024-11-26 00:38:12.588336+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/.standard.yml": {
       "md5": "9b0e9c5a40cde70c5451be3da3cd47f3",
@@ -2673,7 +2673,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.189757+0100",
       "created": "2024-11-26 00:38:12.604469+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/bin/ruby-hyphen": {
       "md5": "99323fcd12afd2c60d2a6b0f07c5de5b",
@@ -2683,7 +2683,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.193757+0100",
       "created": "2024-11-26 00:38:12.654404+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/Code-of-Conduct.md": {
       "md5": "d2b6788cd1d90679ff78f510d0430094",
@@ -2693,7 +2693,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.189757+0100",
       "created": "2024-11-26 00:38:12.608427+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/Contributing.md": {
       "md5": "9b803d06348628607b9ec92252d3332c",
@@ -2703,7 +2703,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.189757+0100",
       "created": "2024-11-26 00:38:12.614421+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/History.md": {
       "md5": "9ea8617ecde7e087f4e3f40311d82b18",
@@ -2713,7 +2713,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.190756+0100",
       "created": "2024-11-26 00:38:12.618989+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.696391+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/Licence.md": {
       "md5": "42728cc7032aec517a705c70a8e9d871",
@@ -2723,7 +2723,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.191767+0100",
       "created": "2024-11-26 00:38:12.626555+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/Manifest.txt": {
       "md5": "8cc18490e6876efd0bbb270ff95a933a",
@@ -2733,7 +2733,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.191767+0100",
       "created": "2024-11-26 00:38:12.630555+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/Rakefile": {
       "md5": "ab3115c9983bd646e6d560c63161b471",
@@ -2743,7 +2743,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.192776+0100",
       "created": "2024-11-26 00:38:12.635104+0100",
-      "access": "2025-02-04 16:15:08.636189+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/README.md": {
       "md5": "4635ca6b378c769eb4f59098c05fe84a",
@@ -2753,7 +2753,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.192776+0100",
       "created": "2024-11-26 00:38:12.639139+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/test/test_bugs.rb": {
       "md5": "9bc9f42a0831f7bd14c5cc16449adaef",
@@ -2763,7 +2763,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.195756+0100",
       "created": "2024-11-26 00:38:12.672817+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0/data.tar/test/test_text_hyphen.rb": {
       "md5": "fbdb3bb23576fbc15bec81ff5f1aeac6",
@@ -2773,7 +2773,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.195756+0100",
       "created": "2024-11-26 00:38:12.678346+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0/metadata/metadata": {
       "md5": "eed25d9a099ad04350c5a17c247b7c1b",
@@ -2783,7 +2783,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.196756+0100",
       "created": "2024-11-26 00:38:12.712858+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/text-hyphen-1.5.0.gem": {
       "md5": "844076e33219040cfed43ea6ba04856a",
@@ -2793,7 +2793,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.187767+0100",
       "created": "2024-11-26 00:38:11.672974+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/_tests/Abenduniversität.txt": {
       "md5": "d86c479c326289def12efa95ffcc556b",
@@ -2803,7 +2803,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.196756+0100",
       "created": "2024-11-26 00:38:12.729958+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/_tests/dictionaries.json": {
       "md5": "299da7e0d6d534b7001a61d00cd2e7fc",
@@ -2813,7 +2813,7 @@
       "attr": "A",
       "modified": "2024-11-07 16:59:47.777579+0100",
       "created": "2024-11-26 00:38:12.734550+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/_tests/Encyclopedia.txt": {
       "md5": "28cbe90e212de8072fb827e18961c6eb",
@@ -2823,7 +2823,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.197755+0100",
       "created": "2024-11-26 00:38:12.739511+0100",
-      "access": "2025-02-04 16:15:08.651792+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/_tests/Morgenstern.txt": {
       "md5": "79bbd2c759883169d52bdc0efc634668",
@@ -2833,7 +2833,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.197755+0100",
       "created": "2024-11-26 00:38:12.742522+0100",
-      "access": "2025-02-04 16:15:08.667420+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/_tests/Nennwertherabsetzung.txt": {
       "md5": "968d56f57a363815343d9ba1fc9d69d7",
@@ -2843,7 +2843,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.197755+0100",
       "created": "2024-11-26 00:38:12.747862+0100",
-      "access": "2025-02-04 16:15:08.667420+0100"
+      "access": "2025-02-16 21:16:00.703401+0100"
     },
     "_info/_tests/pattern.txt": {
       "md5": "014fa0f6144a649a6fac6a24d06b7845",
@@ -2853,7 +2853,7 @@
       "attr": "A",
       "modified": "2024-11-06 17:27:38.567408+0100",
       "created": "2024-11-26 00:38:12.752856+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.719054+0100"
     },
     "_info/_tests/Test.odt": {
       "md5": "1f32738532dac8dca62a33eae430c8a5",
@@ -2863,27 +2863,27 @@
       "attr": "A",
       "modified": "2024-11-06 17:22:49.198756+0100",
       "created": "2024-11-26 00:38:12.771580+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.719054+0100"
     },
     "_mypy.py": {
-      "md5": "e4c1a4f59fcb7ae581f7bfa2abf41a69",
+      "md5": "a301908f60aba24153e73b60f31100d5",
       "path": "",
       "name": "_mypy.py",
-      "size": 9918,
+      "size": 9685,
       "attr": "A",
-      "modified": "2025-02-04 15:34:57.866627+0100",
+      "modified": "2025-02-16 13:11:17.892984+0100",
       "created": "2025-01-15 15:47:36.081516+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.719054+0100"
     },
     "_pyright.py": {
-      "md5": "156a940701e5127ea812708f842c0b8e",
+      "md5": "27eeca69eff30472f3c921e32ca9d428",
       "path": "",
       "name": "_pyright.py",
-      "size": 4861,
+      "size": 4820,
       "attr": "A",
-      "modified": "2025-02-04 15:55:03.348997+0100",
+      "modified": "2025-02-16 13:11:24.429137+0100",
       "created": "2025-01-15 15:47:36.145722+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.719054+0100"
     },
     "__history.txt": {
       "md5": "159fc99dd885aca4eaf25bc6a991b41c",
@@ -2893,37 +2893,37 @@
       "attr": "A",
       "modified": "2025-01-31 20:04:16.642470+0100",
       "created": "2024-12-29 22:46:39.283267+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.719054+0100"
     },
     "__tree.txt": {
-      "md5": "2cd66988e69d7a3951aee4d702933394",
+      "md5": "0bfa71cd6494aadeb36a590f1025c363",
       "path": "",
       "name": "__tree.txt",
-      "size": 681,
+      "size": 677,
       "attr": "A",
-      "modified": "2025-01-31 20:54:42.945766+0100",
+      "modified": "2025-02-16 20:46:12.181717+0100",
       "created": "2024-11-27 18:23:07.597016+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.734662+0100"
     },
-    "___cheatsheet.txt": {
-      "md5": "832b236d0c98252bc8cb1c7fa0719214",
+    "___Cheat-Sheet.txt": {
+      "md5": "3a29cc0314c9568b92ca8278a4c4a64a",
       "path": "",
-      "name": "___cheatsheet.txt",
-      "size": 6321,
+      "name": "___Cheat-Sheet.txt",
+      "size": 6914,
       "attr": "A",
-      "modified": "2025-02-02 14:16:36.278416+0100",
-      "created": "2025-01-02 18:19:29.755264+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "modified": "2025-02-15 22:35:16.074302+0100",
+      "created": "2025-02-15 16:22:45.111441+0100",
+      "access": "2025-02-16 21:16:00.734662+0100"
     },
     "___start.txt": {
-      "md5": "a9711ebe6fa65a7f0b85f65e211906e0",
+      "md5": "62c3d1bea54de73eb6643bf18e5a94f6",
       "path": "",
       "name": "___start.txt",
-      "size": 195,
+      "size": 141,
       "attr": "A",
-      "modified": "2025-01-31 19:31:04.812591+0100",
+      "modified": "2025-02-16 16:00:15.107084+0100",
       "created": "2024-12-21 09:56:29.985430+0100",
-      "access": "2025-02-04 16:15:08.683053+0100"
+      "access": "2025-02-16 21:16:00.734662+0100"
     }
   }
 }

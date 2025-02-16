@@ -1,10 +1,11 @@
-Python:   3.13.1 (main, Dec  6 2024, 18:07:41) [MSC v.1942 64 bit (AMD64)]
+Python:   3.13.2 (main, Feb  5 2025, 19:16:35) [MSC v.1942 64 bit (AMD64)]
 Platform: Windows-11-10.0.22631-SP0
-Date:     04.02.2025 22:32:41
+Date:     16.02.2025 21:15:47
 Path:     G:\Python\hyphenation-test
 
-MyPy 1.14.1 settings:
+MyPy 1.15.0 settings:
  - Python version 3.13
+ --sqlite-cache
  --namespace-packages
  --explicit-package-bases
  --disallow-untyped-calls
@@ -17,7 +18,6 @@ MyPy 1.14.1 settings:
  --allow-redefinition
  --extra-checks
  --force-uppercase-builtins
- --sqlite-cache
  --strict-equality
 
 Source files:

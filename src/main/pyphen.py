@@ -1,4 +1,4 @@
-import pyphen  # type: ignore[import-untyped] # mypy + pyright
+import pyphen  # type: ignore[import-untyped]
 
 from utils.globals   import BASE_PATH
 from utils.trace     import Trace
@@ -8,7 +8,7 @@ DICT_DIR = BASE_PATH / "dict"
 
 pyphen_dic: pyphen.Pyphen
 
-@duration("Pyphon init")
+@duration("Pyphen init")
 def init_pyphen( language: str="de_DE" ) -> None:
     global pyphen_dic
 

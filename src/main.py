@@ -180,30 +180,30 @@ def main() -> None:
 
     # PyHyphen (mit Patch)
 
-    check_samples("PyHyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
-    check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
-    check_samples("PyHyphen", "de_DE", "wortliste")
-    check_samples("PyHyphen", "de_DE", "german_words")
-    check_samples("PyHyphen", "de_DE", "de_DE_frami")
-    check_samples("PyHyphen", "de_DE", "wordlist-german")
+    # check_samples("PyHyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
+    # check_samples("PyHyphen", "de_DE", "AlleDeutschenWoerter")
+    # check_samples("PyHyphen", "de_DE", "wortliste")
+    # check_samples("PyHyphen", "de_DE", "german_words")
+    # check_samples("PyHyphen", "de_DE", "de_DE_frami")
+    # check_samples("PyHyphen", "de_DE", "wordlist-german")
 
     # Pyphen
 
-    check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
-    check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
-    check_samples("Pyphen", "de_DE", "wortliste")
-    check_samples("Pyphen", "de_DE", "german_words")
-    check_samples("Pyphen", "de_DE", "de_DE_frami")
-    check_samples("Pyphen", "de_DE", "wordlist-german")
+    # check_samples("Pyphen", "de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"], trace=True)
+    # check_samples("Pyphen", "de_DE", "AlleDeutschenWoerter")
+    # check_samples("Pyphen", "de_DE", "wortliste")
+    # check_samples("Pyphen", "de_DE", "german_words")
+    # check_samples("Pyphen", "de_DE", "de_DE_frami")
+    # check_samples("Pyphen", "de_DE", "wordlist-german")
 
     # PyHyphen (with patch) <-> Pyphen
 
-    compare_samples("de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"])
-    compare_samples("de_DE", "AlleDeutschenWoerter")
-    compare_samples("de_DE", "wortliste")
-    compare_samples("de_DE", "german_words")
-    compare_samples("de_DE", "de_DE_frami")
-    compare_samples("de_DE", "wordlist-german")
+    # compare_samples("de_DE", "samples", ["test_patch", "dashes", "upper", "special", "corrected", "wrong"])
+    # compare_samples("de_DE", "AlleDeutschenWoerter")
+    # compare_samples("de_DE", "wortliste")
+    # compare_samples("de_DE", "german_words")
+    # compare_samples("de_DE", "de_DE_frami")
+    # compare_samples("de_DE", "wordlist-german")
 
 if __name__ == "__main__":
     Trace.set( debug_mode=False, timezone=False )

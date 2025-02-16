@@ -1,6 +1,6 @@
-Python:   3.13.1 (main, Dec  6 2024, 18:07:41) [MSC v.1942 64 bit (AMD64)]
+Python:   3.13.2 (main, Feb  5 2025, 19:16:35) [MSC v.1942 64 bit (AMD64)]
 Platform: Windows-11-10.0.22631-SP0
-Date:     04.02.2025 22:36:55
+Date:     16.02.2025 21:15:31
 Path:     G:\Python\hyphenation-test
 
 PyRight 1.1.393 settings:
