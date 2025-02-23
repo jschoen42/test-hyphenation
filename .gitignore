@@ -12,6 +12,10 @@ _trace*/*
 _old/*
 
 .mypy_cache/*
+.type-check-result/*
+
+.timestamps.json
+.Python31?-*
 
 ### General
 .env

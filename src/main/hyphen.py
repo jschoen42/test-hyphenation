@@ -1,11 +1,15 @@
+from __future__ import annotations
+
 from typing import Any, List
 
-from hyphen import Hyphenator # type: ignore[import-untyped]
-from hyphen import dictools   # type: ignore[import-untyped]
+from hyphen import (  # type: ignore[import-untyped]
+    Hyphenator,
+    dictools,
+)
 
-from utils.globals   import BASE_PATH
-from utils.trace     import Trace
 from utils.decorator import duration
+from utils.globals import BASE_PATH
+from utils.trace import Trace
 
 DICT_DIR = BASE_PATH / "dict"
 
@@ -32,7 +36,7 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
         if patch:
             mode = 0
             if part.istitle():
-                part = part.lower()
+                part = part.lower()  # noqa: PLW2901
                 mode = 4
 
             res = hyphen.syllables(part)
@@ -67,5 +71,5 @@ def download_all() -> None:
         try:
             dictools.install(language, directory=DICT_DIR )
             Trace.info(f"downloading {language}")
-        except Exception as _err:
-            pass
+        except Exception as err:
+            Trace.error(f"{err}")

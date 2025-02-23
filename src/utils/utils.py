@@ -9,6 +9,7 @@
      - pascal_to_snake(name: str) -> str
      - snake_to_pascal(name: str) -> str
 """
+from __future__ import annotations
 
 import re
 

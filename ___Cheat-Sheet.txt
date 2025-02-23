@@ -44,15 +44,20 @@ deactivate
 │   └── pyvenv.cfg
 ├── .python-version
 ├── README.md
-├── hello.py
+├── main.py
 ├── pyproject.toml
 └── uv.lock
 
 .venv/pyenv.cfg -> 'prompt = xyz' -> terminal -> (xyz)
 
+PyPy:
+uv venv .venv -p pypy-3.11.11-windows-x86_64-none --prompt .venv
+
 ----------- uv dependencies -> uv pip  ------------
 
 uv pip install -r requirements.txt
+
+uv pip compile pyproject.toml -o requirements.toml.txt
 
 ------ uv dependencies -> uv add, uv remove  ------
 
@@ -93,8 +98,8 @@ uv lock
 uv pip list
 uv pip list --outdated > __outdated.txt
 
-uv tree > __tree.txt
-uv tree --no-dev > __tree.txt
+uv tree > __package_tree.txt
+uv tree --no-dev > __package_tree.txt
 
 ----------------- upgrade Python ------------------
 
@@ -216,6 +221,7 @@ git merge feature/...
 git status
 
 git push -u origin main
+git push origin main --force
 
 git branche -d feature/... (delete)
 
@@ -326,8 +332,12 @@ module = "faster_whisper.*"
 ignore_errors = true
 ignore_missing_imports = true
 
-python _mypy.py src/main.py
- -> main.py and all imported (!) files will be checked
+python _mypy.py src
+
+bug:
+ - src/main/
+ - src/main.py
+     -> main.py not analysed
 
 # type: ignore
 # type: ignore[attr-defined]
@@ -336,13 +346,6 @@ python _mypy.py src/main.py
 
 npm install --global pyright
 npm update --global pyright
-
-[tool.pyright]
-include = ["src"]
-exclude = ["**/node_modules",
-    "**/__pycache__",
-]
-pythonVersion = "3.13"
 
 python _pyright.py src/main.py
  -> only main.py will be checked
@@ -353,3 +356,23 @@ python _pyright.py src
 python _pyright.py src/main
 python _pyright.py src/helper
 python _pyright.py src/utils
+
+################## basedpyright ###################
+
+uv add basedpyright --dev
+
+pyproject.toml:
+---------------
+[tool.basedpyright]
+deprecateTypingAliases =  false
+reportAny = false
+reportExplicitAny = false
+reportImplicitRelativeImport = false
+reportMissingTypeStubs = false
+reportUnusedCallResult = false
+reportUnknownArgumentType = false
+reportUnknownVariableType = false
+reportUnknownMemberType = false
+
+python _basedpyright.py src
+uv run _basedpyright.py src

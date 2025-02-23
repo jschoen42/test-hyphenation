@@ -26,3 +26,13 @@ dev = [
     "types-pyyaml>=6.0.12.20241230",
     "types-xmltodict>=0.14.0.20241009",
 ]
+
+[tool.basedpyright]
+deprecateTypingAliases =  false
+reportAny = false
+reportImplicitRelativeImport = false
+reportUnusedCallResult = false
+reportUnknownArgumentType = false
+reportUnknownVariableType = false
+reportUnknownMemberType = false
+reportExplicitAny = false

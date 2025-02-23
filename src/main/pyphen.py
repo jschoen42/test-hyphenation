@@ -1,8 +1,10 @@
+from __future__ import annotations
+
 import pyphen  # type: ignore[import-untyped]
 
-from utils.globals   import BASE_PATH
-from utils.trace     import Trace
 from utils.decorator import duration
+from utils.globals import BASE_PATH
+from utils.trace import Trace
 
 DICT_DIR = BASE_PATH / "dict"
 
@@ -23,7 +25,7 @@ def init_pyphen( language: str="de_DE" ) -> None:
     pyphen_dic = pyphen.Pyphen(filename=filepath)
 
 def get_pyphen( word:str, trace: bool = False ) -> str:
-    global pyphen_dic
+    # global pyphen_dic
 
     parts = word.split("-") # e.g. "Baden-Württemberg"
 

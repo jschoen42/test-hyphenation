@@ -1,20 +1,20 @@
 # .venv/Scripts/activate
 # python src/main.py
 
+from __future__ import annotations
+
 import sys
-
 from typing import Any, Dict, List
-from result import is_err #, is_ok
 
-from main.hyphen import init_hyphen, get_hyphen # PyHyphen
-from main.pyphen import init_pyphen, get_pyphen # Pyphon
+from result import is_err  #, is_ok
 
 from helper.samples import import_samples
-
-from utils.globals   import BASE_PATH
-from utils.trace     import Trace, Color
+from main.hyphen import get_hyphen, init_hyphen  # PyHyphen
+from main.pyphen import get_pyphen, init_pyphen  # Pyphon
 from utils.decorator import duration
-from utils.files     import write_file
+from utils.files import write_file
+from utils.globals import BASE_PATH
+from utils.trace import Color, Trace
 
 RESULT_DIR = BASE_PATH / "results"
 
@@ -32,7 +32,10 @@ RESULT_DIR = BASE_PATH / "results"
 # check_samples("Pyphen", "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_samples(package_name: str, language: str, set_name: str, sub_set: List[Any] = [], trace: bool = False ) -> None:
+def check_samples(package_name: str, language: str, set_name: str, sub_set: List[Any] | None = None, trace: bool = False ) -> None:
+
+    if sub_set is None:
+        sub_set = []
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
@@ -56,7 +59,7 @@ def check_samples(package_name: str, language: str, set_name: str, sub_set: List
     Trace.result(f"results: {len(results)}")
 
 @duration("Pyphen test all")
-def test_Pyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict[str, str]:
+def test_Pyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict[str, str]:  # noqa: N802
     Trace.action(f"{Color.BLUE}{Color.BOLD}Pyphen ...{Color.RESET}")
     init_pyphen(language)
 
@@ -67,7 +70,7 @@ def test_Pyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict
     return result
 
 @duration("PyHyphen test all")
-def test_PyHyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict[str, str]:
+def test_PyHyphen(words: Dict[str, str], language: str, trace:bool = True) -> Dict[str, str]:  # noqa: N802
     Trace.action(f"{Color.BLUE}{Color.BOLD}PyHyphen with patch ...{Color.RESET}")
     init_hyphen(language)
 
@@ -87,7 +90,10 @@ def test_PyHyphen(words: Dict[str, str], language: str, trace:bool = True) -> Di
 # compare_samples( "de_DE", "de_DE_frami")
 ##############################################################
 
-def check_patch_samples( language: str, set_name: str, sub_set: List[str] = [], trace: bool = False ) -> None:
+def check_patch_samples( language: str, set_name: str, sub_set: List[str] | None = None, trace: bool = False ) -> None:
+
+    if sub_set is None:
+        sub_set = []
 
     set_name, samples = import_samples(set_name, sub_set, language)
 
@@ -129,7 +135,10 @@ def check_patch_samples( language: str, set_name: str, sub_set: List[str] = [], 
 #
 ##############################################################
 
-def compare_samples( language: str, set_name: str, sub_set: List[str] = [], trace: bool = False ) -> None:
+def compare_samples( language: str, set_name: str, sub_set: List[str] | None = None, trace: bool = False ) -> None:
+
+    if sub_set is None:
+        sub_set = []
 
     set_name, samples = import_samples(set_name, sub_set, language)
 

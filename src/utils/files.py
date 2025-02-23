@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 16.02.2025
+    © Jürgen Schoenemeyer, 22.02.2025
 
     src/utils/files.py
 
@@ -31,18 +31,17 @@
      - result = listdir_ext(dirpath: Path | str, extensions: List | None = None) -> Result[List, str]
      - result = check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=False) -> Result[str, str]
 """
+from __future__ import annotations
 
 import os
 import sys
-
-from typing import Any, List, Tuple
+import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
-
+from typing import Any, List, Tuple
 from xml.dom import minidom
-import xml.etree.ElementTree as ET
 
-from result import Result, Ok, Err
+from result import Err, Ok, Result
 
 try:
     import orjson
@@ -55,11 +54,11 @@ except ModuleNotFoundError:
     pass
 
 try:
-    from dict2xml import dict2xml # type: ignore[import-untyped]
+    from dict2xml import dict2xml  # type: ignore[import-untyped]
 except ModuleNotFoundError:
     pass
 
-from utils.trace import Trace, Color
+from utils.trace import Color, Trace
 
 TIMESTAMP = "%Y-%m-%d_%H-%M-%S"
 
@@ -83,14 +82,14 @@ def get_timestamp(filepath: Path | str) -> Result[float, str]:
         return Err(err)
 
     try:
-        ret = os.path.getmtime(Path(filepath))
+        ret = filepath.stat().st_mtime
     except OSError as err:
         Trace.debug(f"{err}")
         return Err(f"{err}")
 
     return Ok(ret)
 
-def set_timestamp(filepath: Path | str, timestamp: int|float) -> Result[str, str]:
+def set_timestamp(filepath: Path | str, timestamp: float) -> Result[str, str]:
     """
     ### set timestamp of a file
 
@@ -120,14 +119,16 @@ def set_timestamp(filepath: Path | str, timestamp: int|float) -> Result[str, str
 
 # dir listing -> list of files and dirs
 
-def get_files_dirs(path: str, extensions: List[str]) -> Result[Tuple[List[str], List[str]], str]:
+def get_files_dirs(path: Path | str, extensions: List[str]) -> Result[Tuple[List[str], List[str]], str]:
+    path = Path(path)
+
     files: List[str] = []
     dirs: List[str] = []
     try:
         for filename in os.listdir(path):
-            filepath = os.path.join(path, filename)
+            filepath = path / filename
 
-            if os.path.isfile(filepath):
+            if Path.is_file(filepath):
                 for extention in extensions:
                     if "." + extention in filename:
                         files.append(filename)
@@ -163,18 +164,18 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
     dirpath  = Path(filepath).parent
     filename = Path(filepath).name
 
-    # 1. type check
+    # 1. file_type check
 
     suffix  = Path(filename).suffix
 
     if suffix == ".txt":
-        type = "text"
+        file_type = "text"
 
     elif suffix == ".json":
-        type = "json"
+        file_type = "json"
 
     elif suffix == ".xml":
-        type = "xml"
+        file_type = "xml"
 
     else:
         err = f"Type '{suffix}' is not supported"
@@ -196,16 +197,16 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
         return Err(err)
 
     try:
-        with open(filepath, "r", encoding=encoding) as f:
+        with Path.open(filepath, mode="r", encoding=encoding) as f:
             text = f.read()
     except OSError as err:
         Trace.debug(f"{err}")
         return Err(f"{err}")
 
-    if type == "text":
+    if file_type == "text":
         return Ok(text)
 
-    elif type == "json":
+    elif file_type == "json":
         if "orjson" in sys.modules:
             try:
                 data = orjson.loads(text)           # type: ignore[reportPossiblyUnboundVariable]
@@ -223,10 +224,10 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
                 return Err(error)
             return Ok(data)
 
-    elif type == "xml":
+    elif file_type == "xml":
         try:
             # data = ET.fromstring(text)
-            data = minidom.parseString(text)
+            data = minidom.parseString(text)  # noqa: S318
         except (TypeError, AttributeError) as err:
             error = f"ParseError: {err}"
             Trace.debug(error)
@@ -234,11 +235,11 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
         return Ok(data)
 
     else:
-        Trace.error(f"Type '{type}' is not supported")
-        return Err(f"Type '{type}' is not supported")
+        Trace.error(f"Type '{file_type}' is not supported")
+        return Err(f"Type '{file_type}' is not supported")
 
 
-def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False, timestamp: int|float = 0, encoding: str="utf-8", newline: str="\n", create_dir: bool = True, show_message: bool=True) -> Result[str, str]:
+def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False, timestamp: float = 0, encoding: str="utf-8", newline: str="\n", create_dir: bool = True, show_message: bool=True) -> Result[str, str]:
     """
     ### write file (text, json, xml)
 
@@ -268,7 +269,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
     stem = Path(filename).stem
 
     if filename_timestamp:
-        filename = f"{stem}_{datetime.now().strftime(TIMESTAMP)}{suffix}"
+        filename = f"{stem}_{datetime.now().astimezone().strftime(TIMESTAMP)}{suffix}"
 
     # 1. type check + serialization
 
@@ -305,7 +306,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
             return obj
 
-        if isinstance(data, dict) or isinstance(data, list):
+        if isinstance(data, (dict, list)):
             try:
                 if "orjson" in sys.modules:
                     text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8") # type: ignore[reportPossiblyUnboundVariable]
@@ -334,7 +335,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
         # json -> xml
 
-        elif isinstance(data, dict) or isinstance(data, list):
+        elif isinstance(data, (dict, list)):
             if "dict2xml" in sys.modules:
                 try:
                     text  = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n'
@@ -375,7 +376,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
     if not dirpath.exists():
         if create_dir:
             try:
-                os.makedirs(dirpath)
+                dirpath.mkdir(parents=True)
                 Trace.update(f"'{dirpath}' created")
             except OSError as err:
                 Trace.debug(f"{err}")
@@ -387,7 +388,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
     if filepath.exists():
         try:
-            with open(filepath, "r", encoding=encoding) as f:
+            with Path.open(filepath, mode="r", encoding=encoding) as f:
                 text_old = f.read()
         except OSError as err:
             Trace.debug(f"{err}")
@@ -398,7 +399,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
             return Ok("")
 
         try:
-            with open(filepath, "w", encoding=encoding, newline=newline) as f:
+            with Path.open(filepath, mode="w", encoding=encoding, newline=newline) as f:
                 f.write(text)
         except OSError as err:
             return Err(f"{err}")
@@ -408,7 +409,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
     else:
         try:
-            with open(filepath, "w", encoding=encoding, newline=newline) as f:
+            with Path.open(filepath, mode="w", encoding=encoding, newline=newline) as f:
                 f.write(text)
         except OSError as err:
             Trace.debug(f"{err}")
@@ -466,7 +467,7 @@ def check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=F
         if not case_sensitive:
             return Ok(f"{Color.GREEN}{path.as_posix()}{Color.RESET}")
 
-        if os.path.abspath(path) == os.path.realpath(path):
+        if path.resolve() == path:
             return Ok(f"{Color.GREEN}{path.as_posix()}{Color.RESET}")
 
     name = ""
@@ -483,28 +484,26 @@ def check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=F
     for part in path.parts:
         if not error:
             if case_sensitive:
-                if (success / part).exists() and os.path.abspath(success / part) == os.path.realpath(success / part):
+                if (success / part).exists() and (success / part).resolve() == (success / part):
                     success = success / part
                 else:
                     error = True
                     txt += f"{Color.RED}{Color.BOLD}"
 
+            elif (success / part).exists():
+                success = success / part
             else:
-                if (success / part).exists():
-                    success = success / part
-                else:
-                    error = True
-                    txt += f"{Color.RED}{Color.BOLD}"
+                error = True
+                txt += f"{Color.RED}{Color.BOLD}"
 
-        txt += part + "/"
+            txt += part + "/"
 
     if name == "":
         txt = txt[:-1]
+    elif error:
+        txt += name
     else:
-        if error:
-            txt += name
-        else:
-            txt += f"{Color.RED}{Color.BOLD}{name}"
+        txt += f"{Color.RED}{Color.BOLD}{name}"
 
     txt += f"{Color.RESET}"
 

@@ -1,12 +1,14 @@
-from typing import Any, List, Set, Tuple
+from __future__ import annotations
+
 from pathlib import Path
+from typing import Any, List, Set, Tuple
 
 import yaml
 from yaml.parser import ParserError
 
-from utils.globals   import BASE_PATH
-from utils.trace     import Trace
 from utils.decorator import duration
+from utils.globals import BASE_PATH
+from utils.trace import Trace
 
 #  externe Liste -> settings/settings.yaml
 #
@@ -28,7 +30,7 @@ def import_samples( sample_name: str, sub_samples: List[str] | None = None, lang
 
     settings: Any = {}
     try:
-        with open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
+        with Path.open( SETTING_DIR / "settings.yaml", "r", encoding="utf-8") as file:
             settings = yaml.safe_load(file)
     except ParserError as err:
         Trace.fatal(f"settings.yaml: {err}")
@@ -39,7 +41,7 @@ def import_samples( sample_name: str, sub_samples: List[str] | None = None, lang
     files    = sample["files"]
 
     if type == "yaml":
-        words_yaml: List[str] = list()
+        words_yaml: List[str] = []
         for file in files:
             words_yaml.extend(import_samples_yaml(SAMPLES_DIR / language, str(file), sub_samples))
 
@@ -73,7 +75,7 @@ def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List[str] ) 
 
     samples: Any = {}
     try:
-        with open( dirpath / filename, "r", encoding="utf-8") as file:
+        with Path.open( dirpath / filename, "r", encoding="utf-8") as file:
             samples = yaml.safe_load(file)
 
     except OSError as err:
@@ -100,9 +102,9 @@ def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> 
     words = set()
 
     try:
-        with open(dirpath / filename, "r", encoding=encoding) as file:
+        with Path.open(dirpath / filename, "r", encoding=encoding) as file:
             for i, line in enumerate(file):
-                line = line.strip()
+                line = line.strip()  # noqa: PLW2901
                 if i==0 or len(line) == 0 or line.startswith("#") :
                     continue
 
@@ -120,9 +122,9 @@ def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> set[st
     words = set()
 
     try:
-        with open(dirpath / filename, "r", encoding=encoding) as file:
+        with Path.open(dirpath / filename, "r", encoding=encoding) as file:
             for line in file:
-                line = line.strip().replace("\ufeff", "") # german_words.txt
+                line = line.strip().replace("\ufeff", "") # german_words.txt  # noqa: PLW2901
 
                 if len(line) == 0 or line.startswith("#"):
                     continue
@@ -132,7 +134,7 @@ def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> set[st
 
                 parts = line.split(",")    # sein, war, gewesen
                 for part in parts:
-                    part = part.strip()
+                    part = part.strip()  # noqa: PLW2901
                     if len(part) == 0:
                         continue
 
