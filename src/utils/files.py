@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 22.02.2025
+    © Jürgen Schoenemeyer, 01.03.2025 15:26
 
     src/utils/files.py
 
@@ -36,6 +36,7 @@ from __future__ import annotations
 import os
 import sys
 import xml.etree.ElementTree as ET
+
 from datetime import datetime
 from pathlib import Path
 from typing import Any, List, Tuple
@@ -340,7 +341,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
                 try:
                     text  = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n'
                     text += dict2xml(data, wrap="root", indent="  ") # type: ignore[reportPossiblyUnboundVariable]
-                except Exception as error:
+                except ValueError as error:
                     err = f"ValueError: {error}"
                     return Err(err)
             else:

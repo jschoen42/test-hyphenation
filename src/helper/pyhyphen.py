@@ -1,11 +1,27 @@
+"""
+    © Jürgen Schoenemeyer, 02.03.2025 19:37
+
+    src/helper/pyhyphen.py
+
+    PyHyphen 4.0.4
+    https://pypi.org/project/PyHyphen/
+    https://github.com/dr-leo/PyHyphen
+
+    https://github.com/LibreOffice/dictionaries/blob/master/de/hyph_de_DE.dic
+
+    PUBLIC:
+     - init_pyhypen( language: str = "de_DE" ) -> None
+     - get_pyhypen( word:str, patch: bool = True, trace: bool = False ) -> str
+
+    PRIVATE:
+     - format_word( parts: List[Any] ) -> str
+     - download_pyhypen_all() -> None
+"""
 from __future__ import annotations
 
 from typing import Any, List
 
-from hyphen import (  # type: ignore[import-untyped]
-    Hyphenator,
-    dictools,
-)
+from hyphen import Hyphenator  # type: ignore[import-untyped]
 
 from utils.decorator import duration
 from utils.globals import BASE_PATH
@@ -16,7 +32,7 @@ DICT_DIR = BASE_PATH / "dict"
 hyphen: Hyphenator
 
 @duration("PyHyphen init")
-def init_hyphen( language: str = "de_DE" ) -> None:
+def init_pyhyphen( language: str = "de_DE" ) -> None:
     global hyphen
 
     dirpath = DICT_DIR
@@ -25,7 +41,7 @@ def init_hyphen( language: str = "de_DE" ) -> None:
 
     hyphen = Hyphenator(language, directory=dirpath)
 
-def get_hyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
+def get_pyhyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
 
     parts = word.split("-") # e.g. "Baden-Württemberg"
 
@@ -54,22 +70,22 @@ def get_hyphen( word: str, patch: bool = True, trace: bool = False ) -> str :
         result.append(res)
 
     if trace:
-        Trace.result(f"PyHyphen: {pprint_hyphen(result)}")
+        Trace.result(f"PyHyphen: {format_word(result)}")
 
-    return pprint_hyphen(result)
+    return format_word(result)
 
-def pprint_hyphen( parts: List[Any] ) -> str:
+def format_word( parts: List[Any] ) -> str:
     result = ""
     for part in parts:
         result = result + "·".join(part) + "-"
 
     return result[:-1]
 
-def download_all() -> None:
-    languages = dictools.LANGUAGES
-    for language in languages:
-        try:
-            dictools.install(language, directory=DICT_DIR )
-            Trace.info(f"downloading {language}")
-        except Exception as err:
-            Trace.error(f"{err}")
+# def download_pyhyphen_all() -> None:
+#     languages = dictools.LANGUAGES
+#     for language in languages:
+#         try:
+#             dictools.install(language, directory=DICT_DIR )
+#             Trace.info(f"downloading {language}")
+#         except Exception as err:
+#             Trace.error(f"{err}")

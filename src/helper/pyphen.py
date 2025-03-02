@@ -1,3 +1,16 @@
+"""
+    © Jürgen Schoenemeyer, 02.03.2025 19:37
+
+    src/helper/pyphen.py
+
+    pyphen 0.17.2
+    https://pypi.org/project/pyphen/
+    https://github.com/Kozea/Pyphen
+
+    PUBLIC:
+     - init_pyphen( language: str="de_DE" ) -> None
+     - get_pyphen( word:str, trace: bool = False ) -> str
+"""
 from __future__ import annotations
 
 import pyphen  # type: ignore[import-untyped]

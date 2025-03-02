@@ -1,9 +1,22 @@
+"""
+    © Jürgen Schoenemeyer, 02.03.2025 19:37
+
+    src/helper/samples.py
+
+    PUBLIC:
+     - import_samples( sample_name: str, sub_samples: List[str] | None = None, language: str = "#" ) -> Tuple[str, List[str] | Set[str]]
+     - import_samples_yaml( dirpath: Path, filename: str, sub_samples: List[str] ) -> List[str]
+     - import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> Set[str]
+     - import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> Set[str]
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
 from typing import Any, List, Set, Tuple
 
 import yaml
+
 from yaml.parser import ParserError
 
 from utils.decorator import duration
@@ -98,7 +111,7 @@ def import_samples_yaml( dirpath: Path, filename: str, sub_samples: List[str] ) 
 
 # DICTIONARY
 
-def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> set[str]:
+def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> Set[str]:
     words = set()
 
     try:
@@ -118,7 +131,7 @@ def import_samples_dictionary( dirpath: Path, filename: str, encoding: str ) -> 
 
 # TEXT
 
-def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> set[str]:
+def import_samples_text( dirpath: Path, filename: str, encoding: str ) -> Set[str]:
     words = set()
 
     try:
