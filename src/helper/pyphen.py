@@ -1,9 +1,12 @@
 """
-    © Jürgen Schoenemeyer, 02.03.2025 19:37
+    © Jürgen Schoenemeyer, 17.03.2025 17:59
 
     src/helper/pyphen.py
 
-    pyphen 0.17.2
+    pyphen 0.17.2 (20.01.2025)
+
+    Pure Python module
+
     https://pypi.org/project/pyphen/
     https://github.com/Kozea/Pyphen
 

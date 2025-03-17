@@ -1,9 +1,11 @@
 """
-    © Jürgen Schoenemeyer, 02.03.2025 19:37
+    © Jürgen Schoenemeyer, 17.03.2025 18:10
 
     src/helper/pyhyphen.py
 
-    PyHyphen 4.0.4
+    PyHyphen 4.0.4 (30.07.2024)
+     -> hyphen.c (László Németh)
+
     https://pypi.org/project/PyHyphen/
     https://github.com/dr-leo/PyHyphen
 

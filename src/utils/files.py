@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 01.03.2025 15:26
+    © Jürgen Schoenemeyer, 14.03.2025 17:59
 
     src/utils/files.py
 
@@ -129,7 +129,7 @@ def get_files_dirs(path: Path | str, extensions: List[str]) -> Result[Tuple[List
         for filename in os.listdir(path):
             filepath = path / filename
 
-            if Path.is_file(filepath):
+            if filepath.is_file():
                 for extention in extensions:
                     if "." + extention in filename:
                         files.append(filename)
@@ -198,7 +198,7 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
         return Err(err)
 
     try:
-        with Path.open(filepath, mode="r", encoding=encoding) as f:
+        with filepath.open(mode="r", encoding=encoding) as f:
             text = f.read()
     except OSError as err:
         Trace.debug(f"{err}")
@@ -389,7 +389,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
     if filepath.exists():
         try:
-            with Path.open(filepath, mode="r", encoding=encoding) as f:
+            with filepath.open(mode="r", encoding=encoding) as f:
                 text_old = f.read()
         except OSError as err:
             Trace.debug(f"{err}")
@@ -400,7 +400,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
             return Ok("")
 
         try:
-            with Path.open(filepath, mode="w", encoding=encoding, newline=newline) as f:
+            with filepath.open(mode="w", encoding=encoding, newline=newline) as f:
                 f.write(text)
         except OSError as err:
             return Err(f"{err}")
@@ -410,7 +410,7 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
     else:
         try:
-            with Path.open(filepath, mode="w", encoding=encoding, newline=newline) as f:
+            with filepath.open(mode="w", encoding=encoding, newline=newline) as f:
                 f.write(text)
         except OSError as err:
             Trace.debug(f"{err}")

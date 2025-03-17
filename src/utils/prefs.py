@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 01.03.2025 15:26
+    © Jürgen Schoenemeyer, 12.03.2025 16:31
 
     src/utils/prefs.py
 
@@ -9,6 +9,7 @@
       - load(cls, pref_name: str) -> bool
       - get(cls, key_path: str) -> Any
 
+    PRIVATE:
      - merge_dicts(a: Dict, b: Dict) -> Dict
      - build_tree(tree: List, in_key: str, value: str) -> Dict
 """
@@ -51,7 +52,7 @@ class Prefs:
             Trace.error(f"pref not found '{cls.pref_path}\\{pref_name}'")
             return False
         try:
-            with Path.open( Path(cls.pref_path, pref_name), mode="r", encoding="utf-8") as file:
+            with (cls.pref_path / pref_name).open( mode="r", encoding="utf-8") as file:
                 data = yaml.safe_load(file)
 
             cls.data = dict(merge_dicts(cls.data, data))
@@ -122,7 +123,8 @@ class Prefs:
 
 def get_pref_special(pref_path: Path, pref_prexix: str, pref_name: str, key: str) -> str:
     try:
-        with Path.open(Path(pref_path, pref_prexix + pref_name + ".yaml"), mode="r", encoding="utf-8") as file:
+        path = pref_path / pref_prexix / (pref_name + ".yaml")
+        with path.open(mode="r", encoding="utf-8") as file:
             pref = yaml.safe_load(file)
 
     except yaml.YAMLError as err:
@@ -141,7 +143,7 @@ def get_pref_special(pref_path: Path, pref_prexix: str, pref_name: str, key: str
 
 def read_pref( pref_path: Path, pref_name: str ) -> Tuple[bool, Dict[Any, Any]]:
     try:
-        with Path.open( Path(pref_path, pref_name), mode="r", encoding="utf-8") as file:
+        with (pref_path / pref_name).open( mode="r", encoding="utf-8") as file:
             data = yaml.safe_load(file)
 
     except yaml.YAMLError as err:
