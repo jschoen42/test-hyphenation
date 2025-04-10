@@ -1,5 +1,5 @@
 """
-    © Jürgen Schoenemeyer, 14.03.2025 17:59
+    © Jürgen Schoenemeyer, 07.04.2025 20:30
 
     src/utils/files.py
 
@@ -7,13 +7,13 @@
 
     PUBLIC:
      - result = get_timestamp(filepath: Path | str) -> Result[float, str]
-     - result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[(), str]
-    #
-     - result = get_files_dirs(path: str, extensions: List) -> Result[Tuple[List, List], str]
-    #
-     - result = read_file(filepath: Path | str, encoding: str="utf-8" ) -> Result[Any, str]
+     - result = set_timestamp(filepath: Path | str, timestamp: float) -> Result[str, str]
+
+     - result = get_files_dirs(path: str, extensions: List) -> Result[Tuple[List[str], List[str]], str]
+
+     - result = read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]
      - result = write_file(filepath: Path | str, data: Any, encoding: str="utf-8", create_dir: bool = True, show_message: bool=True) -> Result[str, str]
-    #
+
     ------
     from result import is_err, is_ok
 
@@ -26,7 +26,7 @@
      - .txt
      - .json (json or orjson)
      - .xml (minidom or xml.etree.ElementTree)
-     #
+
      ------
      - result = listdir_ext(dirpath: Path | str, extensions: List | None = None) -> Result[List, str]
      - result = check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=False) -> Result[str, str]
@@ -55,7 +55,7 @@ except ModuleNotFoundError:
     pass
 
 try:
-    from dict2xml import dict2xml  # type: ignore[import-untyped]
+    from dict2xml import dict2xml  # type: ignore[import-untyped, reportMissingTypeStubs]
 except ModuleNotFoundError:
     pass
 
@@ -84,9 +84,9 @@ def get_timestamp(filepath: Path | str) -> Result[float, str]:
 
     try:
         ret = filepath.stat().st_mtime
-    except OSError as err:
-        Trace.debug(f"{err}")
-        return Err(f"{err}")
+    except OSError as e:
+        Trace.debug(f"{e}")
+        return Err(f"{e}")
 
     return Ok(ret)
 
@@ -112,9 +112,9 @@ def set_timestamp(filepath: Path | str, timestamp: float) -> Result[str, str]:
 
     try:
         os.utime(Path(filepath), times = (timestamp, timestamp)) # atime and mtime
-    except OSError as err:
-        Trace.debug(f"{err}")
-        return Err(f"{err}")
+    except OSError as e:
+        Trace.debug(f"{e}")
+        return Err(f"{e}")
 
     return Ok("")
 
@@ -137,9 +137,9 @@ def get_files_dirs(path: Path | str, extensions: List[str]) -> Result[Tuple[List
             else:
                 dirs.append(filename)
 
-    except OSError as err:
-        Trace.error(f"{err}")
-        return Err(f"{err}")
+    except OSError as e:
+        Trace.error(f"{e}")
+        return Err(f"{e}")
 
     return Ok((files, dirs))
 
@@ -200,9 +200,9 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
     try:
         with filepath.open(mode="r", encoding=encoding) as f:
             text = f.read()
-    except OSError as err:
-        Trace.debug(f"{err}")
-        return Err(f"{err}")
+    except OSError as e:
+        Trace.debug(f"{e}")
+        return Err(f"{e}")
 
     if file_type == "text":
         return Ok(text)
@@ -210,17 +210,17 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
     elif file_type == "json":
         if "orjson" in sys.modules:
             try:
-                data = orjson.loads(text)           # type: ignore[reportPossiblyUnboundVariable]
-            except orjson.JSONDecodeError as err:   # type: ignore[reportPossiblyUnboundVariable]
-                error = f"JSONDecodeError: {filepath} => {err}"
+                data = orjson.loads(text)           # type: ignore[reportPossiblyUnboundVariable] # PyRight: "orjson" is possibly unbound
+            except orjson.JSONDecodeError as e:     # type: ignore[reportPossiblyUnboundVariable] # PyRight: "orjson" is possibly unbound
+                error = f"JSONDecodeError: {filepath} => {e}"
                 Trace.debug(error)
                 return Err(error)
             return Ok(data)
         else:
             try:
-                data = json.loads(text)             # type: ignore[reportPossiblyUnboundVariable]
-            except json.JSONDecodeError as err:     # type: ignore[reportPossiblyUnboundVariable]
-                error = f"JSONDecodeError: {filepath} => {err}"
+                data = json.loads(text)             # type: ignore[reportPossiblyUnboundVariable] # PyRight: "json" is possibly unbound
+            except json.JSONDecodeError as e:       # type: ignore[reportPossiblyUnboundVariable] # PyRight: "json" is possibly unbound
+                error = f"JSONDecodeError: {filepath} => {e}"
                 Trace.debug(error)
                 return Err(error)
             return Ok(data)
@@ -229,8 +229,8 @@ def read_file(filepath: Path | str, encoding: str="utf-8") -> Result[Any, str]:
         try:
             # data = ET.fromstring(text)
             data = minidom.parseString(text)  # noqa: S318
-        except (TypeError, AttributeError) as err:
-            error = f"ParseError: {err}"
+        except (TypeError, AttributeError) as e:
+            error = f"ParseError: {e}"
             Trace.debug(error)
             return Err(error)
         return Ok(data)
@@ -289,11 +289,11 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
         if "xmltodict" in sys.modules:
             if isinstance(data, minidom.Document):
                 text = data.toxml()
-                data = xmltodict.parse(text) # type: ignore[reportPossiblyUnboundVariable]
+                data = xmltodict.parse(text) # type: ignore[reportPossiblyUnboundVariable] # PyRight: "xmltodict" is possibly unbound
 
             elif isinstance(data, ET.Element):
                 text = ET.tostring(data, method="xml", xml_declaration=True, encoding="unicode")
-                data = xmltodict.parse(text) # type: ignore[reportPossiblyUnboundVariable]
+                data = xmltodict.parse(text) # type: ignore[reportPossiblyUnboundVariable] # PyRight: "xmltodict" is possibly unbound
         else:
             err = "module 'xmltodict' not installed"
             Trace.debug(err)
@@ -303,20 +303,20 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
         def serialize_sets(obj: Any) -> Any:
             if isinstance(obj, set):
-                return sorted(obj) # type: ignore[reportUnknownVariableType]
+                return sorted(obj)
 
             return obj
 
         if isinstance(data, (dict, list)):
             try:
                 if "orjson" in sys.modules:
-                    text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8") # type: ignore[reportPossiblyUnboundVariable]
+                    text = orjson.dumps(data, default=serialize_sets, option=orjson.OPT_INDENT_2).decode("utf-8") # type: ignore[reportPossiblyUnboundVariable] # PyRight: "orjson" is possibly unbound
                 else:
-                    text = json.dumps(data, default=serialize_sets, indent=2, ensure_ascii=False)                 # type: ignore[reportPossiblyUnboundVariable]
-            except TypeError as error:
-                err = f"TypeError: {error}"
-                Trace.error(err)
-                return Err(err)
+                    text = json.dumps(data, default=serialize_sets, indent=2, ensure_ascii=False)                 # type: ignore[reportPossiblyUnboundVariable] # PyRight: "json" is possibly unbound
+            except TypeError as e:
+                error = f"TypeError: {e}"
+                Trace.error(error)
+                return Err(error)
         else:
             err = f"Type '{type(data)}' is not supported for '{suffix}'"
             Trace.error(err)
@@ -340,10 +340,10 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
             if "dict2xml" in sys.modules:
                 try:
                     text  = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>\n'
-                    text += dict2xml(data, wrap="root", indent="  ") # type: ignore[reportPossiblyUnboundVariable]
-                except ValueError as error:
-                    err = f"ValueError: {error}"
-                    return Err(err)
+                    text += dict2xml(data, wrap="root", indent="  ") # type: ignore[reportPossiblyUnboundVariable] # PyRight: "dict2xml" is possibly unbound
+                except ValueError as e:
+                    error = f"ValueError: {e}"
+                    return Err(error)
             else:
                 err = "module 'dict2xml' not installed"
                 Trace.debug(err)
@@ -351,10 +351,10 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
 
             # if "dicttoxml" in sys.modules: # GNU License !
             #     try:
-            #         xml = dicttoxml(data) # type: ignore[reportPossiblyUnboundVariable]
-            #     except ValueError as error:
-            #         err = f"ValueError: {error}"
-            #         return Err(err)
+            #         xml = dicttoxml(data) # type: ignore[reportPossiblyUnboundVariable] # PyRight: "dicttoxml" is possibly unbound
+            #     except ValueError as e:
+            #         error = f"ValueError: {e}"
+            #         return Err(error)
             #     text = minidom.parseString(xml).toprettyxml(indent="  ")
             #     text = text.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="utf-8" standalone="yes"?>')
             # else:
@@ -379,9 +379,9 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
             try:
                 dirpath.mkdir(parents=True)
                 Trace.update(f"'{dirpath}' created")
-            except OSError as err:
-                Trace.debug(f"{err}")
-                return Err(f"{err}")
+            except OSError as e:
+                Trace.debug(f"{e}")
+                return Err(f"{e}")
         else:
             return Err(f"DirNotFoundError: '{dirpath}'")
 
@@ -391,9 +391,9 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
         try:
             with filepath.open(mode="r", encoding=encoding) as f:
                 text_old = f.read()
-        except OSError as err:
-            Trace.debug(f"{err}")
-            return Err(f"{err}")
+        except OSError as e:
+            Trace.debug(f"{e}")
+            return Err(f"{e}")
 
         if text == text_old:
             Trace.info(f"'{filepath}' not modified")
@@ -402,8 +402,8 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
         try:
             with filepath.open(mode="w", encoding=encoding, newline=newline) as f:
                 f.write(text)
-        except OSError as err:
-            return Err(f"{err}")
+        except OSError as e:
+            return Err(f"{e}")
 
         if show_message:
             Trace.update(f"'{filepath}' updated")
@@ -412,9 +412,9 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
         try:
             with filepath.open(mode="w", encoding=encoding, newline=newline) as f:
                 f.write(text)
-        except OSError as err:
-            Trace.debug(f"{err}")
-            return Err(f"{err}")
+        except OSError as e:
+            Trace.debug(f"{e}")
+            return Err(f"{e}")
 
         if show_message:
             Trace.update(f"'{filepath}' created")
@@ -424,9 +424,9 @@ def write_file(filepath: Path | str, data: Any, filename_timestamp: bool = False
     if timestamp > 0:
         try:
             os.utime(filepath, times = (timestamp, timestamp)) # atime and mtime
-        except OSError as err:
-            Trace.debug(f"{err}")
-            return Err(f"timestamp: {err}")
+        except OSError as e:
+            Trace.debug(f"{e}")
+            return Err(f"timestamp: {e}")
 
     return Ok("")
 
@@ -510,6 +510,6 @@ def check_path_exist(path: Path | str, case_sensitive: bool=False, debug: bool=F
 
     txt = str(Path(txt).as_posix())
     if debug:
-        Trace.error( f"path '{txt}' not found" )
+        Trace.error(f"path '{txt}' not found")
 
     return Err(f"{txt}")
